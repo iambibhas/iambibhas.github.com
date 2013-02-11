@@ -51,7 +51,7 @@ $(function(){
             "keyup #prompt": "getOutput"
         },
         commands: {
-            'help': 'Hello there!'
+            'help': 'I\'m currently moving my site from raw JS to Backbone.js. So few stuffs are missing. Sorry for the trouble. :( You can click the `posts` link on the sidebar and read my blog posts. :)'
         },
         history: [],
         getOutput: function(e) {
