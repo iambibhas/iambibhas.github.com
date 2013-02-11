@@ -81,6 +81,7 @@ $(function(){
                 var lastInput = this.history.pop();
                 this.input.val(lastInput);
             }
+            $('#terminal').scrollTop(99999);
         }
     });
 
