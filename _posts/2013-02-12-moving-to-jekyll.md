@@ -5,8 +5,7 @@ status: publish
 tags: 
 - Non-technical
 published: true
-title: Moving to Jekyll
+title: Moving to Jekyll and Github
 ---
 
-I'm moving my blog to Jekyll
-----------------------------
+Got tired of wordpress and PHP. So moving my site to Github pages.
