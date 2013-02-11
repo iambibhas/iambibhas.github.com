@@ -25,9 +25,16 @@ layout: layout
         I'm a developer. <a href="https://twitter.com/{{ site.twitter }}" target="_blank">Follow me on Twitter</a>;
       </p>
 
-      <a href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="{{ site.twitter }}">Tweet</a>
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="iAmBibhas">Tweet</a>
       <a href="http://twitter.com/{{ site.twitter }}" class="twitter-follow-button" data-show-count="false">Follow @{{ site.twitter }}</a>
       <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+    </section>
+    <section style="padding-right: 20px; margin-top: 10px">
+        {% if site.comments.provider == 'facebook' %}
+            {% include comment_providers/facebook.html %}
+        {% else if site.comments.provider == 'disqus' %}
+            {% include comment_providers/disqus.html %}
+        {% endif %}
     </section>
   </section>
 </section>

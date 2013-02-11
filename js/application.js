@@ -1,5 +1,6 @@
 $(function(){
-    $('#prompt').css('width', $('#terminal')[0].clientWidth);
+    if($('#terminal')[0] !== undefined)
+        $('#prompt').css('width', $('#terminal')[0].clientWidth);
 
     var Command = Backbone.Model.extend({
         defaults: function() {

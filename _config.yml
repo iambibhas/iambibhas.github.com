@@ -6,10 +6,20 @@ rdiscount:
   extensions: [smart]
 
 name: Bibhas Debnath
-url: http://bibhas.in/
+url: http://bibhas.in
 description: Lazy to the core
 twitter: iAmBibhas
 github: iambibhas
 gravatar_url: http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152
 
 about_page: /about-me/
+
+comments :
+  provider : disqus
+  disqus:
+    short_name : bee-mblog
+  facebook :
+    appid : 162354263778470
+    num_posts: 5
+    width: 580
+    colorscheme: light
