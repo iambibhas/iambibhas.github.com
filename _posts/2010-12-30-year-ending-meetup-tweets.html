@@ -1,0 +1,56 @@
+--- 
+layout: post
+type: post
+status: publish
+tags: 
+- "2010"
+- facebook
+- meetup
+- Non-technical
+- tweet
+- tweetup
+meta: 
+  _wpbitly: http://q.bibhas.in/H5YhPY
+  image: ""
+  _wp_old_slug: ""
+  _edit_last: "1"
+published: true
+title: Year Ending Meetup - Tweets
+---
+We decided to meet up once before the year ends and have a quality time. Some of us are gonna tweet live from the spot. So I thought this would help to track the tweets. :)
+So, its just a Live stream for following the tweets made from the Event spot. :)
+<!--more-->
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+ <script type="text/javascript">// <![CDATA[
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: 'kolmeetup OR koltweetup since:2010-12-30 include:retweets',
+  interval: 3000,
+  title: 'Live Tweets from the event',
+  subject: 'Year ending meetup - 2010',
+  width: 'auto',
+  height: 400,
+  theme: {
+    shell: {
+      background: '#545657',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: false,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'default'
+  }
+}).render().start();
+// ]]></script>

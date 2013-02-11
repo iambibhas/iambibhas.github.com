@@ -1,0 +1,41 @@
+--- 
+layout: post
+type: post
+status: publish
+tags: 
+- android
+- neo
+- neo-v
+- neov
+- root
+- rooting
+- Technical
+- xperia
+meta: 
+  _wpbitly: http://q.bibhas.in/M0f3lE
+  _edit_last: "1"
+published: true
+title: Rooting Xperia Neo V MT11i with 4.0.2.A.0.62 Build (on Ubuntu)
+---
+<blockquote><strong>Warning: While rooting, unlocking bootloader would wipe all your phone's data and apps. So Backup before proceeding!</strong></blockquote>
+<!--more-->Getting straight to the point, here is a step by step guide to rooting an Xperia Neo V MT11i on Ubuntu 11.10.
+<blockquote>Small note: If you're running Windows, ignore step 1 and 3 and have the phone's USB drivers installed properly.</blockquote>
+<ol>
+	<li>Install <span class="lang:sh decode:true  crayon-inline ">libusb-dev</span> and <span class="lang:sh decode:true  crayon-inline">libusb-1.0-0-dev</span>.</li>
+	<li>Get <a href="http://androxyde.github.com/" target="_blank">Flashtool</a>. Download both 0.8.0.0 and 0.8.6.0 update. Extract both, then copy-paste the files from 0.8.6.0 folder to 0.8.0.0 folder. So that you have the updated version.</li>
+	<li>From terminal, go to the FlashTool directory, and run it -
+<pre class="lang:sh decode:true">$ ./FlashTool</pre>
+</li>
+	<li>Once FlashTool runs, turn on USB Debugging from the Settings&gt;Applications&gt;Development and Unknown Sources from the Settings&gt;Applications.</li>
+	<li>Connect your phone to USB, <strong>Not in Mass Storage Device mode</strong>. If it's connected successfully, you'll see some logs on the window of Flashtool. If there is any error, ask me.</li>
+	<li>Now you have to check if your phone's Boot loader is unlocked. To root, the boot loader needs to be unlocked. To check, Dial *#*#7378423#*#* . Then go to -&gt; "Service Info" -&gt; "Configuration". If there is:
+<ol>
+	<li><strong>Bootloader unlock allowed - Yes &lt;&lt; this means that your Bootloader is Locked</strong></li>
+	<li><strong>Bootloader Unlocked - Yes &lt;&lt; this means that your bootloader is unlocked</strong></li>
+</ol>
+</li>
+	<li>If BL is locked, from Flashtool, go to Plugins &gt; Bootloader Unlock &gt; Run and follow the instructions. At one point, it'll send you to Sony website for the unlock code where you have to approve the fact that your warranty is being void. :P</li>
+	<li>Once the BL is unlocked, your phone would boot and you'll have lost all your apps, data, everything. You may then start from scratch again or restore from any previous backup.</li>
+	<li>Follow <a href="http://forum.xda-developers.com/showpost.php?p=25610423&amp;postcount=1" target="_blank">the tutorial at XDA</a>. Ignore step 2 of that guide if you are using Ubuntu.</li>
+</ol>
+You'll have your phone rooted in no time. :)

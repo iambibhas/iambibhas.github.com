@@ -1,13 +1,13 @@
 markdown: rdiscount
 pygments: true
-permalink: /posts/:title
+permalink: /blog/:title
 auto: true
 rdiscount:
   extensions: [smart]
 
-name: Zach Holman
-url: http://zachholman.com
-description: A fantastic blog that is fantastic.
-twitter: holman
-github: holman
-gravatar_url: http://gravatar.com/avatar/6f63cde8b16b035280ca615f621a6c8c
+name: Bibhas Debnath
+url: http://bibhas.in/
+description: Lazy to the core
+twitter: iAmBibhas
+github: iambibhas
+gravatar_url: http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152

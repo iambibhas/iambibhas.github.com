@@ -1,0 +1,33 @@
+--- 
+layout: post
+type: post
+status: publish
+tags: 
+- chrome
+- desktop
+- feed
+- google
+- Non-technical
+- notification
+- reader
+meta: 
+  _wpbitly: http://q.bibhas.in/H59XWy
+  _edit_last: "1"
+published: true
+title: "Chrome: Instant Desktop Notification of Your Google Reader Feed"
+---
+I know there are hell lot of people out there(like me) who are too lazy to open <a title="Google Reader" href="http://reader.google.com" target="_blank">http://reader.google.com</a> every time for latest news, yet want to stay updated of the news instantly. I made a simple solution for myself.<!--more-->The logic is simple. I'm going to fetch the public feed of my reader timeline and going to put that in a Chrome app that shows desktop notifications instantly for any feed. :)
+
+I installed a Chrome app named <a title="Feed Notifier" href="https://chrome.google.com/webstore/detail/njjncilebadhdbgkgnnbobcofhgjmipj?hl=en-US" target="_blank">Feed Notifier</a>. After installing it, just go to <strong>Menu</strong> &gt; <strong>Tools</strong> &gt; <strong>Extensions</strong> &gt; Click on the <strong>Options</strong> link below <strong>Feed Notifier</strong>.
+<p style="text-align: center;"><a href="http://i.imgur.com/AsBYT.png"><img class="aligncenter" title="Feed notifier" src="http://i.imgur.com/AsBYT.png" alt="" width="720" height="405" /></a></p>
+Now keep that window open, we need to get your Reader feed now.
+
+Open <a title="Google Reader" href="http://reader.google.com" target="_blank">Google Reader</a>. Go to All Items. Then copy the URL of that window. it should be something like -
+<pre class="brush:html">http://www.google.com/reader/view/#stream/user%2F08435596288051107451%2Fstate%2Fcom.google%2Freading-list</pre>
+Now change that URL a bit. To something like this -
+<pre class="brush:html">http://www.google.com/reader/atom/user%2F08435596288051107451%2Fstate%2Fcom.google%2Freading-list</pre>
+So you see, I just replaced <strong>/view/#stream/</strong> to <strong>/atom/</strong> ..
+
+Now copy the new modified URL, paste it in the <strong>Feed URL</strong> field of the Feed Notifier extension window you opened earlier. Set refresh interval and other options. Click Save. And that's it. Now you should be able to see desktop notifications like this every time a new item appears in your Google Reader stream. :)
+
+<img class="aligncenter" title="Feed Notifier" src="http://i.imgur.com/JdJDH.png" alt="" width="341" height="258" />

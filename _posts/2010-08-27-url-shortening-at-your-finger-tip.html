@@ -1,0 +1,44 @@
+--- 
+layout: post
+type: post
+status: publish
+tags: 
+- free
+- php
+- shorten
+- Technical
+- url
+meta: 
+  _wpbitly: http://q.bibhas.in/GWyJnm
+  _wp_old_slug: ""
+  _edit_last: "1"
+published: true
+title: URL Shortening at your finger tip. :)
+---
+<img class="alignleft" title="Yourls Logo" src="http://i36.tinypic.com/2eanmnc.jpg" alt="" width="201" height="90" />I dunno about you guys, but I was getting weary of all the url shorteners that has grown like weeds around us.. Hence thought of using something that I could customize and use as I like. Hence did a Google search and found Yourls.
+
+The case is simple, this service gives your site a capability to shorten urls. All you need is a Domain. Let it be a Top-Level Domain or a free one.. Now *this* is what I call usability. :)
+
+<!--more-->As you already know, I maintain a TLD. So I thought of a URL shortener like <strong>bibhas.in/l/</strong> ..
+So, I downloaded Yourls. According to its guide, installed it and just ran it. And Voila! It works flawlessly. :)
+
+Now, coming to the main points, what are the advantages of Yourls over <a title="Bit.ly Pro" href="https://bitly.com/pro/" target="_blank">Bit.ly Pro(another similar service)</a>?
+<ol>
+	<li>Yours is totally customizable. Its open source. So you can modify it anyway you want. :)</li>
+	<li>All the link data are saved in your own database. Whereas Bit.ly stores then in its own database.</li>
+	<li>Yourls has a cool API that's fairly simple to use.</li>
+	<li>Yourls provides two bookmarklets to share any link you want to share on the go. :)</li>
+</ol>
+Yourls gives you a local API. Means all the functions resides on your server. You're given an unique signature which you can use instead of username and password while making an API request.
+
+And you call goes like this -
+<pre class="brush:plain">http://bibhas.in/l/yourls-api.php?signature=f271546ece&amp;action=shorturl&amp;url=http://bibhas.in&amp;format=xml</pre>
+as simple as that. :)
+
+More details on the API can be found here - <a href="http://yourls.org/#API" target="_blank">http://yourls.org/#API</a>
+
+Here is a screenshot of the default Yourls Link Dashboard -
+
+<img style="border: 1px solid black;" title="Yourls Link Dashboard" src="http://i34.tinypic.com/9iuyvp.jpg" alt="" width="500" height="288" />
+
+Now, If you're interested in using it, Download Yourls from here - <a title="Download Yourls" href="http://yourls.org/download" target="_blank">http://yourls.org/download</a>

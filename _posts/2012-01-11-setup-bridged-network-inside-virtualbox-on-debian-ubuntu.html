@@ -1,0 +1,34 @@
+--- 
+layout: post
+type: post
+status: publish
+tags: 
+- debian
+- linux
+- networking
+- setup
+- Technical
+meta: 
+  _genesis_keywords: linux, debian, networking, setup
+  _genesis_description: Network configuration of a Debian/Ubuntu/Linux box inside VirtualBox(by Oracle) in bridged network mode.
+  _genesis_title: Setup Bridged Network inside VirtualBox on Debian/Ubuntu
+  _wpbitly: http://q.bibhas.in/GZgBZc
+  _edit_last: "1"
+published: true
+title: Setup Bridged Network inside VirtualBox on Debian/Ubuntu
+---
+I cannot stay away from Terminal. :| So I was setting up a debian box inside my Windows installation. I downloaded a net installation image of Debian 6.0.3 (<a title="Direct link to the image file" href="http://cdimage.debian.org/debian-cd/current/i386/iso-cd/debian-6.0.3-i386-netinst.iso" target="_blank">debian-6.0.3-i386-netinst.iso</a>) and booted into it in VirtualBox. Well, while installing it, VB was in NAT mode and I didn't notice that. So the installer configured the OS according to NAT mode and I had the network connection after I logged in. But as I wanted to run few server applications, I needed the OS to use a bridged connection. So I opened the network configuration of VB, changed it to Bridged Adapter mode, selected by adapter, hit Ok, then restarted the network service in the box and tried to ping google. But got error. The network wasn't working.
+
+<!--more-->
+
+Fired up Google, but after few searches, I landed on the conclusion that it was the basic network configuration that I needed to follow. :|
+
+i.e. Following commands -
+[bash]
+sudo  ifconfig eth0 10.0.0.5 netmask 255.255.255.0
+sudo route add default gw 10.0.0.1  eth0
+#Now restart networking
+sudo /etc/init.d/networking restart
+[/bash]
+
+That did the trick.

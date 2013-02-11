@@ -1,0 +1,41 @@
+--- 
+layout: post
+type: post
+status: publish
+tags: 
+- client
+- dabr
+- Technical
+- tweak
+- twitter
+meta: 
+  slider_style: default.css
+  _wpbitly: http://q.bibhas.in/Hp4XqZ
+  slide_redirect_url: http://bibhas.in/blog/2010/10/auto-refresh-your-dabr-client/
+  _wp_old_slug: ""
+  _edit_last: "1"
+published: true
+title: Auto Refresh your Dabr client
+---
+If you don't know yet, Dabr is an open source Twitter Mobile Web client which can be used from their own site <a title="Dabr Home Page" href="http://dabr.co.uk" target="_blank">dabr.co.uk</a> or you can download the code from its <a title="Dabr code" href="http://code.google.com/p/dabr/" target="_blank">Google Code page</a> and upload it to your server and use it like your own client.. :) But Don't forget to read the documentation while installing. :)
+
+Now, about auto refreshing, First I thought about using AJAX, but that seemed a lot of work. So, I thought of an alternative.
+<!--more-->
+Open the <strong>theme.php</strong> file which is inside the <strong>common</strong> directory.
+Scroll to line no <strong>137</strong>. You should see something like this -&gt;
+<pre class="brush:html">&lt;head&gt;&lt;title&gt;',$_SERVER['SERVER_NAME'],' - ',$title,'&lt;/title&gt;&lt;base href="',BASE_URL,'" /&gt;
+'.theme('css').'
+&lt;/head&gt;</pre>
+Just add this line just before the <strong>&lt;/html&gt;</strong> tag,
+<pre class="brush:html">&lt;meta http-equiv="refresh" content="30"&gt;</pre>
+Like -
+<pre class="brush:html">&lt;head&gt;&lt;title&gt;',$_SERVER['SERVER_NAME'],' - ',$title,'&lt;/title&gt;&lt;base href="',BASE_URL,'" /&gt;
+'.theme('css').'
+&lt;meta http-equiv="refresh" content="30"&gt;
+&lt;/head&gt;</pre>
+And save it and upload it to your server. You can change the value 30 as u wish, it'll be counted as seconds and the page will refresh with that interval. :D
+For reference,
+<blockquote><em>"META tags with an HTTP-EQUIV attribute are equivalent to HTTP headers. Typically, they control the action of browsers, and may be used to refine the information provided by the actual headers."</em></blockquote>
+So, I'm just modifying the sent header data and saying the browser that, refresh the page with a 30 seconds interval. :D
+
+But be careful. Don't give the value too less, or you might run out of API calls. :)

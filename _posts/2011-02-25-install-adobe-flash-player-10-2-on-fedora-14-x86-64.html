@@ -1,0 +1,38 @@
+--- 
+layout: post
+type: post
+status: publish
+tags: 
+- "14"
+- command
+- fedora
+- flash
+- player
+- rhel
+- Technical
+- terminal
+- x64
+- x86
+meta: 
+  _wpbitly: http://q.bibhas.in/H4zdIs
+  _edit_last: "1"
+published: true
+title: Install Adobe Flash Player 10.2 on Fedora 14 x86_64
+---
+Reading the title may make you feel it's pretty simple - Download the flash player rpm package from adobe.com, install it and Done. I thought so too. But even if flash-plugin was installed, Firefox wasn't detecting it. So did some old-style googling, and came up with these commands.
+<!--more-->
+Remember, my one is Fedora 14 x86_64, it might not work for other versions.
+<h2>Step 1. Open Terminal and go to Root user mode</h2>
+<pre class="brush:bash">
+su -
+Enter password: </pre>
+<h2>Step 2. Install Adobe YUM Repository RPM package</h2>
+<pre class="brush:bash">rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm
+rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+</pre>
+<h2>Step 3. Update Repositories(Optional, Do if you haven't done it recently)</h2>
+<pre class="brush:bash">yum check-update</pre>
+<h2>Step 4. Install required packages</h2>
+<pre class="brush:bash">yum install flash-plugin nspluginwrapper.x86_64 nspluginwrapper.i686 alsa-plugins-pulseaudio.i686 libcurl.i686</pre>
+<blockquote>This command should also work on <strong>Fedora 13, Fedora 12 and Red Hat (RHEL) 6 64-bit version (x86_64) (32 bit wrapped version)</strong>..</blockquote>
+That's it. Restart Firefox and you should be able to run Flash stuff. Head for Youtube to test it.

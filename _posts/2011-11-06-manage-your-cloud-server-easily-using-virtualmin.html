@@ -1,0 +1,65 @@
+--- 
+layout: post
+type: post
+status: publish
+tags: 
+- amazon
+- aws
+- ec2
+- fabric
+- Non-technical
+- python
+- Technical
+- virtualmin
+- webmin
+meta: 
+  _wpbitly: http://q.bibhas.in/HmWSD1
+  _oembed_b07c5b21919103714f182fcfebe72238: "{{unknown}}"
+  _oembed_7b1a3b8ccf29cbf98891aa89152c15c9: "{{unknown}}"
+  _edit_last: "1"
+published: true
+title: Manage Your Cloud Server Easily Using Virtualmin
+---
+A friend of mine owns an <a href="http://aws.amazon.com" target="_blank">AWS</a>(Amazon Web Services) account and wants to run an <a href="http://aws.amazon.com/ec2/" target="_blank">EC2</a>(Elastic Compute Cloud) instance for his domain. But the problem is, he is not much technically sound to handle the Ubuntu server himself. A solution like cPanel is much better for him because then he can just click and have stuffs done, without writing a single line of command. But sadly, cPanel aint free. So is there any free alternative? I searched a bit and found that <a href="http://www.webmin.com/" target="_blank">Webmin</a> and its derivative <a href="http://www.virtualmin.com/" target="_blank">Virtualmin</a> matches the criterion perfectly. <!--more-->
+
+To make his job easy, I wrote a Python script using <a href="http://fabfile.org/" target="_blank">Fabric</a>, that automatically logs into his EC2 instance and installs all the packages required(e.g. lamp-server) (Will post the Fabric recipe later). I just needed to install the Virtualmin on it for him to control everything smoothly.
+
+Virtualmin is a <a href="http://www.virtualmin.com/documentation/installation/manual" target="_blank">bit complicated</a> to setup. So they provide an installation script to make the job easy. To install Virtualmin on any server, first <a href="http://www.virtualmin.com/download.html" target="_blank">choose the appropriate installation script from here</a> for your server, then do this(I'm using the installation script for Ubuntu) -
+[crayon lang="sh"]
+$ wget http://software.virtualmin.com/gpl/scripts/install.sh
+$ sudo sh install.sh
+[/crayon]
+
+This should install Webmin, Virtualmin and configure everything.
+
+Now, as we usually use a keypair file to SSH to cloud servers like EC2, there is no password for root user. But to login to the virtualmin interface, you'll need to set a password for the root user only for the virtualmin interface. It is NOT about setting a root password for your server's root user. This is just a password to login to virtualmin. To do that, execute this command -
+[crayon lang="sh"]
+//For ubuntu
+sudo /usr/share/webmin/changepass.pl /etc/webmin root XYZ
+//if not, then
+sudo /usr/libexec/webmin/changepass.pl /etc/webmin root XYZ
+//Where XYZ is the new password
+[/crayon]
+
+Once you've done this, go visit -
+[crayon lang="html"]
+https://example.com:10000
+[/crayon]
+Or:
+[crayon lang="html"]
+https://xxx.xx.xx.xxx:10000
+[/crayon]
+
+Remember, You MUST use https. And Virtualmin is available on port 10000 by default. So remember to edit your security group(in case of Amazon AWS) to allow TCP access to port 10000.
+
+If you've done everything right, you'll be able to see the login page of Virtualmin. Dont bother if your browser shows some warning about the validity of the SSL security when you use https, Just ignore it and proceed.
+
+Once you login, you'll see a panel like this -
+
+[caption id="" align="aligncenter" width="448" caption="Virtualmin Admin Panel"]<a href="http://i.imgur.com/IBiuF.png"><img class="    " title="Virtualmin Admin Panel" src="http://i.imgur.com/IBiuF.png" alt="Virtualmin Admin Panel" width="448" height="214" /></a>[/caption]
+
+Now you can add Virtual Servers and configure them as much as you can. You can add virtual hosts to add domain names, setup Email servers etc etc and a lot more things.
+
+Go ahead and give it a try. If you face any trouble, ask me or consult <a href="http://www.virtualmin.com/documentation/installation/automated" target="_blank">Virtualmin's official installation guide</a>.
+
+Happy Cloud Computing. :)

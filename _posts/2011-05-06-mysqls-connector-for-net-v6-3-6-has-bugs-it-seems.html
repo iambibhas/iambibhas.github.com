@@ -1,0 +1,23 @@
+--- 
+layout: post
+type: post
+status: publish
+tags: 
+- .net
+- connect
+- database
+- mysql
+- Non-technical
+meta: 
+  _wpbitly: http://q.bibhas.in/H3i9Wg
+  _edit_last: "1"
+published: true
+title: MySQL's Connector for .NET v6.3.6 has bugs it seems
+---
+My final year project requires both the use of .NET and PHP/MySQL. For some certain process, I needed to connect to the MySQL database from the .NET desktop app.<!--more--> So I searched a bit and saw that MySQL provides several connectors to connect to MySQL database using various languages or platforms, e.g. there are connectors for ODBC(for Windows, Linux, Mac OS X, and Unix platforms), Java platform, .NET platform, MXJ(MBean for embedding the MySQL server in Java applications), C and C++ language and even for OpenOffice.org products! Seemed cool. went ahead and downloaded the latest stable version 6.3.6 of the .NET connector. But when I tried to install it, the installation failed unexpectedly. There were no error log for me to analyze and take step. Only this error message from the installer -
+
+[caption id="" align="aligncenter" width="510" caption="MySQL Connector/NET installation error"]<img title="MySQL Connector/NET installation error" src="http://i.imgur.com/YWBX6.png" alt="MySQL Connector/NET installation error" width="510" height="397" />[/caption]
+
+Now I searched for the solution, went to the MySQL dev forum, but couldn't find a solution that worked. So I assumed that this installer is faulty, hence downloaded the immediate previous version 6.3.4 and tried to install it. Now it installed without any problem. Tried connecting from the .NET app, worked cool.
+
+So it's pretty much clear that the 6.3.6 installer has some glitch that needs to be worked on. Hope they fix it soon.

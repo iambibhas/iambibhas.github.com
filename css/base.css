@@ -1,17 +1,21 @@
 @charset "UTF-8";
+* {
+    font-family: "Roboto", serif;
+}
+
 body {
-  font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
   margin: 0;
   -webkit-font-smoothing: antialiased; }
 
 a {
-  color: #227ce8; }
+    color: #227ce8;
+}
 
 .sidebar {
   position: fixed;
   left: 15px;
   top: 15px;
-  width: 80px;
+  width: 150px;
   font-family: Helvetica, sans-serif; }
   .sidebar a {
     text-decoration: none; }
@@ -58,8 +62,7 @@ a {
       margin-bottom: 7px; }
 
 .content {
-  max-width: 650px;
-  margin-left: 110px;
+  margin-left: 150px;
   margin-right: 20px;
   margin-bottom: 50px; }
   .content h1 {
@@ -160,7 +163,7 @@ a {
       margin: 0;
       padding: 0; }
     .content .listing li {
-      font-size: 13px;
+      font-size: 1.3em;
       list-style: none;
       padding: 5px 3px;
       margin: 0;

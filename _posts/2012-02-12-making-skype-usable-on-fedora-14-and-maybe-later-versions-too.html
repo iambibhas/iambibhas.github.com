@@ -1,0 +1,27 @@
+--- 
+layout: post
+type: post
+status: publish
+tags: 
+- fedora
+- install
+- skype
+- Technical
+- terminal
+meta: 
+  _wpbitly: http://q.bibhas.in/HpOciU
+  _edit_last: "1"
+published: true
+title: Making Skype usable on Fedora 14 and maybe later versions too
+---
+I use Skype a lot. But although Skype has a fantastic version for Windows, the Linux part is a bit weak. I run Fedora 14 on my laptop(Compaq CQ42 173TU) and for some reason, Skype wont run on it. With the RPM package of 2.2 Beta, it gets installed but never runs. So I installed the static version of it following this instructions here. But when I would try to run skype from terminal, this error would occur -
+[bash]
+[root@localhost ~]# skype
+skype: error while loading shared libraries: libXv.so.1:
+cannot open shared object file: No such file or directory
+[/bash]
+So to check which dependency package I was missing, I searched with YUM -
+[bash]
+[root@localhost ~]# yum whatprovides libXv.so.1
+[/bash]
+and found that this specific package <span class="lang:default decode:true  crayon-inline ">libXv-1.0.5-1.fc13.i686</span> has that specific file. So although I'm running Fedora 14 and it's of x86_64 architecture, I installed that package which was meant for Fedora 13 and i686 architecture. Then ran skype from terminal and it worked!

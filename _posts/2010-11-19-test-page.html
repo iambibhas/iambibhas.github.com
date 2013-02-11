@@ -1,0 +1,47 @@
+--- 
+layout: post
+type: post
+status: private
+tags: []
+
+meta: 
+  _edit_last: "1"
+published: false
+title: test page
+---
+test
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: 'SSKolLive',
+  interval: 6000,
+  title: 'Live Tweets from the event',
+  subject: 'Startup Saturday Kolkata (December '2010) Edition - The Hot Seat',
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#545657',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'default'
+  }
+}).render().start();
+</script>
+<div style="clear:both;"></div>
