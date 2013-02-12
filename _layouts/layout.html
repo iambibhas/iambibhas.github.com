@@ -24,6 +24,9 @@
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  {% if site.analytics.provider == 'mixpanel' %}
+    {% include analytics/mixpanel.html %}
+  {% endif %}
   <script type="text/javascript" src="/js/application.js"></script>
 </head>
 

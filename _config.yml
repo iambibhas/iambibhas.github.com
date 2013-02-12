@@ -23,3 +23,8 @@ comments :
     num_posts: 5
     width: 580
     colorscheme: light
+
+analytics :
+  provider : mixpanel
+  mixpanel:
+    id: b0dae1534eca0d9521c89110e2ce4081

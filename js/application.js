@@ -2,6 +2,10 @@ $(function(){
     if($('#terminal')[0] !== undefined)
         $('#prompt').css('width', $('#terminal')[0].clientWidth);
 
+    $('a').click(function(e) {
+        mixpanel.track('Clicked on ' + $(this).attr('href'));
+    });
+
     var Command = Backbone.Model.extend({
         defaults: function() {
             return {
@@ -78,7 +82,9 @@ $(function(){
                 }
                 this.history.push(inp);
                 this.input.val('');
+                mixpanel.track('Tried Command: ' + inp);
             }else if (e.keyCode == 38) {
+                mixpanel.track('Pressed up key');
                 var lastInput = this.history.pop();
                 this.input.val(lastInput);
             }
