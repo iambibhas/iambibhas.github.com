@@ -1,0 +1,13 @@
+#terminal {
+    font-size: 1.3em;
+    border: 1px solid #ccc;
+    padding-left: 10px;
+    margin-top: 15px;
+    width: 99%;
+    height: 500px;
+    overflow-y: scroll;
+}
+
+#prompt {
+    font-size: 1.3em;
+}

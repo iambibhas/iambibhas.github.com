@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+      Auto Refresh your Dabr client &ndash;
+    
+    Bibhas Debnath
+  </title>
+
+  <meta name="author" content="Bibhas Debnath" />
+  <meta name="description" content="Lazy to the core" />
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+  <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
+
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/underscore-min.js"></script>
+  <script type="text/javascript" src="/js/backbone-min.js"></script>
+  
+    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
+e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
+  
+  <script type="text/javascript" src="/js/application.js"></script>
+</head>
+
+<body>
+  <section class="sidebar">
+    <a href="/">
+      <img src="http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152?s=150" height="75" width="75" class="avatar" />
+    </a>
+
+    <section class="name">
+      <a href="/">
+        <span id="fname">Bibhas</span>
+        <span id="lname">Debnath</span>
+      </a>
+    </section>
+
+    <section class="meta">
+      <a href="https://github.com/iambibhas" target="_blank"><img src="/images/github.png" /></a>
+      <a href="https://twitter.com/iAmBibhas" target="_blank"><img src="/images/twitter.png"></a>
+      <a href="/atom.xml"><img src="/images/rss.png" /></a>
+    </section>
+
+    <section class="sections">
+      <ul>
+        <li><a href="/about-me/">about</a></li>
+        <li><a href="/blog/">posts</a></li>
+      </ul>
+    </section>
+
+    <section class="sections">
+        <a href="http://stackexchange.com/users/94480">
+        <img src="http://stackexchange.com/users/flair/94480.png" width="120" height="35" alt="profile for Bibhas on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Bibhas on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+        </a>
+    </section>
+
+    <section>
+        <br>
+        <a href="https://github.com/iambibhas/iambibhas.github.com" target="_blank">
+            <img src="/images/github-powered.png" alt="" style="width: 100px">
+        </a>
+    </section>
+  </section>
+
+  <section class="content">
+  <h1>
+    <a href="/blog/193/auto-refresh-your-dabr-client/">Auto Refresh your Dabr client</a>
+  </h1>
+
+  <section class="byline">
+    October 31, 2010
+  </section>
+
+  If you don't know yet, Dabr is an open source Twitter Mobile Web client which can be used from their own site <a title="Dabr Home Page" href="http://dabr.co.uk" target="_blank">dabr.co.uk</a> or you can download the code from its <a title="Dabr code" href="http://code.google.com/p/dabr/" target="_blank">Google Code page</a> and upload it to your server and use it like your own client.. :) But Don't forget to read the documentation while installing. :)<br />
+<br />
+Now, about auto refreshing, First I thought about using AJAX, but that seemed a lot of work. So, I thought of an alternative.<br />
+<!--more--><br />
+Open the <strong>theme.php</strong> file which is inside the <strong>common</strong> directory.<br />
+Scroll to line no <strong>137</strong>. You should see something like this -&gt;<br />
+<pre class="brush:html">&lt;head&gt;&lt;title&gt;',$_SERVER['SERVER_NAME'],' - ',$title,'&lt;/title&gt;&lt;base href="',BASE_URL,'" /&gt;<br />
+'.theme('css').'<br />
+&lt;/head&gt;</pre><br />
+Just add this line just before the <strong>&lt;/html&gt;</strong> tag,<br />
+<pre class="brush:html">&lt;meta http-equiv="refresh" content="30"&gt;</pre><br />
+Like -<br />
+<pre class="brush:html">&lt;head&gt;&lt;title&gt;',$_SERVER['SERVER_NAME'],' - ',$title,'&lt;/title&gt;&lt;base href="',BASE_URL,'" /&gt;<br />
+'.theme('css').'<br />
+&lt;meta http-equiv="refresh" content="30"&gt;<br />
+&lt;/head&gt;</pre><br />
+And save it and upload it to your server. You can change the value 30 as u wish, it'll be counted as seconds and the page will refresh with that interval. :D<br />
+For reference,<br />
+<blockquote><em>"META tags with an HTTP-EQUIV attribute are equivalent to HTTP headers. Typically, they control the action of browsers, and may be used to refine the information provided by the actual headers."</em></blockquote><br />
+So, I'm just modifying the sent header data and saying the browser that, refresh the page with a 30 seconds interval. :D<br />
+<br />
+But be careful. Don't give the value too less, or you might run out of API calls. :)<br />
+
+
+  <!-- TODO: bio here -->
+  <section class="meta">
+    <h3>Discussion, links, and tweets</h3>
+    <section class="copy">
+      <a href="https://twitter.com/iAmBibhas" target="_blank">
+        <img src="http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152?s=142" height="50" width="50" />
+      </a>
+
+      <p>
+        I'm a developer. <a href="https://twitter.com/iAmBibhas" target="_blank">Follow me on Twitter</a>;
+      </p>
+
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="iAmBibhas">Tweet</a>
+      <a href="http://twitter.com/iAmBibhas" class="twitter-follow-button" data-show-count="false">Follow @iAmBibhas</a>
+      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+    </section>
+    <section style="padding-right: 20px; margin-top: 10px">
+        
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'bee-mblog'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+    </section>
+  </section>
+</section>
+<script>
+    mixpanel.track("Reading Auto Refresh your Dabr client");
+</script>
+
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3724476-6']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+</body>
+
+</html>

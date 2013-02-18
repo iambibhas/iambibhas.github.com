@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+      Manage Your Cloud Server Easily Using Virtualmin &ndash;
+    
+    Bibhas Debnath
+  </title>
+
+  <meta name="author" content="Bibhas Debnath" />
+  <meta name="description" content="Lazy to the core" />
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
+  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+  <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
+
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/js/underscore-min.js"></script>
+  <script type="text/javascript" src="/js/backbone-min.js"></script>
+  
+    <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
+typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
+e,d])};b.__SV=1.2}})(document,window.mixpanel||[]);
+mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
+  
+  <script type="text/javascript" src="/js/application.js"></script>
+</head>
+
+<body>
+  <section class="sidebar">
+    <a href="/">
+      <img src="http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152?s=150" height="75" width="75" class="avatar" />
+    </a>
+
+    <section class="name">
+      <a href="/">
+        <span id="fname">Bibhas</span>
+        <span id="lname">Debnath</span>
+      </a>
+    </section>
+
+    <section class="meta">
+      <a href="https://github.com/iambibhas" target="_blank"><img src="/images/github.png" /></a>
+      <a href="https://twitter.com/iAmBibhas" target="_blank"><img src="/images/twitter.png"></a>
+      <a href="/atom.xml"><img src="/images/rss.png" /></a>
+    </section>
+
+    <section class="sections">
+      <ul>
+        <li><a href="/about-me/">about</a></li>
+        <li><a href="/blog/">posts</a></li>
+      </ul>
+    </section>
+
+    <section class="sections">
+        <a href="http://stackexchange.com/users/94480">
+        <img src="http://stackexchange.com/users/flair/94480.png" width="120" height="35" alt="profile for Bibhas on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Bibhas on Stack Exchange, a network of free, community-driven Q&amp;A sites">
+        </a>
+    </section>
+
+    <section>
+        <br>
+        <a href="https://github.com/iambibhas/iambibhas.github.com" target="_blank">
+            <img src="/images/github-powered.png" alt="" style="width: 100px">
+        </a>
+    </section>
+  </section>
+
+  <section class="content">
+  <h1>
+    <a href="/blog/manage-your-cloud-server-easily-using-virtualmin">Manage Your Cloud Server Easily Using Virtualmin</a>
+  </h1>
+
+  <section class="byline">
+    November  6, 2011
+  </section>
+
+  A friend of mine owns an <a href="http://aws.amazon.com" target="_blank">AWS</a>(Amazon Web Services) account and wants to run an <a href="http://aws.amazon.com/ec2/" target="_blank">EC2</a>(Elastic Compute Cloud) instance for his domain. But the problem is, he is not much technically sound to handle the Ubuntu server himself. A solution like cPanel is much better for him because then he can just click and have stuffs done, without writing a single line of command. But sadly, cPanel aint free. So is there any free alternative? I searched a bit and found that <a href="http://www.webmin.com/" target="_blank">Webmin</a> and its derivative <a href="http://www.virtualmin.com/" target="_blank">Virtualmin</a> matches the criterion perfectly. <!--more--><br />
+<br />
+To make his job easy, I wrote a Python script using <a href="http://fabfile.org/" target="_blank">Fabric</a>, that automatically logs into his EC2 instance and installs all the packages required(e.g. lamp-server) (Will post the Fabric recipe later). I just needed to install the Virtualmin on it for him to control everything smoothly.<br />
+<br />
+Virtualmin is a <a href="http://www.virtualmin.com/documentation/installation/manual" target="_blank">bit complicated</a> to setup. So they provide an installation script to make the job easy. To install Virtualmin on any server, first <a href="http://www.virtualmin.com/download.html" target="_blank">choose the appropriate installation script from here</a> for your server, then do this(I'm using the installation script for Ubuntu) -<br />
+[crayon lang="sh"]<br />
+$ wget http://software.virtualmin.com/gpl/scripts/install.sh<br />
+$ sudo sh install.sh<br />
+[/crayon]<br />
+<br />
+This should install Webmin, Virtualmin and configure everything.<br />
+<br />
+Now, as we usually use a keypair file to SSH to cloud servers like EC2, there is no password for root user. But to login to the virtualmin interface, you'll need to set a password for the root user only for the virtualmin interface. It is NOT about setting a root password for your server's root user. This is just a password to login to virtualmin. To do that, execute this command -<br />
+[crayon lang="sh"]<br />
+//For ubuntu<br />
+sudo /usr/share/webmin/changepass.pl /etc/webmin root XYZ<br />
+//if not, then<br />
+sudo /usr/libexec/webmin/changepass.pl /etc/webmin root XYZ<br />
+//Where XYZ is the new password<br />
+[/crayon]<br />
+<br />
+Once you've done this, go visit -<br />
+[crayon lang="html"]<br />
+https://example.com:10000<br />
+[/crayon]<br />
+Or:<br />
+[crayon lang="html"]<br />
+https://xxx.xx.xx.xxx:10000<br />
+[/crayon]<br />
+<br />
+Remember, You MUST use https. And Virtualmin is available on port 10000 by default. So remember to edit your security group(in case of Amazon AWS) to allow TCP access to port 10000.<br />
+<br />
+If you've done everything right, you'll be able to see the login page of Virtualmin. Dont bother if your browser shows some warning about the validity of the SSL security when you use https, Just ignore it and proceed.<br />
+<br />
+Once you login, you'll see a panel like this -<br />
+<br />
+[caption id="" align="aligncenter" width="448" caption="Virtualmin Admin Panel"]<a href="http://i.imgur.com/IBiuF.png"><img class="    " title="Virtualmin Admin Panel" src="http://i.imgur.com/IBiuF.png" alt="Virtualmin Admin Panel" width="448" height="214" /></a>[/caption]<br />
+<br />
+Now you can add Virtual Servers and configure them as much as you can. You can add virtual hosts to add domain names, setup Email servers etc etc and a lot more things.<br />
+<br />
+Go ahead and give it a try. If you face any trouble, ask me or consult <a href="http://www.virtualmin.com/documentation/installation/automated" target="_blank">Virtualmin's official installation guide</a>.<br />
+<br />
+Happy Cloud Computing. :)<br />
+
+
+  <!-- TODO: bio here -->
+  <section class="meta">
+    <h3>Discussion, links, and tweets</h3>
+    <section class="copy">
+      <a href="https://twitter.com/iAmBibhas" target="_blank">
+        <img src="http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152?s=142" height="50" width="50" />
+      </a>
+
+      <p>
+        I'm a developer. <a href="https://twitter.com/iAmBibhas" target="_blank">Follow me on Twitter</a>;
+      </p>
+
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="iAmBibhas">Tweet</a>
+      <a href="http://twitter.com/iAmBibhas" class="twitter-follow-button" data-show-count="false">Follow @iAmBibhas</a>
+      <script src="http://platform.twitter.com/widgets.js" type="text/javascript"></script>
+    </section>
+    <section style="padding-right: 20px; margin-top: 10px">
+        
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'bee-mblog'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+    </section>
+  </section>
+</section>
+<script>
+    mixpanel.track("Reading Manage Your Cloud Server Easily Using Virtualmin");
+</script>
+
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3724476-6']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+
+</body>
+
+</html>
