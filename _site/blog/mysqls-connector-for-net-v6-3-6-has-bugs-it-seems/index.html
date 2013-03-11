@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,13 +86,13 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     May  6, 2011
   </section>
 
-  My final year project requires both the use of .NET and PHP/MySQL. For some certain process, I needed to connect to the MySQL database from the .NET desktop app.<!--more--> So I searched a bit and saw that MySQL provides several connectors to connect to MySQL database using various languages or platforms, e.g. there are connectors for ODBC(for Windows, Linux, Mac OS X, and Unix platforms), Java platform, .NET platform, MXJ(MBean for embedding the MySQL server in Java applications), C and C++ language and even for OpenOffice.org products! Seemed cool. went ahead and downloaded the latest stable version 6.3.6 of the .NET connector. But when I tried to install it, the installation failed unexpectedly. There were no error log for me to analyze and take step. Only this error message from the installer -<br />
-<br />
-[caption id="" align="aligncenter" width="510" caption="MySQL Connector/NET installation error"]<img title="MySQL Connector/NET installation error" src="http://i.imgur.com/YWBX6.png" alt="MySQL Connector/NET installation error" width="510" height="397" />[/caption]<br />
-<br />
-Now I searched for the solution, went to the MySQL dev forum, but couldn't find a solution that worked. So I assumed that this installer is faulty, hence downloaded the immediate previous version 6.3.4 and tried to install it. Now it installed without any problem. Tried connecting from the .NET app, worked cool.<br />
-<br />
-So it's pretty much clear that the 6.3.6 installer has some glitch that needs to be worked on. Hope they fix it soon.<br />
+  My final year project requires both the use of .NET and PHP/MySQL. For some certain process, I needed to connect to the MySQL database from the .NET desktop app.<!--more--> So I searched a bit and saw that MySQL provides several connectors to connect to MySQL database using various languages or platforms, e.g. there are connectors for ODBC(for Windows, Linux, Mac OS X, and Unix platforms), Java platform, .NET platform, MXJ(MBean for embedding the MySQL server in Java applications), C and C++ language and even for OpenOffice.org products! Seemed cool. went ahead and downloaded the latest stable version 6.3.6 of the .NET connector. But when I tried to install it, the installation failed unexpectedly. There were no error log for me to analyze and take step. Only this error message from the installer -
+
+[caption id="" align="aligncenter" width="510" caption="MySQL Connector/NET installation error"]<img title="MySQL Connector/NET installation error" src="http://i.imgur.com/YWBX6.png" alt="MySQL Connector/NET installation error" width="510" height="397" />[/caption]
+
+Now I searched for the solution, went to the MySQL dev forum, but couldn't find a solution that worked. So I assumed that this installer is faulty, hence downloaded the immediate previous version 6.3.4 and tried to install it. Now it installed without any problem. Tried connecting from the .NET app, worked cool.
+
+So it's pretty much clear that the 6.3.6 installer has some glitch that needs to be worked on. Hope they fix it soon.
 
 
   <!-- TODO: bio here -->
@@ -146,6 +150,9 @@ So it's pretty much clear that the 6.3.6 installer has some glitch that needs to
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

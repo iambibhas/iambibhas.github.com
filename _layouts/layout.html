@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   {% if site.analytics.provider == 'mixpanel' %}
     {% include analytics/mixpanel.html %}
   {% endif %}
@@ -101,6 +105,9 @@
 
     </script>
 {% endif %}
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

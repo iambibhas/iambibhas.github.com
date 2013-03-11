@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,31 +86,31 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     August 22, 2012
   </section>
 
-  These are the guiding principles of Python, but are open to interpretation. A sense of humor is required for their proper interpretation.<br />
-<br />
-<pre>Beautiful is better than ugly.<br />
-Explicit is better than implicit.<br />
-Simple is better than complex.<br />
-Complex is better than complicated.<br />
-Flat is better than nested.<br />
-Sparse is better than dense.<br />
-Readability counts.<br />
-Special cases aren't special enough to break the rules.<br />
-Although practicality beats purity.<br />
-Errors should never pass silently.<br />
-Unless explicitly silenced.<br />
-In the face of ambiguity, refuse the temptation to guess.<br />
-There should be one-- and preferably only one --obvious way to do it.<br />
-Although that way may not be obvious at first unless you're Dutch.<br />
-Now is better than never.<br />
-Although never is often better than *right* now.<br />
-If the implementation is hard to explain, it's a bad idea.<br />
-If the implementation is easy to explain, it may be a good idea.<br />
-Namespaces are one honking great idea -- let's do more of those!</pre><br />
-<br />
-- Tim Peters (<a href="http://www.python.org/dev/peps/pep-0020/" target="_blank">PEP 20</a>) | <a href="http://stackoverflow.com/questions/228181/the-zen-of-python" target="_blank">Explanation with Examples</a>.<br />
-<br />
-Easter Egg: Try - <span class="lang:python decode:true  crayon-inline ">import this</span><br />
+  These are the guiding principles of Python, but are open to interpretation. A sense of humor is required for their proper interpretation.
+
+<pre>Beautiful is better than ugly.
+Explicit is better than implicit.
+Simple is better than complex.
+Complex is better than complicated.
+Flat is better than nested.
+Sparse is better than dense.
+Readability counts.
+Special cases aren't special enough to break the rules.
+Although practicality beats purity.
+Errors should never pass silently.
+Unless explicitly silenced.
+In the face of ambiguity, refuse the temptation to guess.
+There should be one-- and preferably only one --obvious way to do it.
+Although that way may not be obvious at first unless you're Dutch.
+Now is better than never.
+Although never is often better than *right* now.
+If the implementation is hard to explain, it's a bad idea.
+If the implementation is easy to explain, it may be a good idea.
+Namespaces are one honking great idea -- let's do more of those!</pre>
+
+- Tim Peters (<a href="http://www.python.org/dev/peps/pep-0020/" target="_blank">PEP 20</a>) | <a href="http://stackoverflow.com/questions/228181/the-zen-of-python" target="_blank">Explanation with Examples</a>.
+
+Easter Egg: Try - <span class="lang:python decode:true  crayon-inline ">import this</span>
 
 
   <!-- TODO: bio here -->
@@ -164,6 +168,9 @@ Easter Egg: Try - <span class="lang:python decode:true  crayon-inline ">import 
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

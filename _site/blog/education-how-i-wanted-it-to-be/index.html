@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,29 +86,29 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     March 30, 2012
   </section>
 
-  The other day I was chatting at <a href="http://superuser.com" target="_blank">SuperUser</a> chatroom and <em>@studiohac</em>k mentioned that he had a <strong>Intro-to-Mac</strong> class that evening. That sounded funny as it was completely strange to me, having studied here in India. The closest subject I had to that was "Introduction to Computing" which was boring, and boiled down to C lessons, nothing more. I felt interested. And we started talking about how we taught ourselves.<!--more--><br />
-<br />
-Most of us in that chatroom at that point were self-taught. Including me. Whatever I know about computers, programming and all related things, I taught myself those. College taught me very few stuffs that I use now, but even for those we had in syllabus, I was aware of them beforehand.<br />
-<br />
-Back to the topic, <em>@Sidran32</em> started talking about how he learned things in his college -<br />
-<blockquote>You know, when I went to my college, they never intro'd us to Windows, Mac, or Linux/Solaris/UNIX. They just kind of threw us on Solaris machines, gave us a 1 day rudimentary overview on commands like <code>cd</code>, <code>ls</code>, and <code>make</code>, and then just let us have at it.<br />
-<br />
-When I took a class that had us work on Macs in the Mac lab, there was barely anything else, other than "these are the programs we're going to use, and this is how you compile in XCode". :P<br />
-<br />
-It was actually kind of fun. :P If we wanted to ssh from our dorms, we were on our own. Everyone eventually figured out how to, but the teachers only gave suggestions (like putty) if we asked them after class.<br />
-<br />
-Heh, there was a cracked version of xwin32 going around campus for a while. I used that until I figured out how to use cygwin, and then started experimenting with dual-booting Linux. :P</blockquote><br />
-My immediate reaction was "<strong>This</strong> is how education should be!".<br />
-<br />
-Nowadays I'm looking ahead for a masters degree. Not because it will add some more characters in my resume, just because I feel that I wasted those 4 years of mine. First year barely had any computer related subjects(Mind it that I was studying Information Technology). So, as a result, in that year, my rank was being counted from bottom. I failed a subject and was ranked second from last. :P<br />
-<br />
-<strong>&lt;rant&gt; </strong>We were taught how to crack exams. How to score more. So, plagiarism was considered legit. Teachers wont say so, but they hardly reacted if someone was found copying in exams. Assignments were meant for 4 to 5 students in the class. Others are supposed to copy from them. We used to stay awake the night before exam hoping that the paper would leak. We used to hide books in cloths and go to bathroom during exams to study. Apart from the fact that the syllabus is obsolete, no real life scenarios were discussed in the laboratories. Most of my batch-mates never heard of SSH(the case is still the same, although they are working in reputed Tech companies), let alone know how to use it. Version Controlling is alien to most. Software development life cycles meant waterfall model. Agile was Hebrew. Teachers would write the whole client-server communication program in C on white board so that students could copy it and vomit on the paper during exams. Handful of us knew how to debug a C code, how to trace the errors. We used to have strike in college(Shutting down college activities, classes, labs) if any of us failed in the exams. Students would lock the Principal and faculties in the college saying that students should not be failed. Those same students spent the semester at the corner of the college field smoking Gold Flake, instead of attending the class. Still it was the college's fault if they failed the exam. Hilarious. Ridiculous. <strong>&lt;/rant&gt;</strong><br />
-<br />
-I regret those years. If it were possible, I'd have done the same graduation in some institute where they teach the way <em>@Sidran32</em> was taught.<br />
-<br />
-I read articles where big-shot corporate gurus rant that only 10-15% of the student mass in India are employable. I wish they had spent at least 5% of their fortune in teaching these students. Where students feel challenged every single moment of those 4 years. I guess it's too much to ask.<br />
-<br />
-Pity.<br />
+  The other day I was chatting at <a href="http://superuser.com" target="_blank">SuperUser</a> chatroom and <em>@studiohac</em>k mentioned that he had a <strong>Intro-to-Mac</strong> class that evening. That sounded funny as it was completely strange to me, having studied here in India. The closest subject I had to that was "Introduction to Computing" which was boring, and boiled down to C lessons, nothing more. I felt interested. And we started talking about how we taught ourselves.<!--more-->
+
+Most of us in that chatroom at that point were self-taught. Including me. Whatever I know about computers, programming and all related things, I taught myself those. College taught me very few stuffs that I use now, but even for those we had in syllabus, I was aware of them beforehand.
+
+Back to the topic, <em>@Sidran32</em> started talking about how he learned things in his college -
+<blockquote>You know, when I went to my college, they never intro'd us to Windows, Mac, or Linux/Solaris/UNIX. They just kind of threw us on Solaris machines, gave us a 1 day rudimentary overview on commands like <code>cd</code>, <code>ls</code>, and <code>make</code>, and then just let us have at it.
+
+When I took a class that had us work on Macs in the Mac lab, there was barely anything else, other than "these are the programs we're going to use, and this is how you compile in XCode". :P
+
+It was actually kind of fun. :P If we wanted to ssh from our dorms, we were on our own. Everyone eventually figured out how to, but the teachers only gave suggestions (like putty) if we asked them after class.
+
+Heh, there was a cracked version of xwin32 going around campus for a while. I used that until I figured out how to use cygwin, and then started experimenting with dual-booting Linux. :P</blockquote>
+My immediate reaction was "<strong>This</strong> is how education should be!".
+
+Nowadays I'm looking ahead for a masters degree. Not because it will add some more characters in my resume, just because I feel that I wasted those 4 years of mine. First year barely had any computer related subjects(Mind it that I was studying Information Technology). So, as a result, in that year, my rank was being counted from bottom. I failed a subject and was ranked second from last. :P
+
+<strong>&lt;rant&gt; </strong>We were taught how to crack exams. How to score more. So, plagiarism was considered legit. Teachers wont say so, but they hardly reacted if someone was found copying in exams. Assignments were meant for 4 to 5 students in the class. Others are supposed to copy from them. We used to stay awake the night before exam hoping that the paper would leak. We used to hide books in cloths and go to bathroom during exams to study. Apart from the fact that the syllabus is obsolete, no real life scenarios were discussed in the laboratories. Most of my batch-mates never heard of SSH(the case is still the same, although they are working in reputed Tech companies), let alone know how to use it. Version Controlling is alien to most. Software development life cycles meant waterfall model. Agile was Hebrew. Teachers would write the whole client-server communication program in C on white board so that students could copy it and vomit on the paper during exams. Handful of us knew how to debug a C code, how to trace the errors. We used to have strike in college(Shutting down college activities, classes, labs) if any of us failed in the exams. Students would lock the Principal and faculties in the college saying that students should not be failed. Those same students spent the semester at the corner of the college field smoking Gold Flake, instead of attending the class. Still it was the college's fault if they failed the exam. Hilarious. Ridiculous. <strong>&lt;/rant&gt;</strong>
+
+I regret those years. If it were possible, I'd have done the same graduation in some institute where they teach the way <em>@Sidran32</em> was taught.
+
+I read articles where big-shot corporate gurus rant that only 10-15% of the student mass in India are employable. I wish they had spent at least 5% of their fortune in teaching these students. Where students feel challenged every single moment of those 4 years. I guess it's too much to ask.
+
+Pity.
 
 
   <!-- TODO: bio here -->
@@ -162,6 +166,9 @@ Pity.<br />
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

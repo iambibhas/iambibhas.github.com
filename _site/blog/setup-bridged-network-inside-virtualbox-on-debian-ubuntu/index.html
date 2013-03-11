@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,21 +86,21 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     January 11, 2012
   </section>
 
-  I cannot stay away from Terminal. :| So I was setting up a debian box inside my Windows installation. I downloaded a net installation image of Debian 6.0.3 (<a title="Direct link to the image file" href="http://cdimage.debian.org/debian-cd/current/i386/iso-cd/debian-6.0.3-i386-netinst.iso" target="_blank">debian-6.0.3-i386-netinst.iso</a>) and booted into it in VirtualBox. Well, while installing it, VB was in NAT mode and I didn't notice that. So the installer configured the OS according to NAT mode and I had the network connection after I logged in. But as I wanted to run few server applications, I needed the OS to use a bridged connection. So I opened the network configuration of VB, changed it to Bridged Adapter mode, selected by adapter, hit Ok, then restarted the network service in the box and tried to ping google. But got error. The network wasn't working.<br />
-<br />
-<!--more--><br />
-<br />
-Fired up Google, but after few searches, I landed on the conclusion that it was the basic network configuration that I needed to follow. :|<br />
-<br />
-i.e. Following commands -<br />
-[bash]<br />
-sudo  ifconfig eth0 10.0.0.5 netmask 255.255.255.0<br />
-sudo route add default gw 10.0.0.1  eth0<br />
-#Now restart networking<br />
-sudo /etc/init.d/networking restart<br />
-[/bash]<br />
-<br />
-That did the trick.<br />
+  I cannot stay away from Terminal. :| So I was setting up a debian box inside my Windows installation. I downloaded a net installation image of Debian 6.0.3 (<a title="Direct link to the image file" href="http://cdimage.debian.org/debian-cd/current/i386/iso-cd/debian-6.0.3-i386-netinst.iso" target="_blank">debian-6.0.3-i386-netinst.iso</a>) and booted into it in VirtualBox. Well, while installing it, VB was in NAT mode and I didn't notice that. So the installer configured the OS according to NAT mode and I had the network connection after I logged in. But as I wanted to run few server applications, I needed the OS to use a bridged connection. So I opened the network configuration of VB, changed it to Bridged Adapter mode, selected by adapter, hit Ok, then restarted the network service in the box and tried to ping google. But got error. The network wasn't working.
+
+<!--more-->
+
+Fired up Google, but after few searches, I landed on the conclusion that it was the basic network configuration that I needed to follow. :|
+
+i.e. Following commands -
+[bash]
+sudo  ifconfig eth0 10.0.0.5 netmask 255.255.255.0
+sudo route add default gw 10.0.0.1  eth0
+#Now restart networking
+sudo /etc/init.d/networking restart
+[/bash]
+
+That did the trick.
 
 
   <!-- TODO: bio here -->
@@ -154,6 +158,9 @@ That did the trick.<br />
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

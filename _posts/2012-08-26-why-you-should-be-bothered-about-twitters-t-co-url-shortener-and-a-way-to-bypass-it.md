@@ -23,7 +23,7 @@ If you notice carefully, most of the links you share or click nowadays are alrea
 
 t.co is adding another node above what you already have. So that's two node you have to be redirected from. For example, take this tweet -
 
-https://twitter.com/TechCrunch/status/239765316601802752
+<blockquote class="twitter-tweet"><p>Where Have The Users Gone? <a href="http://t.co/acgTzWKR" title="http://tcrn.ch/NTr6S8">tcrn.ch/NTr6S8</a> by @<a href="https://twitter.com/nireyal">nireyal</a></p>&mdash; TechCrunch (@TechCrunch) <a href="https://twitter.com/TechCrunch/status/239765316601802752">August 26, 2012</a></blockquote>
 
 TechCrunch already uses their own url shortener tcrn.ch, as you see. And when they share it on Twitter, it's being shortened with the t.co url shortener. When you read the tweet, you can see the tcrn.ch url, but if you click it, you'll see that it'll take you to a t.co link. That means, it's an anchor, when the original url is the text and the t.co link is the url. That's an effin bummer. :|
 
@@ -34,7 +34,7 @@ So this is how you have to visit your document now -
 So I have to go through two server before I can get to my link. That's really a pain in the arse for me, and should be for you too. Because if anyday the t.co server is slow because of the constant load it serves, <strong>you</strong> have to wait.
 
 I effin hate that. So wanted to get my way around it. I inspected the anchor tag of Twitter Web, this is what I got -
-<pre class="toolbar:1 lang:xhtml decode:true">&lt;a href="http://t.co/acgTzWKR" class="twitter-timeline-link" target="_blank" data-expanded-url="http://tcrn.ch/NTr6S8" title="http://tcrn.ch/NTr6S8" dir="ltr" wotsearchprocessed="true"&gt;
+<pre class="brush:js">&lt;a href="http://t.co/acgTzWKR" class="twitter-timeline-link" target="_blank" data-expanded-url="http://tcrn.ch/NTr6S8" title="http://tcrn.ch/NTr6S8" dir="ltr" wotsearchprocessed="true"&gt;
     &lt;span class="invisible"&gt;http://&lt;/span&gt;
     &lt;span class="js-display-url"&gt;tcrn.ch/NTr6S8&lt;/span&gt;
     &lt;span class="invisible"&gt;&lt;/span&gt;
@@ -45,7 +45,7 @@ I effin hate that. So wanted to get my way around it. I inspected the anchor tag
 Now if you see closely, twitter stores the original url as the value of <span class="lang:default decode:true  crayon-inline ">data-expanded-url</span> in the anchor tag. That is good for me. I just pushed a simple Javascript code that replaces the value of href property with the value of <span class="lang:default decode:true  crayon-inline ">data-expanded-url</span>'s value. And my work is done.
 
 Here is the javascript code -
-<pre class="toolbar:1 show-lang:1 lang:js decode:true">si = window.setInterval(clearanchors, 2000);
+<pre class="brush:js">si = window.setInterval(clearanchors, 2000);
 function clearanchors(){
     anchors = document.getElementsByTagName('a')
     for(i=0;i&lt;anchors.length;i++){

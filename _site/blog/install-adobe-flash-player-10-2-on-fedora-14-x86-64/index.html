@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,23 +86,23 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     February 25, 2011
   </section>
 
-  Reading the title may make you feel it's pretty simple - Download the flash player rpm package from adobe.com, install it and Done. I thought so too. But even if flash-plugin was installed, Firefox wasn't detecting it. So did some old-style googling, and came up with these commands.<br />
-<!--more--><br />
-Remember, my one is Fedora 14 x86_64, it might not work for other versions.<br />
-<h2>Step 1. Open Terminal and go to Root user mode</h2><br />
-<pre class="brush:bash"><br />
-su -<br />
-Enter password: </pre><br />
-<h2>Step 2. Install Adobe YUM Repository RPM package</h2><br />
-<pre class="brush:bash">rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm<br />
-rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux<br />
-</pre><br />
-<h2>Step 3. Update Repositories(Optional, Do if you haven't done it recently)</h2><br />
-<pre class="brush:bash">yum check-update</pre><br />
-<h2>Step 4. Install required packages</h2><br />
-<pre class="brush:bash">yum install flash-plugin nspluginwrapper.x86_64 nspluginwrapper.i686 alsa-plugins-pulseaudio.i686 libcurl.i686</pre><br />
-<blockquote>This command should also work on <strong>Fedora 13, Fedora 12 and Red Hat (RHEL) 6 64-bit version (x86_64) (32 bit wrapped version)</strong>..</blockquote><br />
-That's it. Restart Firefox and you should be able to run Flash stuff. Head for Youtube to test it.<br />
+  Reading the title may make you feel it's pretty simple - Download the flash player rpm package from adobe.com, install it and Done. I thought so too. But even if flash-plugin was installed, Firefox wasn't detecting it. So did some old-style googling, and came up with these commands.
+<!--more-->
+Remember, my one is Fedora 14 x86_64, it might not work for other versions.
+<h2>Step 1. Open Terminal and go to Root user mode</h2>
+<pre class="brush:bash">
+su -
+Enter password: </pre>
+<h2>Step 2. Install Adobe YUM Repository RPM package</h2>
+<pre class="brush:bash">rpm -ivh http://linuxdownload.adobe.com/adobe-release/adobe-release-i386-1.0-1.noarch.rpm
+rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
+</pre>
+<h2>Step 3. Update Repositories(Optional, Do if you haven't done it recently)</h2>
+<pre class="brush:bash">yum check-update</pre>
+<h2>Step 4. Install required packages</h2>
+<pre class="brush:bash">yum install flash-plugin nspluginwrapper.x86_64 nspluginwrapper.i686 alsa-plugins-pulseaudio.i686 libcurl.i686</pre>
+<blockquote>This command should also work on <strong>Fedora 13, Fedora 12 and Red Hat (RHEL) 6 64-bit version (x86_64) (32 bit wrapped version)</strong>..</blockquote>
+That's it. Restart Firefox and you should be able to run Flash stuff. Head for Youtube to test it.
 
 
   <!-- TODO: bio here -->
@@ -156,6 +160,9 @@ That's it. Restart Firefox and you should be able to run Flash stuff. Head for Y
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

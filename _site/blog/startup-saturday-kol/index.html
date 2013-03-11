@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,42 +86,42 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     December 11, 2010
   </section>
 
-  Just a Live stream for following the tweets made from the Event spot. :)<br />
-<!--more--><br />
-<script src="http://widgets.twimg.com/j/2/widget.js"></script><br />
-<script><br />
-new TWTR.Widget({<br />
-  version: 2,<br />
-  type: 'search',<br />
-  search: 'SSKolLive OR SSKolkata since:2010-12-11 include:retweets',<br />
-  interval: 3000,<br />
-  title: 'Live Tweets from the event',<br />
-  subject: 'Startup Saturday Kolkata - December \'10 Edition - The Hot Seat',<br />
-  width: 'auto',<br />
-  height: 400,<br />
-  theme: {<br />
-    shell: {<br />
-      background: '#545657',<br />
-      color: '#ffffff'<br />
-    },<br />
-    tweets: {<br />
-      background: '#ffffff',<br />
-      color: '#444444',<br />
-      links: '#1985b5'<br />
-    }<br />
-  },<br />
-  features: {<br />
-    scrollbar: true,<br />
-    loop: true,<br />
-    live: true,<br />
-    hashtags: true,<br />
-    timestamp: true,<br />
-    avatars: true,<br />
-    toptweets: true,<br />
-    behavior: 'default'<br />
-  }<br />
-}).render().start();<br />
-</script><br />
+  Just a Live stream for following the tweets made from the Event spot. :)
+<!--more-->
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: 'SSKolLive OR SSKolkata since:2010-12-11 include:retweets',
+  interval: 3000,
+  title: 'Live Tweets from the event',
+  subject: 'Startup Saturday Kolkata - December \'10 Edition - The Hot Seat',
+  width: 'auto',
+  height: 400,
+  theme: {
+    shell: {
+      background: '#545657',
+      color: '#ffffff'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: true,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'default'
+  }
+}).render().start();
+</script>
 
 
   <!-- TODO: bio here -->
@@ -175,6 +179,9 @@ new TWTR.Widget({<br />
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,21 +86,21 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     May 16, 2011
   </section>
 
-  I know there are hell lot of people out there(like me) who are too lazy to open <a title="Google Reader" href="http://reader.google.com" target="_blank">http://reader.google.com</a> every time for latest news, yet want to stay updated of the news instantly. I made a simple solution for myself.<!--more-->The logic is simple. I'm going to fetch the public feed of my reader timeline and going to put that in a Chrome app that shows desktop notifications instantly for any feed. :)<br />
-<br />
-I installed a Chrome app named <a title="Feed Notifier" href="https://chrome.google.com/webstore/detail/njjncilebadhdbgkgnnbobcofhgjmipj?hl=en-US" target="_blank">Feed Notifier</a>. After installing it, just go to <strong>Menu</strong> &gt; <strong>Tools</strong> &gt; <strong>Extensions</strong> &gt; Click on the <strong>Options</strong> link below <strong>Feed Notifier</strong>.<br />
-<p style="text-align: center;"><a href="http://i.imgur.com/AsBYT.png"><img class="aligncenter" title="Feed notifier" src="http://i.imgur.com/AsBYT.png" alt="" width="720" height="405" /></a></p><br />
-Now keep that window open, we need to get your Reader feed now.<br />
-<br />
-Open <a title="Google Reader" href="http://reader.google.com" target="_blank">Google Reader</a>. Go to All Items. Then copy the URL of that window. it should be something like -<br />
-<pre class="brush:html">http://www.google.com/reader/view/#stream/user%2F08435596288051107451%2Fstate%2Fcom.google%2Freading-list</pre><br />
-Now change that URL a bit. To something like this -<br />
-<pre class="brush:html">http://www.google.com/reader/atom/user%2F08435596288051107451%2Fstate%2Fcom.google%2Freading-list</pre><br />
-So you see, I just replaced <strong>/view/#stream/</strong> to <strong>/atom/</strong> ..<br />
-<br />
-Now copy the new modified URL, paste it in the <strong>Feed URL</strong> field of the Feed Notifier extension window you opened earlier. Set refresh interval and other options. Click Save. And that's it. Now you should be able to see desktop notifications like this every time a new item appears in your Google Reader stream. :)<br />
-<br />
-<img class="aligncenter" title="Feed Notifier" src="http://i.imgur.com/JdJDH.png" alt="" width="341" height="258" /><br />
+  I know there are hell lot of people out there(like me) who are too lazy to open <a title="Google Reader" href="http://reader.google.com" target="_blank">http://reader.google.com</a> every time for latest news, yet want to stay updated of the news instantly. I made a simple solution for myself.<!--more-->The logic is simple. I'm going to fetch the public feed of my reader timeline and going to put that in a Chrome app that shows desktop notifications instantly for any feed. :)
+
+I installed a Chrome app named <a title="Feed Notifier" href="https://chrome.google.com/webstore/detail/njjncilebadhdbgkgnnbobcofhgjmipj?hl=en-US" target="_blank">Feed Notifier</a>. After installing it, just go to <strong>Menu</strong> &gt; <strong>Tools</strong> &gt; <strong>Extensions</strong> &gt; Click on the <strong>Options</strong> link below <strong>Feed Notifier</strong>.
+<p style="text-align: center;"><a href="http://i.imgur.com/AsBYT.png"><img class="aligncenter" title="Feed notifier" src="http://i.imgur.com/AsBYT.png" alt="" width="720" height="405" /></a></p>
+Now keep that window open, we need to get your Reader feed now.
+
+Open <a title="Google Reader" href="http://reader.google.com" target="_blank">Google Reader</a>. Go to All Items. Then copy the URL of that window. it should be something like -
+<pre class="brush:html">http://www.google.com/reader/view/#stream/user%2F08435596288051107451%2Fstate%2Fcom.google%2Freading-list</pre>
+Now change that URL a bit. To something like this -
+<pre class="brush:html">http://www.google.com/reader/atom/user%2F08435596288051107451%2Fstate%2Fcom.google%2Freading-list</pre>
+So you see, I just replaced <strong>/view/#stream/</strong> to <strong>/atom/</strong> ..
+
+Now copy the new modified URL, paste it in the <strong>Feed URL</strong> field of the Feed Notifier extension window you opened earlier. Set refresh interval and other options. Click Save. And that's it. Now you should be able to see desktop notifications like this every time a new item appears in your Google Reader stream. :)
+
+<img class="aligncenter" title="Feed Notifier" src="http://i.imgur.com/JdJDH.png" alt="" width="341" height="258" />
 
 
   <!-- TODO: bio here -->
@@ -154,6 +158,9 @@ Now copy the new modified URL, paste it in the <strong>Feed URL</strong> field o
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

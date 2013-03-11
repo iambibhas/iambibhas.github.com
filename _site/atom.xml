@@ -4,7 +4,7 @@
  <title>Bibhas Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2013-02-19T03:21:38+05:30</updated>
+ <updated>2013-03-12T01:04:58+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas Debnath</name>
@@ -114,26 +114,30 @@ See you at the venue. :)
    <updated>2012-08-26T00:00:00+05:30</updated>
    <id>http://bibhas.in/blog/836/why-you-should-be-bothered-about-twitters-t-co-url-shortener-and-a-way-to-bypass-it</id>
    <content type="html">&lt;blockquote&gt;The way to bypass the t.co url is only for Twitter Web users. If you're not using it, If you're using an app, it wont help you.&lt;/blockquote&gt;
-Since the very moment twitter introduced the automatic link shortening of all the links posted with it's own t.co shortener, it bothered me. Why? Let me explain.&lt;!--more--&gt;
 
-Twitter is using this t.co shortener just to track all the links being shared across it's site. It can track how many links are being shared and how many of them are clicked. (Technically hat also enables them to know which resources are being more popular among the users. I'm not sure how they are using that data.) But the real trouble is, t.co is just another server on your way to the original url.
 
-If you notice carefully, most of the links you share or click nowadays are already shortened. And thanks to services like bit.ly, everyone can make a new link shortener in no time. While these shortened urls do look nice, they just push one node away from your destination node. When you click a shortened url, you are taken to the server where the link shortener is hosted and then redirected to the original destination. So, if it were to take you 100ms to reach your url, it'll take you some more time than that if you click the shortener url.
+&lt;p&gt;Since the very moment twitter introduced the automatic link shortening of all the links posted with it&amp;rsquo;s own t.co shortener, it bothered me. Why? Let me explain.&lt;!--more--&gt;&lt;/p&gt;
 
-t.co is adding another node above what you already have. So that's two node you have to be redirected from. For example, take this tweet -
+&lt;p&gt;Twitter is using this t.co shortener just to track all the links being shared across it&amp;rsquo;s site. It can track how many links are being shared and how many of them are clicked. (Technically hat also enables them to know which resources are being more popular among the users. I&amp;rsquo;m not sure how they are using that data.) But the real trouble is, t.co is just another server on your way to the original url.&lt;/p&gt;
 
-https://twitter.com/TechCrunch/status/239765316601802752
+&lt;p&gt;If you notice carefully, most of the links you share or click nowadays are already shortened. And thanks to services like bit.ly, everyone can make a new link shortener in no time. While these shortened urls do look nice, they just push one node away from your destination node. When you click a shortened url, you are taken to the server where the link shortener is hosted and then redirected to the original destination. So, if it were to take you 100ms to reach your url, it&amp;rsquo;ll take you some more time than that if you click the shortener url.&lt;/p&gt;
 
-TechCrunch already uses their own url shortener tcrn.ch, as you see. And when they share it on Twitter, it's being shortened with the t.co url shortener. When you read the tweet, you can see the tcrn.ch url, but if you click it, you'll see that it'll take you to a t.co link. That means, it's an anchor, when the original url is the text and the t.co link is the url. That's an effin bummer. :|
+&lt;p&gt;t.co is adding another node above what you already have. So that&amp;rsquo;s two node you have to be redirected from. For example, take this tweet &amp;ndash;&lt;/p&gt;
 
-So this is how you have to visit your document now -
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;Where Have The Users Gone? &lt;a href=&quot;http://t.co/acgTzWKR&quot; title=&quot;http://tcrn.ch/NTr6S8&quot;&gt;tcrn.ch/NTr6S8&lt;/a&gt; by @&lt;a href=&quot;https://twitter.com/nireyal&quot;&gt;nireyal&lt;/a&gt;&lt;/p&gt;&amp;mdash; TechCrunch (@TechCrunch) &lt;a href=&quot;https://twitter.com/TechCrunch/status/239765316601802752&quot;&gt;August 26, 2012&lt;/a&gt;&lt;/blockquote&gt;
 
-&lt;a href=&quot;http://t.co/acgTzWKR&quot; target=&quot;_blank&quot;&gt;http://t.co/acgTzWKR&lt;/a&gt; -&amp;gt; &lt;a href=&quot;http://tcrn.ch/NTr6S8&quot; target=&quot;_blank&quot;&gt;http://tcrn.ch/NTr6S8&lt;/a&gt; -&amp;gt; &lt;a href=&quot;http://techcrunch.com/2012/08/26/where-have-the-users-gone/&quot;&gt;http://techcrunch.com/2012/08/26/where-have-the-users-gone/&lt;/a&gt;
 
-So I have to go through two server before I can get to my link. That's really a pain in the arse for me, and should be for you too. Because if anyday the t.co server is slow because of the constant load it serves, &lt;strong&gt;you&lt;/strong&gt; have to wait.
+&lt;p&gt;TechCrunch already uses their own url shortener tcrn.ch, as you see. And when they share it on Twitter, it&amp;rsquo;s being shortened with the t.co url shortener. When you read the tweet, you can see the tcrn.ch url, but if you click it, you&amp;rsquo;ll see that it&amp;rsquo;ll take you to a t.co link. That means, it&amp;rsquo;s an anchor, when the original url is the text and the t.co link is the url. That&amp;rsquo;s an effin bummer. :|&lt;/p&gt;
 
-I effin hate that. So wanted to get my way around it. I inspected the anchor tag of Twitter Web, this is what I got -
-&lt;pre class=&quot;toolbar:1 lang:xhtml decode:true&quot;&gt;&amp;lt;a href=&quot;http://t.co/acgTzWKR&quot; class=&quot;twitter-timeline-link&quot; target=&quot;_blank&quot; data-expanded-url=&quot;http://tcrn.ch/NTr6S8&quot; title=&quot;http://tcrn.ch/NTr6S8&quot; dir=&quot;ltr&quot; wotsearchprocessed=&quot;true&quot;&amp;gt;
+&lt;p&gt;So this is how you have to visit your document now &amp;ndash;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://t.co/acgTzWKR&quot; target=&quot;_blank&quot;&gt;http://t.co/acgTzWKR&lt;/a&gt; &amp;ndash;&amp;gt; &lt;a href=&quot;http://tcrn.ch/NTr6S8&quot; target=&quot;_blank&quot;&gt;http://tcrn.ch/NTr6S8&lt;/a&gt; &amp;ndash;&amp;gt; &lt;a href=&quot;http://techcrunch.com/2012/08/26/where-have-the-users-gone/&quot;&gt;http://techcrunch.com/2012/08/26/where-have-the-users-gone/&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;So I have to go through two server before I can get to my link. That&amp;rsquo;s really a pain in the arse for me, and should be for you too. Because if anyday the t.co server is slow because of the constant load it serves, &lt;strong&gt;you&lt;/strong&gt; have to wait.&lt;/p&gt;
+
+&lt;p&gt;I effin hate that. So wanted to get my way around it. I inspected the anchor tag of Twitter Web, this is what I got &amp;ndash;&lt;/p&gt;
+
+&lt;pre class=&quot;brush:js&quot;&gt;&amp;lt;a href=&quot;http://t.co/acgTzWKR&quot; class=&quot;twitter-timeline-link&quot; target=&quot;_blank&quot; data-expanded-url=&quot;http://tcrn.ch/NTr6S8&quot; title=&quot;http://tcrn.ch/NTr6S8&quot; dir=&quot;ltr&quot; wotsearchprocessed=&quot;true&quot;&amp;gt;
     &amp;lt;span class=&quot;invisible&quot;&amp;gt;http://&amp;lt;/span&amp;gt;
     &amp;lt;span class=&quot;js-display-url&quot;&amp;gt;tcrn.ch/NTr6S8&amp;lt;/span&amp;gt;
     &amp;lt;span class=&quot;invisible&quot;&amp;gt;&amp;lt;/span&amp;gt;
@@ -141,10 +145,13 @@ I effin hate that. So wanted to get my way around it. I inspected the anchor tag
         &amp;lt;span class=&quot;invisible&quot;&amp;gt;&amp;amp;nbsp;&amp;lt;/span&amp;gt;
     &amp;lt;/span&amp;gt;
 &amp;lt;/a&amp;gt;&lt;/pre&gt;
-Now if you see closely, twitter stores the original url as the value of &lt;span class=&quot;lang:default decode:true  crayon-inline &quot;&gt;data-expanded-url&lt;/span&gt; in the anchor tag. That is good for me. I just pushed a simple Javascript code that replaces the value of href property with the value of &lt;span class=&quot;lang:default decode:true  crayon-inline &quot;&gt;data-expanded-url&lt;/span&gt;'s value. And my work is done.
 
-Here is the javascript code -
-&lt;pre class=&quot;toolbar:1 show-lang:1 lang:js decode:true&quot;&gt;si = window.setInterval(clearanchors, 2000);
+
+&lt;p&gt;Now if you see closely, twitter stores the original url as the value of &lt;span class=&quot;lang:default decode:true  crayon-inline &quot;&gt;data-expanded-url&lt;/span&gt; in the anchor tag. That is good for me. I just pushed a simple Javascript code that replaces the value of href property with the value of &lt;span class=&quot;lang:default decode:true  crayon-inline &quot;&gt;data-expanded-url&lt;/span&gt;&amp;rsquo;s value. And my work is done.&lt;/p&gt;
+
+&lt;p&gt;Here is the javascript code &amp;ndash;&lt;/p&gt;
+
+&lt;pre class=&quot;brush:js&quot;&gt;si = window.setInterval(clearanchors, 2000);
 function clearanchors(){
     anchors = document.getElementsByTagName('a')
     for(i=0;i&amp;lt;anchors.length;i++){
@@ -153,9 +160,15 @@ function clearanchors(){
         }
     }
 }&lt;/pre&gt;
-Just use any javascript pusher and push this to twitter.com. I personally use &lt;a href=&quot;https://chrome.google.com/webstore/detail/plcnnpdmhobdfbponjpedobekiogmbco&quot; target=&quot;_blank&quot;&gt;Personalized Web&lt;/a&gt;. so I created this recipe for it -
+
+
+&lt;p&gt;Just use any javascript pusher and push this to twitter.com. I personally use &lt;a href=&quot;https://chrome.google.com/webstore/detail/plcnnpdmhobdfbponjpedobekiogmbco&quot; target=&quot;_blank&quot;&gt;Personalized Web&lt;/a&gt;. so I created this recipe for it &amp;ndash;&lt;/p&gt;
+
 &lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://bibhas.in/blog/wp-content/uploads/2012/08/Screenshot-08262012-104737-PM.png&quot;&gt;&lt;img class=&quot;aligncenter  wp-image-837&quot; title=&quot;Screenshot - 08262012 - 10:47:37 PM&quot; src=&quot;http://bibhas.in/blog/wp-content/uploads/2012/08/Screenshot-08262012-104737-PM-300x184.png&quot; alt=&quot;&quot; width=&quot;300&quot; height=&quot;184&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+
 &lt;p style=&quot;text-align: left;&quot;&gt;I added it as timed function because or else it wont change the urls Twitter Web loads with ajax.&lt;/p&gt;
+
 </content>
  </entry>
  

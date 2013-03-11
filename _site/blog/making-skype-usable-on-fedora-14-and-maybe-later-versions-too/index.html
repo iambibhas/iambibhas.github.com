@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,17 +86,17 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     February 12, 2012
   </section>
 
-  I use Skype a lot. But although Skype has a fantastic version for Windows, the Linux part is a bit weak. I run Fedora 14 on my laptop(Compaq CQ42 173TU) and for some reason, Skype wont run on it. With the RPM package of 2.2 Beta, it gets installed but never runs. So I installed the static version of it following this instructions here. But when I would try to run skype from terminal, this error would occur -<br />
-[bash]<br />
-[root@localhost ~]# skype<br />
-skype: error while loading shared libraries: libXv.so.1:<br />
-cannot open shared object file: No such file or directory<br />
-[/bash]<br />
-So to check which dependency package I was missing, I searched with YUM -<br />
-[bash]<br />
-[root@localhost ~]# yum whatprovides libXv.so.1<br />
-[/bash]<br />
-and found that this specific package <span class="lang:default decode:true  crayon-inline ">libXv-1.0.5-1.fc13.i686</span> has that specific file. So although I'm running Fedora 14 and it's of x86_64 architecture, I installed that package which was meant for Fedora 13 and i686 architecture. Then ran skype from terminal and it worked!<br />
+  I use Skype a lot. But although Skype has a fantastic version for Windows, the Linux part is a bit weak. I run Fedora 14 on my laptop(Compaq CQ42 173TU) and for some reason, Skype wont run on it. With the RPM package of 2.2 Beta, it gets installed but never runs. So I installed the static version of it following this instructions here. But when I would try to run skype from terminal, this error would occur -
+[bash]
+[root@localhost ~]# skype
+skype: error while loading shared libraries: libXv.so.1:
+cannot open shared object file: No such file or directory
+[/bash]
+So to check which dependency package I was missing, I searched with YUM -
+[bash]
+[root@localhost ~]# yum whatprovides libXv.so.1
+[/bash]
+and found that this specific package <span class="lang:default decode:true  crayon-inline ">libXv-1.0.5-1.fc13.i686</span> has that specific file. So although I'm running Fedora 14 and it's of x86_64 architecture, I installed that package which was meant for Fedora 13 and i686 architecture. Then ran skype from terminal and it worked!
 
 
   <!-- TODO: bio here -->
@@ -150,6 +154,9 @@ and found that this specific package <span class="lang:default decode:true  cray
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

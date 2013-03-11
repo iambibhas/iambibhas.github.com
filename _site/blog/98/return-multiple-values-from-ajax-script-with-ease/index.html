@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,47 +86,47 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     September 25, 2010
   </section>
 
-  <blockquote><br />
-<p style="text-align: center;"><em><strong>Disclaimer</strong> </em></p><br />
-<p style="text-align: center;"><em>This post is <strong>not</strong> for Expert users. Only the novice guys who are interested in these stuff, might have a look.</em></p><br />
-</blockquote><br />
-<!--more-->While working on an AJAX implemented script, we sometimes need to return a lot of data from the server side script. If you've worked with AJAX, you'll know that the script returns the value as <em>httpObject.responseText</em>. And the value of <em>responseText</em> is what you echo from your script. Now that makes our scope limited.<br />
-<br />
-Assuming that We have a javascript file <em>testAjaxJs.js</em> and <em>testAjaxPhp.php</em> ..<br />
-<br />
-If you try to make a lot of echo inside the php script, all of them are gonna get appended one behind another and appear like, for an example, this - <em>BibhasChandraDebnath</em>.<br />
-<br />
-Now, you may have an idea of echoing a special character like <strong>'-'</strong> or<strong> '_' </strong>after each echo so that you can then split the whole text inside the JS file using the split function and form an array.<br />
-<br />
-That might be an idea, but there is a better way. Why not just use JSON to return data as array? Well, PHP can pretty much deal with JSON and it is a native thing to Javascript. So, it becomes easier. :)<br />
-<br />
-Do this, initialize an array inside the php script, and whenever you have a data ready to be returned, insert it into the array.<br />
-<br />
-So at the end of the script, you'll have an array like this -<br />
-<pre class="brush: php">Array<br />
-(<br />
-    [first_name] =&gt; Bibhas<br />
-    [middle_name] =&gt; Chandra<br />
-    [last_name] =&gt; Debnath<br />
-)</pre><br />
-Now,we're gonna encode this data as JSON object. For that,<br />
-<pre class="brush: php">$json_name=json_encode($array_name);</pre><br />
-Now your array will look like -<br />
-<pre class="brush: php">{"first_name":"Bibhas","middle_name":"Chandra","last_name":"Debnath"}</pre><br />
-As this is a string to PHP, you can easily echo it. Now lets go to the Javascript part to read this JSON string we just sent to it.<br />
-<br />
-Initialize a variable to store the returned string in it -<br />
-<pre class="brush: js">var jsonText = httpObject.responseText</pre><br />
-Now we need to transform this JSONText to a JSON Object. For that, we can use the eval() function. Like-<br />
-<pre class="brush: js">var jsonObject= eval('('+jsonText+')');</pre><br />
-or<br />
-<pre class="brush: js">eval('jsonObject='+jsonText);</pre><br />
-both works the same in this case.<br />
-So now that we have a JSON Object, lets get those data.<br />
-<pre class="brush: js">var firstName=jsonObject.first_name;<br />
-var middleName=jsonObject.middle_name;<br />
-var lastName=jsonObject.last_name;</pre><br />
-And that's it, you've got your data back. :)<br />
+  <blockquote>
+<p style="text-align: center;"><em><strong>Disclaimer</strong> </em></p>
+<p style="text-align: center;"><em>This post is <strong>not</strong> for Expert users. Only the novice guys who are interested in these stuff, might have a look.</em></p>
+</blockquote>
+<!--more-->While working on an AJAX implemented script, we sometimes need to return a lot of data from the server side script. If you've worked with AJAX, you'll know that the script returns the value as <em>httpObject.responseText</em>. And the value of <em>responseText</em> is what you echo from your script. Now that makes our scope limited.
+
+Assuming that We have a javascript file <em>testAjaxJs.js</em> and <em>testAjaxPhp.php</em> ..
+
+If you try to make a lot of echo inside the php script, all of them are gonna get appended one behind another and appear like, for an example, this - <em>BibhasChandraDebnath</em>.
+
+Now, you may have an idea of echoing a special character like <strong>'-'</strong> or<strong> '_' </strong>after each echo so that you can then split the whole text inside the JS file using the split function and form an array.
+
+That might be an idea, but there is a better way. Why not just use JSON to return data as array? Well, PHP can pretty much deal with JSON and it is a native thing to Javascript. So, it becomes easier. :)
+
+Do this, initialize an array inside the php script, and whenever you have a data ready to be returned, insert it into the array.
+
+So at the end of the script, you'll have an array like this -
+<pre class="brush: php">Array
+(
+    [first_name] =&gt; Bibhas
+    [middle_name] =&gt; Chandra
+    [last_name] =&gt; Debnath
+)</pre>
+Now,we're gonna encode this data as JSON object. For that,
+<pre class="brush: php">$json_name=json_encode($array_name);</pre>
+Now your array will look like -
+<pre class="brush: php">{"first_name":"Bibhas","middle_name":"Chandra","last_name":"Debnath"}</pre>
+As this is a string to PHP, you can easily echo it. Now lets go to the Javascript part to read this JSON string we just sent to it.
+
+Initialize a variable to store the returned string in it -
+<pre class="brush: js">var jsonText = httpObject.responseText</pre>
+Now we need to transform this JSONText to a JSON Object. For that, we can use the eval() function. Like-
+<pre class="brush: js">var jsonObject= eval('('+jsonText+')');</pre>
+or
+<pre class="brush: js">eval('jsonObject='+jsonText);</pre>
+both works the same in this case.
+So now that we have a JSON Object, lets get those data.
+<pre class="brush: js">var firstName=jsonObject.first_name;
+var middleName=jsonObject.middle_name;
+var lastName=jsonObject.last_name;</pre>
+And that's it, you've got your data back. :)
 
 
   <!-- TODO: bio here -->
@@ -180,6 +184,9 @@ And that's it, you've got your data back. :)<br />
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

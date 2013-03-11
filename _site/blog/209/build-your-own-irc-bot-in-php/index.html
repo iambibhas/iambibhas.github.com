@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,240 +86,240 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     November 17, 2010
   </section>
 
-  <p>I started using IRC about 2 months ago. I know its lame of me to get to that stuff so late. But from the very point I logged into a channel, the thing that caught most of my attention was a Bot that used to respond to user command. Now that seemed interesting. I dug some codes in Github, did some Googling and got the idea. Then found a sample snippet of how to create an IRC bot with PHP, at www.thegeeks.us which wasn&rsquo;t much functional to start with.. I started testing the code and thanks to Ben(spookz), one of the member(and most probably a co-founder too) of thegeeks.us, with some <em>inspiration</em> from him, I got this thing to work.</p><br />
-<br />
-<!--more--><br />
-<br />
-<br />
-<p>I built quite a few commands for myself. But I&rsquo;d rather not post them in a blog which is pretty much in Google&rsquo;s reach. :P</p><br />
-<br />
-<p>Am posting the code here so that you can customize it and build your own bot with it. The code itself is documented with comments. Still, if you have any type of doubt, don&rsquo;t hesitate to contact me.</p><br />
-<br />
-<pre><code>/*<br />
-* PHP IRC Bot<br />
-* Customized by Bibhas.<br />
-* Get in touch at @iAmBibhas in twitter<br />
-*/<br />
-<br />
-//Setting time limit off. We need to run the script until We ask it to exit.<br />
-set_time_limit(0);<br />
-//Open socket to server,port<br />
-$socket = fsockopen("irc.freenode.net",6667);<br />
-//Sends USER HOSTNAME IDENT :REAL NAME Change it as you wish.<br />
-fputs($socket,"USER PHPBot bibhas.in PHP :The PHP Bot\n");<br />
-<br />
-//Sends the NICK to server. Choose a unique one or the script will fail.<br />
-fputs($socket,"NICK php-bot-custom\n");<br />
-<br />
-//Enter the channel you want to use your bot on.<br />
-fputs($socket,"JOIN #sample-channel\n");<br />
-<br />
-//Array of commands you can use. If you create a new command,<br />
-//it must be enlisted here before it can be used.<br />
-$commands = array (<br />
-"!version",<br />
-"!say",<br />
-"!tw",<br />
-"!g",<br />
-"!answerme",<br />
-"!restart1",<br />
-"!exit1"<br />
-);<br />
-<br />
-//Sends the script into an infinite loop<br />
-while (1) {<br />
-<br />
-    //Recieves the data into $data in 128 bytes.<br />
-    //The bot actually does nothing but receive data users enter in the channel and<br />
-    //respond to it. So, we'll fetch all the texts entered in the channel and<br />
-    //fetch our required data and respond to it.<br />
-    while($data=fgets($socket,128)) {<br />
-        //puts the data in an array by word<br />
-        //this helps us to identify commands and parameters<br />
-        $get = explode(' ', $data);<br />
-        //Server Pinged us lets reply!<br />
-        if ($get[0] == "PING") {<br />
-            fputs ($socket, "PONG ".$get[1]."\n");<br />
-        }<br />
-        //When someone says somethign in the channel, its fetched in the $get array in the following format<br />
-        //0=&gt;:Zhe_Viking!~chatzilla@117.145.203.189 1=&gt;PRIVMSG 2=&gt;#test_field 3=&gt;:!say 4=&gt;Hello 5=&gt;World.<br />
-<br />
-        //The following code sets $nick and $chan variables from the text last entered in the channel<br />
-        if (substr_count($get[2],"#")) {<br />
-            $nick = explode(':',$get[0]);<br />
-            $nick = explode('!',$nick[1]);<br />
-            $nick = $nick[0]; //User who entered the command<br />
-            $chan = $get[2]; //the channel the bot is in<br />
-            $num = 3; //If you observe the array format, actually text starts from 3rd index.<br />
-            if ($num == 3) {<br />
-                $split = explode(':',$get[3],2);<br />
-                $text = rtrim($split[1]); //trimming is important. never forget.<br />
-                //This is where we start processing the commands we entered in earlier<br />
-                if (in_array($text,$commands)) {<br />
-                    //switch-case structure, each case sorresponds to each enlisted commands.<br />
-                    switch(rtrim($text)) {<br />
-                    case "!version":<br />
-                        //PRIVMSG sends our command to the correct channel.<br />
-                        fputs($socket,"PRIVMSG $chan : PHP Bot Developed mostly by Bibhas.\n");<br />
-                        break;<br />
-                    case "!tw": //A command developped by me that fetches the last tweet from the given username<br />
-                        $msg="";<br />
-                        $handle=$get[4];<br />
-                        $msg= get_last_tweet($handle);<br />
-                        $msg=html_entity_decode($msg, ENT_QUOTES);<br />
-                        fputs($socket,"PRIVMSG $chan :$msg\n");<br />
-                        unset($msg);<br />
-                        break;<br />
-                    case "!g": //Does some google search for you.<br />
-                        $arraysize = sizeof($get);<br />
-                        $count = 4;<br />
-                        $query=""; $result="";<br />
-                        while ($count &lt;= $arraysize) { $query = $query." ".$get[$count]; $count++; } $result=from_google($query); $result=html_entity_decode($result, ENT_QUOTES); fputs($socket,"PRIVMSG $chan :$nick =&gt; $result\n");<br />
-                        unset($result);<br />
-                        break;<br />
-                    case "!say": //it usually repeats the stuff you give as parameter.<br />
-                        // but i used it to print the whole input array for testing purpose.<br />
-                        $arraysize = sizeof($get);<br />
-                        //1,2,3 are just nick and chan, 4 is where text starts<br />
-                        $count = 0;<br />
-                        $saytext="";<br />
-                        while ($count &lt;= $arraysize) { $saytext = $saytext." " . $count . "=&gt;".$get[$count];<br />
-                            $count++;<br />
-                        }<br />
-                        echo $saytext . "<br />
-";<br />
-                        $saytext = "Array Size $arraysize " . $saytext;<br />
-                        fputs($socket,"PRIVMSG $chan :$saytext\n");<br />
-                        unset($saytext);<br />
-                        break;<br />
-                    case "!answerme": //A Yahoo answers integration.<br />
-                        $arraysize = sizeof($get);<br />
-                        $count = 4;<br />
-                        $query=""; $result="";<br />
-                        while ($count &lt;= $arraysize) {<br />
-                            $query = $query." ".$get[$count];<br />
-                            $count++;<br />
-                        }<br />
-                        $query=trim($query);<br />
-                        $result=trim(answerMe($query));<br />
-                        fputs($socket,"PRIVMSG $chan :$nick $result\n");<br />
-                        unset($result);<br />
-                        break;<br />
-                    }<br />
-                }<br />
-            }<br />
-        }else if(substr_count($get[3],"#")){ //This is like the admin panel. You can /msg the bot to command it to exit.<br />
-            //print_r($get);<br />
-            $chan=trim(str_replace(":","",$get[3]));<br />
-            $command=trim($get[4]);<br />
-            switch ($command) {<br />
-            case "!exit":<br />
-                fputs($socket,"PRIVMSG $chan :Shutting Down PHPBot!\n");<br />
-                fputs($socket,"QUIT Client Disconnected!\n");<br />
-                //IMPORANT TO HAVE THE DIE(), this throws the script out of the infinite while loop!<br />
-                exit;<br />
-                break;<br />
-            case '!restart': //only works if you're running the bot from browser.<br />
-                echo "";<br />
-                exit;<br />
-                break;<br />
-            }<br />
-        }<br />
-        //Shows the text in the browser as Time - Text<br />
-        //this command logs the channel.<br />
-        echo nl2br(date('G:i:s')."-".$data);<br />
-<br />
-        //Flush it out to the browser<br />
-        flush();<br />
-    }<br />
-}<br />
-function get_last_tweet($handle){<br />
-    $url = "http://search.twitter.com/search.json?"<br />
-    . "q=from:" . $handle;<br />
-    // sendRequest<br />
-    $ch = curl_init();<br />
-    $msg="";<br />
-    curl_setopt($ch, CURLOPT_URL, $url);<br />
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);<br />
-    curl_setopt($ch, CURLOPT_REFERER, "http://asfd.in");<br />
-    $body = curl_exec($ch);<br />
-    curl_close($ch);<br />
-<br />
-    // now, process the JSON string<br />
-    $json = json_decode($body);<br />
-    // now have some fun with the results...<br />
-    $result=object_to_array(get_object_vars($json));<br />
-    if($result['results'][0]['text']!=""){<br />
-        $msg="Twitter: http://twitter.com/{$result['results'][0]['from_user']} =&gt; " . $result['results'][0]['text'];<br />
-        return $msg;<br />
-    }else{<br />
-        $msg="Twitter: Nothing!";<br />
-        return $msg;<br />
-    }<br />
-    //return $result['results'][0]['text'];<br />
-}<br />
-function object_to_array($data) // Converts a Nested stdObject to a full associative Array<br />
-{ // Not used everywhere, because found this solution much later<br />
-    if(is_array($data) || is_object($data)) //<br />
-    {<br />
-        $result = array();<br />
-        foreach($data as $key =&gt; $value)<br />
-        {<br />
-            $result[$key] = object_to_array($value);<br />
-        }<br />
-        return $result;<br />
-    }<br />
-    return $data;<br />
-}<br />
-<br />
-function from_google($query){<br />
-    $query=urlencode($query);<br />
-    $array=array();<br />
-    $url = "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&amp;"<br />
-    . "q=" . $query . "&amp;rsz=large";<br />
-    $ch = curl_init();<br />
-    curl_setopt($ch, CURLOPT_URL, $url);<br />
-    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);<br />
-    curl_setopt($ch, CURLOPT_REFERER, "http://forums.com");<br />
-    $body = curl_exec($ch);<br />
-    curl_close($ch);<br />
-    $json = json_decode($body);<br />
-    $array = object_to_array($json);<br />
-    return $array['responseData']['results'][0]['titleNoFormatting'] . " =&gt; " . $array['responseData']['results'][0]['url'];<br />
-}<br />
-<br />
-function answerMe($query){<br />
-    $output_a=array();<br />
-    $query=urlencode($query);<br />
-    $url="http://answers.yahooapis.com/AnswersService/V1/questionSearch?"<br />
-    . "appid=Ad1hrrPV34Fh3zYyVhTCvpQ9sTG6pq7lSTXl7xx1epJEGdcxux_e8Xb5Q9ao-"<br />
-    . "&amp;query=$query"<br />
-    . "&amp;type=resolved"<br />
-    . "&amp;search_in=question"<br />
-    . "&amp;output=json";<br />
-    $output = file_get_contents($url);<br />
-    $output_a=object_to_array(json_decode($output));<br />
-    if($output_a['all']['count']&gt;0){<br />
-        $output_a=$output_a['all']['questions'];<br />
-<br />
-        //print_r($output_a);<br />
-        return " *Possible Question:* " . $output_a[0]['Subject'] . " *Answer:* " . $output_a[0]['ChosenAnswer'] . " *Link:* " . $output_a[0]['Link'];<br />
-        //return $output_a[0]['ChosenAnswer'];<br />
-    }else{<br />
-        return "Dont have any answer to that!";<br />
-    }<br />
-}<br />
-</code></pre><br />
-<br />
-<p><strong>To run the bot:</strong></p><br />
-<br />
-<p>You can run it from either command prompt with php and  Apache server installed or you can run it from a browser. For the later case, just execute the script file form the browser.</p><br />
-<br />
-<p>There you go. Leave comment if you have doubt. Or directly reach me at twitter or facebook. :)</p><br />
-<br />
-<blockquote><p><strong>:Note to myself:</strong></p><br />
-<br />
-<p>The code looks like a mess. Clean it up.</p></blockquote><br />
+  <p>I started using IRC about 2 months ago. I know its lame of me to get to that stuff so late. But from the very point I logged into a channel, the thing that caught most of my attention was a Bot that used to respond to user command. Now that seemed interesting. I dug some codes in Github, did some Googling and got the idea. Then found a sample snippet of how to create an IRC bot with PHP, at www.thegeeks.us which wasn&rsquo;t much functional to start with.. I started testing the code and thanks to Ben(spookz), one of the member(and most probably a co-founder too) of thegeeks.us, with some <em>inspiration</em> from him, I got this thing to work.</p>
+
+<!--more-->
+
+
+<p>I built quite a few commands for myself. But I&rsquo;d rather not post them in a blog which is pretty much in Google&rsquo;s reach. :P</p>
+
+<p>Am posting the code here so that you can customize it and build your own bot with it. The code itself is documented with comments. Still, if you have any type of doubt, don&rsquo;t hesitate to contact me.</p>
+
+<pre><code>/*
+* PHP IRC Bot
+* Customized by Bibhas.
+* Get in touch at @iAmBibhas in twitter
+*/
+
+//Setting time limit off. We need to run the script until We ask it to exit.
+set_time_limit(0);
+//Open socket to server,port
+$socket = fsockopen("irc.freenode.net",6667);
+//Sends USER HOSTNAME IDENT :REAL NAME Change it as you wish.
+fputs($socket,"USER PHPBot bibhas.in PHP :The PHP Bot\n");
+
+//Sends the NICK to server. Choose a unique one or the script will fail.
+fputs($socket,"NICK php-bot-custom\n");
+
+//Enter the channel you want to use your bot on.
+fputs($socket,"JOIN #sample-channel\n");
+
+//Array of commands you can use. If you create a new command,
+//it must be enlisted here before it can be used.
+$commands = array (
+"!version",
+"!say",
+"!tw",
+"!g",
+"!answerme",
+"!restart1",
+"!exit1"
+);
+
+//Sends the script into an infinite loop
+while (1) {
+
+    //Recieves the data into $data in 128 bytes.
+    //The bot actually does nothing but receive data users enter in the channel and
+    //respond to it. So, we'll fetch all the texts entered in the channel and
+    //fetch our required data and respond to it.
+    while($data=fgets($socket,128)) {
+        //puts the data in an array by word
+        //this helps us to identify commands and parameters
+        $get = explode(' ', $data);
+        //Server Pinged us lets reply!
+        if ($get[0] == "PING") {
+            fputs ($socket, "PONG ".$get[1]."\n");
+        }
+        //When someone says somethign in the channel, its fetched in the $get array in the following format
+        //0=&gt;:Zhe_Viking!~chatzilla@117.145.203.189 1=&gt;PRIVMSG 2=&gt;#test_field 3=&gt;:!say 4=&gt;Hello 5=&gt;World.
+
+        //The following code sets $nick and $chan variables from the text last entered in the channel
+        if (substr_count($get[2],"#")) {
+            $nick = explode(':',$get[0]);
+            $nick = explode('!',$nick[1]);
+            $nick = $nick[0]; //User who entered the command
+            $chan = $get[2]; //the channel the bot is in
+            $num = 3; //If you observe the array format, actually text starts from 3rd index.
+            if ($num == 3) {
+                $split = explode(':',$get[3],2);
+                $text = rtrim($split[1]); //trimming is important. never forget.
+                //This is where we start processing the commands we entered in earlier
+                if (in_array($text,$commands)) {
+                    //switch-case structure, each case sorresponds to each enlisted commands.
+                    switch(rtrim($text)) {
+                    case "!version":
+                        //PRIVMSG sends our command to the correct channel.
+                        fputs($socket,"PRIVMSG $chan : PHP Bot Developed mostly by Bibhas.\n");
+                        break;
+                    case "!tw": //A command developped by me that fetches the last tweet from the given username
+                        $msg="";
+                        $handle=$get[4];
+                        $msg= get_last_tweet($handle);
+                        $msg=html_entity_decode($msg, ENT_QUOTES);
+                        fputs($socket,"PRIVMSG $chan :$msg\n");
+                        unset($msg);
+                        break;
+                    case "!g": //Does some google search for you.
+                        $arraysize = sizeof($get);
+                        $count = 4;
+                        $query=""; $result="";
+                        while ($count &lt;= $arraysize) { $query = $query." ".$get[$count]; $count++; } $result=from_google($query); $result=html_entity_decode($result, ENT_QUOTES); fputs($socket,"PRIVMSG $chan :$nick =&gt; $result\n");
+                        unset($result);
+                        break;
+                    case "!say": //it usually repeats the stuff you give as parameter.
+                        // but i used it to print the whole input array for testing purpose.
+                        $arraysize = sizeof($get);
+                        //1,2,3 are just nick and chan, 4 is where text starts
+                        $count = 0;
+                        $saytext="";
+                        while ($count &lt;= $arraysize) { $saytext = $saytext." " . $count . "=&gt;".$get[$count];
+                            $count++;
+                        }
+                        echo $saytext . "
+";
+                        $saytext = "Array Size $arraysize " . $saytext;
+                        fputs($socket,"PRIVMSG $chan :$saytext\n");
+                        unset($saytext);
+                        break;
+                    case "!answerme": //A Yahoo answers integration.
+                        $arraysize = sizeof($get);
+                        $count = 4;
+                        $query=""; $result="";
+                        while ($count &lt;= $arraysize) {
+                            $query = $query." ".$get[$count];
+                            $count++;
+                        }
+                        $query=trim($query);
+                        $result=trim(answerMe($query));
+                        fputs($socket,"PRIVMSG $chan :$nick $result\n");
+                        unset($result);
+                        break;
+                    }
+                }
+            }
+        }else if(substr_count($get[3],"#")){ //This is like the admin panel. You can /msg the bot to command it to exit.
+            //print_r($get);
+            $chan=trim(str_replace(":","",$get[3]));
+            $command=trim($get[4]);
+            switch ($command) {
+            case "!exit":
+                fputs($socket,"PRIVMSG $chan :Shutting Down PHPBot!\n");
+                fputs($socket,"QUIT Client Disconnected!\n");
+                //IMPORANT TO HAVE THE DIE(), this throws the script out of the infinite while loop!
+                exit;
+                break;
+            case '!restart': //only works if you're running the bot from browser.
+                echo "";
+                exit;
+                break;
+            }
+        }
+        //Shows the text in the browser as Time - Text
+        //this command logs the channel.
+        echo nl2br(date('G:i:s')."-".$data);
+
+        //Flush it out to the browser
+        flush();
+    }
+}
+function get_last_tweet($handle){
+    $url = "http://search.twitter.com/search.json?"
+    . "q=from:" . $handle;
+    // sendRequest
+    $ch = curl_init();
+    $msg="";
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_REFERER, "http://asfd.in");
+    $body = curl_exec($ch);
+    curl_close($ch);
+
+    // now, process the JSON string
+    $json = json_decode($body);
+    // now have some fun with the results...
+    $result=object_to_array(get_object_vars($json));
+    if($result['results'][0]['text']!=""){
+        $msg="Twitter: http://twitter.com/{$result['results'][0]['from_user']} =&gt; " . $result['results'][0]['text'];
+        return $msg;
+    }else{
+        $msg="Twitter: Nothing!";
+        return $msg;
+    }
+    //return $result['results'][0]['text'];
+}
+function object_to_array($data) // Converts a Nested stdObject to a full associative Array
+{ // Not used everywhere, because found this solution much later
+    if(is_array($data) || is_object($data)) //
+    {
+        $result = array();
+        foreach($data as $key =&gt; $value)
+        {
+            $result[$key] = object_to_array($value);
+        }
+        return $result;
+    }
+    return $data;
+}
+
+function from_google($query){
+    $query=urlencode($query);
+    $array=array();
+    $url = "http://ajax.googleapis.com/ajax/services/search/web?v=1.0&amp;"
+    . "q=" . $query . "&amp;rsz=large";
+    $ch = curl_init();
+    curl_setopt($ch, CURLOPT_URL, $url);
+    curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
+    curl_setopt($ch, CURLOPT_REFERER, "http://forums.com");
+    $body = curl_exec($ch);
+    curl_close($ch);
+    $json = json_decode($body);
+    $array = object_to_array($json);
+    return $array['responseData']['results'][0]['titleNoFormatting'] . " =&gt; " . $array['responseData']['results'][0]['url'];
+}
+
+function answerMe($query){
+    $output_a=array();
+    $query=urlencode($query);
+    $url="http://answers.yahooapis.com/AnswersService/V1/questionSearch?"
+    . "appid=Ad1hrrPV34Fh3zYyVhTCvpQ9sTG6pq7lSTXl7xx1epJEGdcxux_e8Xb5Q9ao-"
+    . "&amp;query=$query"
+    . "&amp;type=resolved"
+    . "&amp;search_in=question"
+    . "&amp;output=json";
+    $output = file_get_contents($url);
+    $output_a=object_to_array(json_decode($output));
+    if($output_a['all']['count']&gt;0){
+        $output_a=$output_a['all']['questions'];
+
+        //print_r($output_a);
+        return " *Possible Question:* " . $output_a[0]['Subject'] . " *Answer:* " . $output_a[0]['ChosenAnswer'] . " *Link:* " . $output_a[0]['Link'];
+        //return $output_a[0]['ChosenAnswer'];
+    }else{
+        return "Dont have any answer to that!";
+    }
+}
+</code></pre>
+
+<p><strong>To run the bot:</strong></p>
+
+<p>You can run it from either command prompt with php and  Apache server installed or you can run it from a browser. For the later case, just execute the script file form the browser.</p>
+
+<p>There you go. Leave comment if you have doubt. Or directly reach me at twitter or facebook. :)</p>
+
+<blockquote><p><strong>:Note to myself:</strong></p>
+
+<p>The code looks like a mess. Clean it up.</p></blockquote>
 
 
   <!-- TODO: bio here -->
@@ -373,6 +377,9 @@ function answerMe($query){<br />
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

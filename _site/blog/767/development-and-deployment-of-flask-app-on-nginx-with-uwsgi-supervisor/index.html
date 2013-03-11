@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,35 +86,35 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     June 14, 2012
   </section>
 
-  <blockquote>Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. And before you ask: It's <a href="http://flask.pocoo.org/docs/license/">BSD licensed</a>!</blockquote><br />
-I came across <a title="Flask" href="http://flask.pocoo.org/" target="_blank">Flask</a> when I was going through the apps from <a title="Hasgeek - Github" href="https://github.com/hasgeek" target="_blank">Hasgeek</a>. All their sites are built on Flask. So I thought of giving it a try and I'm not disappointed.<!--more--><br />
-<br />
-Flask is awesome. Minimal, supports Jinja for template managing and all you have to do is work on your app logic. Very less work involved to manage the framework. Here are the quick steps to follow to develop with Flask and deploy the app on an Nginx server -<br />
-<ol><br />
-	<li><a title="Install Flask" href="http://flask.pocoo.org/docs/installation/#installation" target="_blank">Install Flask in a vertualenv</a>.</li><br />
-	<li>Make a file named your_app_name.py and <a title="Flask Quickstart" href="http://flask.pocoo.org/docs/quickstart/#quickstart" target="_blank">start building your app</a>.</li><br />
-	<li>Test the app locally and when you think you're ready to deploy prepare your server.</li><br />
-	<li>Install gcc, python, python-dev, python-virtualenv on your server.</li><br />
-	<li><a title="Flask Deployment Options" href="http://flask.pocoo.org/docs/deploying/" target="_blank">many deployment options</a>, I chose uWSGI. It seemed to have very little footsteps.</li><br />
-	<li>Setup the virtualenv and transfer your files to server.</li><br />
-	<li>Install uWSGI inside your virtualenv with pip.<br />
-<pre class="lang:sh decode:true">pip install uwsgi</pre><br />
-</li><br />
-	<li><a title="uWSGI + Supervisor" href="http://www.readncode.com/blog/Deploying-Flask-with-nginx-uWSGI-and-Supervisor/" target="_blank">Deploy using uWSGI and Supervisor</a>. Just one thing, instead of using that Symlink method to deploy your site, you might prefer to use these <a title="nginx_ensite" href="https://github.com/perusio/nginx_ensite" target="_blank">nginx_ensite and nginx_dissite commands</a>.</li><br />
-	<li>I made a special executable named <span class="lang:default decode:true  crayon-inline ">nginx_renabsite</span>that disables the provided site config, reloads the server, then enables new config and again reloads the server -<br />
-<pre class="top-set:false bottom-set:false lang:sh decode:true ">nginx_dissite $1<br />
-/etc/init.d/nginx reload<br />
-nginx_ensite $1<br />
-/etc/init.d/nginx reload</pre><br />
-Place this file to <span class="lang:sh decode:true  crayon-inline">/usr/sbin/nginx_renabsite</span>and you can run it like<br />
-<pre class="lang:default decode:true">$ nginx_renabsite site_config_filename</pre><br />
-</li><br />
-	<li>Your app should be up and running by now.</li><br />
-	<li>Once you make any changes to your app, upload the files to server, then <a title="Reload supervisord" href="http://supervisord.readthedocs.org/en/latest/running.html#running-supervisorctl" target="_blank">reload Supervisor with supervisorctl</a>.</li><br />
-</ol><br />
-Things should be fine now. :)<br />
-<br />
-P.S. - Here is <a href="https://gist.github.com/1225493">a fabfile</a> for this deployment. I haven't tried it out yet.<br />
+  <blockquote>Flask is a microframework for Python based on Werkzeug, Jinja 2 and good intentions. And before you ask: It's <a href="http://flask.pocoo.org/docs/license/">BSD licensed</a>!</blockquote>
+I came across <a title="Flask" href="http://flask.pocoo.org/" target="_blank">Flask</a> when I was going through the apps from <a title="Hasgeek - Github" href="https://github.com/hasgeek" target="_blank">Hasgeek</a>. All their sites are built on Flask. So I thought of giving it a try and I'm not disappointed.<!--more-->
+
+Flask is awesome. Minimal, supports Jinja for template managing and all you have to do is work on your app logic. Very less work involved to manage the framework. Here are the quick steps to follow to develop with Flask and deploy the app on an Nginx server -
+<ol>
+	<li><a title="Install Flask" href="http://flask.pocoo.org/docs/installation/#installation" target="_blank">Install Flask in a vertualenv</a>.</li>
+	<li>Make a file named your_app_name.py and <a title="Flask Quickstart" href="http://flask.pocoo.org/docs/quickstart/#quickstart" target="_blank">start building your app</a>.</li>
+	<li>Test the app locally and when you think you're ready to deploy prepare your server.</li>
+	<li>Install gcc, python, python-dev, python-virtualenv on your server.</li>
+	<li><a title="Flask Deployment Options" href="http://flask.pocoo.org/docs/deploying/" target="_blank">many deployment options</a>, I chose uWSGI. It seemed to have very little footsteps.</li>
+	<li>Setup the virtualenv and transfer your files to server.</li>
+	<li>Install uWSGI inside your virtualenv with pip.
+<pre class="lang:sh decode:true">pip install uwsgi</pre>
+</li>
+	<li><a title="uWSGI + Supervisor" href="http://www.readncode.com/blog/Deploying-Flask-with-nginx-uWSGI-and-Supervisor/" target="_blank">Deploy using uWSGI and Supervisor</a>. Just one thing, instead of using that Symlink method to deploy your site, you might prefer to use these <a title="nginx_ensite" href="https://github.com/perusio/nginx_ensite" target="_blank">nginx_ensite and nginx_dissite commands</a>.</li>
+	<li>I made a special executable named <span class="lang:default decode:true  crayon-inline ">nginx_renabsite</span>that disables the provided site config, reloads the server, then enables new config and again reloads the server -
+<pre class="top-set:false bottom-set:false lang:sh decode:true ">nginx_dissite $1
+/etc/init.d/nginx reload
+nginx_ensite $1
+/etc/init.d/nginx reload</pre>
+Place this file to <span class="lang:sh decode:true  crayon-inline">/usr/sbin/nginx_renabsite</span>and you can run it like
+<pre class="lang:default decode:true">$ nginx_renabsite site_config_filename</pre>
+</li>
+	<li>Your app should be up and running by now.</li>
+	<li>Once you make any changes to your app, upload the files to server, then <a title="Reload supervisord" href="http://supervisord.readthedocs.org/en/latest/running.html#running-supervisorctl" target="_blank">reload Supervisor with supervisorctl</a>.</li>
+</ol>
+Things should be fine now. :)
+
+P.S. - Here is <a href="https://gist.github.com/1225493">a fabfile</a> for this deployment. I haven't tried it out yet.
 
 
   <!-- TODO: bio here -->
@@ -168,6 +172,9 @@ P.S. - Here is <a href="https://gist.github.com/1225493">a fabfile</a> for this 
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

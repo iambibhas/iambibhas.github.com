@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,33 +86,33 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     August 27, 2010
   </section>
 
-  <img class="alignleft" title="Yourls Logo" src="http://i36.tinypic.com/2eanmnc.jpg" alt="" width="201" height="90" />I dunno about you guys, but I was getting weary of all the url shorteners that has grown like weeds around us.. Hence thought of using something that I could customize and use as I like. Hence did a Google search and found Yourls.<br />
-<br />
-The case is simple, this service gives your site a capability to shorten urls. All you need is a Domain. Let it be a Top-Level Domain or a free one.. Now *this* is what I call usability. :)<br />
-<br />
-<!--more-->As you already know, I maintain a TLD. So I thought of a URL shortener like <strong>bibhas.in/l/</strong> ..<br />
-So, I downloaded Yourls. According to its guide, installed it and just ran it. And Voila! It works flawlessly. :)<br />
-<br />
-Now, coming to the main points, what are the advantages of Yourls over <a title="Bit.ly Pro" href="https://bitly.com/pro/" target="_blank">Bit.ly Pro(another similar service)</a>?<br />
-<ol><br />
-	<li>Yours is totally customizable. Its open source. So you can modify it anyway you want. :)</li><br />
-	<li>All the link data are saved in your own database. Whereas Bit.ly stores then in its own database.</li><br />
-	<li>Yourls has a cool API that's fairly simple to use.</li><br />
-	<li>Yourls provides two bookmarklets to share any link you want to share on the go. :)</li><br />
-</ol><br />
-Yourls gives you a local API. Means all the functions resides on your server. You're given an unique signature which you can use instead of username and password while making an API request.<br />
-<br />
-And you call goes like this -<br />
-<pre class="brush:plain">http://bibhas.in/l/yourls-api.php?signature=f271546ece&amp;action=shorturl&amp;url=http://bibhas.in&amp;format=xml</pre><br />
-as simple as that. :)<br />
-<br />
-More details on the API can be found here - <a href="http://yourls.org/#API" target="_blank">http://yourls.org/#API</a><br />
-<br />
-Here is a screenshot of the default Yourls Link Dashboard -<br />
-<br />
-<img style="border: 1px solid black;" title="Yourls Link Dashboard" src="http://i34.tinypic.com/9iuyvp.jpg" alt="" width="500" height="288" /><br />
-<br />
-Now, If you're interested in using it, Download Yourls from here - <a title="Download Yourls" href="http://yourls.org/download" target="_blank">http://yourls.org/download</a><br />
+  <img class="alignleft" title="Yourls Logo" src="http://i36.tinypic.com/2eanmnc.jpg" alt="" width="201" height="90" />I dunno about you guys, but I was getting weary of all the url shorteners that has grown like weeds around us.. Hence thought of using something that I could customize and use as I like. Hence did a Google search and found Yourls.
+
+The case is simple, this service gives your site a capability to shorten urls. All you need is a Domain. Let it be a Top-Level Domain or a free one.. Now *this* is what I call usability. :)
+
+<!--more-->As you already know, I maintain a TLD. So I thought of a URL shortener like <strong>bibhas.in/l/</strong> ..
+So, I downloaded Yourls. According to its guide, installed it and just ran it. And Voila! It works flawlessly. :)
+
+Now, coming to the main points, what are the advantages of Yourls over <a title="Bit.ly Pro" href="https://bitly.com/pro/" target="_blank">Bit.ly Pro(another similar service)</a>?
+<ol>
+	<li>Yours is totally customizable. Its open source. So you can modify it anyway you want. :)</li>
+	<li>All the link data are saved in your own database. Whereas Bit.ly stores then in its own database.</li>
+	<li>Yourls has a cool API that's fairly simple to use.</li>
+	<li>Yourls provides two bookmarklets to share any link you want to share on the go. :)</li>
+</ol>
+Yourls gives you a local API. Means all the functions resides on your server. You're given an unique signature which you can use instead of username and password while making an API request.
+
+And you call goes like this -
+<pre class="brush:plain">http://bibhas.in/l/yourls-api.php?signature=f271546ece&amp;action=shorturl&amp;url=http://bibhas.in&amp;format=xml</pre>
+as simple as that. :)
+
+More details on the API can be found here - <a href="http://yourls.org/#API" target="_blank">http://yourls.org/#API</a>
+
+Here is a screenshot of the default Yourls Link Dashboard -
+
+<img style="border: 1px solid black;" title="Yourls Link Dashboard" src="http://i34.tinypic.com/9iuyvp.jpg" alt="" width="500" height="288" />
+
+Now, If you're interested in using it, Download Yourls from here - <a title="Download Yourls" href="http://yourls.org/download" target="_blank">http://yourls.org/download</a>
 
 
   <!-- TODO: bio here -->
@@ -166,6 +170,9 @@ Now, If you're interested in using it, Download Yourls from here - <a title="Dow
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,23 +86,23 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     February 26, 2011
   </section>
 
-  The first thing I noticed after installing Fedora 14 was that there are updates available for my packages. And not a few, more than 400 updates! Sizing about 500mb!<br />
-<br />
-Now, I use a lame internet plan of 256kbps. Updating all the packages in one go will make me keep this system on for about 5 hours. Thats not possible for me. So I needed a way to update few packages everytime and keep doing that whenever I find time.<!--more-->Now I can open the update manager, untick about 350 package the first time to update first 50 package and go on like that.. Sounds ridiculous, right? So ticking-unticking aint an option, lets look for something new.<br />
-<br />
-Terminal is always there, lets use it. I thought of using conditions with the <strong>yum</strong> command. Like defining a number, so that first that number of packages will be updated. But that'd most probably require me to write a complicated shell script which I'm not intending to do right now.<br />
-<br />
-Next option, lets try to find if any condition can be applied to packages' name and update only the matching ones. This idea seem to have an easy way to deploy. I found that you can use wildcard (*) to the <strong>yum update</strong> command. Now that's cool! it lets me to select packages based on a portion of their name. Like, if I want to update only the packages that start with a, all I need to do is use this command -<br />
-<pre class="brush:bash"># yum update a*<br />
-</pre><br />
-Or if I want to update all the packages that has the phrase py in them, I'd use the command -<br />
-<pre class="brush:bash"># yum update *py*<br />
-</pre><br />
-I can also define more than one condition with a space as delimiter, like -<br />
-<pre class="brush:bash"># yum update 'a*' '*bas*'<br />
-</pre><br />
-That's it! I got my way to update few packages at a time. :D<br />
-<blockquote>Note: Before using Yum, install the yum plugin <strong>yum-fastestmirror</strong>. Saves time finding the the mirrors that'll transfer data faster. :)</blockquote><br />
+  The first thing I noticed after installing Fedora 14 was that there are updates available for my packages. And not a few, more than 400 updates! Sizing about 500mb!
+
+Now, I use a lame internet plan of 256kbps. Updating all the packages in one go will make me keep this system on for about 5 hours. Thats not possible for me. So I needed a way to update few packages everytime and keep doing that whenever I find time.<!--more-->Now I can open the update manager, untick about 350 package the first time to update first 50 package and go on like that.. Sounds ridiculous, right? So ticking-unticking aint an option, lets look for something new.
+
+Terminal is always there, lets use it. I thought of using conditions with the <strong>yum</strong> command. Like defining a number, so that first that number of packages will be updated. But that'd most probably require me to write a complicated shell script which I'm not intending to do right now.
+
+Next option, lets try to find if any condition can be applied to packages' name and update only the matching ones. This idea seem to have an easy way to deploy. I found that you can use wildcard (*) to the <strong>yum update</strong> command. Now that's cool! it lets me to select packages based on a portion of their name. Like, if I want to update only the packages that start with a, all I need to do is use this command -
+<pre class="brush:bash"># yum update a*
+</pre>
+Or if I want to update all the packages that has the phrase py in them, I'd use the command -
+<pre class="brush:bash"># yum update *py*
+</pre>
+I can also define more than one condition with a space as delimiter, like -
+<pre class="brush:bash"># yum update 'a*' '*bas*'
+</pre>
+That's it! I got my way to update few packages at a time. :D
+<blockquote>Note: Before using Yum, install the yum plugin <strong>yum-fastestmirror</strong>. Saves time finding the the mirrors that'll transfer data faster. :)</blockquote>
 
 
   <!-- TODO: bio here -->
@@ -156,6 +160,9 @@ That's it! I got my way to update few packages at a time. :D<br />
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

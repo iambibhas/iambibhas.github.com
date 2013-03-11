@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,65 +86,65 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     May  7, 2011
   </section>
 
-  To modify MySQL databases using C#.NET or any language using .NET framework, you must first install the MySQL Connector for .NET. You can download it <a title="MySQL Connectors for .NET" href="http://www.mysql.com/downloads/connector/net/" target="_blank">from here</a>. Avoid v6.3.6 for now, as I've discussed in <a title="MySQL’s Connector for .NET v6.3.6 has bugs it seems" href="http://bibhas.in/blog/2011/05/mysqls-connector-for-net-v6-3-6-has-bugs-it-seems/" target="_blank">a previous post</a>, that version might have some bugs. Go the the <a title="Connector/NET Previous Versions Download" href="http://www.mysql.com/downloads/connector/net/6.2.html#downloads" target="_blank">previous versions section</a> and download v6.3.4 instead. After you've downloaded it, install.<!--more--><br />
-<br />
-Now run Visual Studio. Open your project. Go to <em>View</em> menu &gt; <em>Solution Explorer</em> &gt; right click on <em>References</em> &gt; <em>Add References</em> &gt; under the tab <em>.NET</em>, select <em>MySQL.Data </em>&gt; <em>Ok</em>. That's almost it. Now you've added the reference to your project.<br />
-<br />
-To start coding, add this line to the top of your source -<br />
-<pre class="brush:csharp">using MySql.Data.MySqlClient;</pre><br />
-Now you can write the codes just like you do with <em>SQL server</em>, just add My in front of SQL :P. See the code below for example. I wrote two abstract function for my use.<br />
-<pre class="brush:csharp">private string MySQLConnectionString = "SERVER=localhost;DATABASE=db_name;UID=root;PASSWORD=;";<br />
-public int mysql_query_execute_noReturn(string query)<br />
-{<br />
-    Int32 row_affected = 0;<br />
-    try<br />
-    {<br />
-        MySqlConnection con = new MySqlConnection(MySQLConnectionString);<br />
-        if (con.State == System.Data.ConnectionState.Closed)<br />
-        {<br />
-            con.Open();<br />
-        }<br />
-        MySqlCommand command = new MySqlCommand(query, con);<br />
-        row_affected = command.ExecuteNonQuery();<br />
-<br />
-        if (con.State == System.Data.ConnectionState.Open)<br />
-        {<br />
-            con.Close();<br />
-        }<br />
-    }<br />
-    catch (Exception ex)<br />
-    {<br />
-<br />
-    }<br />
-    return row_affected;<br />
-}<br />
-<br />
-public DataSet mysql_query_execute_return(string query)<br />
-{<br />
-    DataSet dataSet = new DataSet();<br />
-    try<br />
-    {<br />
-        MySqlConnection con = new MySqlConnection(MySQLConnectionString);<br />
-        if (con.State == System.Data.ConnectionState.Closed)<br />
-        {<br />
-            con.Open();<br />
-        }<br />
-        MySqlDataAdapter dataAdapter = new MySqlDataAdapter(query, con);<br />
-        dataAdapter.Fill(dataSet);<br />
-        if (con.State == System.Data.ConnectionState.Open)<br />
-        {<br />
-            con.Close();<br />
-        }<br />
-    }<br />
-    catch (Exception ex)<br />
-    {<br />
-<br />
-    }<br />
-    return dataSet;<br />
-}</pre><br />
-You can pass any query string to these functions, <em>mysql_query_execute_noReturn</em> will take a query, execute it and return the number of rows affected. It's only for queries like INSERT, UPDATE, DELETE etc. And <em>mysql_query_execute_return</em> will take a query, execute it and return a <em>DataSet </em>containing all the records. It's for queries like SELECT.<br />
-<br />
-So, try it out. :)<br />
+  To modify MySQL databases using C#.NET or any language using .NET framework, you must first install the MySQL Connector for .NET. You can download it <a title="MySQL Connectors for .NET" href="http://www.mysql.com/downloads/connector/net/" target="_blank">from here</a>. Avoid v6.3.6 for now, as I've discussed in <a title="MySQL’s Connector for .NET v6.3.6 has bugs it seems" href="http://bibhas.in/blog/2011/05/mysqls-connector-for-net-v6-3-6-has-bugs-it-seems/" target="_blank">a previous post</a>, that version might have some bugs. Go the the <a title="Connector/NET Previous Versions Download" href="http://www.mysql.com/downloads/connector/net/6.2.html#downloads" target="_blank">previous versions section</a> and download v6.3.4 instead. After you've downloaded it, install.<!--more-->
+
+Now run Visual Studio. Open your project. Go to <em>View</em> menu &gt; <em>Solution Explorer</em> &gt; right click on <em>References</em> &gt; <em>Add References</em> &gt; under the tab <em>.NET</em>, select <em>MySQL.Data </em>&gt; <em>Ok</em>. That's almost it. Now you've added the reference to your project.
+
+To start coding, add this line to the top of your source -
+<pre class="brush:csharp">using MySql.Data.MySqlClient;</pre>
+Now you can write the codes just like you do with <em>SQL server</em>, just add My in front of SQL :P. See the code below for example. I wrote two abstract function for my use.
+<pre class="brush:csharp">private string MySQLConnectionString = "SERVER=localhost;DATABASE=db_name;UID=root;PASSWORD=;";
+public int mysql_query_execute_noReturn(string query)
+{
+    Int32 row_affected = 0;
+    try
+    {
+        MySqlConnection con = new MySqlConnection(MySQLConnectionString);
+        if (con.State == System.Data.ConnectionState.Closed)
+        {
+            con.Open();
+        }
+        MySqlCommand command = new MySqlCommand(query, con);
+        row_affected = command.ExecuteNonQuery();
+
+        if (con.State == System.Data.ConnectionState.Open)
+        {
+            con.Close();
+        }
+    }
+    catch (Exception ex)
+    {
+
+    }
+    return row_affected;
+}
+
+public DataSet mysql_query_execute_return(string query)
+{
+    DataSet dataSet = new DataSet();
+    try
+    {
+        MySqlConnection con = new MySqlConnection(MySQLConnectionString);
+        if (con.State == System.Data.ConnectionState.Closed)
+        {
+            con.Open();
+        }
+        MySqlDataAdapter dataAdapter = new MySqlDataAdapter(query, con);
+        dataAdapter.Fill(dataSet);
+        if (con.State == System.Data.ConnectionState.Open)
+        {
+            con.Close();
+        }
+    }
+    catch (Exception ex)
+    {
+
+    }
+    return dataSet;
+}</pre>
+You can pass any query string to these functions, <em>mysql_query_execute_noReturn</em> will take a query, execute it and return the number of rows affected. It's only for queries like INSERT, UPDATE, DELETE etc. And <em>mysql_query_execute_return</em> will take a query, execute it and return a <em>DataSet </em>containing all the records. It's for queries like SELECT.
+
+So, try it out. :)
 
 
   <!-- TODO: bio here -->
@@ -198,6 +202,9 @@ So, try it out. :)<br />
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>

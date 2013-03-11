@@ -19,11 +19,15 @@
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
   <script type="text/javascript" src="/js/underscore-min.js"></script>
   <script type="text/javascript" src="/js/backbone-min.js"></script>
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -82,15 +86,15 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
     April 29, 2011
   </section>
 
-  One of my basic beliefs - Regular Expression is God-Gifted.. Its hard to find something that can be so simple but so much useful.. All for these reasons, I end up using RegEx whenever I have some pattern matching business. And for that to be perfect, I need a cool RegEx validator.<br />
-<br />
-<!--more-->Most of the times, I use the validator from <a title="GSkinner" href="http://www.gskinner.com/" target="_blank">GSkinner</a> - <a title="RegExr" href="http://gskinner.com/RegExr/" target="_blank">http://gskinner.com/RegExr/</a> ..<br />
-<p style="text-align: center;"><a href="http://i.imgur.com/rgBYG.png"><img class="aligncenter" title="RegExp" src="http://i.imgur.com/rgBYG.png" alt="" width="808" height="382" /></a></p><br />
-It's built with flash. Have a cool interface. There are a lot of inbuilt patters you can use or try out. You can also save your own patterns.<br />
-<br />
-It have options to test both matching of patterns and replacing using patterns.<br />
-<br />
-And to add to all this, it has a desktop version you can <a title="RegExr Desktop" href="http://www.gskinner.com/RegExr/desktop/" target="_blank">download</a> and use right away! Sweet! :)<br />
+  One of my basic beliefs - Regular Expression is God-Gifted.. Its hard to find something that can be so simple but so much useful.. All for these reasons, I end up using RegEx whenever I have some pattern matching business. And for that to be perfect, I need a cool RegEx validator.
+
+<!--more-->Most of the times, I use the validator from <a title="GSkinner" href="http://www.gskinner.com/" target="_blank">GSkinner</a> - <a title="RegExr" href="http://gskinner.com/RegExr/" target="_blank">http://gskinner.com/RegExr/</a> ..
+<p style="text-align: center;"><a href="http://i.imgur.com/rgBYG.png"><img class="aligncenter" title="RegExp" src="http://i.imgur.com/rgBYG.png" alt="" width="808" height="382" /></a></p>
+It's built with flash. Have a cool interface. There are a lot of inbuilt patters you can use or try out. You can also save your own patterns.
+
+It have options to test both matching of patterns and replacing using patterns.
+
+And to add to all this, it has a desktop version you can <a title="RegExr Desktop" href="http://www.gskinner.com/RegExr/desktop/" target="_blank">download</a> and use right away! Sweet! :)
 
 
   <!-- TODO: bio here -->
@@ -148,6 +152,9 @@ And to add to all this, it has a desktop version you can <a title="RegExr Deskto
 
     </script>
 
+<script type="text/javascript">
+     SyntaxHighlighter.all()
+</script>
 </body>
 
 </html>
