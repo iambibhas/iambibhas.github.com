@@ -1,0 +1,82 @@
+804  man jekyll
+  805  jekyll --help
+  806  jekyll
+  807  jekyll --pygments
+  808  git add .
+  809  git commit -a -m "Generated _site for Heroku"
+  810  sudo gem install rack-rewrite
+  811  touch config.ru
+  812  echo "rack-jekyll\nrack-rewrite" > .gems
+  813  gem install heroku
+  814  sudo gem install heroku
+  815* cd /tmp
+  816* wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+  817  sudo gem uninstall heroku
+  818* wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+  819* ls
+  820* wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh
+  821* apt-get install -y heroku-toolbelt
+  822* sudo apt-get install -y heroku-toolbelt
+  823* sudo rm /var/lib/apt/lists/* -vf
+  824* wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+  825  heroku login
+  826  heroku create
+  827  heroku rename bibhasin
+  828  git status
+  829  git add .
+  830  git commit -m "added files needed for heroku"
+  831  git branch
+  832  git push heroku master
+  833* sudo apt-get install ruby1.9.1-dev
+  834* sudo gem install bundler
+  835  bundle init
+  836  gem
+  837  gem list
+  838  gem list --local
+  839  bundle install
+  840  cat Gemfile.lock
+  841  git status
+  842  git add .
+  843  git commit -m "Added gemfile"
+  844  git push heroku master
+  845  bundle install
+  846  cat Gemfile.lock
+  847* \curl -L https://get.rvm.io | bash -s stable --ruby
+  848  source /home/bibhas/.rvm/scripts/rvm
+  849  bundle install
+  850  cat Gemfile.lock
+  851  git add .
+  852  git commit -m "Added gemfile"
+  853  git push heroku master
+  854  heroku logs -t 
+  855  heroku config
+  856  heroku config:add GEM_PATH=vendor/bundle/ruby/1.9.3
+  857  heroku logs -t 
+  858  gem list
+  859  gem list --global
+  860  gem list --g
+  861  gem list --local
+  862  heroku config:remove GEM_PATH
+  863  heroku logs -t 
+  864  heroku config:add PATH=bin:vendor/bundle/ruby/1.9.3/bin:/usr/local/bin:/usr/bin:/bin
+  865  heroku logs -t 
+  866  heroku config
+  867  heroku config:add GEM_PATH=vendor/bundle/ruby/1.9.3
+  868  heroku config
+  869  heroku logs -t 
+  870  gem list
+  871  bundle exec rackup
+  872  gem install rackup
+  873  gem install rack
+  874  bundle install
+  875  cat Gemfile.lock
+  876  git push heroku master
+  877  heroku logs -t 
+  878  gem install rack-jekyll
+  879  bundle install
+  880  git push heroku master
+  881  heroku logs -t 
+  882  bundle install
+  883  git push heroku master
+  884  heroku logs -t 
+  885  git push heroku master
