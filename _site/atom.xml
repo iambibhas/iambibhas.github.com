@@ -4,7 +4,7 @@
  <title>Bibhas Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2013-03-18T03:07:44+05:30</updated>
+ <updated>2013-03-18T03:42:44+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas Debnath</name>
@@ -177,9 +177,9 @@ function clearanchors(){
    <link href="http://bibhas.in/blog/810/the-zen-of-python/"/>
    <updated>2012-08-22T00:00:00+05:30</updated>
    <id>http://bibhas.in/blog/810/the-zen-of-python</id>
-   <content type="html">These are the guiding principles of Python, but are open to interpretation. A sense of humor is required for their proper interpretation.
+   <content type="html">&lt;p&gt;These are the guiding principles of Python, but are open to interpretation. A sense of humor is required for their proper interpretation.&lt;/p&gt;
 
-&lt;pre&gt;Beautiful is better than ugly.
+&lt;pre&gt;&lt;code&gt;Beautiful is better than ugly.
 Explicit is better than implicit.
 Simple is better than complex.
 Complex is better than complicated.
@@ -197,11 +197,15 @@ Now is better than never.
 Although never is often better than *right* now.
 If the implementation is hard to explain, it's a bad idea.
 If the implementation is easy to explain, it may be a good idea.
-Namespaces are one honking great idea -- let's do more of those!&lt;/pre&gt;
+Namespaces are one honking great idea -- let's do more of those!
+&lt;/code&gt;&lt;/pre&gt;
 
-- Tim Peters (&lt;a href=&quot;http://www.python.org/dev/peps/pep-0020/&quot; target=&quot;_blank&quot;&gt;PEP 20&lt;/a&gt;) | &lt;a href=&quot;http://stackoverflow.com/questions/228181/the-zen-of-python&quot; target=&quot;_blank&quot;&gt;Explanation with Examples&lt;/a&gt;.
+&lt;ul&gt;
+&lt;li&gt;Tim Peters (&lt;a href=&quot;http://www.python.org/dev/peps/pep-0020/&quot; target=&quot;_blank&quot;&gt;PEP 20&lt;/a&gt;) | &lt;a href=&quot;http://stackoverflow.com/questions/228181/the-zen-of-python&quot; target=&quot;_blank&quot;&gt;Explanation with Examples&lt;/a&gt;.&lt;/li&gt;
+&lt;/ul&gt;
 
-Easter Egg: Try - &lt;span class=&quot;lang:python decode:true  crayon-inline &quot;&gt;import this&lt;/span&gt;
+
+&lt;p&gt;Easter Egg: Try - &lt;code&gt;import this&lt;/code&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -366,19 +370,21 @@ Don't know if it was tight schedule or incompetent developers or both, but it se
    <link href="http://bibhas.in/blog/how-aware-are-you-of-whats-going-around-you"/>
    <updated>2012-04-01T00:00:00+05:30</updated>
    <id>http://bibhas.in/blog/how-aware-are-you-of-whats-going-around-you</id>
-   <content type="html">Tonight I came across few youtube videos that pointed out how we tend &quot;not to notice&quot; things that we're not expecting. I'll say no more and let you watch them and see for yourselves.&lt;!--more--&gt;
+   <content type="html">&lt;p&gt;Tonight I came across few youtube videos that pointed out how we tend &amp;ldquo;not to notice&amp;rdquo; things that we&amp;rsquo;re not expecting. I&amp;rsquo;ll say no more and let you watch them and see for yourselves.&lt;/p&gt;
 
-[tube]http://www.youtube.com/watch?v=Ahg6qcgoay4[/tube]
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/Ahg6qcgoay4?color=white&amp;theme=light&quot;&gt;&lt;/iframe&gt;
 
-How did you like it? Feel stupid? Confused? Want to watch again? Go ahead. Once you're satisfied realizing what just happened, watch the later one.
 
-[tube]http://www.youtube.com/watch?v=ubNF9QNEQLA[/tube]
+&lt;p&gt;How did you like it? Feel stupid? Confused? Want to watch again? Go ahead. Once you&amp;rsquo;re satisfied realizing what just happened, watch the later one.&lt;/p&gt;
 
-Had enough fun yet?
+&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/ubNF9QNEQLA?color=white&amp;theme=light&quot;&gt;&lt;/iframe&gt;
 
-Yes, this is the fact. It is just as the video says, &quot;It's easy to miss something you're not looking for&quot;. It can be anything from a Dancing Bear to a bear's statue replaced by an iron armor. And if you're not cautious enough, this might wind you up into something fatal.
 
-So, keep your eyes open. :)
+&lt;p&gt;Had enough fun yet?&lt;/p&gt;
+
+&lt;p&gt;Yes, this is the fact. It is just as the video says, &amp;ldquo;It&amp;rsquo;s easy to miss something you&amp;rsquo;re not looking for&amp;rdquo;. It can be anything from a Dancing Bear to a bear&amp;rsquo;s statue replaced by an iron armor. And if you&amp;rsquo;re not cautious enough, this might wind you up into something fatal.&lt;/p&gt;
+
+&lt;p&gt;So, keep your eyes open. :)&lt;/p&gt;
 </content>
  </entry>
  

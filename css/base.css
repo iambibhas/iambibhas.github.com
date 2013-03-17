@@ -13,9 +13,8 @@ a {
 
 .sidebar {
   position: fixed;
-  left: 15px;
   top: 15px;
-  width: 140px;
+  width: 220px;
   font-family: Helvetica, sans-serif; }
   .sidebar a {
     text-decoration: none; }
@@ -50,7 +49,7 @@ a {
       padding: 3px 0;
       color: black;
       font-weight: bold;
-      font-size: 12px;
+      font-size: 20px;
       display: block; }
       .sidebar .sections a:hover {
         color: #227ce8; }
@@ -62,9 +61,10 @@ a {
       margin-bottom: 7px; }
 
 .content {
-  margin-left: 150px;
+  margin-left: 230px;
   margin-right: 20px;
-  margin-bottom: 50px; }
+  margin-bottom: 50px;
+  padding-left: 20px; }
   .content h1 {
     color: #333;
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;
