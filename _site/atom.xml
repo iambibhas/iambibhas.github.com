@@ -4,7 +4,7 @@
  <title>Bibhas Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2013-03-18T03:42:44+05:30</updated>
+ <updated>2013-03-23T11:31:55+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas Debnath</name>
@@ -372,12 +372,12 @@ Don't know if it was tight schedule or incompetent developers or both, but it se
    <id>http://bibhas.in/blog/how-aware-are-you-of-whats-going-around-you</id>
    <content type="html">&lt;p&gt;Tonight I came across few youtube videos that pointed out how we tend &amp;ldquo;not to notice&amp;rdquo; things that we&amp;rsquo;re not expecting. I&amp;rsquo;ll say no more and let you watch them and see for yourselves.&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/Ahg6qcgoay4?color=white&amp;theme=light&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=\&quot;560\&quot; height=\&quot;420\&quot; src=\&quot;http://www.youtube.com/embed/Ahg6qcgoay4\&quot; frameborder=\&quot;0\&quot;allowfullscreen&gt;&lt;/iframe&gt;
 
 
 &lt;p&gt;How did you like it? Feel stupid? Confused? Want to watch again? Go ahead. Once you&amp;rsquo;re satisfied realizing what just happened, watch the later one.&lt;/p&gt;
 
-&lt;iframe width=&quot;560&quot; height=&quot;420&quot; src=&quot;http://www.youtube.com/embed/ubNF9QNEQLA?color=white&amp;theme=light&quot;&gt;&lt;/iframe&gt;
+&lt;iframe width=\&quot;560\&quot; height=\&quot;420\&quot; src=\&quot;http://www.youtube.com/embed/ubNF9QNEQLA\&quot; frameborder=\&quot;0\&quot;allowfullscreen&gt;&lt;/iframe&gt;
 
 
 &lt;p&gt;Had enough fun yet?&lt;/p&gt;
@@ -1180,7 +1180,7 @@ And DO let me know if you like it and if you need any changes made. :)
  </entry>
  
  <entry>
-   <title>Year Ending Kolkata Meetup ’10</title>
+   <title>Year Ending Kolkata Meetup â10</title>
    <link href="http://bibhas.in/blog/year-ending-kolkata-meetup-10"/>
    <updated>2010-12-31T00:00:00+05:30</updated>
    <id>http://bibhas.in/blog/year-ending-kolkata-meetup-10</id>
@@ -1355,7 +1355,7 @@ So this way, you can make changes in your slug any way you want. But be careful 
  </entry>
  
  <entry>
-   <title>Startup Saturday Kolkata – Tweets</title>
+   <title>Startup Saturday Kolkata â Tweets</title>
    <link href="http://bibhas.in/blog/startup-saturday-kol"/>
    <updated>2010-12-11T00:00:00+05:30</updated>
    <id>http://bibhas.in/blog/startup-saturday-kol</id>

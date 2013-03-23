@@ -1,4 +1,5 @@
 require "rack/jekyll"
+require "yaml"
 require "rack-rewrite" # optional
 
 # (optional) Redirect www.example.com to example.com
