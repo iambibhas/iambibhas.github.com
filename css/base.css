@@ -1,6 +1,6 @@
 @charset "UTF-8";
 * {
-    font-family: "Roboto", serif;
+    font-family: 'Inconsolata', sans-serif;
 }
 
 body {
@@ -8,7 +8,7 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 a {
-    color: #227ce8;
+    color: #223ce8;
 }
 
 .sidebar {
@@ -64,7 +64,7 @@ a {
   margin-left: 230px;
   margin-right: 20px;
   margin-bottom: 50px;
-  padding-left: 20px; }
+  padding-left: 8px; }
   .content h1 {
     color: #333;
     font-family: "Yanone Kaffeesatz", Helvetica, sans-serif;

@@ -5,14 +5,17 @@ permalink: /
 ---
 
 <section class="content" id="app">
-    <div id="terminal">
-        <div class="view">anonymous@bibhas.in:~$ |<br><strong>Hello there! Welcome to bibhas.in. Please type `help` and hit Enter/Return.</strong></div>
+    <div id="console">
+        <div class="cnsl-ln">anonymous@127.0.0.1:~$ <strong><span id="cursor">|</span></strong></div>
     </div>
-    <input id="prompt" type="text" autofocus>
+    <div id="input">
+        <form onsubmit="return execute()">
+            <div id="command-box">
+                <input type="text" name="command" id="command" /><input type="submit" value="" style="display:none"/>
+            </div>
+        </form>
+    </div>
 </section>
-<script type="text/template" id="input-entered">
-    <div class="view">anonymous@bibhas.in:~$ <%- name %> <br><strong><%- text %></strong></div>
-</script>
 <script type="text/javascript">
     mixpanel.track("Landed on Home page");
 </script>
