@@ -12,11 +12,11 @@ title: How aware are you of what's going around you?
 ---
 Tonight I came across few youtube videos that pointed out how we tend "not to notice" things that we're not expecting. I'll say no more and let you watch them and see for yourselves.
 
-{% youtube Ahg6qcgoay4 %}
+<iframe width=\"560\" height=\"420\" src=\"http://www.youtube.com/embed/Ahg6qcgoay4\" frameborder=\"0\"allowfullscreen></iframe>
 
 How did you like it? Feel stupid? Confused? Want to watch again? Go ahead. Once you're satisfied realizing what just happened, watch the later one.
 
-{% youtube ubNF9QNEQLA %}
+<iframe width=\"560\" height=\"420\" src=\"http://www.youtube.com/embed/ubNF9QNEQLA\" frameborder=\"0\"allowfullscreen></iframe>
 
 Had enough fun yet?
 
