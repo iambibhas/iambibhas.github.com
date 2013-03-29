@@ -41,6 +41,7 @@ function execute(){
             str += 'blog: Opens my blog in a new tab.' + '<br />';
             str += 'github: Opens my Github profile in a new tab.' + '<br />';
             str += 'resume: Opens my Resume in a new tab.' + '<br />';
+            str += 'mail: Drop me a mail.' + '<br />';
             str += 'search: Searches Google, Duckduckgo and Bing in new tabs for any following keyword(s).' + '<br />';
             str += 'linuxdl: Downloads Linux distro of your choice(Only Ubuntu is available now).<br />'
             str += 'clear: Resets this console.' + '<br />';
@@ -52,6 +53,10 @@ function execute(){
         case 'whoami':
             setConsoleVal(full_command, 'I don\'t know yet.');
             break;
+        case 'mail':
+            setConsoleVal(full_command, 'Opening your mail app.');
+            window.open('mailto:me@bibhas.in?subject=Hi+Bibhas!&body=Nice+Website!');
+            break
         case 'blog':
             if(comm_arr.hasOwnProperty(1)){
                 switch(comm_arr[1]){
