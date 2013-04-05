@@ -42,6 +42,7 @@ function execute(){
             str += 'github: Opens my Github profile in a new tab.' + '<br />';
             str += 'resume: Opens my Resume in a new tab.' + '<br />';
             str += 'mail: Drop me a mail.' + '<br />';
+            str += 'bitcoin: Treat me a cup of coffee with some BitCoin.' + '<br />';
             str += 'search: Searches Google, Duckduckgo and Bing in new tabs for any following keyword(s).' + '<br />';
             str += 'linuxdl: Downloads Linux distro of your choice(Only Ubuntu is available now).<br />'
             str += 'clear: Resets this console.' + '<br />';
@@ -56,6 +57,9 @@ function execute(){
         case 'mail':
             setConsoleVal(full_command, 'Opening your mail app.');
             window.open('mailto:me@bibhas.in?subject=Hi+Bibhas!&body=Nice+Website!');
+            break
+        case 'bitcoin':
+            setConsoleVal(full_command, 'Buy me a cup of coffee. <br/> Send some BitCoins to - 1EaszqX5Qmus5e3CTSavJbhxUPiAxrnp4i');
             break
         case 'blog':
             if(comm_arr.hasOwnProperty(1)){
@@ -118,8 +122,8 @@ function execute(){
                 var platform = '';
                 var format = 'iso';
                 if(!comm_arr.hasOwnProperty(2)){
-                    version = '12.04';
-                }else if(comm_arr[2]!=''){
+                    version = '12.04.2';
+                }else if(comm_arr[2] !== ''){
                     version = comm_arr[2];
                 }
 
