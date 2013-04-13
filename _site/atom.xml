@@ -4,12 +4,21 @@
  <title>Bibhas Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2013-04-05T14:53:08+05:30</updated>
+ <updated>2013-04-14T02:36:01+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas Debnath</name>
  </author>
  
+ 
+ <entry>
+   <title>From 20,000 feet above ground ..</title>
+   <link href="http://bibhas.in/blog/from-20000-feet-above-ground-/"/>
+   <updated>2013-04-14T00:00:00+05:30</updated>
+   <id>http://bibhas.in/blog/from-20000-feet-above-ground-</id>
+   <content type="html">&lt;p&gt;From 20,000 feet above ground, when you look down, you can actually see and feel how insignificantly small we are compared to this vast planet. We&amp;rsquo;re like ants on the ground. Trying to survive, trying to ignore this fact.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Moving to Jekyll and Github</title>
