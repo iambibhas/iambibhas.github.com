@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Shell Access to Tornado Local Environment"
+title: "Interactive Shell Access to Tornado Local Environment"
 description: ""
 category: 
 tags: []
-permalink: /blog/shell-access-to-tornado-local-environment/
+permalink: /blog/interactive-shell-access-to-tornado-local-environment/
 ---
 I've been working on [Tornado](http://www.tornadoweb.org/en/stable/) for last few days and I really needed a shell access to the local virtual environment of my Tornado app so that I can test few things out. Exactly like Django has `./manage.py shell`. But as we all know Tornado lacks a good documentation. Most of the things except the use of the native classes, require a lot of trial and error(at least for me, I'm not so bright). So I looked around and found how [Flask](http://flask.pocoo.org/) [has a way](http://flask.pocoo.org/snippets/23/) of having an interactive shell access to the environment. And I just replicated it.
 
