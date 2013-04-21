@@ -37,3 +37,5 @@ And the `-i` option -
 > -i  
 > When a script is passed as first argument or the -c option is used, enter interactive mode after executing the script or the command, even when sys.stdin does not appear to be a terminal. The PYTHONSTARTUP file is not read.  
 > This can be useful to inspect global variables or a stack trace when a script raises an exception.
+
+Now just navigate to your project root and execute `python shell.py` or you can do `./shell.py` if you know how. This will take you to an interactive shell where you can play around with your project.
