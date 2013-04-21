@@ -4,12 +4,52 @@
  <title>Bibhas Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2013-04-15T23:34:07+05:30</updated>
+ <updated>2013-04-21T13:02:47+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas Debnath</name>
  </author>
  
+ 
+ <entry>
+   <title>Shell Access to Tornado Local Environment</title>
+   <link href="http://bibhas.in/blog/shell-access-to-tornado-local-environment/"/>
+   <updated>2013-04-21T00:00:00+05:30</updated>
+   <id>http://bibhas.in/blog/shell-access-to-tornado-local-environment</id>
+   <content type="html">&lt;p&gt;I&amp;rsquo;ve been working on &lt;a href=&quot;http://www.tornadoweb.org/en/stable/&quot;&gt;Tornado&lt;/a&gt; for last few days and I really needed a shell access to the local virtual environment of my Tornado app so that I can test few things out. Exactly like Django has &lt;code&gt;./manage.py shell&lt;/code&gt;. But as we all know Tornado lacks a good documentation. Most of the things except the use of the native classes, require a lot of trial and error(at least for me, I&amp;rsquo;m not so bright). So I looked around and found how &lt;a href=&quot;http://flask.pocoo.org/&quot;&gt;Flask&lt;/a&gt; &lt;a href=&quot;http://flask.pocoo.org/snippets/23/&quot;&gt;has a way&lt;/a&gt; of having an interactive shell access to the environment. And I just replicated it.&lt;/p&gt;
+
+&lt;p&gt;Create a file called &lt;code&gt;shell.py&lt;/code&gt;(or whatever you like) on the root of your project and put these codes in it &amp;ndash;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;#!/usr/bin/env python
+
+import os
+import readline
+from pprint import pprint
+
+# Your app file
+from app import * 
+
+# These project specific. But I need these to run my project
+from config import *
+from settings import *
+
+# This is the main part
+os.environ['PYTHONINSPECT'] = 'True'
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;From Python documentation &amp;ndash;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;PYTHONINSPECT&lt;br/&gt;
+If this is set to a non-empty string it is equivalent to specifying the &lt;code&gt;-i&lt;/code&gt; option.&lt;br/&gt;
+This variable can also be modified by Python code using os.environ to force inspect mode on program termination.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;And the &lt;code&gt;-i&lt;/code&gt; option &amp;ndash;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;-i&lt;br/&gt;
+When a script is passed as first argument or the -c option is used, enter interactive mode after executing the script or the command, even when sys.stdin does not appear to be a terminal. The PYTHONSTARTUP file is not read.&lt;br/&gt;
+This can be useful to inspect global variables or a stack trace when a script raises an exception.&lt;/p&gt;&lt;/blockquote&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Shubho Nababarsha, 1420</title>

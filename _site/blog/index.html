@@ -88,18 +88,46 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
   <ul class="listing">
     
     <li>
-      <span>April 15, 2013</span> <a href="/blog/shubho-nababarsha-1420/">Shubho Nababarsha, 1420</a>
+      <span>April 21, 2013</span> <a href="/blog/shell-access-to-tornado-local-environment/">Shell Access to Tornado Local Environment</a>
       
-      <div><p>I&rsquo;d have <em>really</em> regretted if I hadn&rsquo;t come home for the Bengali New Year. This is one of those days when you get to see Bongs showing off their Bong-ness. I mean if you visit the City Center you&rsquo;ll see that they have stalls and frying fish in bengali recipes. Girls and Ladies are wearing Sharees, guys are wearing Panjabi. Singing and playing Bengali songs loudly in every locality. People would behave more lethargic than Ever. So on and so forth ..</p>
+      <div><p>I&rsquo;ve been working on <a href="http://www.tornadoweb.org/en/stable/">Tornado</a> for last few days and I really needed a shell access to the local virtual environment of my Tornado app so that I can test few things out. Exactly like Django has <code>./manage.py shell</code>. But as we all know Tornado lacks a good documentation. Most of the things except the use of the native classes, require a lot of trial and error(at least for me, I&rsquo;m not so bright). So I looked around and found how <a href="http://flask.pocoo.org/">Flask</a> <a href="http://flask.pocoo.org/snippets/23/">has a way</a> of having an interactive shell access to the environment. And I just replicated it.</p>
 
-<p>Among all of these things, I got to see a glimpse of the True bong spirit today. A cute sister of mine is a student at Arena Multimedia. And Arena celebrates Bengali new year with a small function among the students, teachers and staffs. Outsiders are usually not told about this, but my sis got me, her elder sister and her brother to attend it becasue, for the first time, she was going to dance in a function. And we 3 being her most favorite people, were invited to watch it. That&rsquo;s another major reason I came to Kolkata this time. I just couldn&rsquo;t miss this.</p>
+<p>Create a file called <code>shell.py</code>(or whatever you like) on the root of your project and put these codes in it &ndash;</p>
 
-<p>So they sang. Rabindranath, Jibanananda, bangla band, Anjan Datta; they left nothing. And they performed <em>really</em> well. There were moments like <em>everyone</em> singing &ldquo;Bela Bose&rdquo; together in open voice without any tension, making fun impressions in the process. Or some of them dancing and others cheering them up or just watching quietly. There were moments of reciting self-composed poems. Those are some talented kids.</p>
+<pre><code>#!/usr/bin/env python
 
-<p>And there were moments where someone was dancing a break-dance score from a movie called &ldquo;Student of the year&rdquo;. I think it released this year. And someone singing a hindi song that had absolutely no relationship with the event. But anyway, was glad to see their efforts.</p>
+import os
+import readline
+from pprint import pprint
 
-<p>Oh, I also visited a friend&rsquo;s office and did some brainstorming. Good start of the bengali year overall. Hope this year goes well for you people reading this blog post too. Shubho Nababarsha. শুভ নববর্ষ।</p>
+# Your app file
+from app import * 
+
+# These project specific. But I need these to run my project
+from config import *
+from settings import *
+
+# This is the main part
+os.environ['PYTHONINSPECT'] = 'True'
+</code></pre>
+
+<p>From Python documentation &ndash;</p>
+
+<blockquote><p>PYTHONINSPECT<br/>
+If this is set to a non-empty string it is equivalent to specifying the <code>-i</code> option.<br/>
+This variable can also be modified by Python code using os.environ to force inspect mode on program termination.</p></blockquote>
+
+<p>And the <code>-i</code> option &ndash;</p>
+
+<blockquote><p>-i<br/>
+When a script is passed as first argument or the -c option is used, enter interactive mode after executing the script or the command, even when sys.stdin does not appear to be a terminal. The PYTHONSTARTUP file is not read.<br/>
+This can be useful to inspect global variables or a stack trace when a script raises an exception.</p></blockquote>
 </div>
+      
+    </li>
+    
+    <li>
+      <span>April 15, 2013</span> <a href="/blog/shubho-nababarsha-1420/">Shubho Nababarsha, 1420</a>
       
     </li>
     
