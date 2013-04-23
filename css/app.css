@@ -3,6 +3,10 @@ pre {
     background-color: #efefef;
 }
 
+blockquote {
+    background-color: #efefef;
+}
+
 .content {
     overflow: hidden;
 }
