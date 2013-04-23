@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Bibhas Debnath</title>
+ <title>Bibhas C Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2013-04-21T13:18:01+05:30</updated>
+ <updated>2013-04-24T01:23:07+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
-   <name>Bibhas Debnath</name>
+   <name>Bibhas C Debnath</name>
  </author>
  
+ 
+ <entry>
+   <title>To Keep Coming Back</title>
+   <link href="http://bibhas.in/blog/to-keep-coming-back/"/>
+   <updated>2013-04-24T00:00:00+05:30</updated>
+   <id>http://bibhas.in/blog/to-keep-coming-back</id>
+   <content type="html">&lt;blockquote&gt;&lt;p&gt;I&amp;rsquo;ve been here before&lt;br/&gt;
+I&amp;rsquo;ll be back for more&lt;br/&gt;
+Maybe this time I can stay&lt;br/&gt;
+Forever more, forever more&lt;/p&gt;
+
+&lt;p&gt;Wonder what the future brings&lt;br/&gt;
+Fortune tellers and time machines&lt;br/&gt;
+I predict what they&amp;rsquo;ll predict for me&lt;br/&gt;
+That I keep coming back to you.&lt;/p&gt;&lt;/blockquote&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Interactive Shell Access to Tornado Local Environment</title>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>
     
-      Avail Request Object in Django Form Validation &ndash;
+      To Keep Coming Back &ndash;
     
     Bibhas C Debnath
   </title>
@@ -86,43 +86,22 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
 
   <section class="content">
   <h1>
-    <a href="/blog/avail-request-object-in-django-form-validation">Avail Request Object in Django Form Validation</a>
+    <a href="/blog/to-keep-coming-back/">To Keep Coming Back</a>
   </h1>
 
   <section class="byline">
-    January 13, 2012
+    April 24, 2013
   </section>
 
-  It may sometime happen that to validate a form field you need to check the value with some existing value from the database related to the User or some other entity. But sadly Django doesn't allow accessing the Request object in the clean() or clean_&lt;FieldName&gt;() methods. Here is a way around it - <!--more-->
+  <blockquote><p>I&rsquo;ve been here before<br/>
+I&rsquo;ll be back for more<br/>
+Maybe this time I can stay<br/>
+Forever more, forever more</p>
 
-All you need to do is override the default __init__() function of forms.Form with this -
-[python]
-def __init__(self, request, *args, **kwargs):
-    self.request = request
-    super(CreateTagForm, self).__init__(*args, **kwargs)
-[/python]
-Now when you call the Form, you can call it like -
-[python]
-form = YourForm(request, request.POST)
-[/python]
-Now the whole code will look like -
-[python]
-from django import forms
-
-class YourForm(forms.Form):
-    name = forms.CharField(max_length=50, min_length=1)
-    mark = forms.IntegerField(min_value=1, max_value=100)
-
-    def __init__(self, request, *args, **kwargs):
-        self.request = request
-        super(YourForm, self).__init__(*args, **kwargs)
-
-    def clean_mark(self):
-        marks_left = get_marks_left(self.request.user)
-        # Do what more you want to do
-[/python]
-
-That's it. Happy Coding. :)
+<p>Wonder what the future brings<br/>
+Fortune tellers and time machines<br/>
+I predict what they&rsquo;ll predict for me<br/>
+That I keep coming back to you.</p></blockquote>
 
 
   <!-- TODO: bio here -->
@@ -162,7 +141,7 @@ That's it. Happy Coding. :)
   </section>
 </section>
 <script>
-    mixpanel.track("Reading Avail Request Object in Django Form Validation");
+    mixpanel.track("Reading To Keep Coming Back");
 </script>
 
 

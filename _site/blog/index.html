@@ -6,10 +6,10 @@
     
       Posts &ndash;
     
-    Bibhas Debnath
+    Bibhas C Debnath
   </title>
 
-  <meta name="author" content="Bibhas Debnath" />
+  <meta name="author" content="Bibhas C Debnath" />
   <meta name="description" content="Lazy to the core" />
 
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
@@ -88,43 +88,23 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
   <ul class="listing">
     
     <li>
-      <span>April 21, 2013</span> <a href="/blog/interactive-shell-access-to-tornado-local-environment/">Interactive Shell Access to Tornado Local Environment</a>
+      <span>April 24, 2013</span> <a href="/blog/to-keep-coming-back/">To Keep Coming Back</a>
       
-      <div><p>I&rsquo;ve been working on <a href="http://www.tornadoweb.org/en/stable/">Tornado</a> for last few days and I really needed a shell access to the local virtual environment of my Tornado app so that I can test few things out. Exactly like Django has <code>./manage.py shell</code>. But as we all know Tornado lacks a good documentation. Most of the things except the use of the native classes, require a lot of trial and error(at least for me, I&rsquo;m not so bright). So I looked around and found how <a href="http://flask.pocoo.org/">Flask</a> <a href="http://flask.pocoo.org/snippets/23/">has a way</a> of having an interactive shell access to the environment. And I just replicated it.</p>
+      <div><blockquote><p>I&rsquo;ve been here before<br/>
+I&rsquo;ll be back for more<br/>
+Maybe this time I can stay<br/>
+Forever more, forever more</p>
 
-<p>Create a file called <code>shell.py</code>(or whatever you like) on the root of your project and put these codes in it &ndash;</p>
-
-<pre><code>#!/usr/bin/env python
-
-import os
-import readline
-from pprint import pprint
-
-# Your app file
-from app import * 
-
-# These project specific. But I need these to run my project
-from config import *
-from settings import *
-
-# This is the main part
-os.environ['PYTHONINSPECT'] = 'True'
-</code></pre>
-
-<p>From Python documentation &ndash;</p>
-
-<blockquote><p>PYTHONINSPECT<br/>
-If this is set to a non-empty string it is equivalent to specifying the <code>-i</code> option.<br/>
-This variable can also be modified by Python code using os.environ to force inspect mode on program termination.</p></blockquote>
-
-<p>And the <code>-i</code> option &ndash;</p>
-
-<blockquote><p>-i<br/>
-When a script is passed as first argument or the -c option is used, enter interactive mode after executing the script or the command, even when sys.stdin does not appear to be a terminal. The PYTHONSTARTUP file is not read.<br/>
-This can be useful to inspect global variables or a stack trace when a script raises an exception.</p></blockquote>
-
-<p>Now just navigate to your project root and execute <code>python shell.py</code> or you can do <code>./shell.py</code> if you know how. This will take you to an interactive shell where you can play around with your project.</p>
+<p>Wonder what the future brings<br/>
+Fortune tellers and time machines<br/>
+I predict what they&rsquo;ll predict for me<br/>
+That I keep coming back to you.</p></blockquote>
 </div>
+      
+    </li>
+    
+    <li>
+      <span>April 21, 2013</span> <a href="/blog/interactive-shell-access-to-tornado-local-environment/">Interactive Shell Access to Tornado Local Environment</a>
       
     </li>
     
