@@ -4,12 +4,77 @@
  <title>Bibhas C Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2013-04-24T01:33:27+05:30</updated>
+ <updated>2013-04-25T12:14:43+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas C Debnath</name>
  </author>
  
+ 
+ <entry>
+   <title>Tornado + WTForms = TypeError: formdata should be a multidict type wrapper ...</title>
+   <link href="http://bibhas.in/blog/tornado-wtforms-typeerror-formdata-should-be-a-multidict-type-wrapper/"/>
+   <updated>2013-04-25T00:00:00+05:30</updated>
+   <id>http://bibhas.in/blog/tornado--wtforms--typeerror-formdata-should-be-a-multidict-type-wrapper-</id>
+   <content type="html">&lt;p&gt;If you&amp;rsquo;re here from some search engine, that means you&amp;rsquo;ve been working with Tornado and WTForms, and you&amp;rsquo;ve faced the same error &amp;ndash;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(Pdb) form = SomeForm(self.request.arguments)
+*** TypeError: formdata should be a multidict-type wrapper that supports the 'getlist' method
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The thing is, Tornado does provide a dictionary that contains the data like a MultiDict should do for GET/POST/others request arguments &amp;ndash;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;{'_xsrf': ['b2c0d0bebbf84516a8aa0462bb41ea0f'], 'password': ['password'], 'email': ['mail@gmail.com']}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;But it sends it as a dictionary &amp;ndash;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(Pdb) type(self.request.arguments)
+&amp;lt;type 'dict'&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;And Python dictionaries don&amp;rsquo;t have a &lt;code&gt;getlist()&lt;/code&gt; method. And WTForms requires the arguments object to have that method.&lt;/p&gt;
+
+&lt;p&gt;Workaround?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class SimpleMultiDict(dict):
+    def getlist(self, key):
+        return self[key]
+
+    def __repr__(self):
+        return type(self).__name__ + '(' + dict.__repr__(self) + ')'
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This simply makes a subclass of &lt;code&gt;dict&lt;/code&gt; and adds the &lt;code&gt;getlist()&lt;/code&gt; method. So, What did we gain?&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(Pdb) SimpleMultiDict(self.request.arguments)
+SimpleMultiDict({'_xsrf': ['b2c0d0bebbf84516a8aa0462bb41ea0f'], 'password': ['password'], 'email': ['mail@gmail.com']})
+(Pdb) arguments = SimpleMultiDict(self.request.arguments)
+(Pdb) dir(arguments)
+['__class__', (skipping some default methods) , 'clear', 'copy', 'fromkeys', 'get', 'getlist', 'has_key', 'items', 'iteritems', 'iterkeys', 'itervalues', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values', 'viewitems', 'viewkeys', 'viewvalues']
+
+# Notice the getlist() method
+
+(Pdb) arguments.getlist('email')
+['mail@gmail.com']
+(Pdb) form = LoginForm(arguments)
+(Pdb) form.email.data
+'mail@gmail.com'
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now there is a point to note here. Tornado sends the arguments data in a simple dictionary that has each of the values inside a list. Here is a pointer if you&amp;rsquo;re using some framework that sends a simple dictionary, with the arguments &lt;em&gt;not&lt;/em&gt; in list, and that also doesn&amp;rsquo;t have a &lt;code&gt;getlist()&lt;/code&gt; method, just change the &lt;code&gt;getlist()&lt;/code&gt; method to this &amp;ndash;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class SimpleMultiDict(dict):
+    def getlist(self, key):
+        return self[key] if type(self[key]) == list else [self[key]]
+
+    def __repr__(self):
+        return type(self).__name__ + '(' + dict.__repr__(self) + ')'
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This just turns the simgle values to a list, just what &lt;code&gt;getlist()&lt;/code&gt; is supposed to do.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>To Keep Coming Back</title>

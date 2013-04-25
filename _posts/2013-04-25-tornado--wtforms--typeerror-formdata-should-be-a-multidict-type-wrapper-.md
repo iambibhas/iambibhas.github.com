@@ -6,7 +6,7 @@ category:
 tags: []
 permalink: /blog/tornado-wtforms-typeerror-formdata-should-be-a-multidict-type-wrapper/
 ---
-If you're here from some search engine, that means you've been working with Tornado and WTForms, and you've face the same error - 
+If you're here from some search engine, that means you've been working with Tornado and WTForms, and you've faced the same error - 
 
     (Pdb) form = SomeForm(self.request.arguments)
     *** TypeError: formdata should be a multidict-type wrapper that supports the 'getlist' method
@@ -47,7 +47,7 @@ This simply makes a subclass of `dict` and adds the `getlist()` method. So, What
     (Pdb) form.email.data
     'mail@gmail.com'
 
-Now there is a point to note here. Tornado sends the arguments data in a simple dictionary that has the values inside a list. Here is a pointer if you're using some framework that sends a simple dictionary, with the arguments *not* in list, and that also doesn't have a `getlist()` method, just change the `getlist()` method to this -
+Now there is a point to note here. Tornado sends the arguments data in a simple dictionary that has each of the values inside a list. Here is a pointer if you're using some framework that sends a simple dictionary, with the arguments *not* in list, and that also doesn't have a `getlist()` method, just change the `getlist()` method to this -
 
     class SimpleMultiDict(dict):
         def getlist(self, key):

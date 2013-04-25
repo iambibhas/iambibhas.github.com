@@ -1,6 +1,7 @@
 pre {
     padding: 20px;
     background-color: #efefef;
+    overflow-x: scroll;
 }
 
 blockquote {
