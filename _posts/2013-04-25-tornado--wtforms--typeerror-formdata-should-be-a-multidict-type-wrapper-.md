@@ -11,7 +11,7 @@ If you're here from some search engine, that means you've been working with Torn
     (Pdb) form = SomeForm(self.request.arguments)
     *** TypeError: formdata should be a multidict-type wrapper that supports the 'getlist' method
 
-The thing is, Tornado does provide a MultiDict for GET/POST/others request arguments - 
+The thing is, Tornado does provide a dictionary that contains the data like a MultiDict should do for GET/POST/others request arguments - 
 
     {'_xsrf': ['b2c0d0bebbf84516a8aa0462bb41ea0f'], 'password': ['password'], 'email': ['mail@gmail.com']}
 
