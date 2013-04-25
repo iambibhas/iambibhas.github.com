@@ -4,7 +4,7 @@ title: "Tornado + WTForms = TypeError: formdata should be a multidict type wrapp
 description: ""
 category: 
 tags: []
-permalink: /blog/tornado--wtforms--typeerror-formdata-should-be-a-multidict-type-wrapper/
+permalink: /blog/tornado-wtforms-typeerror-formdata-should-be-a-multidict-type-wrapper/
 ---
 If you're here from some search engine, that means you've been working with Tornado and WTForms, and you've face the same error - 
 
