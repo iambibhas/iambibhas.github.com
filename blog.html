@@ -10,7 +10,7 @@ permalink: /blog/
     <li>
       <span>{{ post.date | date: "%B %e, %Y" }}</span> <a href="{{ post.url }}">{{ post.title }}</a>
       {% if forloop.index == 1 %}
-      <div>{{ post.content }}</div>
+      <div>{{ post.content | truncatewords: 50 }}</div>
       {% endif %}
     </li>
     {% endfor %}

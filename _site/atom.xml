@@ -4,12 +4,40 @@
  <title>Bibhas C Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2013-04-25T12:14:43+05:30</updated>
+ <updated>2013-05-24T00:58:10+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas C Debnath</name>
  </author>
  
+ 
+ <entry>
+   <title>My Bangalore Story #1</title>
+   <link href="http://bibhas.in/blog/my-bangalore-story-1/"/>
+   <updated>2013-05-24T00:00:00+05:30</updated>
+   <id>http://bibhas.in/blog/my-bangalore-story-1</id>
+   <content type="html">&lt;p&gt;Why #1? Because there is going to be #2 and maybe more. Most probably not in near future, but someday.&lt;/p&gt;
+
+&lt;p&gt;Gist is, I&amp;rsquo;m heading back to Kolkata for now. Consider this post as a commit message to my life, for the changes in last few months.&lt;/p&gt;
+
+&lt;p&gt;First two months here were the worst. The &lt;em&gt;entrepreneur&lt;/em&gt; who hired me and convinced me to move here, betting a lot of savings of my parents, kept me sitting idle for a month and a half, and then declared that his idea isn&amp;rsquo;t working so he&amp;rsquo;s going after another idea and abandoning ship, without paying me or the my friend who was also on the same boat. That&amp;rsquo;s two months of no income for me. Of course I couldn&amp;rsquo;t tell my parents anything. They were already depending a lot on me and their health isn&amp;rsquo;t that good either. Hence I had to borrow money from some friends and manage somehow. And I&amp;rsquo;m still under a lot of debt. Thanks Mr Entrepreneur. You&amp;rsquo;re a real hero.&lt;/p&gt;
+
+&lt;p&gt;Because of my parents' ill health and some more reasons, I had to visit Kolkata multiple times in last few months. And it had good travel costs. So actually, all my earnings in last few months, after paying rent and food cost, were spent on repaying debts. And I&amp;rsquo;ll still have to do that for next couple of months. I&amp;rsquo;m saving almost nothing staying here and also spending about 15k each month in living cost, which I could, maybe, save, if I were in Kolkata.&lt;/p&gt;
+
+&lt;p&gt;All thanks to a friend, who appeared as an angel and gave me another opportunity at LxiDD, I was able to recover most part of the crisis. I&amp;rsquo;ll be forever grateful to him.&lt;/p&gt;
+
+&lt;p&gt;The city is great. The thing I liked most here, and which I also miss in Kolkata is that, people here are always active. They are talking, coming up with ideas, and, most importantly, executing those ideas no matter what. And I&amp;rsquo;ve made some really great friends among these people. I&amp;rsquo;ve learned so many things. This is a nice city to live in too. Maybe someday..&lt;/p&gt;
+
+&lt;p&gt;Still I decided to give up my job here and move because my parents need me right now. And swinging between two cities, is helping neither party much.&lt;/p&gt;
+
+&lt;p&gt;One other major reason is, I&amp;rsquo;m not liking this long distance relationship thing. We&amp;rsquo;ve been together for just about a year and a half now. And I&amp;rsquo;m already running around, away from her. She&amp;rsquo;s been more supportive that I&amp;rsquo;ve ever imagined. She&amp;rsquo;s one of the most strong willed girl I&amp;rsquo;ve met. But I am weak. I simply cannot stay away from her. I know you must be smirking. I really don&amp;rsquo;t care.&lt;/p&gt;
+
+&lt;p&gt;I know I shouldn&amp;rsquo;t leave my job like this. Well, I don&amp;rsquo;t want to. I&amp;rsquo;m willing to work remotely. But as it happens, my startup is not really ready to accept remote work. I&amp;rsquo;ll still be freelancing with them I guess. But I &lt;em&gt;really&lt;/em&gt; don&amp;rsquo;t want to stop working with them. LxiDD and Kamelot Kapital is the best place I&amp;rsquo;ve worked till now. The people are so nice and friendly, and there are huge scopes of learning new things here. Someday I want to come back to Bangalore again. And I&amp;rsquo;m gonna check if they have any place for me. Well, my skills are not gonna get rusty, that I&amp;rsquo;m sure of. So, let&amp;rsquo;s see. :P&lt;br/&gt;
+For now, I&amp;rsquo;d recomment any of my friends to join Kamelot Kapital/LxiDD if they can. Well, with me going out, they have a vacancy right now. If you&amp;rsquo;re up for it, just shoot a mail to &lt;a href=&quot;mailto:jobs@lxidd.com&quot;&gt;jobs@lxidd.com&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;I also know that I shouldn&amp;rsquo;t take my career so lightly. But I have always did things the way I felt were right. Well, most of the decisions till now turned out to be bad decisions, and they had their prices too. But the way I see it, in exchange of all the bad times, I always get something good back. So, I&amp;rsquo;m going to do it again this time. Let&amp;rsquo;s see what happens.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Tornado + WTForms = TypeError: formdata should be a multidict type wrapper ...</title>

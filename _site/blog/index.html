@@ -32,6 +32,7 @@
   
 
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
   
     <!-- start Mixpanel --><script type="text/javascript">(function(e,b){if(!b.__SV){var a,f,i,g;window.mixpanel=b;a=e.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===e.location.protocol?"https:":"http:")+'//cdn.mxpnl.com/libs/mixpanel-2.2.min.js';f=e.getElementsByTagName("script")[0];f.parentNode.insertBefore(a,f);b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==
 typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config people.set people.increment people.append people.track_charge people.clear_charges people.delete_user".split(" ");for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,
@@ -88,66 +89,14 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
   <ul class="listing">
     
     <li>
-      <span>April 25, 2013</span> <a href="/blog/tornado-wtforms-typeerror-formdata-should-be-a-multidict-type-wrapper/">Tornado + WTForms = TypeError: formdata should be a multidict type wrapper ...</a>
+      <span>May 24, 2013</span> <a href="/blog/my-bangalore-story-1/">My Bangalore Story #1</a>
       
-      <div><p>If you&rsquo;re here from some search engine, that means you&rsquo;ve been working with Tornado and WTForms, and you&rsquo;ve faced the same error &ndash;</p>
-
-<pre><code>(Pdb) form = SomeForm(self.request.arguments)
-*** TypeError: formdata should be a multidict-type wrapper that supports the 'getlist' method
-</code></pre>
-
-<p>The thing is, Tornado does provide a dictionary that contains the data like a MultiDict should do for GET/POST/others request arguments &ndash;</p>
-
-<pre><code>{'_xsrf': ['b2c0d0bebbf84516a8aa0462bb41ea0f'], 'password': ['password'], 'email': ['mail@gmail.com']}
-</code></pre>
-
-<p>But it sends it as a dictionary &ndash;</p>
-
-<pre><code>(Pdb) type(self.request.arguments)
-&lt;type 'dict'&gt;
-</code></pre>
-
-<p>And Python dictionaries don&rsquo;t have a <code>getlist()</code> method. And WTForms requires the arguments object to have that method.</p>
-
-<p>Workaround?</p>
-
-<pre><code>class SimpleMultiDict(dict):
-    def getlist(self, key):
-        return self[key]
-
-    def __repr__(self):
-        return type(self).__name__ + '(' + dict.__repr__(self) + ')'
-</code></pre>
-
-<p>This simply makes a subclass of <code>dict</code> and adds the <code>getlist()</code> method. So, What did we gain?</p>
-
-<pre><code>(Pdb) SimpleMultiDict(self.request.arguments)
-SimpleMultiDict({'_xsrf': ['b2c0d0bebbf84516a8aa0462bb41ea0f'], 'password': ['password'], 'email': ['mail@gmail.com']})
-(Pdb) arguments = SimpleMultiDict(self.request.arguments)
-(Pdb) dir(arguments)
-['__class__', (skipping some default methods) , 'clear', 'copy', 'fromkeys', 'get', 'getlist', 'has_key', 'items', 'iteritems', 'iterkeys', 'itervalues', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values', 'viewitems', 'viewkeys', 'viewvalues']
-
-# Notice the getlist() method
-
-(Pdb) arguments.getlist('email')
-['mail@gmail.com']
-(Pdb) form = LoginForm(arguments)
-(Pdb) form.email.data
-'mail@gmail.com'
-</code></pre>
-
-<p>Now there is a point to note here. Tornado sends the arguments data in a simple dictionary that has each of the values inside a list. Here is a pointer if you&rsquo;re using some framework that sends a simple dictionary, with the arguments <em>not</em> in list, and that also doesn&rsquo;t have a <code>getlist()</code> method, just change the <code>getlist()</code> method to this &ndash;</p>
-
-<pre><code>class SimpleMultiDict(dict):
-    def getlist(self, key):
-        return self[key] if type(self[key]) == list else [self[key]]
-
-    def __repr__(self):
-        return type(self).__name__ + '(' + dict.__repr__(self) + ')'
-</code></pre>
-
-<p>This just turns the simgle values to a list, just what <code>getlist()</code> is supposed to do.</p>
-</div>
+      <div><p>Why #1? Because there is going to be #2 and maybe more. Most probably not in near future, but someday.</p> <p>Gist is, I&rsquo;m heading back to Kolkata for now. Consider this post as a commit message to my life, for the changes in last few months.</p> <p>First two months here...</div>
+      
+    </li>
+    
+    <li>
+      <span>April 25, 2013</span> <a href="/blog/tornado-wtforms-typeerror-formdata-should-be-a-multidict-type-wrapper/">Tornado + WTForms = TypeError: formdata should be a multidict type wrapper ...</a>
       
     </li>
     

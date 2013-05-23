@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>
     
-      Avail Request Object in Django Form Validation &ndash;
+      My Bangalore Story #1 &ndash;
     
     Bibhas C Debnath
   </title>
@@ -87,43 +87,33 @@ mixpanel.init("b0dae1534eca0d9521c89110e2ce4081");</script><!-- end Mixpanel -->
 
   <section class="content">
   <h1>
-    <a href="/blog/avail-request-object-in-django-form-validation">Avail Request Object in Django Form Validation</a>
+    <a href="/blog/my-bangalore-story-1/">My Bangalore Story #1</a>
   </h1>
 
   <section class="byline">
-    January 13, 2012
+    May 24, 2013
   </section>
 
-  It may sometime happen that to validate a form field you need to check the value with some existing value from the database related to the User or some other entity. But sadly Django doesn't allow accessing the Request object in the clean() or clean_&lt;FieldName&gt;() methods. Here is a way around it - <!--more-->
+  <p>Why #1? Because there is going to be #2 and maybe more. Most probably not in near future, but someday.</p>
 
-All you need to do is override the default __init__() function of forms.Form with this -
-[python]
-def __init__(self, request, *args, **kwargs):
-    self.request = request
-    super(CreateTagForm, self).__init__(*args, **kwargs)
-[/python]
-Now when you call the Form, you can call it like -
-[python]
-form = YourForm(request, request.POST)
-[/python]
-Now the whole code will look like -
-[python]
-from django import forms
+<p>Gist is, I&rsquo;m heading back to Kolkata for now. Consider this post as a commit message to my life, for the changes in last few months.</p>
 
-class YourForm(forms.Form):
-    name = forms.CharField(max_length=50, min_length=1)
-    mark = forms.IntegerField(min_value=1, max_value=100)
+<p>First two months here were the worst. The <em>entrepreneur</em> who hired me and convinced me to move here, betting a lot of savings of my parents, kept me sitting idle for a month and a half, and then declared that his idea isn&rsquo;t working so he&rsquo;s going after another idea and abandoning ship, without paying me or the my friend who was also on the same boat. That&rsquo;s two months of no income for me. Of course I couldn&rsquo;t tell my parents anything. They were already depending a lot on me and their health isn&rsquo;t that good either. Hence I had to borrow money from some friends and manage somehow. And I&rsquo;m still under a lot of debt. Thanks Mr Entrepreneur. You&rsquo;re a real hero.</p>
 
-    def __init__(self, request, *args, **kwargs):
-        self.request = request
-        super(YourForm, self).__init__(*args, **kwargs)
+<p>Because of my parents' ill health and some more reasons, I had to visit Kolkata multiple times in last few months. And it had good travel costs. So actually, all my earnings in last few months, after paying rent and food cost, were spent on repaying debts. And I&rsquo;ll still have to do that for next couple of months. I&rsquo;m saving almost nothing staying here and also spending about 15k each month in living cost, which I could, maybe, save, if I were in Kolkata.</p>
 
-    def clean_mark(self):
-        marks_left = get_marks_left(self.request.user)
-        # Do what more you want to do
-[/python]
+<p>All thanks to a friend, who appeared as an angel and gave me another opportunity at LxiDD, I was able to recover most part of the crisis. I&rsquo;ll be forever grateful to him.</p>
 
-That's it. Happy Coding. :)
+<p>The city is great. The thing I liked most here, and which I also miss in Kolkata is that, people here are always active. They are talking, coming up with ideas, and, most importantly, executing those ideas no matter what. And I&rsquo;ve made some really great friends among these people. I&rsquo;ve learned so many things. This is a nice city to live in too. Maybe someday..</p>
+
+<p>Still I decided to give up my job here and move because my parents need me right now. And swinging between two cities, is helping neither party much.</p>
+
+<p>One other major reason is, I&rsquo;m not liking this long distance relationship thing. We&rsquo;ve been together for just about a year and a half now. And I&rsquo;m already running around, away from her. She&rsquo;s been more supportive that I&rsquo;ve ever imagined. She&rsquo;s one of the most strong willed girl I&rsquo;ve met. But I am weak. I simply cannot stay away from her. I know you must be smirking. I really don&rsquo;t care.</p>
+
+<p>I know I shouldn&rsquo;t leave my job like this. Well, I don&rsquo;t want to. I&rsquo;m willing to work remotely. But as it happens, my startup is not really ready to accept remote work. I&rsquo;ll still be freelancing with them I guess. But I <em>really</em> don&rsquo;t want to stop working with them. LxiDD and Kamelot Kapital is the best place I&rsquo;ve worked till now. The people are so nice and friendly, and there are huge scopes of learning new things here. Someday I want to come back to Bangalore again. And I&rsquo;m gonna check if they have any place for me. Well, my skills are not gonna get rusty, that I&rsquo;m sure of. So, let&rsquo;s see. :P<br/>
+For now, I&rsquo;d recomment any of my friends to join Kamelot Kapital/LxiDD if they can. Well, with me going out, they have a vacancy right now. If you&rsquo;re up for it, just shoot a mail to <a href="mailto:jobs@lxidd.com">jobs@lxidd.com</a>.</p>
+
+<p>I also know that I shouldn&rsquo;t take my career so lightly. But I have always did things the way I felt were right. Well, most of the decisions till now turned out to be bad decisions, and they had their prices too. But the way I see it, in exchange of all the bad times, I always get something good back. So, I&rsquo;m going to do it again this time. Let&rsquo;s see what happens.</p>
 
 
   <!-- TODO: bio here -->
@@ -162,7 +152,7 @@ That's it. Happy Coding. :)
   </section>
 </section>
 <script>
-    mixpanel.track("Reading Avail Request Object in Django Form Validation");
+    mixpanel.track("Reading My Bangalore Story #1");
 </script>
 
 
