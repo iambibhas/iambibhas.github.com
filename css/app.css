@@ -1,3 +1,17 @@
+/* Crypt */
+
+.crypt h2 {
+    font-family: 'Inconsolata', sans-serif;
+}
+
+.crypt input {
+    height: 30px;
+    width: 800px;
+    font-size: 25px;
+}
+
+/* Rest */
+
 pre {
     padding: 20px;
     background-color: #efefef;
