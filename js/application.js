@@ -4,7 +4,7 @@ $(function(){
     $('#command').focus();
     setInterval("toggleCursor()",500);
     var str = 'Hi, welcome to http://bibhas.in/<br />';
-    str += 'Please enter "help" or say "hello".' + '<br />';
+    str += 'Please enter "help" or say "hello"(Only for Chrome users).' + '<br />';
     setConsoleVal('', str);
 
     // Voice Recognition
