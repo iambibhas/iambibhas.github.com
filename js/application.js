@@ -18,15 +18,20 @@ function initRecognition(){
     }else{
         var recognition = new webkitSpeechRecognition();
         recognition.onresult = function(event) {
+            console.log(event.results);
           if (event.results.length > 0) {
             command.value = event.results[0][0].transcript;
             return execute();
           }
         };
-        
+        recognition.continuous = true;
+        recognition.onend = reloadRecog;
         window.recognition = recognition;
         window.recognition.start();
     }
+}
+function reloadRecog(){
+    initRecognition();
 }
 
 function toggleCursor(){
