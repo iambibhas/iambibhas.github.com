@@ -1,16 +1,20 @@
+var listening = false;
 $(function(){
     if($('#terminal')[0] !== undefined)
         $('#prompt').css('width', $('#terminal')[0].clientWidth);
     $('#command').focus();
     setInterval("toggleCursor()",500);
     var str = 'Hi, welcome to http://bibhas.in/<br />';
-    str += 'Please enter "help" or say "hello"(Only for Chrome users).' + '<br />';
+    str += 'Please enter "help" or press "v" to activate voice commands and say "Hello".(Only for Chrome users).' + '<br />';
     setConsoleVal('', str);
 
     // Voice Recognition
-    if(location.pathname == '/'){
-        initRecognition();
-    }
+    $('body').on('keyup', function(e){
+        if(e.keyCode == 86 && listening === false && location.pathname == '/'){
+            listening = true;
+            initRecognition();
+        }
+    });
 });
 
 function initRecognition(){
