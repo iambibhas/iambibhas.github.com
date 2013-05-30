@@ -4,7 +4,7 @@ $(function(){
     $('#command').focus();
     setInterval("toggleCursor()",500);
     var str = 'Hi, welcome to http://bibhas.in/<br />';
-    str += 'Please enter "help" for the Complete list of available commands.' + '<br />';
+    str += 'Please enter "help" or say "hello".' + '<br />';
     setConsoleVal('', str);
 
     // Voice Recognition
@@ -61,7 +61,7 @@ function execute(){
             str += 'blog: Opens my blog in a new tab.' + '<br />';
             str += 'github: Opens my Github profile in a new tab.' + '<br />';
             str += 'resume: Opens my Resume in a new tab.' + '<br />';
-            str += 'mail: Drop me a mail.' + '<br />';
+            str += 'email: Drop me a mail.' + '<br />';
             str += 'bitcoin: Treat me a cup of coffee with some BitCoin.' + '<br />';
             str += 'search: Searches Google, Duckduckgo and Bing in new tabs for any following keyword(s).' + '<br />';
             str += 'linuxdl: Downloads Linux distro of your choice(Only Ubuntu is available now).<br />'
@@ -74,7 +74,7 @@ function execute(){
         case 'whoami':
             setConsoleVal(full_command, 'I don\'t know yet.');
             break;
-        case 'mail':
+        case 'email':
             setConsoleVal(full_command, 'Opening your mail app.');
             window.open('mailto:me@bibhas.in?subject=Hi+Bibhas!&body=Nice+Website!');
             break
@@ -116,6 +116,8 @@ function execute(){
             break;
         case 'hello':
             setConsoleVal(full_command, 'Hi. :)');
+            command.value = 'help';
+            execute();
             break;
         case 'search':
             var q = '';
