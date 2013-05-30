@@ -131,10 +131,14 @@ function execute(){
                 q += comm_arr[i] + ' ';
             }
             q = $.trim(q);
-            window.open('http://www.bing.com/search?setmkt=en-US&q=' + q);
-            window.open('https://duckduckgo.com/?q=' + q);
-            window.open('https://www.google.co.in/search?ix=sea&ie=UTF-8&q=' + q);
-            setConsoleVal(full_command, 'Searching for \"' + q + '\"');
+            if(q !== ''){
+                window.open('http://www.bing.com/search?setmkt=en-US&q=' + q);
+                window.open('https://duckduckgo.com/?q=' + q);
+                window.open('https://www.google.co.in/search?ix=sea&ie=UTF-8&q=' + q);
+                setConsoleVal(full_command, 'Searching for \"' + q + '\"');
+            }else{
+                setConsoleVal(full_command, 'No search term found');
+            }
             break;
         case 'linuxdl':
             console.log(comm_arr);
