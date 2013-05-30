@@ -12,22 +12,20 @@ $(function(){
 });
 
 function initRecognition(){
-    if(window.recognition !== undefined){
-        window.recognition.stop();
-        window.recognition.start();
-    }else{
-        var recognition = new webkitSpeechRecognition();
-        recognition.onresult = function(event) {
-            console.log(event.results);
-          if (event.results.length > 0) {
-            command.value = event.results[0][0].transcript;
-            return execute();
-          }
-        };
-        recognition.continuous = true;
-        window.recognition = recognition;
-        window.recognition.start();
-    }
+    window.recognition = new webkitSpeechRecognition();
+    window.recognition.onresult = function(event) {
+        console.log(event.results);
+        console.log(event.results.length);
+      if (event.results.length > 0) {
+        command.value = event.results[event.results.length-1][0].transcript;
+        return execute();
+      }else{
+        command.value = "*&#^$&@^#?";
+        return execute();
+      }
+    };
+    window.recognition.continuous = true;
+    window.recognition.start();
 }
 
 function toggleCursor(){
@@ -179,6 +177,5 @@ function execute(){
     $('#command').val('');
     $('#console').scrollTop(99999);
     $('#command').focus();
-    initRecognition();
     return false;
 }
