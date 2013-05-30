@@ -14,18 +14,19 @@ $(function(){
 function initRecognition(){
     if(window.recognition !== undefined){
         window.recognition.stop();
+        window.recognition.start();
+    }else{
+        var recognition = new webkitSpeechRecognition();
+        recognition.onresult = function(event) {
+          if (event.results.length > 0) {
+            command.value = event.results[0][0].transcript;
+            return execute();
+          }
+        };
+        
+        window.recognition = recognition;
+        window.recognition.start();
     }
-
-    var recognition = new webkitSpeechRecognition();
-    recognition.onresult = function(event) {
-      if (event.results.length > 0) {
-        command.value = event.results[0][0].transcript;
-        return execute();
-      }
-    };
-    
-    window.recognition = recognition;
-    window.recognition.start();
 }
 
 function toggleCursor(){
