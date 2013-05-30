@@ -25,13 +25,9 @@ function initRecognition(){
           }
         };
         recognition.continuous = true;
-        recognition.onend = reloadRecog;
         window.recognition = recognition;
         window.recognition.start();
     }
-}
-function reloadRecog(){
-    initRecognition();
 }
 
 function toggleCursor(){
