@@ -18,20 +18,24 @@ $(function(){
 });
 
 function initRecognition(){
-    window.recognition = new webkitSpeechRecognition();
-    window.recognition.onresult = function(event) {
-        console.log(event.results);
-        console.log(event.results.length);
-      if (event.results.length > 0) {
-        command.value = event.results[event.results.length-1][0].transcript;
-        return execute();
-      }else{
-        command.value = "*&#^$&@^#?";
-        return execute();
-      }
-    };
-    window.recognition.continuous = true;
-    window.recognition.start();
+    if('webkitSpeechRecognition' in window){
+        window.recognition = new webkitSpeechRecognition();
+        window.recognition.onresult = function(event) {
+            console.log(event.results);
+            console.log(event.results.length);
+          if (event.results.length > 0) {
+            command.value = event.results[event.results.length-1][0].transcript;
+            return execute();
+          }else{
+            command.value = "*&#^$&@^#?";
+            return execute();
+          }
+        };
+        window.recognition.continuous = true;
+        window.recognition.start();
+    }else{
+        alert('Sorry. Voice commands are not available for your browser. Trying using Chrome 25+.');
+    }
 }
 
 function toggleCursor(){
