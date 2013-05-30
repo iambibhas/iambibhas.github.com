@@ -3,10 +3,30 @@ $(function(){
         $('#prompt').css('width', $('#terminal')[0].clientWidth);
     $('#command').focus();
     setInterval("toggleCursor()",500);
-    var str = 'Hi, welcome to http://bibhas.in/<br />'
+    var str = 'Hi, welcome to http://bibhas.in/<br />';
     str += 'Please enter "help" for the Complete list of available commands.' + '<br />';
     setConsoleVal('', str);
+
+    // Voice Recognition
+    initRecognition();
 });
+
+function initRecognition(){
+    if(window.recognition !== undefined){
+        window.recognition.stop();
+    }
+
+    var recognition = new webkitSpeechRecognition();
+    recognition.onresult = function(event) {
+      if (event.results.length > 0) {
+        command.value = event.results[0][0].transcript;
+        return execute();
+      }
+    };
+    
+    window.recognition = recognition;
+    window.recognition.start();
+}
 
 function toggleCursor(){
     $('#cursor').toggle();
@@ -157,5 +177,6 @@ function execute(){
     $('#command').val('');
     $('#console').scrollTop(99999);
     $('#command').focus();
+    initRecognition();
     return false;
 }
