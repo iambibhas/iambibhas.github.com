@@ -8,7 +8,9 @@ $(function(){
     setConsoleVal('', str);
 
     // Voice Recognition
-    initRecognition();
+    if(location.pathname == '/'){
+        initRecognition();
+    }
 });
 
 function initRecognition(){
