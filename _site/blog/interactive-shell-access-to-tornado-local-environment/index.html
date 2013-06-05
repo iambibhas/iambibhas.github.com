@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+      Interactive Shell Access to Tornado Local Environment &ndash;
+    
+    Bibhas C Debnath
+  </title>
+
+  <meta name="author" content="Bibhas C Debnath" />
+  <meta name="description" content="Lazy to the core" />
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
+  <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
+
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+
+  
+  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
+  
+
+  
+
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  <script type="text/javascript" src="/js/application.js"></script>
+</head>
+
+<body>
+  <section class="sidebar" align="right">
+    <a href="/">
+      <img src="http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152?s=150" height="75" width="75" class="avatar" />
+    </a>
+
+    <section class="name">
+      <a href="/">
+        <span id="fname">Bibhas</span><br>
+        <span id="lname">Debnath</span>
+      </a>
+    </section>
+
+    <section class="meta">
+      <a href="https://github.com/iambibhas" target="_blank"><img src="/images/github.png" /></a>
+      <a href="https://twitter.com/iAmBibhas" target="_blank"><img src="/images/twitter.png"></a>
+      <a href="/atom.xml"><img src="/images/rss.png" /></a>
+    </section>
+
+    <section class="sections">
+      <ul>
+        <li><a href="/about-me/">about</a></li>
+        <li><a href="/blog/">posts</a></li>
+        <li><a href="/crypt/">Generate Hashes</a></li>
+        <li><a href="/search/all/">Moderated Search</a></li>
+      </ul>
+    </section>
+    <section class="sections">
+        <a href="https://twitter.com/iAmBibhas" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @iAmBibhas</a>
+    </section>
+    <section class="sections">
+        <a href="http://stackexchange.com/users/94480/bibhas">
+            <img src="http://stackexchange.com/users/flair/94480.png" width="208" height="58" alt="profile for Bibhas on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Bibhas on Stack Exchange, a network of free, community-driven Q&amp;A sites" />
+        </a>
+    </section>
+    <section id="gittip">
+        <p>
+            <a href="https://www.gittip.com/on/github/iambibhas">
+            <img src="https://464cb7500b7b22c45962-7e649de06c64f44fd9a5706b67a55744.ssl.cf2.rackcdn.com//img/gittip_icon.png" alt="gittip">
+            Fund me on Gittip!</a>
+        </p>
+    </section>
+  </section>
+
+  <section class="content">
+  <h1>
+    <a href="/blog/interactive-shell-access-to-tornado-local-environment/">Interactive Shell Access to Tornado Local Environment</a>
+  </h1>
+
+  <section class="byline">
+    April 21, 2013
+  </section>
+
+  <p>I&rsquo;ve been working on <a href="http://www.tornadoweb.org/en/stable/">Tornado</a> for last few days and I really needed a shell access to the local virtual environment of my Tornado app so that I can test few things out. Exactly like Django has <code>./manage.py shell</code>. But as we all know Tornado lacks a good documentation. Most of the things except the use of the native classes, require a lot of trial and error(at least for me, I&rsquo;m not so bright). So I looked around and found how <a href="http://flask.pocoo.org/">Flask</a> <a href="http://flask.pocoo.org/snippets/23/">has a way</a> of having an interactive shell access to the environment. And I just replicated it.</p>
+
+<p>Create a file called <code>shell.py</code>(or whatever you like) on the root of your project and put these codes in it &ndash;</p>
+
+<pre><code>#!/usr/bin/env python
+
+import os
+import readline
+from pprint import pprint
+
+# Your app file
+from app import * 
+
+# These project specific. But I need these to run my project
+from config import *
+from settings import *
+
+# This is the main part
+os.environ['PYTHONINSPECT'] = 'True'
+</code></pre>
+
+<p>From Python documentation &ndash;</p>
+
+<blockquote><p>PYTHONINSPECT<br/>
+If this is set to a non-empty string it is equivalent to specifying the <code>-i</code> option.<br/>
+This variable can also be modified by Python code using os.environ to force inspect mode on program termination.</p></blockquote>
+
+<p>And the <code>-i</code> option &ndash;</p>
+
+<blockquote><p>-i<br/>
+When a script is passed as first argument or the -c option is used, enter interactive mode after executing the script or the command, even when sys.stdin does not appear to be a terminal. The PYTHONSTARTUP file is not read.<br/>
+This can be useful to inspect global variables or a stack trace when a script raises an exception.</p></blockquote>
+
+<p>Now just navigate to your project root and execute <code>python shell.py</code> or you can do <code>./shell.py</code> if you know how. This will take you to an interactive shell where you can play around with your project.</p>
+
+
+  <!-- TODO: bio here -->
+  <section class="meta">
+    <h3>Discussion, links, and tweets</h3>
+    <section class="copy">
+      <a href="https://twitter.com/iAmBibhas" target="_blank">
+        <img src="http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152?s=142" height="50" width="50" />
+      </a>
+
+      <p>
+        I'm a Ninja/Kickass/Rockstar Developer, NOT. <a href="https://twitter.com/iAmBibhas" target="_blank">Follow me on Twitter</a>;
+      </p>
+
+      <a href="https://twitter.com/share" class="twitter-share-button" data-via="iAmBibhas">Tweet</a>
+      <div class="g-plusone" data-size="tall" data-annotation="none"></div>
+    </section>
+    <section style="padding-right: 20px; margin-top: 10px">
+        
+            <div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_developer = 1;
+    var disqus_shortname = 'bee-mblog'; // required: replace example with your forum shortname
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="http://disqus.com" class="dsq-brlink">blog comments powered by <span class="logo-disqus">Disqus</span></a>
+
+        
+    </section>
+  </section>
+</section>
+
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3724476-6']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <script type="text/javascript">
+        if(SyntaxHighlighter !== undefined){
+            SyntaxHighlighter.all();
+        }
+    </script>
+
+</body>
+
+</html>

@@ -15,21 +15,34 @@
   <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
 
   <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
-  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
   <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
   <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
 
   <script type="text/javascript" src="/js/jquery.min.js"></script>
+
+  {% if page.url != '/' %}
+  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
   <script type="text/javascript" src="/js/shCore.js"></script>
   <script type="text/javascript" src="/js/shBrushPlain.js"></script>
   <script type="text/javascript" src="/js/shBrushJScript.js"></script>
-  {% if site.analytics.provider == 'mixpanel' %}
-    {% include analytics/mixpanel.html %}
   {% endif %}
+
+  {% if page.url == '/crypt/' %}
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha512.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/ripemd160.js"></script>
+  <script type="text/javascript" src="/js/crypt.js"></script>
+  {% endif %}
+
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
   <script type="text/javascript" src="/js/application.js"></script>
 </head>
 
@@ -56,15 +69,18 @@
       <ul>
         <li><a href="{{ site.about_page }}">about</a></li>
         <li><a href="/blog/">posts</a></li>
+        <li><a href="/crypt/">Generate Hashes</a></li>
+        <li><a href="/search/all/">Moderated Search</a></li>
       </ul>
     </section>
-
+    <section class="sections">
+        <a href="https://twitter.com/iAmBibhas" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @iAmBibhas</a>
+    </section>
     <section class="sections">
         <a href="http://stackexchange.com/users/94480/bibhas">
             <img src="http://stackexchange.com/users/flair/94480.png" width="208" height="58" alt="profile for Bibhas on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Bibhas on Stack Exchange, a network of free, community-driven Q&amp;A sites" />
         </a>
     </section>
-
     <section id="gittip">
         <p>
             <a href="https://www.gittip.com/on/github/iambibhas">
@@ -104,10 +120,12 @@
       })();
 
     </script>
+    <script type="text/javascript">
+        if(SyntaxHighlighter !== undefined){
+            SyntaxHighlighter.all();
+        }
+    </script>
 {% endif %}
-<script type="text/javascript">
-     SyntaxHighlighter.all()
-</script>
 </body>
 
 </html>

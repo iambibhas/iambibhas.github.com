@@ -5,7 +5,7 @@ auto: true
 rdiscount:
   extensions: [smart]
 
-name: Bibhas Debnath
+name: Bibhas C Debnath
 url: http://bibhas.in
 description: Lazy to the core
 twitter: iAmBibhas

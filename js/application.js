@@ -1,12 +1,42 @@
+var listening = false;
 $(function(){
     if($('#terminal')[0] !== undefined)
         $('#prompt').css('width', $('#terminal')[0].clientWidth);
     $('#command').focus();
     setInterval("toggleCursor()",500);
-    var str = 'Hi, welcome to http://bibhas.in/<br />'
-    str += 'Please enter "help" for the Complete list of available commands.' + '<br />';
+    var str = 'Hi, welcome to http://bibhas.in/<br />';
+    str += 'Please enter "help" or press "v" to activate voice commands and say "Hello".(Only for Chrome users).' + '<br />';
     setConsoleVal('', str);
+
+    // Voice Recognition
+    $('body').on('keyup', function(e){
+        if(e.keyCode == 86 && listening === false && location.pathname == '/'){
+            listening = true;
+            initRecognition();
+        }
+    });
 });
+
+function initRecognition(){
+    if('webkitSpeechRecognition' in window){
+        window.recognition = new webkitSpeechRecognition();
+        window.recognition.onresult = function(event) {
+            console.log(event.results);
+            console.log(event.results.length);
+          if (event.results.length > 0) {
+            command.value = event.results[event.results.length-1][0].transcript;
+            return execute();
+          }else{
+            command.value = "*&#^$&@^#?";
+            return execute();
+          }
+        };
+        window.recognition.continuous = true;
+        window.recognition.start();
+    }else{
+        alert('Sorry. Voice commands are not available for your browser. Trying using Chrome 25+.');
+    }
+}
 
 function toggleCursor(){
     $('#cursor').toggle();
@@ -41,6 +71,8 @@ function execute(){
             str += 'blog: Opens my blog in a new tab.' + '<br />';
             str += 'github: Opens my Github profile in a new tab.' + '<br />';
             str += 'resume: Opens my Resume in a new tab.' + '<br />';
+            str += 'email: Drop me a mail.' + '<br />';
+            str += 'bitcoin: Treat me a cup of coffee with some BitCoin.' + '<br />';
             str += 'search: Searches Google, Duckduckgo and Bing in new tabs for any following keyword(s).' + '<br />';
             str += 'linuxdl: Downloads Linux distro of your choice(Only Ubuntu is available now).<br />'
             str += 'clear: Resets this console.' + '<br />';
@@ -52,6 +84,13 @@ function execute(){
         case 'whoami':
             setConsoleVal(full_command, 'I don\'t know yet.');
             break;
+        case 'email':
+            setConsoleVal(full_command, 'Opening your mail app.');
+            window.open('mailto:me@bibhas.in?subject=Hi+Bibhas!&body=Nice+Website!');
+            break
+        case 'bitcoin':
+            setConsoleVal(full_command, 'Buy me a cup of coffee. <br/> Send some BitCoins to - 1EaszqX5Qmus5e3CTSavJbhxUPiAxrnp4i');
+            break
         case 'blog':
             if(comm_arr.hasOwnProperty(1)){
                 switch(comm_arr[1]){
@@ -87,6 +126,8 @@ function execute(){
             break;
         case 'hello':
             setConsoleVal(full_command, 'Hi. :)');
+            command.value = 'help';
+            execute();
             break;
         case 'search':
             var q = '';
@@ -94,10 +135,14 @@ function execute(){
                 q += comm_arr[i] + ' ';
             }
             q = $.trim(q);
-            window.open('http://www.bing.com/search?setmkt=en-US&q=' + q);
-            window.open('https://duckduckgo.com/?q=' + q);
-            window.open('https://www.google.co.in/search?ix=sea&ie=UTF-8&q=' + q);
-            setConsoleVal(full_command, 'Searching for \"' + q + '\"');
+            if(q !== ''){
+                window.open('http://www.bing.com/search?setmkt=en-US&q=' + q);
+                window.open('https://duckduckgo.com/?q=' + q);
+                window.open('https://www.google.co.in/search?ix=sea&ie=UTF-8&q=' + q);
+                setConsoleVal(full_command, 'Searching for \"' + q + '\"');
+            }else{
+                setConsoleVal(full_command, 'No search term found');
+            }
             break;
         case 'linuxdl':
             console.log(comm_arr);
@@ -113,8 +158,8 @@ function execute(){
                 var platform = '';
                 var format = 'iso';
                 if(!comm_arr.hasOwnProperty(2)){
-                    version = '12.04';
-                }else if(comm_arr[2]!=''){
+                    version = '12.04.2';
+                }else if(comm_arr[2] !== ''){
                     version = comm_arr[2];
                 }
 

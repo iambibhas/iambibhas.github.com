@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>
+    
+      Generate Crypto Hashes &ndash;
+    
+    Bibhas C Debnath
+  </title>
+
+  <meta name="author" content="Bibhas C Debnath" />
+  <meta name="description" content="Lazy to the core" />
+
+  <link rel="alternate" type="application/rss+xml" href="/atom.xml" />
+
+  <link rel="stylesheet" href="/css/base.css" type="text/css" media="screen, projection" />
+  <link media="only screen and (max-device-width: 480px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link media="only screen and (device-width: 768px)" href="/css/iphone.css" type="text/css" rel="stylesheet" />
+  <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="/css/app.css" type="text/css" media="screen, projection" />
+
+  <script type="text/javascript" src="/js/jquery.min.js"></script>
+
+  
+  <link rel="stylesheet" href="/css/pygments.css" type="text/css" />
+  <link rel="stylesheet" href="/css/shCore.css" type="text/css" media="screen, projection" />
+  <script type="text/javascript" src="/js/shCore.js"></script>
+  <script type="text/javascript" src="/js/shBrushPlain.js"></script>
+  <script type="text/javascript" src="/js/shBrushJScript.js"></script>
+  
+
+  
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/md5.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha1.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha256.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha512.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
+  <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/ripemd160.js"></script>
+  <script type="text/javascript" src="/js/crypt.js"></script>
+  
+
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+  <script type="text/javascript" src="/js/application.js"></script>
+</head>
+
+<body>
+  <section class="sidebar" align="right">
+    <a href="/">
+      <img src="http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152?s=150" height="75" width="75" class="avatar" />
+    </a>
+
+    <section class="name">
+      <a href="/">
+        <span id="fname">Bibhas</span><br>
+        <span id="lname">Debnath</span>
+      </a>
+    </section>
+
+    <section class="meta">
+      <a href="https://github.com/iambibhas" target="_blank"><img src="/images/github.png" /></a>
+      <a href="https://twitter.com/iAmBibhas" target="_blank"><img src="/images/twitter.png"></a>
+      <a href="/atom.xml"><img src="/images/rss.png" /></a>
+    </section>
+
+    <section class="sections">
+      <ul>
+        <li><a href="/about-me/">about</a></li>
+        <li><a href="/blog/">posts</a></li>
+        <li><a href="/crypt/">Generate Hashes</a></li>
+        <li><a href="/search/all/">Moderated Search</a></li>
+      </ul>
+    </section>
+    <section class="sections">
+        <a href="https://twitter.com/iAmBibhas" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @iAmBibhas</a>
+    </section>
+    <section class="sections">
+        <a href="http://stackexchange.com/users/94480/bibhas">
+            <img src="http://stackexchange.com/users/flair/94480.png" width="208" height="58" alt="profile for Bibhas on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Bibhas on Stack Exchange, a network of free, community-driven Q&amp;A sites" />
+        </a>
+    </section>
+    <section id="gittip">
+        <p>
+            <a href="https://www.gittip.com/on/github/iambibhas">
+            <img src="https://464cb7500b7b22c45962-7e649de06c64f44fd9a5706b67a55744.ssl.cf2.rackcdn.com//img/gittip_icon.png" alt="gittip">
+            Fund me on Gittip!</a>
+        </p>
+    </section>
+  </section>
+
+  <section class="content crypt">
+    <div class="entry">
+        <h2>Enter something</h2>
+        <input type="text" name="text" id="id_text" autofocus >
+    </div>
+    <div class="entry">
+        <h2>MD5</h2>
+        <input type="text" name="md5" id="id_md5" >
+    </div>
+    <hr>
+    <div class="entry">
+        <h2>SHA-1</h2>
+        <input type="text" name="sha1" id="id_sha1" >
+    </div>
+    <hr>
+    <div class="entry">
+        <h2>SHA-256</h2>
+        <input type="text" name="sha256" id="id_sha256" >
+    </div>
+    <div class="entry">
+        <h2>SHA-512</h2>
+        <input type="text" name="sha512" id="id_sha512" >
+    </div>
+    <hr>
+    <div class="entry">
+        <h2>SHA-3 [224 bits]</h2>
+        <input type="text" name="sha3_224" id="id_sha3_224" >
+    </div>
+    <div class="entry">
+        <h2>SHA-3 [256 bits]</h2>
+        <input type="text" name="sha3_256" id="id_sha3_256" >
+    </div>
+    <div class="entry">
+        <h2>SHA-3 [384 bits]</h2>
+        <input type="text" name="sha3_384" id="id_sha3_384" >
+    </div>
+    <div class="entry">
+        <h2>SHA-3 [512 bits]</h2>
+        <input type="text" name="sha3_512" id="id_sha3_512" >
+    </div>
+    <hr>
+    <div class="entry">
+        <h2>RIPEMD-160</h2>
+        <input type="text" name="ripemd160" id="id_ripemd160" >
+    </div>
+    <hr>
+</section>
+
+
+    <script type="text/javascript">
+
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-3724476-6']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
+    </script>
+    <script type="text/javascript">
+        if(SyntaxHighlighter !== undefined){
+            SyntaxHighlighter.all();
+        }
+    </script>
+
+</body>
+
+</html>
