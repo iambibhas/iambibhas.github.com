@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pixlie</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="section time"></div>
+            </div>
+        </div>
+    </div>
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="moment.min.js"></script>
+    <script>
+    
+    function updateTime() {
+        var total = '';
+
+        var then = moment("2011-09-25 14:00 +0530").unix();
+        var now = moment().unix();
+        var diff_seconds = now - then;
+        var days, months, years;
+        
+        days = Math.floor(diff_seconds / 86400);
+
+        if(days > 28){
+            months = Math.floor(days / 30);
+            remaining_days = days - (months * 30)
+        }
+
+        if(months > 12){
+            years = Math.floor(months/12);
+            total = years + ' years, ' + total;
+            remaining_months = months - (years * 12)
+            total += remaining_months + ' months, ';
+        }
+
+        total += remaining_days + ' days, ';
+        var remaining_seconds = diff_seconds - (days * 86400);
+
+        var hours = Math.floor(remaining_seconds / 3600);
+        total += hours + ' hours, ';
+        remaining_seconds = remaining_seconds - (hours * 3600);
+
+        var minutes = Math.floor(remaining_seconds / 60);
+        total += minutes + ' minutes, ';
+        remaining_seconds = remaining_seconds - (minutes * 60);
+
+        total += remaining_seconds + ' seconds';
+        
+        $('.time').html(total);
+    }
+    var interval = self.setInterval(function(){updateTime()}, 1000);
+    </script>
+</body>
+</html>
