@@ -15,7 +15,7 @@
 .section {
     font-size: 2em;
     /*border-bottom: 1px solid;*/
-    height: 250px;
+    height: 100px;
 }
 
 .one, .two, .three {
