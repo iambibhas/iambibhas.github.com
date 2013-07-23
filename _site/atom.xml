@@ -4,12 +4,110 @@
  <title>Bibhas C Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2013-06-18T18:46:44+05:30</updated>
+ <updated>2013-07-23T11:25:01+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas C Debnath</name>
  </author>
  
+ 
+ <entry>
+   <title>Using Jinja2 as the Template Engine for Tornado Web Framework</title>
+   <link href="http://bibhas.in/blog/using-jinja2-as-the-template-engine-for-tornado-web-framework/"/>
+   <updated>2013-07-23T00:00:00+05:30</updated>
+   <id>http://bibhas.in/blog/using-jinja2-as-the-template-engine-for-tornado-web-framework</id>
+   <content type="html">&lt;ul&gt;
+&lt;li&gt;What is Tornado?&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;p&gt;From the &lt;a href=&quot;http://www.tornadoweb.org/en/stable/index.html&quot;&gt;website&lt;/a&gt; itself &amp;ndash;&lt;/p&gt;
+
+&lt;blockquote&gt;&lt;p&gt;Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;It&amp;rsquo;s basically a minimalistic web framework which supports non-blocking network operations. If you go through the &lt;a href=&quot;http://www.tornadoweb.org/en/stable/documentation.html&quot;&gt;list of modules&lt;/a&gt; it supports, you&amp;rsquo;ll see that it has a lot of modules built in. But there is no proper tutorial of how to achieve most of the things. All the reference to the API is there though. So you must go ahead, read the API and figure out things yourself.&lt;/p&gt;
+
+&lt;p&gt;Anyway, I&amp;rsquo;m not going to write about what is good or bad about it. This post is about how you can replace Tornado&amp;rsquo;s default template engine with Jinja2.&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;What is Jinja2?&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;blockquote&gt;&lt;p&gt;Jinja2 is a modern and designer friendly templating language for Python, modelled after Django’s templates. It is fast, widely used and secure with the optional sandboxed template execution environment:&lt;/p&gt;&lt;/blockquote&gt;
+
+&lt;p&gt;Tornado&amp;rsquo;s native template engine is good and really light-weight. But at the same time it lacks few features I wanted, which Jinja2 has. So I decided to replate tornado&amp;rsquo;s template engine with Jinja2.&lt;/p&gt;
+
+&lt;p&gt;To do this, you need to write a base handler which all the other handlers will inherit from. This is what I wrote &amp;ndash;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import os
+import tornado.web
+from jinja2 import Environment, FileSystemLoader, TemplateNotFound
+
+
+class TemplateRendering:
+    &quot;&quot;&quot;
+    A simple class to hold methods for rendering templates.
+    &quot;&quot;&quot;
+    def render_template(self, template_name, **kwargs):
+        template_dirs = []
+        if self.settings.get('template_path', ''):
+            template_dirs.append(
+                self.settings[&quot;template_path&quot;]
+            )
+
+        env = Environment(loader=FileSystemLoader(template_dirs))
+
+        try:
+            template = env.get_template(template_name)
+        except TemplateNotFound:
+            raise TemplateNotFound(template_name)
+        content = template.render(kwargs)
+        return content
+
+
+class BaseHandler(tornado.web.RequestHandler, TemplateRendering):
+    &quot;&quot;&quot;
+    RequestHandler already has a `render()` method. I'm writing another
+    method `render2()` and keeping the API almost same.
+    &quot;&quot;&quot;
+    def render2(self, template_name, **kwargs):
+        &quot;&quot;&quot;
+        This is for making some extra context variables available to
+        the template
+        &quot;&quot;&quot;
+        kwargs.update({
+            'settings': self.settings,
+            'STATIC_URL': self.settings.get('static_url_prefix', '/static/'),
+            'request': self.request,
+            'xsrf_token': self.xsrf_token,
+            'xsrf_form_html': self.xsrf_form_html,
+        })
+        content = self.render_template(template_name, **kwargs)
+        self.write(content)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now to use this base handler, you need to make few things sure that your application settings should have a &lt;code&gt;template_path&lt;/code&gt; key pointing to the absolute path of the directory holding all the templates.&lt;/p&gt;
+
+&lt;p&gt;Now you can inherit this base handler and use jinja2 by default &amp;ndash;&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;class RegisterHandler(BaseHandler):
+    def get(self, **kwargs):
+        data = {
+            'foo': 'bar'
+        }
+        return self.render2('auth/register.html', **data)
+
+    def post(self, **kwargs):
+        self.check_xsrf_cookie()
+        pass
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now you can use the &lt;code&gt;foo&lt;/code&gt; variable as &lt;code&gt;{{ foo }}&lt;/code&gt; in your jinja2 template.&lt;/p&gt;
+
+&lt;p&gt;Note: I took some help from &lt;a href=&quot;http://aurigroup.wordpress.com/2011/02/21/a-good-start-with-google-app-engine-for-python/&quot;&gt;this blog post&lt;/a&gt;.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Focus..</title>
