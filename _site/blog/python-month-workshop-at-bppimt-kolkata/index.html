@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <title>
     
-      Manage Your Cloud Server Easily Using Virtualmin &ndash;
+      Python Month workshop at BPPIMT, Kolkata and NSEC, Kolkata &ndash;
     
     Bibhas C Debnath
   </title>
@@ -84,56 +84,28 @@
 
   <section class="content">
   <h1>
-    <a href="/blog/manage-your-cloud-server-easily-using-virtualmin">Manage Your Cloud Server Easily Using Virtualmin</a>
+    <a href="/blog/python-month-workshop-at-bppimt-kolkata/">Python Month workshop at BPPIMT, Kolkata and NSEC, Kolkata</a>
   </h1>
 
   <section class="byline">
-    November  6, 2011
+    August 25, 2013
   </section>
 
-  A friend of mine owns an <a href="http://aws.amazon.com" target="_blank">AWS</a>(Amazon Web Services) account and wants to run an <a href="http://aws.amazon.com/ec2/" target="_blank">EC2</a>(Elastic Compute Cloud) instance for his domain. But the problem is, he is not much technically sound to handle the Ubuntu server himself. A solution like cPanel is much better for him because then he can just click and have stuffs done, without writing a single line of command. But sadly, cPanel aint free. So is there any free alternative? I searched a bit and found that <a href="http://www.webmin.com/" target="_blank">Webmin</a> and its derivative <a href="http://www.virtualmin.com/" target="_blank">Virtualmin</a> matches the criterion perfectly. <!--more-->
+  <p>This August has been special for all the Python lovers in India for it&rsquo;s being celebrated as &ldquo;Python Month&rdquo; by PyCon India. Volunteers all around the country have been visiting colleges and organizing workshops to promote and spread the awesomeness of Python. There has been few workshops in West Bengal as well. I attended and helped organize two of them. One at the B.P.Poddar Institute of Management and Technology and Netaji Subhash Engineering College.</p>
 
-To make his job easy, I wrote a Python script using <a href="http://fabfile.org/" target="_blank">Fabric</a>, that automatically logs into his EC2 instance and installs all the packages required(e.g. lamp-server) (Will post the Fabric recipe later). I just needed to install the Virtualmin on it for him to control everything smoothly.
+<p>The workshop at BPPIMT was organized by CampusHash. Sanket and Rohit, who run CampusHash, has been kind enough to extend their support in organizing workshops around the country. The college management was really helpful, and the number of attendees were good.</p>
 
-Virtualmin is a <a href="http://www.virtualmin.com/documentation/installation/manual" target="_blank">bit complicated</a> to setup. So they provide an installation script to make the job easy. To install Virtualmin on any server, first <a href="http://www.virtualmin.com/download.html" target="_blank">choose the appropriate installation script from here</a> for your server, then do this(I'm using the installation script for Ubuntu) -
-[crayon lang="sh"]
-$ wget http://software.virtualmin.com/gpl/scripts/install.sh
-$ sudo sh install.sh
-[/crayon]
+<p><img src="/uploads/bppimt_1.jpg" alt="" /></p>
 
-This should install Webmin, Virtualmin and configure everything.
+<p><img src="/uploads/bppimt_2.jpg" alt="" /></p>
 
-Now, as we usually use a keypair file to SSH to cloud servers like EC2, there is no password for root user. But to login to the virtualmin interface, you'll need to set a password for the root user only for the virtualmin interface. It is NOT about setting a root password for your server's root user. This is just a password to login to virtualmin. To do that, execute this command -
-[crayon lang="sh"]
-//For ubuntu
-sudo /usr/share/webmin/changepass.pl /etc/webmin root XYZ
-//if not, then
-sudo /usr/libexec/webmin/changepass.pl /etc/webmin root XYZ
-//Where XYZ is the new password
-[/crayon]
+<p>In the other hand, NSEC had a very concentrated crowd. We had to organize it in a rush, so we had to do it small. We took a small computer lab so that everyone could try out things that were being discussed. The volunteers Debjeet, Sneha, Nilabhra, Puja and others from that college were really helpful and the workshop was a success. :)</p>
 
-Once you've done this, go visit -
-[crayon lang="html"]
-https://example.com:10000
-[/crayon]
-Or:
-[crayon lang="html"]
-https://xxx.xx.xx.xxx:10000
-[/crayon]
+<p><img src="/uploads/nsec.jpg" alt="" /></p>
 
-Remember, You MUST use https. And Virtualmin is available on port 10000 by default. So remember to edit your security group(in case of Amazon AWS) to allow TCP access to port 10000.
+<p>There has been more workshops in West Bengal. CampusHash organized two more workshops at Heritage Institute of Technology and Institute of Engineering and Management. And some students from B.C.Roy Engineering College, Durgapur organized another workshop there.</p>
 
-If you've done everything right, you'll be able to see the login page of Virtualmin. Dont bother if your browser shows some warning about the validity of the SSL security when you use https, Just ignore it and proceed.
-
-Once you login, you'll see a panel like this -
-
-[caption id="" align="aligncenter" width="448" caption="Virtualmin Admin Panel"]<a href="http://i.imgur.com/IBiuF.png"><img class="    " title="Virtualmin Admin Panel" src="http://i.imgur.com/IBiuF.png" alt="Virtualmin Admin Panel" width="448" height="214" /></a>[/caption]
-
-Now you can add Virtual Servers and configure them as much as you can. You can add virtual hosts to add domain names, setup Email servers etc etc and a lot more things.
-
-Go ahead and give it a try. If you face any trouble, ask me or consult <a href="http://www.virtualmin.com/documentation/installation/automated" target="_blank">Virtualmin's official installation guide</a>.
-
-Happy Cloud Computing. :)
+<p>This is just the start. PyCon is next week. After that we&rsquo;ll have more of these coming to Kolkata. :)</p>
 
 
   <!-- TODO: bio here -->

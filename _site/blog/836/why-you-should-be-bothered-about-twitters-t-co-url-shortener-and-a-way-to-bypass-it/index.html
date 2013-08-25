@@ -100,20 +100,20 @@
 
 <p>If you notice carefully, most of the links you share or click nowadays are already shortened. And thanks to services like bit.ly, everyone can make a new link shortener in no time. While these shortened urls do look nice, they just push one node away from your destination node. When you click a shortened url, you are taken to the server where the link shortener is hosted and then redirected to the original destination. So, if it were to take you 100ms to reach your url, it&rsquo;ll take you some more time than that if you click the shortener url.</p>
 
-<p>t.co is adding another node above what you already have. So that&rsquo;s two node you have to be redirected from. For example, take this tweet &ndash;</p>
+<p>t.co is adding another node above what you already have. So that&rsquo;s two node you have to be redirected from. For example, take this tweet -</p>
 
 <blockquote class="twitter-tweet"><p>Where Have The Users Gone? <a href="http://t.co/acgTzWKR" title="http://tcrn.ch/NTr6S8">tcrn.ch/NTr6S8</a> by @<a href="https://twitter.com/nireyal">nireyal</a></p>&mdash; TechCrunch (@TechCrunch) <a href="https://twitter.com/TechCrunch/status/239765316601802752">August 26, 2012</a></blockquote>
 
 
 <p>TechCrunch already uses their own url shortener tcrn.ch, as you see. And when they share it on Twitter, it&rsquo;s being shortened with the t.co url shortener. When you read the tweet, you can see the tcrn.ch url, but if you click it, you&rsquo;ll see that it&rsquo;ll take you to a t.co link. That means, it&rsquo;s an anchor, when the original url is the text and the t.co link is the url. That&rsquo;s an effin bummer. :|</p>
 
-<p>So this is how you have to visit your document now &ndash;</p>
+<p>So this is how you have to visit your document now -</p>
 
-<p><a href="http://t.co/acgTzWKR" target="_blank">http://t.co/acgTzWKR</a> &ndash;&gt; <a href="http://tcrn.ch/NTr6S8" target="_blank">http://tcrn.ch/NTr6S8</a> &ndash;&gt; <a href="http://techcrunch.com/2012/08/26/where-have-the-users-gone/">http://techcrunch.com/2012/08/26/where-have-the-users-gone/</a></p>
+<p><a href="http://t.co/acgTzWKR" target="_blank">http://t.co/acgTzWKR</a> -&gt; <a href="http://tcrn.ch/NTr6S8" target="_blank">http://tcrn.ch/NTr6S8</a> -&gt; <a href="http://techcrunch.com/2012/08/26/where-have-the-users-gone/">http://techcrunch.com/2012/08/26/where-have-the-users-gone/</a></p>
 
 <p>So I have to go through two server before I can get to my link. That&rsquo;s really a pain in the arse for me, and should be for you too. Because if anyday the t.co server is slow because of the constant load it serves, <strong>you</strong> have to wait.</p>
 
-<p>I effin hate that. So wanted to get my way around it. I inspected the anchor tag of Twitter Web, this is what I got &ndash;</p>
+<p>I effin hate that. So wanted to get my way around it. I inspected the anchor tag of Twitter Web, this is what I got -</p>
 
 <pre class="brush:js">&lt;a href="http://t.co/acgTzWKR" class="twitter-timeline-link" target="_blank" data-expanded-url="http://tcrn.ch/NTr6S8" title="http://tcrn.ch/NTr6S8" dir="ltr" wotsearchprocessed="true"&gt;
     &lt;span class="invisible"&gt;http://&lt;/span&gt;
@@ -127,7 +127,7 @@
 
 <p>Now if you see closely, twitter stores the original url as the value of <span class="lang:default decode:true  crayon-inline ">data-expanded-url</span> in the anchor tag. That is good for me. I just pushed a simple Javascript code that replaces the value of href property with the value of <span class="lang:default decode:true  crayon-inline ">data-expanded-url</span>&rsquo;s value. And my work is done.</p>
 
-<p>Here is the javascript code &ndash;</p>
+<p>Here is the javascript code -</p>
 
 <pre class="brush:js">si = window.setInterval(clearanchors, 2000);
 function clearanchors(){
@@ -140,7 +140,7 @@ function clearanchors(){
 }</pre>
 
 
-<p>Just use any javascript pusher and push this to twitter.com. I personally use <a href="https://chrome.google.com/webstore/detail/plcnnpdmhobdfbponjpedobekiogmbco" target="_blank">Personalized Web</a>. so I created this recipe for it &ndash;</p>
+<p>Just use any javascript pusher and push this to twitter.com. I personally use <a href="https://chrome.google.com/webstore/detail/plcnnpdmhobdfbponjpedobekiogmbco" target="_blank">Personalized Web</a>. so I created this recipe for it -</p>
 
 <p style="text-align: center;"><a href="http://bibhas.in/blog/wp-content/uploads/2012/08/Screenshot-08262012-104737-PM.png"><img class="aligncenter  wp-image-837" title="Screenshot - 08262012 - 10:47:37 PM" src="http://bibhas.in/blog/wp-content/uploads/2012/08/Screenshot-08262012-104737-PM-300x184.png" alt="" width="300" height="184" /></a></p>
 
@@ -153,14 +153,6 @@ function clearanchors(){
   <section class="meta">
     <h3>Discussion, links, and tweets</h3>
     <section class="copy">
-      <a href="https://twitter.com/iAmBibhas" target="_blank">
-        <img src="http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152?s=142" height="50" width="50" />
-      </a>
-
-      <p>
-        I'm a Ninja/Kickass/Rockstar Developer, NOT. <a href="https://twitter.com/iAmBibhas" target="_blank">Follow me on Twitter</a>;
-      </p>
-
       <a href="https://twitter.com/share" class="twitter-share-button" data-via="iAmBibhas">Tweet</a>
       <div class="g-plusone" data-size="tall" data-annotation="none"></div>
     </section>

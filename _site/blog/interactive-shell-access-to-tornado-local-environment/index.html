@@ -93,7 +93,7 @@
 
   <p>I&rsquo;ve been working on <a href="http://www.tornadoweb.org/en/stable/">Tornado</a> for last few days and I really needed a shell access to the local virtual environment of my Tornado app so that I can test few things out. Exactly like Django has <code>./manage.py shell</code>. But as we all know Tornado lacks a good documentation. Most of the things except the use of the native classes, require a lot of trial and error(at least for me, I&rsquo;m not so bright). So I looked around and found how <a href="http://flask.pocoo.org/">Flask</a> <a href="http://flask.pocoo.org/snippets/23/">has a way</a> of having an interactive shell access to the environment. And I just replicated it.</p>
 
-<p>Create a file called <code>shell.py</code>(or whatever you like) on the root of your project and put these codes in it &ndash;</p>
+<p>Create a file called <code>shell.py</code>(or whatever you like) on the root of your project and put these codes in it -</p>
 
 <pre><code>#!/usr/bin/env python
 
@@ -112,13 +112,13 @@ from settings import *
 os.environ['PYTHONINSPECT'] = 'True'
 </code></pre>
 
-<p>From Python documentation &ndash;</p>
+<p>From Python documentation -</p>
 
 <blockquote><p>PYTHONINSPECT<br/>
 If this is set to a non-empty string it is equivalent to specifying the <code>-i</code> option.<br/>
 This variable can also be modified by Python code using os.environ to force inspect mode on program termination.</p></blockquote>
 
-<p>And the <code>-i</code> option &ndash;</p>
+<p>And the <code>-i</code> option -</p>
 
 <blockquote><p>-i<br/>
 When a script is passed as first argument or the -c option is used, enter interactive mode after executing the script or the command, even when sys.stdin does not appear to be a terminal. The PYTHONSTARTUP file is not read.<br/>
@@ -131,14 +131,6 @@ This can be useful to inspect global variables or a stack trace when a script ra
   <section class="meta">
     <h3>Discussion, links, and tweets</h3>
     <section class="copy">
-      <a href="https://twitter.com/iAmBibhas" target="_blank">
-        <img src="http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152?s=142" height="50" width="50" />
-      </a>
-
-      <p>
-        I'm a Ninja/Kickass/Rockstar Developer, NOT. <a href="https://twitter.com/iAmBibhas" target="_blank">Follow me on Twitter</a>;
-      </p>
-
       <a href="https://twitter.com/share" class="twitter-share-button" data-via="iAmBibhas">Tweet</a>
       <div class="g-plusone" data-size="tall" data-annotation="none"></div>
     </section>

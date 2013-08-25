@@ -96,7 +96,7 @@
 </ul>
 
 
-<p>From the <a href="http://www.tornadoweb.org/en/stable/index.html">website</a> itself &ndash;</p>
+<p>From the <a href="http://www.tornadoweb.org/en/stable/index.html">website</a> itself -</p>
 
 <blockquote><p>Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.</p></blockquote>
 
@@ -113,7 +113,7 @@
 
 <p>Tornado&rsquo;s native template engine is good and really light-weight. But at the same time it lacks few features I wanted, which Jinja2 has. So I decided to replate tornado&rsquo;s template engine with Jinja2.</p>
 
-<p>To do this, you need to write a base handler which all the other handlers will inherit from. This is what I wrote &ndash;</p>
+<p>To do this, you need to write a base handler which all the other handlers will inherit from. This is what I wrote -</p>
 
 <pre><code>import os
 import tornado.web
@@ -164,7 +164,7 @@ class BaseHandler(tornado.web.RequestHandler, TemplateRendering):
 
 <p>Now to use this base handler, you need to make few things sure that your application settings should have a <code>template_path</code> key pointing to the absolute path of the directory holding all the templates.</p>
 
-<p>Now you can inherit this base handler and use jinja2 by default &ndash;</p>
+<p>Now you can inherit this base handler and use jinja2 by default -</p>
 
 <pre><code>class RegisterHandler(BaseHandler):
     def get(self, **kwargs):
@@ -187,14 +187,6 @@ class BaseHandler(tornado.web.RequestHandler, TemplateRendering):
   <section class="meta">
     <h3>Discussion, links, and tweets</h3>
     <section class="copy">
-      <a href="https://twitter.com/iAmBibhas" target="_blank">
-        <img src="http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152?s=142" height="50" width="50" />
-      </a>
-
-      <p>
-        I'm a Ninja/Kickass/Rockstar Developer, NOT. <a href="https://twitter.com/iAmBibhas" target="_blank">Follow me on Twitter</a>;
-      </p>
-
       <a href="https://twitter.com/share" class="twitter-share-button" data-via="iAmBibhas">Tweet</a>
       <div class="g-plusone" data-size="tall" data-annotation="none"></div>
     </section>
