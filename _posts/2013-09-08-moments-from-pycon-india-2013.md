@@ -70,6 +70,6 @@ Then I decided to treat myself in completing all the tasks for PyCon India 2013.
 
 Thanks to everyone who attended. I hope we could make it comfortable for you to attend the event. And hope to see you next year. Thank you. :)
 
-PS: The videos are being uploaded at [Python India YouTube channel](https://www.youtube.com/channel/UCVxPTRxEcoWjEFIMXHaGgHA).
+PS: The videos are being uploaded at [Python India YouTube channel](https://www.youtube.com/playlist?list=PL6GW05BfqWIdsaaV35jcHWPWTI-DAw6Yn).
 
 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23pyconindia2013" data-widget-id="376720132053020672">Tweets about "#pyconindia2013"</a>
