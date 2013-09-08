@@ -6,8 +6,6 @@ category:
 tags: ["pyconindia2013"]
 permalink: /blog/moments-from-pycon-india-2013/
 ---
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 And just like that, PyCon India 2013 is over. A lot of hard work and dedications comes to an end for another year. Yet extremely happy because all thoe hard works yielded really awesome feedback. People have enjoyed those 3 days. That's all we needed to make sure would happen. :)
 
 I reached B'lore on 28th, changed from the original plan of going on 29th. I thought it'd better to reach with two days of time in hand so that I can help prepare for the event.
@@ -73,4 +71,3 @@ Thanks to everyone who attended. I hope we could make it comfortable for you to 
 PS: The videos are being uploaded at [Python India YouTube channel](https://www.youtube.com/channel/UCVxPTRxEcoWjEFIMXHaGgHA).
 
 <a class="twitter-timeline" data-dnt="true" href="https://twitter.com/search?q=%23pyconindia2013" data-widget-id="376720132053020672">Tweets about "#pyconindia2013"</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
