@@ -6,7 +6,7 @@ category:
 tags: ["pyconindia2013"]
 permalink: /blog/moments-from-pycon-india-2013/
 ---
-And just like that, PyCon India 2013 is over. A lot of hard work and dedications comes to an end for another year. Yet extremely happy because all thoe hard works yielded really awesome feedback. People have enjoyed those 3 days. That's all we needed to make sure would happen. :)
+And just like that, PyCon India 2013 is over. A lot of hard work and dedications comes to an end for another year. Yet extremely happy because all those hard works yielded really awesome feedback. People have enjoyed those 3 days. That's all we needed to make sure would happen. :)
 
 I reached B'lore on 28th, changed from the original plan of going on 29th. I thought it'd better to reach with two days of time in hand so that I can help prepare for the event.
 
