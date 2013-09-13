@@ -42,7 +42,11 @@
 
         days = Math.floor(diff_seconds / 86400);
 
-        total += days + ' days, ';
+        years = Math.floor(days/365);
+        remaining_days = days - years * 365;
+        total += years + ' years, ';
+
+        total += remaining_days + ' days, ';
         var remaining_seconds = diff_seconds - (days * 86400);
 
         var hours = Math.floor(remaining_seconds / 3600);
