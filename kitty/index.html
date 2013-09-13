@@ -44,7 +44,7 @@
 
         if(days > 28){
             months = Math.floor(days / 30.41668);
-            remaining_days = days - (months * 30.41668)
+            remaining_days = Math.floor(days - (months * 30.41668))
         }
 
         if(months > 12){
