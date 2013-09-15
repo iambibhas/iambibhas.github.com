@@ -31,7 +31,7 @@
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="moment.min.js"></script>
     <script>
-    
+
     function updateTime() {
         var total = '';
 
@@ -39,20 +39,12 @@
         var now = moment().unix();
         var diff_seconds = now - then;
         var days, months, years;
-        
+
         days = Math.floor(diff_seconds / 86400);
 
-        if(days > 28){
-            months = Math.floor(days / 30);
-            remaining_days = days - (months * 30)
-        }
-
-        if(months > 12){
-            years = Math.floor(months/12);
-            total = years + ' years, ' + total;
-            remaining_months = months - (years * 12)
-            total += remaining_months + ' months, ';
-        }
+        years = Math.floor(days/365);
+        remaining_days = days - years * 365;
+        total += years + ' years, ';
 
         total += remaining_days + ' days, ';
         var remaining_seconds = diff_seconds - (days * 86400);
@@ -66,7 +58,7 @@
         remaining_seconds = remaining_seconds - (minutes * 60);
 
         total += remaining_seconds + ' seconds';
-        
+
         $('.time').html(total);
     }
     var interval = self.setInterval(function(){updateTime()}, 1000);
