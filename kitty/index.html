@@ -42,7 +42,7 @@
 
         days = Math.floor(diff_seconds / 86400);
 
-        years = Math.ceil(days/365);
+        years = Math.floor(days/365);
         remaining_days = days - years * 365;
         total += years + ' years, ';
 
