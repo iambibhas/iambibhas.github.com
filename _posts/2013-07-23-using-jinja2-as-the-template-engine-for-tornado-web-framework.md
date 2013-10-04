@@ -8,7 +8,7 @@ permalink: /blog/using-jinja2-as-the-template-engine-for-tornado-web-framework/
 ---
  - What is Tornado?
 
-From the [website](http://www.tornadoweb.org/en/stable/index.html) itself -
+From the [documentation](http://www.tornadoweb.org/en/stable/index.html) itself -
 
 > Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.
 
@@ -16,7 +16,7 @@ It's basically a minimalistic web framework which supports non-blocking network 
 
 Anyway, I'm not going to write about what is good or bad about it. This post is about how you can replace Tornado's default template engine with Jinja2.
 
-- What is Jinja2?
+- What is [Jinja2](https://github.com/mitsuhiko/jinja2)?
 
 > Jinja2 is a modern and designer friendly templating language for Python, modelled after Django’s templates. It is fast, widely used and secure with the optional sandboxed template execution environment:
 
