@@ -1,13 +1,13 @@
---- 
+---
 layout: post
 type: post
 status: publish
-tags: 
+tags:
 - bot
 - irc
 - php
 - Technical
-meta: 
+meta:
   slider_style: default.css
   _wpbitly: http://q.bibhas.in/H1xiCL
   slide_redirect_url: http://bibhas.in/blog/2010/11/build-your-own-irc-bot-in-php/
@@ -29,7 +29,7 @@ Am posting the code here so that you can customize it and build your own bot wit
     /*
     * PHP IRC Bot
     * Customized by Bibhas.
-    * Get in touch at @iAmBibhas in twitter
+    * Get in touch at @pythonerd in twitter
     */
 
     //Setting time limit off. We need to run the script until We ask it to exit.

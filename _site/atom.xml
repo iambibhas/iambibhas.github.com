@@ -4,7 +4,7 @@
  <title>Bibhas C Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2013-09-15T22:38:46+05:30</updated>
+ <updated>2013-10-16T17:19:04+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas C Debnath</name>
@@ -134,7 +134,7 @@
 
 &lt;p&gt;Oh, I can&amp;rsquo;t end the blog post without mentioning Anand Chitipothu. He&amp;rsquo;s the one who made the event possible. :)&lt;/p&gt;
 
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;A blogpost about &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt; is incomplete without mentioning &lt;a href=&quot;https://twitter.com/anandology&quot;&gt;@anandology&lt;/a&gt;. The man behind the whole event. :) &lt;a href=&quot;http://t.co/vj4FC61TjH&quot;&gt;http://t.co/vj4FC61TjH&lt;/a&gt;&lt;/p&gt;&amp;mdash; Bibhas (@iAmBibhas) &lt;a href=&quot;https://twitter.com/iAmBibhas/statuses/376768511554498562&quot;&gt;September 8, 2013&lt;/a&gt;&lt;/blockquote&gt;
+&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;A blogpost about &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt; is incomplete without mentioning &lt;a href=&quot;https://twitter.com/anandology&quot;&gt;@anandology&lt;/a&gt;. The man behind the whole event. :) &lt;a href=&quot;http://t.co/vj4FC61TjH&quot;&gt;http://t.co/vj4FC61TjH&lt;/a&gt;&lt;/p&gt;&amp;mdash; Bibhas (@pythonerd) &lt;a href=&quot;https://twitter.com/pythonerd/statuses/376768511554498562&quot;&gt;September 8, 2013&lt;/a&gt;&lt;/blockquote&gt;
 
 
 &lt;p&gt;PS: The videos are being uploaded at &lt;a href=&quot;https://www.youtube.com/playlist?list=PL6GW05BfqWIdsaaV35jcHWPWTI-DAw6Yn&quot;&gt;Python India YouTube channel&lt;/a&gt;.&lt;/p&gt;
@@ -176,7 +176,7 @@
 &lt;/ul&gt;
 
 
-&lt;p&gt;From the &lt;a href=&quot;http://www.tornadoweb.org/en/stable/index.html&quot;&gt;website&lt;/a&gt; itself -&lt;/p&gt;
+&lt;p&gt;From the &lt;a href=&quot;http://www.tornadoweb.org/en/stable/index.html&quot;&gt;documentation&lt;/a&gt; itself -&lt;/p&gt;
 
 &lt;blockquote&gt;&lt;p&gt;Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.&lt;/p&gt;&lt;/blockquote&gt;
 
@@ -185,7 +185,7 @@
 &lt;p&gt;Anyway, I&amp;rsquo;m not going to write about what is good or bad about it. This post is about how you can replace Tornado&amp;rsquo;s default template engine with Jinja2.&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;What is Jinja2?&lt;/li&gt;
+&lt;li&gt;What is &lt;a href=&quot;https://github.com/mitsuhiko/jinja2&quot;&gt;Jinja2&lt;/a&gt;?&lt;/li&gt;
 &lt;/ul&gt;
 
 
@@ -1957,7 +1957,7 @@ If you dont have time for designing yourself, Click the &quot;Gallery&quot; butt
 &lt;pre&gt;&lt;code&gt;/*
 * PHP IRC Bot
 * Customized by Bibhas.
-* Get in touch at @iAmBibhas in twitter
+* Get in touch at @pythonerd in twitter
 */
 
 //Setting time limit off. We need to run the script until We ask it to exit.

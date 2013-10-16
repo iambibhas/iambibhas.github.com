@@ -72,7 +72,7 @@ Thanks to everyone who attended. I hope we could make it comfortable for you to 
 
 Oh, I can't end the blog post without mentioning Anand Chitipothu. He's the one who made the event possible. :)
 
-<blockquote class="twitter-tweet"><p>A blogpost about <a href="https://twitter.com/search?q=%23pyconindia2013&amp;src=hash">#pyconindia2013</a> is incomplete without mentioning <a href="https://twitter.com/anandology">@anandology</a>. The man behind the whole event. :) <a href="http://t.co/vj4FC61TjH">http://t.co/vj4FC61TjH</a></p>&mdash; Bibhas (@iAmBibhas) <a href="https://twitter.com/iAmBibhas/statuses/376768511554498562">September 8, 2013</a></blockquote>
+<blockquote class="twitter-tweet"><p>A blogpost about <a href="https://twitter.com/search?q=%23pyconindia2013&amp;src=hash">#pyconindia2013</a> is incomplete without mentioning <a href="https://twitter.com/anandology">@anandology</a>. The man behind the whole event. :) <a href="http://t.co/vj4FC61TjH">http://t.co/vj4FC61TjH</a></p>&mdash; Bibhas (@pythonerd) <a href="https://twitter.com/pythonerd/statuses/376768511554498562">September 8, 2013</a></blockquote>
 
 PS: The videos are being uploaded at [Python India YouTube channel](https://www.youtube.com/playlist?list=PL6GW05BfqWIdsaaV35jcHWPWTI-DAw6Yn).
 
