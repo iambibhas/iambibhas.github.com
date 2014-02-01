@@ -5,9 +5,9 @@ auto: true
 rdiscount:
   extensions: [smart]
 
-name: Bibhas C Debnath
+name: Bibhas Debnath
 url: http://bibhas.in
-description: "Bibhas C Debnath, developer from Kolkata, India."
+description: "Bibhas Debnath, developer from Kolkata, India."
 twitter: pythonerd
 github: iambibhas
 gravatar_url: http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152
