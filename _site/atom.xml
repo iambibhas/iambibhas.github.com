@@ -1,15 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
  
- <title>Bibhas C Debnath</title>
+ <title>Bibhas Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2014-02-01T13:00:44+05:30</updated>
+ <updated>2014-03-16T15:06:59+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
-   <name>Bibhas C Debnath</name>
+   <name>Bibhas Debnath</name>
  </author>
  
+ 
+ <entry>
+   <title>The festival of colors, Holi and me</title>
+   <link href="http://bibhas.in/blog/the-festival-of-colors-holi-and-me/"/>
+   <updated>2014-03-16T00:00:00+05:30</updated>
+   <id>http://bibhas.in/blog/the-festival-of-colors-holi-and-me</id>
+   <content type="html">&lt;p&gt;Holi as a festival kind of sucks for me. I guess that&amp;rsquo;s mostly because I don&amp;rsquo;t like the idea of having fun while bathing in artifical colors.  So, I have to stay home for at least 3 days when everybody is &amp;ldquo;spreading the joy&amp;rdquo; outside. And if I go outside, they will share their &amp;ldquo;joy&amp;rdquo; with me too regardless of if I want to be a part of it or not. And they are not very considerate either. We Indians are &lt;em&gt;really&lt;/em&gt; strict about that.&lt;/p&gt;
+
+&lt;p&gt;But this time Holi is actually being awesome because four of us friends are staying inside with our computers. Wherever I look there is code, computer, boxes of foods that have been eaten, camera, bean bag and lot of concentration. I&amp;rsquo;m trying to become a bit less Indian about it and not forcing others to do the same. With you all(well, maybe not all) a Happy Holi.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>Map of Kolkata Book Fair 2014</title>
@@ -1622,7 +1633,7 @@ And DO let me know if you like it and if you need any changes made. :)
  </entry>
  
  <entry>
-   <title>Year Ending Kolkata Meetup ’10</title>
+   <title>Year Ending Kolkata Meetup â10</title>
    <link href="http://bibhas.in/blog/year-ending-kolkata-meetup-10"/>
    <updated>2010-12-31T00:00:00+05:30</updated>
    <id>http://bibhas.in/blog/year-ending-kolkata-meetup-10</id>
@@ -1797,7 +1808,7 @@ So this way, you can make changes in your slug any way you want. But be careful 
  </entry>
  
  <entry>
-   <title>Startup Saturday Kolkata – Tweets</title>
+   <title>Startup Saturday Kolkata â Tweets</title>
    <link href="http://bibhas.in/blog/startup-saturday-kol"/>
    <updated>2010-12-11T00:00:00+05:30</updated>
    <id>http://bibhas.in/blog/startup-saturday-kol</id>
