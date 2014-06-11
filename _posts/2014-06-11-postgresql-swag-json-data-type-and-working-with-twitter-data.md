@@ -76,7 +76,7 @@ Let's try to fetch all the tweet texts(I'll use `explain analyze` on all the que
      Seq Scan on tweet  (cost=0.00..4254.06 rows=20325 width=51) (actual time=0.169..458.198 rows=20335 loops=1)
      Total runtime: 459.121 ms
 
-A bit slow for 20k records, but we'll try and fix that later. Let's try a `WHERE` clause on a JSON property -
+For reference, `->` returns a JSON object and `->>` returns text. Check the JSON data type reference url above for more details. Now, let's try a `WHERE` clause on a JSON property -
 
     tweets=# explain analyze select tid, data#>>'{user,screen_name}', data->>'text' from tweet where data->>'text' like '%world cup%';
                                                    QUERY PLAN

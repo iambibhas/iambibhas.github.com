@@ -4,7 +4,7 @@
  <title>Bibhas Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2014-06-11T19:26:19+05:30</updated>
+ <updated>2014-06-11T19:28:52+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas Debnath</name>
@@ -88,7 +88,7 @@ conn.close()
  Total runtime: 459.121 ms
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;A bit slow for 20k records, but we&amp;rsquo;ll try and fix that later. Let&amp;rsquo;s try a &lt;code&gt;WHERE&lt;/code&gt; clause on a JSON property -&lt;/p&gt;
+&lt;p&gt;For reference, &lt;code&gt;-&amp;gt;&lt;/code&gt; returns a JSON object and &lt;code&gt;-&amp;gt;&amp;gt;&lt;/code&gt; returns text. Check the JSON data type reference url above for more details. Now, let&amp;rsquo;s try a &lt;code&gt;WHERE&lt;/code&gt; clause on a JSON property -&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'text' from tweet where data-&amp;gt;&amp;gt;'text' like '%world cup%';
                                                QUERY PLAN

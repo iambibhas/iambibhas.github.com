@@ -160,7 +160,7 @@ conn.close()
  Total runtime: 459.121 ms
 </code></pre>
 
-<p>A bit slow for 20k records, but we&rsquo;ll try and fix that later. Let&rsquo;s try a <code>WHERE</code> clause on a JSON property -</p>
+<p>For reference, <code>-&gt;</code> returns a JSON object and <code>-&gt;&gt;</code> returns text. Check the JSON data type reference url above for more details. Now, let&rsquo;s try a <code>WHERE</code> clause on a JSON property -</p>
 
 <pre><code>tweets=# explain analyze select tid, data#&gt;&gt;'{user,screen_name}', data-&gt;&gt;'text' from tweet where data-&gt;&gt;'text' like '%world cup%';
                                                QUERY PLAN
