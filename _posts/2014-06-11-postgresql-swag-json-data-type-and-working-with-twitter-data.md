@@ -135,7 +135,7 @@ Here the `geo` field will return GeoJSON like `{"type": "Point", "coordinates": 
 
 These are numbers I can work with.
 
-One of the major reasons to work with PostgreSQL is [PostGIS](http://postgis.net/). *Really* fast geo data parsing and querying is someone everyone who works with geo data, craves. So let's try to find all the tweets in my store which were created withing 5km of my location, e.g. `13.004616, 77.620176` -
+One of the major reasons to work with PostgreSQL is [PostGIS](http://postgis.net/). *Really* fast geo data parsing and querying is everyone who works with geo data, craves. So let's try to find all the tweets in my store which were created withing 5km of my location, e.g. `13.004616, 77.620176` -
 
     explain ANALYZE
     SELECT tmp_table.tid,
