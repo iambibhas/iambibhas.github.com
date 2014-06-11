@@ -4,12 +4,194 @@
  <title>Bibhas Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2014-04-13T23:59:02+05:30</updated>
+ <updated>2014-06-11T19:24:07+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas Debnath</name>
  </author>
  
+ 
+ <entry>
+   <title>PostgreSQL SWAG: JSON data type and working with Twitter data</title>
+   <link href="http://bibhas.in/blog/postgresql-swag-json-data-type-and-working-with-twitter-data/"/>
+   <updated>2014-06-11T00:00:00+05:30</updated>
+   <id>http://bibhas.in/blog/postgresql-swag-json-data-type-and-working-with-twitter-data</id>
+   <content type="html">&lt;p&gt;When working on side projects that deal with 3rd party data, how much time do you spend on figuring out the database schema? Not an insignificant amount. You don&amp;rsquo;t use a DBMS you say? Good luck parsing the data files and querying them.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;m not going to start a DBMS comparison. I&amp;rsquo;ve spent a lot of time fiddling with structred data and PostgreSQL has been really kind to me. It&amp;rsquo;s stable, &lt;em&gt;really&lt;/em&gt; feaure rich and it can literally do &lt;em&gt;anything&lt;/em&gt;. You want to setup a cluster? Replication? Crunch geo spatial data? parse Gigabytes of CSV files? And want to do all of these really fast? Then PostgreSQL is for you, it can do all that and more out of the box. Just today a friend told me that PostgreSQL parsed and imported his 4.3GB CSV file in under 10 minutes. I&amp;rsquo;m happy with that performance.&lt;/p&gt;
+
+&lt;p&gt;We at KLP work with huge amount of data on daily basis and PostgreSQL has been helping us really well on our job. We&amp;rsquo;ve recently migrated all the databases to PostgreSQL 9.3 because of the native support for PostGIS and some more interesting features, I&amp;rsquo;ve written about some of them below. :)&lt;/p&gt;
+
+&lt;p&gt;You&amp;rsquo;ve probably heard about PostgreSQL&amp;rsquo;s &lt;a href=&quot;http://www.postgresql.org/docs/9.3/static/functions-json.html&quot;&gt;JSON data type&lt;/a&gt; recently. This has made it possible to work with both structured and schema-less data. For example, I&amp;rsquo;ll talk about Twitter data here. As you know, Twitter provides their data from API in JSON format. And till now, if I ever had to work with Twitter data, I had to write a quick db schema, create a table, then parse the incoming JSON, insert it in the said table and then work with it. Now the provess is a bit faster. ;)&lt;/p&gt;
+
+&lt;p&gt;First, I&amp;rsquo;ll create couple of small tables -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;CREATE TABLE tweet
+(
+    tid character varying NOT NULL,
+    data json,
+    CONSTRAINT tid_pkey PRIMARY KEY (tid)
+)
+
+CREATE TABLE word
+(
+    id bigserial NOT NULL,
+    text character varying(100),
+    CONSTRAINT id_pkey PRIMARY KEY (id)
+)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;tid&lt;/code&gt; field will store the id of the tweet and &lt;code&gt;data&lt;/code&gt; field will store the json body of the tweet. The table &lt;code&gt;word&lt;/code&gt; is to store the list of words I need to search for on Twitter and gather the sample data.&lt;/p&gt;
+
+&lt;p&gt;Here is a sample script I used to quickly gather about 24k tweets. It&amp;rsquo;s not at all perfect and you should not use it to gather data. It doesn&amp;rsquo;t even use the &lt;code&gt;since_id&lt;/code&gt; param for the search API endpoint.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;import twitter
+import json
+import psycopg2
+
+api = twitter.Twitter(auth=twitter.OAuth('', '', '', ''))
+
+conn = psycopg2.connect(&quot;dbname=tweets user=bibhas password=forgotit&quot;)
+cur = conn.cursor()
+
+cur.execute('SELECT text from word')
+terms = cur.fetchall()
+if terms:
+    for t in terms:
+        tweets = api.search.tweets(q=t, lang='en', count=100)
+        for s in tweets['statuses']:
+            cur.execute(&quot;SELECT * FROM tweet WHERE tid='%s'&quot;, (s['id'], ))
+
+            # ignore the duplicate and RT-like tweets
+            if cur.fetchone() is not None or s['text'].find('RT @') &amp;gt;= 0:
+                continue
+
+            cur.execute(&quot;INSERT INTO tweet (tid, data) VALUES (%s, %s)&quot;, (s['id'], json.dumps(s), ))
+        conn.commit()
+
+cur.close()
+conn.close()
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;I ran this script as a cron job for few hours and I had the required data. Now if I query the table, this is what it looks like -&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/uploads/tweets-json.jpg&quot; alt=&quot;JSON data in PostgreSQL&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;So, no schema specific to the tweet&amp;rsquo;s JSON structure and we got the data in the database. Now let&amp;rsquo;s try to query the data and see what happens.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s try to fetch all the tweet texts(I&amp;rsquo;ll use &lt;code&gt;explain analyze&lt;/code&gt; on all the queries for showing the performace) -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data-&amp;gt;&amp;gt;'text' from tweet;
+                                                 QUERY PLAN
+-------------------------------------------------------------------------------------------------------------
+ Seq Scan on tweet  (cost=0.00..4254.06 rows=20325 width=51) (actual time=0.169..458.198 rows=20335 loops=1)
+ Total runtime: 459.121 ms
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A bit slow for 20k records, but we&amp;rsquo;ll try and fix that later. Let&amp;rsquo;s try a &lt;code&gt;WHERE&lt;/code&gt; clause on a JSON property -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'text' from tweet where data-&amp;gt;&amp;gt;'text' like '%world cup%';
+                                               QUERY PLAN
+--------------------------------------------------------------------------------------------------------
+ Seq Scan on tweet  (cost=0.00..4384.70 rows=2 width=51) (actual time=10.700..481.758 rows=510 loops=1)
+   Filter: ((data -&amp;gt;&amp;gt; 'text'::text) ~~ '%world cup%'::text)
+   Rows Removed by Filter: 20202
+ Total runtime: 481.825 ms
+(4 rows)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;and if I try case insensitice matching -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'text' from tweet where UPPER(data-&amp;gt;&amp;gt;'text') like UPPER('%world cup%');
+                                               QUERY PLAN
+--------------------------------------------------------------------------------------------------------
+ Seq Scan on tweet  (cost=0.00..4436.49 rows=2 width=51) (actual time=7.983..642.647 rows=3563 loops=1)
+   Filter: (upper((data -&amp;gt;&amp;gt; 'text'::text)) ~~ '%WORLD CUP%'::text)
+   Rows Removed by Filter: 17149
+ Total runtime: 642.887 ms
+(4 rows)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s try to find all the useful tweets, those that have been favorited more than, let&amp;rsquo;s say 5 times -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'favorite_count' from tweet where CAST(data-&amp;gt;&amp;gt;'favorite_count' AS integer) &amp;gt; 5;
+                                               QUERY PLAN
+---------------------------------------------------------------------------------------------------------
+ Seq Scan on tweet  (cost=0.00..5202.05 rows=7939 width=51) (actual time=2.727..557.297 rows=27 loops=1)
+   Filter: (((data -&amp;gt;&amp;gt; 'favorite_count'::text))::integer &amp;gt; 5)
+   Rows Removed by Filter: 23787
+ Total runtime: 557.338 ms
+(4 rows)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt; &lt;code&gt;data-&amp;gt;&amp;gt;'favorite_count'&lt;/code&gt; returns the count as &lt;code&gt;text&lt;/code&gt; and we &lt;code&gt;CAST()&lt;/code&gt; it as integer and use it for comparing.&lt;/p&gt;
+
+&lt;p&gt; Now let&amp;rsquo;s try to fetch the geo enabled tweets that has the text &amp;lsquo;home&amp;rsquo; in it (:P) -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt; tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'text', data-&amp;gt;&amp;gt;'geo' from tweet where data-&amp;gt;&amp;gt;'geo' &amp;lt;&amp;gt; '' and UPPER(data-&amp;gt;&amp;gt;'text') like UPPER('%home%');
+                                               QUERY PLAN
+---------------------------------------------------------------------------------------------------------
+ Seq Scan on tweet  (cost=0.00..5302.47 rows=192 width=51) (actual time=28.156..549.844 rows=8 loops=1)
+   Filter: (((data -&amp;gt;&amp;gt; 'geo'::text) &amp;lt;&amp;gt; ''::text) AND (upper((data -&amp;gt;&amp;gt; 'text'::text)) ~~ '%HOME%'::text))
+   Rows Removed by Filter: 24172
+ Total runtime: 549.886 ms
+(4 rows)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Here the &lt;code&gt;geo&lt;/code&gt; field will return GeoJSON like &lt;code&gt;{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [43.6482035, -79.3886928]}&lt;/code&gt;. If you want to extract the lat, long directly, you can do this -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'text', data-&amp;gt;'geo'-&amp;gt;'coordinates'-&amp;gt;0 as lat, data-&amp;gt;'geo'-&amp;gt;'coordinates'-&amp;gt;1 as lon from tweet where data-&amp;gt;&amp;gt;'geo' &amp;lt;&amp;gt; '' and UPPER(data-&amp;gt;&amp;gt;'text') like UPPER('%home%');
+                                               QUERY PLAN
+---------------------------------------------------------------------------------------------------------
+ Seq Scan on tweet  (cost=0.00..5304.87 rows=192 width=51) (actual time=1.220..537.186 rows=8 loops=1)
+   Filter: (((data -&amp;gt;&amp;gt; 'geo'::text) &amp;lt;&amp;gt; ''::text) AND (upper((data -&amp;gt;&amp;gt; 'text'::text)) ~~ '%HOME%'::text))
+   Rows Removed by Filter: 24172
+ Total runtime: 537.205 ms
+(4 rows)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;These are numbers I can work with.&lt;/p&gt;
+
+&lt;p&gt;One of the major reasons to work with PostgreSQL is &lt;a href=&quot;http://postgis.net/&quot;&gt;PostGIS&lt;/a&gt;. &lt;em&gt;Really&lt;/em&gt; fast geo data parsing and querying is someone everyone who works with geo data, craves. So let&amp;rsquo;s try to find all the tweets in my store which were created withing 5km of my location, e.g. &lt;code&gt;13.004616, 77.620176&lt;/code&gt; -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;explain ANALYZE
+SELECT tmp_table.tid,
+   tmp_table.screen_name,
+   tmp_table.text
+FROM
+  (SELECT tid,
+    data-&amp;gt;'user'-&amp;gt;&amp;gt;'screen_name' AS screen_name,
+    data-&amp;gt;&amp;gt;'text' AS text,
+    CAST(data#&amp;gt;&amp;gt;'{geo,coordinates,0}' AS double PRECISION) AS lat,
+    CAST(data#&amp;gt;&amp;gt;'{geo,coordinates,1}' AS double PRECISION) AS lon
+   FROM tweet
+   WHERE data-&amp;gt;&amp;gt;'geo' &amp;lt;&amp;gt; '') AS tmp_table
+WHERE ST_Distance(
+    ST_MakePoint(tmp_table.lon, tmp_table.lat)::geography,
+    ST_MakePoint(77.620176, 13.004616)::geography
+) &amp;lt; 5000;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;that yields this -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;                                                QUERY PLAN
+---------------------------------------------------------------------------------
+ Seq Scan on tweet  (cost=0.00..12667.35 rows=8631 width=51) (actual time=311.740..617.514 rows=2 loops=1)
+   Filter: (((data -&amp;gt;&amp;gt; 'geo'::text) &amp;lt;&amp;gt; ''::text) AND (_st_distance((st_makepoint(((data #&amp;gt;&amp;gt; '{geo,coordinates,1}'::text[]))::double precision, ((data #&amp;gt;&amp;gt; '{geo,coordinates,0}'::text[]))::double precision))::geography, '0101000020E6100000E770ADF6B0675340A11342075D022A40'::geography, 0::double precision, true) &amp;lt; 5000::double precision))
+   Rows Removed by Filter: 26013
+ Total runtime: 617.561 ms
+(4 rows)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That&amp;rsquo;s fairly fast for me.&lt;/p&gt;
+
+&lt;p&gt;Just for reference, &lt;a href=&quot;http://postgis.net/docs/ST_Distance.html&quot;&gt;ST_Distance&lt;/a&gt; and &lt;a href=&quot;http://postgis.net/docs/ST_MakePoint.html&quot;&gt;ST_MakePoint&lt;/a&gt; docs are pretty handy.&lt;/p&gt;
+
+&lt;p&gt;All the above queries just showed that we can query a fairly sized db using JSON data type without much time different between complex queries. My cron job for collecting tweets is still running. I&amp;rsquo;m waiting for it to touch 1 million records. Once it does, will test on it and update this post.&lt;/p&gt;
+
+&lt;p&gt;I&amp;rsquo;ll probably write another post on PostGIS and maybe Foursquare data. That would be fun. If you have any ideas, let me know.&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>WhatsApp + Truecaller + Horny Men = A Perfect Crime</title>
