@@ -8,7 +8,7 @@ permalink: /blog/postgresql-swag-part-2-indexing-json-data-type-and-full-text-se
 ---
 In my [last post](/blog/postgresql-swag-json-data-type-and-working-with-twitter-data/) I demonstrated the use of JSON data type of PostgreSQL. But I skipped a crucial part, Indexes.
 
-All my queries in last post ran on a table with about 24k rows with the JSON tweet data. That import script of mine is still running and I've closed 100k records. I'll run the same queries again, but this time I'll create indexes for the appropriate columns before querying.
+All my queries in last post ran on a table with about 24k rows with the JSON tweet data. That import script of mine is still running and I've crossed 100k records. I'll run the same queries again, but this time I'll create indexes for the appropriate columns before querying.
 
 Also, I'll explain briefly how you can use the full text search feature of PostgreSQL instead of using `LIKE` like I used in last blog post.
 
