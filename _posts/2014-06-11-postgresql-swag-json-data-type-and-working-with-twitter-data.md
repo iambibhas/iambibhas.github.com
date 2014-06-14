@@ -87,7 +87,7 @@ For reference, `->` returns a JSON object and `->>` returns text. Check the JSON
      Total runtime: 481.825 ms
     (4 rows)
 
-and if I try case insensitice matching -
+and if I try case insensitive matching -
 
     tweets=# explain analyze select tid, data#>>'{user,screen_name}', data->>'text' from tweet where UPPER(data->>'text') like UPPER('%world cup%');
                                                    QUERY PLAN
@@ -135,7 +135,7 @@ Here the `geo` field will return GeoJSON like `{"type": "Point", "coordinates": 
 
 These are numbers I can work with.
 
-One of the major reasons to work with PostgreSQL is [PostGIS](http://postgis.net/). *Really* fast geo data parsing and querying is everyone who works with geo data, craves. So let's try to find all the tweets in my store which were created withing 5km of my location, e.g. `13.004616, 77.620176` -
+One of the major reasons to work with PostgreSQL is [PostGIS](http://postgis.net/). *Really* fast geo data parsing and querying is everyone who works with geo data, craves. So let's try to find all the tweets which were created within 5km of my location, e.g. `13.004616, 77.620176` -
 
     explain ANALYZE
     SELECT tmp_table.tid,

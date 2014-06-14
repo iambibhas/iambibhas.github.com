@@ -4,7 +4,7 @@
  <title>Bibhas Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2014-06-11T19:32:38+05:30</updated>
+ <updated>2014-06-11T23:07:08+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas Debnath</name>
@@ -100,7 +100,7 @@ conn.close()
 (4 rows)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;p&gt;and if I try case insensitice matching -&lt;/p&gt;
+&lt;p&gt;and if I try case insensitive matching -&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'text' from tweet where UPPER(data-&amp;gt;&amp;gt;'text') like UPPER('%world cup%');
                                                QUERY PLAN
@@ -152,7 +152,7 @@ conn.close()
 
 &lt;p&gt;These are numbers I can work with.&lt;/p&gt;
 
-&lt;p&gt;One of the major reasons to work with PostgreSQL is &lt;a href=&quot;http://postgis.net/&quot;&gt;PostGIS&lt;/a&gt;. &lt;em&gt;Really&lt;/em&gt; fast geo data parsing and querying is everyone who works with geo data, craves. So let&amp;rsquo;s try to find all the tweets in my store which were created withing 5km of my location, e.g. &lt;code&gt;13.004616, 77.620176&lt;/code&gt; -&lt;/p&gt;
+&lt;p&gt;One of the major reasons to work with PostgreSQL is &lt;a href=&quot;http://postgis.net/&quot;&gt;PostGIS&lt;/a&gt;. &lt;em&gt;Really&lt;/em&gt; fast geo data parsing and querying is everyone who works with geo data, craves. So let&amp;rsquo;s try to find all the tweets which were created withing 5km of my location, e.g. &lt;code&gt;13.004616, 77.620176&lt;/code&gt; -&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;explain ANALYZE
 SELECT tmp_table.tid,

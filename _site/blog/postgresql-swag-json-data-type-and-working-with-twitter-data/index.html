@@ -172,7 +172,7 @@ conn.close()
 (4 rows)
 </code></pre>
 
-<p>and if I try case insensitice matching -</p>
+<p>and if I try case insensitive matching -</p>
 
 <pre><code>tweets=# explain analyze select tid, data#&gt;&gt;'{user,screen_name}', data-&gt;&gt;'text' from tweet where UPPER(data-&gt;&gt;'text') like UPPER('%world cup%');
                                                QUERY PLAN
@@ -224,7 +224,7 @@ conn.close()
 
 <p>These are numbers I can work with.</p>
 
-<p>One of the major reasons to work with PostgreSQL is <a href="http://postgis.net/">PostGIS</a>. <em>Really</em> fast geo data parsing and querying is everyone who works with geo data, craves. So let&rsquo;s try to find all the tweets in my store which were created withing 5km of my location, e.g. <code>13.004616, 77.620176</code> -</p>
+<p>One of the major reasons to work with PostgreSQL is <a href="http://postgis.net/">PostGIS</a>. <em>Really</em> fast geo data parsing and querying is everyone who works with geo data, craves. So let&rsquo;s try to find all the tweets which were created withing 5km of my location, e.g. <code>13.004616, 77.620176</code> -</p>
 
 <pre><code>explain ANALYZE
 SELECT tmp_table.tid,
