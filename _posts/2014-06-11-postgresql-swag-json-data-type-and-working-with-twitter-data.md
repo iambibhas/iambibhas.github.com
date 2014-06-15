@@ -172,4 +172,4 @@ All the above queries just showed that we can query a fairly sized db using JSON
 
 I'll probably write another post on PostGIS and maybe Foursquare data. That would be fun. If you have any ideas, let me know.
 
-**UPDATE**: Here is the [part 2](/blog/postgresql-swag-part-2-indexing-json-data-type-and-full-text-search/) of this blog post.
+**UPDATE**: Here is the [part 2](/blog/postgresql-swag-part-2-indexing-json-data-type-and-full-text-search/) of this blog post about indexing the JSON data and the performance changes related to that.
