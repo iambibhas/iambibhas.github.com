@@ -171,3 +171,5 @@ Just for reference, [ST_Distance](http://postgis.net/docs/ST_Distance.html) and 
 All the above queries just showed that we can query a fairly sized db using JSON data type without much time different between complex queries. My cron job for collecting tweets is still running. I'm waiting for it to touch 1 million records. Once it does, will test on it and update this post.
 
 I'll probably write another post on PostGIS and maybe Foursquare data. That would be fun. If you have any ideas, let me know.
+
+**UPDATE**: Here is the [part 2](/blog/postgresql-swag-part-2-indexing-json-data-type-and-full-text-search/) of this blog post.
