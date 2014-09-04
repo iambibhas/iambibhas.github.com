@@ -4,12 +4,159 @@
  <title>Bibhas Debnath</title>
  <link href="http://bibhas.in/atom.xml" rel="self"/>
  <link href="http://bibhas.in/"/>
- <updated>2014-06-11T23:07:08+05:30</updated>
+ <updated>2014-09-04T11:49:06+05:30</updated>
  <id>http://bibhas.in</id>
  <author>
    <name>Bibhas Debnath</name>
  </author>
  
+ 
+ <entry>
+   <title>We Should Blame Ourselves First</title>
+   <link href="http://bibhas.in/blog/we-should-blame-ourselves-first/"/>
+   <updated>2014-09-04T00:00:00+05:30</updated>
+   <id>http://bibhas.in/blog/we-should-blame-ourselves-first</id>
+   <content type="html">&lt;p&gt;Yesterday, I was standing at a road crossing waiting for the signal to turn green to cross the road. There was a &amp;ldquo;No U Turn&amp;rdquo; sign at the crossing and couple of traffic police. Then a taxi comes and wants to take a right turn, from the look of it because the passanger couple wanted him to. The traffic police stops them of course. Then the male passanger, who was dressed really well with formal shirts (If you met him any random day he&amp;rsquo;d introduce himself as a gentleman I&amp;rsquo;m sure), starts arguing with the traffic police. His point being he&amp;rsquo;s taken right on that crossing before so he can take right again.&lt;/p&gt;
+
+&lt;p&gt;The traffic police shows him the sign ans ask them to go ahead and take the next right. But the passanger keeps arguing, and slowly gets angry. His wife/gf/co-passanger slowly joins him and supports him. The traffic police starts insisting that they don&amp;rsquo;t argue and take the next turn. The passanger starts getting really angry this time and starts talking is loud voice.&lt;/p&gt;
+
+&lt;p&gt;The taxi driver then realizes that he can&amp;rsquo;t take a right, so he starts picking up the speed. But the passanger is really furious by then. And just as the taxi starts picking up speed, he says something &lt;em&gt;really&lt;/em&gt; offensive to the traffic police. The police, hearing that, shouts at the taxi driver and asks him to stop the taxi so that he can do something about it. The driver doesn&amp;rsquo;t stop and they speed away.&lt;/p&gt;
+
+&lt;p&gt;Now think a little, I&amp;rsquo;m sure you&amp;rsquo;ve seen something similar happen around you before. It&amp;rsquo;s clearly written that you can&amp;rsquo;t take a U turn. Or in your case it might have been a &amp;ldquo;No Parking&amp;rdquo; sign or something similar. What did the traffic police do to deserve bad-mouthing? Just because you&amp;rsquo;ve taken U turn on that crossing before, does that give you right to violate a traffic sign? And say offensice things to someone who stands at the crossing of a road trying to keep your journey smoother all day long?&lt;/p&gt;
+
+&lt;p&gt;What really bothers me is that these people who wears nice cloths and speaks nice language behaves like this while on road. These people cannot follow a simple traffic rule and don&amp;rsquo;t even know how to talk to another person. Any given day that traffic police works harder than you and me. They deserve more respect from us than you can think of. Let&amp;rsquo;s just try to give them that. Look around you, you&amp;rsquo;ll find such people around you all the time. You neighbours, relatives, acquaintances. If you see something like that and have a chance to speak some sense, please do.&lt;/p&gt;
+</content>
+ </entry>
+ 
+ <entry>
+   <title>PostgreSQL SWAG Part 2: Indexing JSON data type and Full text search</title>
+   <link href="http://bibhas.in/blog/postgresql-swag-part-2-indexing-json-data-type-and-full-text-search/"/>
+   <updated>2014-06-14T00:00:00+05:30</updated>
+   <id>http://bibhas.in/blog/postgresql-swag-part-2-indexing-json-data-type</id>
+   <content type="html">&lt;p&gt;In my &lt;a href=&quot;/blog/postgresql-swag-json-data-type-and-working-with-twitter-data/&quot;&gt;last post&lt;/a&gt; I demonstrated the use of JSON data type of PostgreSQL. But I skipped a crucial part, Indexes.&lt;/p&gt;
+
+&lt;p&gt;All my queries in last post ran on a table with about 24k rows with the JSON tweet data. That import script of mine is still running and I&amp;rsquo;ve crossed 100k records. I&amp;rsquo;ll run the same queries again, but this time I&amp;rsquo;ll create indexes for the appropriate columns before querying.&lt;/p&gt;
+
+&lt;p&gt;Also, I&amp;rsquo;ll explain briefly how you can use the full text search feature of PostgreSQL instead of using &lt;code&gt;LIKE&lt;/code&gt; like I used in last blog post.&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s first try to fetch all the tweets that have both the word &amp;ldquo;world&amp;rdquo; and &amp;ldquo;cup&amp;rdquo; in it -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tweets=# create index &quot;idx_text&quot; on tweet using gin(to_tsvector('english', data-&amp;gt;&amp;gt;'text'));
+CREATE INDEX
+tweets=# analyze tweet;
+ANALYZE
+tweets=# explain analyze select tid, data-&amp;gt;&amp;gt;'text' from tweet where to_tsvector('english', data-&amp;gt;&amp;gt;'text') @@ to_tsquery('world &amp;amp; cup');
+                                                      QUERY PLAN
+-----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on tweet  (cost=61.03..8490.10 rows=3229 width=51) (actual time=4.146..358.203 rows=17037 loops=1)
+   Recheck Cond: (to_tsvector('english'::regconfig, (data -&amp;gt;&amp;gt; 'text'::text)) @@ to_tsquery('world &amp;amp; cup'::text))
+   -&amp;gt;  Bitmap Index Scan on idx_text  (cost=0.00..60.23 rows=3229 width=0) (actual time=3.325..3.325 rows=17037 loops=1)
+         Index Cond: (to_tsvector('english'::regconfig, (data -&amp;gt;&amp;gt; 'text'::text)) @@ to_tsquery('world &amp;amp; cup'::text))
+ Total runtime: 358.887 ms
+(5 rows)
+
+tweets=# explain analyze select tid, data-&amp;gt;&amp;gt;'text' from tweet where to_tsvector('english', data-&amp;gt;&amp;gt;'text') @@ to_tsquery('python &amp;amp; ruby');
+                                                      QUERY PLAN
+-----------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on tweet  (cost=28.13..91.09 rows=16 width=51) (actual time=2.969..12.769 rows=114 loops=1)
+   Recheck Cond: (to_tsvector('english'::regconfig, (data -&amp;gt;&amp;gt; 'text'::text)) @@ to_tsquery('python &amp;amp; ruby'::text))
+   -&amp;gt;  Bitmap Index Scan on idx_text  (cost=0.00..28.12 rows=16 width=0) (actual time=2.822..2.822 rows=114 loops=1)
+         Index Cond: (to_tsvector('english'::regconfig, (data -&amp;gt;&amp;gt; 'text'::text)) @@ to_tsquery('python &amp;amp; ruby'::text))
+ Total runtime: 12.841 ms
+(5 rows)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The phenomenal time difference is dependant on the number of results -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tweets=# select count(tid) from tweet where to_tsvector('english', data-&amp;gt;&amp;gt;'text') @@ to_tsquery('python &amp;amp; ruby');
+ count
+-------
+   114
+(1 row)
+
+tweets=# select count(tid) from tweet where to_tsvector('english', data-&amp;gt;&amp;gt;'text') @@ to_tsquery('world &amp;amp; cup');
+ count
+-------
+ 17037
+(1 row)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Just remember that these queries are running on almost 4 times the records compared to the last post.&lt;/p&gt;
+
+&lt;p&gt;I think that &lt;code&gt;gin(to_tsvector('english', data-&amp;gt;&amp;gt;'text'))&lt;/code&gt; and &lt;code&gt;where to_tsvector('english', data-&amp;gt;&amp;gt;'text') @@ to_tsquery('world &amp;amp; cup')&lt;/code&gt; needs some explanation.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;GIN&lt;/code&gt;(Generalized Inverted Index) and &lt;code&gt;GiST&lt;/code&gt;(Generalized Search Tree) indexes are &lt;a href=&quot;http://www.postgresql.org/docs/current/static/textsearch-indexes.html&quot;&gt;two types of indexes&lt;/a&gt; on PostgreSQL that can be used to speed up the text search proxess. There are merits and demerits of both. As a rule of thumb, &lt;code&gt;GIN&lt;/code&gt; indexes are best for static data because lookups are faster. Hence we&amp;rsquo;re using that.&lt;/p&gt;
+
+&lt;p&gt;It&amp;rsquo;s important to note that if you create index for &lt;code&gt;to_tsvector('english', data-&amp;gt;&amp;gt;'text')&lt;/code&gt; then while searching you much use the same &lt;code&gt;to_tsvector&lt;/code&gt; method. If you use &lt;code&gt;to_tsvector(data-&amp;gt;&amp;gt;'text')&lt;/code&gt;, the index might not be used.&lt;/p&gt;
+
+&lt;p&gt;The &lt;code&gt;to_tsvector()&lt;/code&gt; function takes a text and breaks it up into tokens, then consults few dictionaries that recognizes those tokens and provides a more normalized &lt;code&gt;lexems&lt;/code&gt; to represent the token. The stop words are also detected and ignored as they appear too frequently to be useful while searching. E.g. -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tweets=# select to_tsvector('english', 'Fifa world cup is ongoing');
+             to_tsvector
+-------------------------------------
+ 'cup':3 'fifa':1 'ongo':5 'world':2
+(1 row)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;to_tsquery()&lt;/code&gt; creates a &lt;code&gt;tsquery&lt;/code&gt; value from querytext, which must consist of single tokens separated by the Boolean operators &lt;code&gt;&amp;amp;&lt;/code&gt; (AND), &lt;code&gt;|&lt;/code&gt; (OR) and &lt;code&gt;!&lt;/code&gt; (NOT).&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tweets=# select to_tsquery('english', 'Fifa &amp;amp; world | cup');
+        to_tsquery
+--------------------------
+ 'fifa' &amp;amp; 'world' | 'cup'
+(1 row)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://www.postgresql.org/docs/9.3/static/textsearch-controls.html#TEXTSEARCH-PARSING-DOCUMENTS&quot;&gt;PostgreSQL doc&lt;/a&gt; has more details.&lt;/p&gt;
+
+&lt;p&gt;Then the &lt;code&gt;tsvector&lt;/code&gt; is searched with the &lt;code&gt;tsquery&lt;/code&gt; &lt;a href=&quot;http://www.postgresql.org/docs/9.3/static/functions-textsearch.html&quot;&gt;using &lt;code&gt;@@&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now let&amp;rsquo;s try searching for tweets with more than 5 favorites, both with and without indexes, so that we can compare -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'favorite_count' from tweet where CAST(data-&amp;gt;&amp;gt;'favorite_count' AS integer) &amp;gt; 5;
+                                                 QUERY PLAN
+-------------------------------------------------------------------------------------------------------------
+ Seq Scan on tweet  (cost=0.00..21121.93 rows=32322 width=51) (actual time=1.901..2103.874 rows=100 loops=1)
+   Filter: (((data -&amp;gt;&amp;gt; 'favorite_count'::text))::integer &amp;gt; 5)
+   Rows Removed by Filter: 96865
+ Total runtime: 2103.918 ms
+(4 rows)
+
+tweets=# create index &quot;idx_fav_count&quot; on tweet using btree(CAST(data-&amp;gt;&amp;gt;'favorite_count' AS integer));
+CREATE INDEX
+tweets=# analyze tweet;
+ANALYZE
+tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'favorite_count' from tweet where CAST(data-&amp;gt;&amp;gt;'favorite_count' AS integer) &amp;gt; 5;
+                                                         QUERY PLAN
+-----------------------------------------------------------------------------------------------------------------------------
+ Index Scan using idx_fav_count on tweet  (cost=0.30..157.46 rows=133 width=51) (actual time=0.266..16.045 rows=100 loops=1)
+   Index Cond: (((data -&amp;gt;&amp;gt; 'favorite_count'::text))::integer &amp;gt; 5)
+ Total runtime: 16.104 ms
+(3 rows)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;As you see, creating the index took down the time from 2 seconds to about 16ms!&lt;/p&gt;
+
+&lt;p&gt;Let&amp;rsquo;s find the tweets that has the word &lt;code&gt;home&lt;/code&gt; in them and also has geo location (remember, we created index for &lt;code&gt;data-&amp;gt;&amp;gt;'text'&lt;/code&gt; earlier) -&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'text', data-&amp;gt;&amp;gt;'geo' from tweet where data-&amp;gt;&amp;gt;'geo' &amp;lt;&amp;gt; '' and to_tsvector('english', data-&amp;gt;&amp;gt;'text') @@ to_tsquery('home');
+                                                       QUERY PLAN
+-------------------------------------------------------------------------------------------------------------------------
+ Bitmap Heap Scan on tweet  (cost=126.35..4321.85 rows=1328 width=51) (actual time=2.095..46.272 rows=27 loops=1)
+   Recheck Cond: (to_tsvector('english'::regconfig, (data -&amp;gt;&amp;gt; 'text'::text)) @@ to_tsquery('home'::text))
+   Filter: ((data -&amp;gt;&amp;gt; 'geo'::text) &amp;lt;&amp;gt; ''::text)
+   Rows Removed by Filter: 1322
+   -&amp;gt;  Bitmap Index Scan on idx_text  (cost=0.00..126.02 rows=1335 width=0) (actual time=1.006..1.006 rows=1349 loops=1)
+         Index Cond: (to_tsvector('english'::regconfig, (data -&amp;gt;&amp;gt; 'text'::text)) @@ to_tsquery('home'::text))
+ Total runtime: 46.313 ms
+(7 rows)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;From ~550ms to 46ms, that too on 4 times the records!&lt;/p&gt;
+
+&lt;p&gt;This just shows how indexing can make your life much easier if you use it correctly. :)&lt;/p&gt;
+</content>
+ </entry>
  
  <entry>
    <title>PostgreSQL SWAG: JSON data type and working with Twitter data</title>
@@ -152,7 +299,7 @@ conn.close()
 
 &lt;p&gt;These are numbers I can work with.&lt;/p&gt;
 
-&lt;p&gt;One of the major reasons to work with PostgreSQL is &lt;a href=&quot;http://postgis.net/&quot;&gt;PostGIS&lt;/a&gt;. &lt;em&gt;Really&lt;/em&gt; fast geo data parsing and querying is everyone who works with geo data, craves. So let&amp;rsquo;s try to find all the tweets which were created withing 5km of my location, e.g. &lt;code&gt;13.004616, 77.620176&lt;/code&gt; -&lt;/p&gt;
+&lt;p&gt;One of the major reasons to work with PostgreSQL is &lt;a href=&quot;http://postgis.net/&quot;&gt;PostGIS&lt;/a&gt;. &lt;em&gt;Really&lt;/em&gt; fast geo data parsing and querying is everyone who works with geo data, craves. So let&amp;rsquo;s try to find all the tweets which were created within 5km of my location, e.g. &lt;code&gt;13.004616, 77.620176&lt;/code&gt; -&lt;/p&gt;
 
 &lt;pre&gt;&lt;code&gt;explain ANALYZE
 SELECT tmp_table.tid,
@@ -190,6 +337,8 @@ WHERE ST_Distance(
 &lt;p&gt;All the above queries just showed that we can query a fairly sized db using JSON data type without much time different between complex queries. My cron job for collecting tweets is still running. I&amp;rsquo;m waiting for it to touch 1 million records. Once it does, will test on it and update this post.&lt;/p&gt;
 
 &lt;p&gt;I&amp;rsquo;ll probably write another post on PostGIS and maybe Foursquare data. That would be fun. If you have any ideas, let me know.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: Here is the &lt;a href=&quot;/blog/postgresql-swag-part-2-indexing-json-data-type-and-full-text-search/&quot;&gt;part 2&lt;/a&gt; of this blog post about indexing the JSON data and the performance changes related to that.&lt;/p&gt;
 </content>
  </entry>
  
