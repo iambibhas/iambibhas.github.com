@@ -62,7 +62,7 @@ Neat!
 Directed Graph
 ---
 
-But the above graph is undirected. I needed directed to know which node is receving more connections from others. Then I found out that Networkx has a Graph class called DiGraph, which can be used to draw directed graphs. Let's try that -
+But the above graph is undirected. I needed directed to know which node is receiving more connections from others. Then I found out that Networkx has a Graph class called DiGraph, which can be used to draw directed graphs. Let's try that -
 
     def draw_graph(graph):
         # create directed networkx graph
