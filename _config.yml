@@ -6,11 +6,11 @@ rdiscount:
   extensions: [smart]
 
 name: Bibhas Debnath
-url: http://bibhas.in
+url: https://bibhas.in
 description: "Bibhas Debnath, developer from Kolkata, India."
 twitter: pythonerd
 github_uname: iambibhas
-gravatar_url: http://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152
+gravatar_url: https://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152
 
 about_page: /about-me/
 
