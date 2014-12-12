@@ -38,7 +38,7 @@ So I looked around for tools that could help with it and came across [Networkx](
     # draw example
     # graph is a list of tuples of nodes. Each tuple defining the
     # connection between 2 nodes
-    graph = [(20, 21),(21, 22),(22, 23), (23, 24),(24, 25), (25, 20)]
+    graph = [(20, 21), (21, 22), (22, 23), (23, 24), (24, 25), (25, 20)]
 
     draw_graph(graph)
 
