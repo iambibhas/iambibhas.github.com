@@ -22,8 +22,8 @@ So I looked around for tools that could help with it and came across [Networkx](
         for edge in graph:
             G.add_edge(edge[0], edge[1])
 
-        # There are graph layouts like shell, spring, spectral and random
-        # shell usually looks better, so we're choosing it.
+        # There are graph layouts like shell, spring, spectral and random.
+        # Shell layout usually looks better, so we're choosing it.
         # I will show some examples later of other layouts
         graph_pos = nx.shell_layout(G)
 
