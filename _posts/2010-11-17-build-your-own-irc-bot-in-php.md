@@ -29,7 +29,7 @@ Am posting the code here so that you can customize it and build your own bot wit
     /*
     * PHP IRC Bot
     * Customized by Bibhas.
-    * Get in touch at @pythonerd in twitter
+    * Get in touch at @bibhasdn in twitter
     */
 
     //Setting time limit off. We need to run the script until We ask it to exit.
