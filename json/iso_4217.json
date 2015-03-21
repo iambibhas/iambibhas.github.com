@@ -1,0 +1,1264 @@
+{
+  "rows" : [
+    {
+      "Code" : "AED",
+      "Num" : 784,
+      "E" : 2,
+      "Name" : "United Arab Emirates dirham",
+      "Locations" : "United Arab Emirates"
+    },
+    {
+      "Code" : "AFN",
+      "Num" : 971,
+      "E" : 2,
+      "Name" : "Afghan afghani",
+      "Locations" : "Afghanistan"
+    },
+    {
+      "Code" : "ALL",
+      "Num" : 8,
+      "E" : 2,
+      "Name" : "Albanian lek",
+      "Locations" : "Albania"
+    },
+    {
+      "Code" : "AMD",
+      "Num" : 51,
+      "E" : 2,
+      "Name" : "Armenian dram",
+      "Locations" : "Armenia"
+    },
+    {
+      "Code" : "ANG",
+      "Num" : 532,
+      "E" : 2,
+      "Name" : "Netherlands Antillean guilder",
+      "Locations" : "Curaçao (CW), Sint Maarten (SX)"
+    },
+    {
+      "Code" : "AOA",
+      "Num" : 973,
+      "E" : 2,
+      "Name" : "Angolan kwanza",
+      "Locations" : "Angola"
+    },
+    {
+      "Code" : "ARS",
+      "Num" : 32,
+      "E" : 2,
+      "Name" : "Argentine peso",
+      "Locations" : "ArgentinaDFGDFG"
+    },
+    {
+      "Code" : "AUD",
+      "Num" : 36,
+      "E" : 2,
+      "Name" : "Australian dollar",
+      "Locations" : "Australia, Christmas Island (CX), Cocos (Keeling) Islands (CC), Heard and McDonald Islands (HM), Kiribati (KI), Nauru (NR), Norfolk Island (NF), Tuvalu (TV), Australian Antarctic Territory"
+    },
+    {
+      "Code" : "AWG",
+      "Num" : 533,
+      "E" : 2,
+      "Name" : "Aruban florin",
+      "Locations" : "Aruba"
+    },
+    {
+      "Code" : "AZN",
+      "Num" : 944,
+      "E" : 2,
+      "Name" : "Azerbaijani manat",
+      "Locations" : "Azerbaijan"
+    },
+    {
+      "Code" : "BAM",
+      "Num" : 977,
+      "E" : 2,
+      "Name" : "Bosnia and Herzegovina convertible mark",
+      "Locations" : "Bosnia and Herzegovina"
+    },
+    {
+      "Code" : "BBD",
+      "Num" : 52,
+      "E" : 2,
+      "Name" : "Barbados dollar",
+      "Locations" : "Barbados"
+    },
+    {
+      "Code" : "BDT",
+      "Num" : 50,
+      "E" : 2,
+      "Name" : "Bangladeshi taka",
+      "Locations" : "Bangladesh"
+    },
+    {
+      "Code" : "BGN",
+      "Num" : 975,
+      "E" : 2,
+      "Name" : "Bulgarian lev",
+      "Locations" : "Bulgaria"
+    },
+    {
+      "Code" : "BHD",
+      "Num" : 48,
+      "E" : 3,
+      "Name" : "Bahraini dinar",
+      "Locations" : "Bahrain"
+    },
+    {
+      "Code" : "BIF",
+      "Num" : 108,
+      "E" : 0,
+      "Name" : "Burundian franc",
+      "Locations" : "Burundi"
+    },
+    {
+      "Code" : "BMD",
+      "Num" : 60,
+      "E" : 2,
+      "Name" : "Bermudian dollar",
+      "Locations" : "Bermuda"
+    },
+    {
+      "Code" : "BND",
+      "Num" : 96,
+      "E" : 2,
+      "Name" : "Brunei dollar",
+      "Locations" : "Brunei, auxiliary in Singapore (SG)"
+    },
+    {
+      "Code" : "BOB",
+      "Num" : 68,
+      "E" : 2,
+      "Name" : "Boliviano",
+      "Locations" : "Bolivia"
+    },
+    {
+      "Code" : "BOV",
+      "Num" : 984,
+      "E" : 2,
+      "Name" : "Bolivian Mvdol (funds code)",
+      "Locations" : "Bolivia"
+    },
+    {
+      "Code" : "BRL",
+      "Num" : 986,
+      "E" : 2,
+      "Name" : "Brazilian real",
+      "Locations" : "Brazil"
+    },
+    {
+      "Code" : "BSD",
+      "Num" : 44,
+      "E" : 2,
+      "Name" : "Bahamian dollar",
+      "Locations" : "Bahamas"
+    },
+    {
+      "Code" : "BTN",
+      "Num" : 64,
+      "E" : 2,
+      "Name" : "Bhutanese ngultrum",
+      "Locations" : "Bhutan"
+    },
+    {
+      "Code" : "BWP",
+      "Num" : 72,
+      "E" : 2,
+      "Name" : "Botswana pula",
+      "Locations" : "Botswana"
+    },
+    {
+      "Code" : "BYR",
+      "Num" : 974,
+      "E" : 0,
+      "Name" : "Belarusian ruble",
+      "Locations" : "Belarus"
+    },
+    {
+      "Code" : "BZD",
+      "Num" : 84,
+      "E" : 2,
+      "Name" : "Belize dollar",
+      "Locations" : "Belize"
+    },
+    {
+      "Code" : "CAD",
+      "Num" : 124,
+      "E" : 2,
+      "Name" : "Canadian dollar",
+      "Locations" : "Canada"
+    },
+    {
+      "Code" : "CDF",
+      "Num" : 976,
+      "E" : 2,
+      "Name" : "Congolese franc",
+      "Locations" : "Democratic Republic of Congo"
+    },
+    {
+      "Code" : "CHE",
+      "Num" : 947,
+      "E" : 2,
+      "Name" : "WIR Bank|WIR Euro (complementary currency)",
+      "Locations" : "Switzerland"
+    },
+    {
+      "Code" : "CHF",
+      "Num" : 756,
+      "E" : 2,
+      "Name" : "Swiss franc",
+      "Locations" : "Switzerland, Liechtenstein (LI)"
+    },
+    {
+      "Code" : "CHW",
+      "Num" : 948,
+      "E" : 2,
+      "Name" : "WIR Bank|WIR Franc (complementary currency)",
+      "Locations" : "Switzerland"
+    },
+    {
+      "Code" : "CLF",
+      "Num" : 990,
+      "E" : 0,
+      "Name" : "Unidad de Fomento (funds code)",
+      "Locations" : "Chile"
+    },
+    {
+      "Code" : "CLP",
+      "Num" : 152,
+      "E" : 0,
+      "Name" : "Chilean peso",
+      "Locations" : "Chile"
+    },
+    {
+      "Code" : "CNY",
+      "Num" : 156,
+      "E" : 2,
+      "Name" : "Renminbi|Chinese yuan",
+      "Locations" : "China"
+    },
+    {
+      "Code" : "COP",
+      "Num" : 170,
+      "E" : 2,
+      "Name" : "Colombian peso",
+      "Locations" : "Colombia"
+    },
+    {
+      "Code" : "COU",
+      "Num" : 970,
+      "E" : 4,
+      "Name" : "Unidad de Valor Real (UVR) (funds code)",
+      "Locations" : "Colombia"
+    },
+    {
+      "Code" : "CRC",
+      "Num" : 188,
+      "E" : 2,
+      "Name" : "Costa Rican colon",
+      "Locations" : "Costa Rica"
+    },
+    {
+      "Code" : "CUC",
+      "Num" : 931,
+      "E" : 2,
+      "Name" : "Cuban convertible peso",
+      "Locations" : "Cuba"
+    },
+    {
+      "Code" : "CUP",
+      "Num" : 192,
+      "E" : 2,
+      "Name" : "Cuban peso",
+      "Locations" : "Cuba"
+    },
+    {
+      "Code" : "CVE",
+      "Num" : 132,
+      "E" : 0,
+      "Name" : "Cape Verde escudo",
+      "Locations" : "Cape Verde"
+    },
+    {
+      "Code" : "CZK",
+      "Num" : 203,
+      "E" : 2,
+      "Name" : "Czech koruna",
+      "Locations" : "Czech Republic"
+    },
+    {
+      "Code" : "DJF",
+      "Num" : 262,
+      "E" : 0,
+      "Name" : "Djiboutian franc",
+      "Locations" : "Djibouti"
+    },
+    {
+      "Code" : "DKK",
+      "Num" : 208,
+      "E" : 2,
+      "Name" : "Danish krone",
+      "Locations" : "Denmark, Faroe Islands (FO), Greenland (GL)"
+    },
+    {
+      "Code" : "DOP",
+      "Num" : 214,
+      "E" : 2,
+      "Name" : "Dominican peso",
+      "Locations" : "Dominican Republic"
+    },
+    {
+      "Code" : "DZD",
+      "Num" : 12,
+      "E" : 2,
+      "Name" : "Algerian dinar",
+      "Locations" : "Algeria"
+    },
+    {
+      "Code" : "EGP",
+      "Num" : 818,
+      "E" : 2,
+      "Name" : "Egyptian pound",
+      "Locations" : "Egypt, auxiliary in Gaza Strip"
+    },
+    {
+      "Code" : "ERN",
+      "Num" : 232,
+      "E" : 2,
+      "Name" : "Eritrean nakfa",
+      "Locations" : "Eritrea"
+    },
+    {
+      "Code" : "ETB",
+      "Num" : 230,
+      "E" : 2,
+      "Name" : "Ethiopian birr",
+      "Locations" : "Ethiopia"
+    },
+    {
+      "Code" : "EUR",
+      "Num" : 978,
+      "E" : 2,
+      "Name" : "Euro",
+      "Locations" : "Andorra (AD), Austria (AT), Belgium (BE), Cyprus (CY) except, Estonia (EE), Finland (FI), France (FR), Germany (DE), Greece (GR), Guadeloupe (GP), Ireland (IE), Italy (IT),  Kosovo, Latvia (LV), Lithuania (LT), Luxembourg (LU), Malta (MT), Martinique (MQ), Mayotte (YT), Monaco (MC), Montenegro (ME), Netherlands (NL), Portugal (PT),  Reunion (RE), San Marino (SM), Saint Barthélemy (BL), Slovakia (SK), Slovenia (SI), Spain (ES), Saint Pierre and Miquelon (PM), Vatican City (VA);  ''see [[Eurozone]]''"
+    },
+    {
+      "Code" : "FJD",
+      "Num" : 242,
+      "E" : 2,
+      "Name" : "Fiji dollar",
+      "Locations" : "Fiji"
+    },
+    {
+      "Code" : "FKP",
+      "Num" : 238,
+      "E" : 2,
+      "Name" : "Falkland Islands pound",
+      "Locations" : "Falkland Islands (pegged to GBP 1:1)"
+    },
+    {
+      "Code" : "GBP",
+      "Num" : 826,
+      "E" : 2,
+      "Name" : "Pound sterling",
+      "Locations" : "United Kingdom, the Isle of Man (IM, see [[Manx pound]]), Jersey (JE, see [[Jersey pound]]), Guernsey (GG, see [[Guernsey pound]]), South Georgia and the South Sandwich Islands (GS), British Indian Ocean Territory (IO) (also uses USD), Tristan da Cunha (SH-TA), and British Antarctic Territory"
+    },
+    {
+      "Code" : "GEL",
+      "Num" : 981,
+      "E" : 2,
+      "Name" : "Georgian lari",
+      "Locations" : "Georgia (country)|name=Georgia (except Abkhazia (GE-AB) and South Ossetia)"
+    },
+    {
+      "Code" : "GHS",
+      "Num" : 936,
+      "E" : 2,
+      "Name" : "Ghanaian cedi",
+      "Locations" : "Ghana"
+    },
+    {
+      "Code" : "GIP",
+      "Num" : 292,
+      "E" : 2,
+      "Name" : "Gibraltar pound",
+      "Locations" : "Gibraltar"
+    },
+    {
+      "Code" : "GMD",
+      "Num" : 270,
+      "E" : 2,
+      "Name" : "Gambian dalasi",
+      "Locations" : "Gambia"
+    },
+    {
+      "Code" : "GNF",
+      "Num" : 324,
+      "E" : 0,
+      "Name" : "Guinean franc",
+      "Locations" : "Guinea"
+    },
+    {
+      "Code" : "GTQ",
+      "Num" : 320,
+      "E" : 2,
+      "Name" : "Guatemalan quetzal",
+      "Locations" : "Guatemala"
+    },
+    {
+      "Code" : "GYD",
+      "Num" : 328,
+      "E" : 2,
+      "Name" : "Guyanese dollar",
+      "Locations" : "Guyana"
+    },
+    {
+      "Code" : "HKD",
+      "Num" : 344,
+      "E" : 2,
+      "Name" : "Hong Kong dollar",
+      "Locations" : "Hong Kong, Macao (MO)"
+    },
+    {
+      "Code" : "HNL",
+      "Num" : 340,
+      "E" : 2,
+      "Name" : "Honduran lempira",
+      "Locations" : "Honduras"
+    },
+    {
+      "Code" : "HRK",
+      "Num" : 191,
+      "E" : 2,
+      "Name" : "Croatian kuna",
+      "Locations" : "Croatia"
+    },
+    {
+      "Code" : "HTG",
+      "Num" : 332,
+      "E" : 2,
+      "Name" : "Haitian gourde",
+      "Locations" : "Haiti"
+    },
+    {
+      "Code" : "HUF",
+      "Num" : 348,
+      "E" : 2,
+      "Name" : "Hungarian forint",
+      "Locations" : "Hungary"
+    },
+    {
+      "Code" : "IDR",
+      "Num" : 360,
+      "E" : 2,
+      "Name" : "Indonesian rupiah",
+      "Locations" : "Indonesia"
+    },
+    {
+      "Code" : "ILS",
+      "Num" : 376,
+      "E" : 2,
+      "Name" : "Israeli new shekel",
+      "Locations" : "Israel, State of Palestine (PS)''<ref>According to Article 4 of the 1994 Paris Protocol [http://www.mfa.gov.il/MFA/Peace+Process/Guide+to+the+Peace+Process/Gaza-Jericho+Agreement+Annex+IV+-+Economic+Protoco.htm]. The Protocol allows the Palestinian Authority to adopt additional currencies. In West Bank the [[Jordanian dinar]] is widely accepted and in Gaza Strip the [[Egyptian pound]] is often used.<\/ref>"
+    },
+    {
+      "Code" : "INR",
+      "Num" : 356,
+      "E" : 2,
+      "Name" : "Indian rupee",
+      "Locations" : "India,Bhutan, Nepal, Zimbabwe"
+    },
+    {
+      "Code" : "IQD",
+      "Num" : 368,
+      "E" : 3,
+      "Name" : "Iraqi dinar",
+      "Locations" : "Iraq"
+    },
+    {
+      "Code" : "IRR",
+      "Num" : 364,
+      "E" : 2,
+      "Name" : "Iranian rial",
+      "Locations" : "Iran"
+    },
+    {
+      "Code" : "ISK",
+      "Num" : 352,
+      "E" : 0,
+      "Name" : "Icelandic króna",
+      "Locations" : "Iceland"
+    },
+    {
+      "Code" : "JMD",
+      "Num" : 388,
+      "E" : 2,
+      "Name" : "Jamaican dollar",
+      "Locations" : "Jamaica"
+    },
+    {
+      "Code" : "JOD",
+      "Num" : 400,
+      "E" : 3,
+      "Name" : "Jordanian dinar",
+      "Locations" : "Jordan, auxiliary in West Bank"
+    },
+    {
+      "Code" : "JPY",
+      "Num" : 392,
+      "E" : 0,
+      "Name" : "Japanese yen",
+      "Locations" : "Japan"
+    },
+    {
+      "Code" : "KES",
+      "Num" : 404,
+      "E" : 2,
+      "Name" : "Kenyan shilling",
+      "Locations" : "Kenya"
+    },
+    {
+      "Code" : "KGS",
+      "Num" : 417,
+      "E" : 2,
+      "Name" : "Kyrgyzstani som",
+      "Locations" : "Kyrgyzstan"
+    },
+    {
+      "Code" : "KHR",
+      "Num" : 116,
+      "E" : 2,
+      "Name" : "Cambodian riel",
+      "Locations" : "Cambodia"
+    },
+    {
+      "Code" : "KMF",
+      "Num" : 174,
+      "E" : 0,
+      "Name" : "Comoro franc",
+      "Locations" : "Comoros"
+    },
+    {
+      "Code" : "KPW",
+      "Num" : 408,
+      "E" : 2,
+      "Name" : "North Korean won",
+      "Locations" : "North Korea"
+    },
+    {
+      "Code" : "KRW",
+      "Num" : 410,
+      "E" : 0,
+      "Name" : "South Korean won",
+      "Locations" : "South Korea"
+    },
+    {
+      "Code" : "KWD",
+      "Num" : 414,
+      "E" : 3,
+      "Name" : "Kuwaiti dinar",
+      "Locations" : "Kuwait"
+    },
+    {
+      "Code" : "KYD",
+      "Num" : 136,
+      "E" : 2,
+      "Name" : "Cayman Islands dollar",
+      "Locations" : "Cayman Islands"
+    },
+    {
+      "Code" : "KZT",
+      "Num" : 398,
+      "E" : 2,
+      "Name" : "Kazakhstani tenge",
+      "Locations" : "Kazakhstan"
+    },
+    {
+      "Code" : "LAK",
+      "Num" : 418,
+      "E" : 2,
+      "Name" : "Lao kip",
+      "Locations" : "Laos"
+    },
+    {
+      "Code" : "LBP",
+      "Num" : 422,
+      "E" : 2,
+      "Name" : "Lebanese pound",
+      "Locations" : "Lebanon"
+    },
+    {
+      "Code" : "LKR",
+      "Num" : 144,
+      "E" : 2,
+      "Name" : "Sri Lankan rupee",
+      "Locations" : "Sri Lanka"
+    },
+    {
+      "Code" : "LRD",
+      "Num" : 430,
+      "E" : 2,
+      "Name" : "Liberian dollar",
+      "Locations" : "Liberia"
+    },
+    {
+      "Code" : "LSL",
+      "Num" : 426,
+      "E" : 2,
+      "Name" : "Lesotho loti",
+      "Locations" : "Lesotho"
+    },
+    {
+      "Code" : "LYD",
+      "Num" : 434,
+      "E" : 3,
+      "Name" : "Libyan dinar",
+      "Locations" : "Libya"
+    },
+    {
+      "Code" : "MAD",
+      "Num" : 504,
+      "E" : 2,
+      "Name" : "Moroccan dirham",
+      "Locations" : "Morocco"
+    },
+    {
+      "Code" : "MDL",
+      "Num" : 498,
+      "E" : 2,
+      "Name" : "Moldovan leu",
+      "Locations" : "Moldova (except Transnistria)"
+    },
+    {
+      "Code" : "MGA",
+      "Num" : 969,
+      "E" : 2,
+      "Name" : "Malagasy ariary",
+      "Locations" : "Madagascar"
+    },
+    {
+      "Code" : "MKD",
+      "Num" : 807,
+      "E" : 2,
+      "Name" : "Macedonian denar",
+      "Locations" : "Macedonia"
+    },
+    {
+      "Code" : "MMK",
+      "Num" : 104,
+      "E" : 2,
+      "Name" : "Myanmar kyat",
+      "Locations" : "Myanmar"
+    },
+    {
+      "Code" : "MNT",
+      "Num" : 496,
+      "E" : 2,
+      "Name" : "Mongolian tögrög|Mongolian tugrik",
+      "Locations" : "Mongolia"
+    },
+    {
+      "Code" : "MOP",
+      "Num" : 446,
+      "E" : 2,
+      "Name" : "Macanese pataca",
+      "Locations" : "Macao"
+    },
+    {
+      "Code" : "MRO",
+      "Num" : 478,
+      "E" : 2,
+      "Name" : "Mauritanian ouguiya",
+      "Locations" : "Mauritania"
+    },
+    {
+      "Code" : "MUR",
+      "Num" : 480,
+      "E" : 2,
+      "Name" : "Mauritian rupee",
+      "Locations" : "Mauritius"
+    },
+    {
+      "Code" : "MVR",
+      "Num" : 462,
+      "E" : 2,
+      "Name" : "Maldivian rufiyaa",
+      "Locations" : "Maldives"
+    },
+    {
+      "Code" : "MWK",
+      "Num" : 454,
+      "E" : 2,
+      "Name" : "Malawian kwacha",
+      "Locations" : "Malawi"
+    },
+    {
+      "Code" : "MXN",
+      "Num" : 484,
+      "E" : 2,
+      "Name" : "Mexican peso",
+      "Locations" : "Mexico"
+    },
+    {
+      "Code" : "MXV",
+      "Num" : 979,
+      "E" : 2,
+      "Name" : "Mexican Unidad de Inversion (UDI) (funds code)",
+      "Locations" : "Mexico"
+    },
+    {
+      "Code" : "MYR",
+      "Num" : 458,
+      "E" : 2,
+      "Name" : "Malaysian ringgit",
+      "Locations" : "Malaysia"
+    },
+    {
+      "Code" : "MZN",
+      "Num" : 943,
+      "E" : 2,
+      "Name" : "Mozambican metical",
+      "Locations" : "Mozambique"
+    },
+    {
+      "Code" : "NAD",
+      "Num" : 516,
+      "E" : 2,
+      "Name" : "Namibian dollar",
+      "Locations" : "Namibia"
+    },
+    {
+      "Code" : "NGN",
+      "Num" : 566,
+      "E" : 2,
+      "Name" : "Nigerian naira",
+      "Locations" : "Nigeria"
+    },
+    {
+      "Code" : "NIO",
+      "Num" : 558,
+      "E" : 2,
+      "Name" : "Nicaraguan córdoba",
+      "Locations" : "Nicaragua"
+    },
+    {
+      "Code" : "NOK",
+      "Num" : 578,
+      "E" : 2,
+      "Name" : "Norwegian krone",
+      "Locations" : "Norway, Svalbard and Jan Mayen (SJ), Bouvet Island (BV),  Queen Maud Land, Peter I Island"
+    },
+    {
+      "Code" : "NPR",
+      "Num" : 524,
+      "E" : 2,
+      "Name" : "Nepalese rupee",
+      "Locations" : "Nepal"
+    },
+    {
+      "Code" : "NZD",
+      "Num" : 554,
+      "E" : 2,
+      "Name" : "New Zealand dollar",
+      "Locations" : "New Zealand, Cook Islands (CK), Niue (NU), Pitcairn Islands (PN; see also [[Pitcairn Islands dollar]]), Tokelau (TK), Ross Dependency"
+    },
+    {
+      "Code" : "OMR",
+      "Num" : 512,
+      "E" : 3,
+      "Name" : "Omani rial",
+      "Locations" : "Oman"
+    },
+    {
+      "Code" : "PAB",
+      "Num" : 590,
+      "E" : 2,
+      "Name" : "Panamanian balboa",
+      "Locations" : "Panama"
+    },
+    {
+      "Code" : "PEN",
+      "Num" : 604,
+      "E" : 2,
+      "Name" : "Peruvian nuevo sol",
+      "Locations" : "Peru"
+    },
+    {
+      "Code" : "PGK",
+      "Num" : 598,
+      "E" : 2,
+      "Name" : "Papua New Guinean kina",
+      "Locations" : "Papua New Guinea"
+    },
+    {
+      "Code" : "PHP",
+      "Num" : 608,
+      "E" : 2,
+      "Name" : "Philippine peso",
+      "Locations" : "Philippines"
+    },
+    {
+      "Code" : "PKR",
+      "Num" : 586,
+      "E" : 2,
+      "Name" : "Pakistani rupee",
+      "Locations" : "Pakistan"
+    },
+    {
+      "Code" : "PLN",
+      "Num" : 985,
+      "E" : 2,
+      "Name" : "Polish złoty",
+      "Locations" : "Poland"
+    },
+    {
+      "Code" : "PYG",
+      "Num" : 600,
+      "E" : 0,
+      "Name" : "Paraguayan guaraní",
+      "Locations" : "Paraguay"
+    },
+    {
+      "Code" : "QAR",
+      "Num" : 634,
+      "E" : 2,
+      "Name" : "Qatari riyal",
+      "Locations" : "Qatar"
+    },
+    {
+      "Code" : "RON",
+      "Num" : 946,
+      "E" : 2,
+      "Name" : "Romanian Leu|Romanian new leu",
+      "Locations" : "Romania"
+    },
+    {
+      "Code" : "RSD",
+      "Num" : 941,
+      "E" : 2,
+      "Name" : "Serbian dinar",
+      "Locations" : "Serbia"
+    },
+    {
+      "Code" : "RUB",
+      "Num" : 643,
+      "E" : 2,
+      "Name" : "Russian ruble",
+      "Locations" : "Russia, Abkhazia (GE-AB), South Ossetia, Crimea"
+    },
+    {
+      "Code" : "RWF",
+      "Num" : 646,
+      "E" : 0,
+      "Name" : "Rwandan franc",
+      "Locations" : "Rwanda"
+    },
+    {
+      "Code" : "SAR",
+      "Num" : 682,
+      "E" : 2,
+      "Name" : "Saudi riyal",
+      "Locations" : "Saudi Arabia"
+    },
+    {
+      "Code" : "SBD",
+      "Num" : 90,
+      "E" : 2,
+      "Name" : "Solomon Islands dollar",
+      "Locations" : "Solomon Islands"
+    },
+    {
+      "Code" : "SCR",
+      "Num" : 690,
+      "E" : 2,
+      "Name" : "Seychelles rupee",
+      "Locations" : "Seychelles"
+    },
+    {
+      "Code" : "SDG",
+      "Num" : 938,
+      "E" : 2,
+      "Name" : "Sudanese pound",
+      "Locations" : "Sudan"
+    },
+    {
+      "Code" : "SEK",
+      "Num" : 752,
+      "E" : 2,
+      "Name" : "Swedish krona/kronor",
+      "Locations" : "Sweden"
+    },
+    {
+      "Code" : "SGD",
+      "Num" : 702,
+      "E" : 2,
+      "Name" : "Singapore dollar",
+      "Locations" : "Singapore,  auxiliary in Brunei (BN)"
+    },
+    {
+      "Code" : "SHP",
+      "Num" : 654,
+      "E" : 2,
+      "Name" : "Saint Helena pound",
+      "Locations" : "Saint Helena (SH-SH), Ascension Island (SH-AC) (pegged to GBP 1:1)"
+    },
+    {
+      "Code" : "SLL",
+      "Num" : 694,
+      "E" : 2,
+      "Name" : "Sierra Leonean leone",
+      "Locations" : "Sierra Leone"
+    },
+    {
+      "Code" : "SOS",
+      "Num" : 706,
+      "E" : 2,
+      "Name" : "Somali shilling",
+      "Locations" : "Somalia (except Somaliland)"
+    },
+    {
+      "Code" : "SRD",
+      "Num" : 968,
+      "E" : 2,
+      "Name" : "Surinamese dollar",
+      "Locations" : "Suriname"
+    },
+    {
+      "Code" : "SSP",
+      "Num" : 728,
+      "E" : 2,
+      "Name" : "South Sudanese pound",
+      "Locations" : "South Sudan"
+    },
+    {
+      "Code" : "STD",
+      "Num" : 678,
+      "E" : 2,
+      "Name" : "São Tomé and Príncipe dobra",
+      "Locations" : "São Tomé and Príncipe"
+    },
+    {
+      "Code" : "SYP",
+      "Num" : 760,
+      "E" : 2,
+      "Name" : "Syrian pound",
+      "Locations" : "Syria"
+    },
+    {
+      "Code" : "SZL",
+      "Num" : 748,
+      "E" : 2,
+      "Name" : "Swazi lilangeni",
+      "Locations" : "Swaziland"
+    },
+    {
+      "Code" : "THB",
+      "Num" : 764,
+      "E" : 2,
+      "Name" : "Thai baht",
+      "Locations" : "Thailand"
+    },
+    {
+      "Code" : "TJS",
+      "Num" : 972,
+      "E" : 2,
+      "Name" : "Tajikistani somoni",
+      "Locations" : "Tajikistan"
+    },
+    {
+      "Code" : "TMT",
+      "Num" : 934,
+      "E" : 2,
+      "Name" : "Turkmenistani manat",
+      "Locations" : "Turkmenistan"
+    },
+    {
+      "Code" : "TND",
+      "Num" : 788,
+      "E" : 3,
+      "Name" : "Tunisian dinar",
+      "Locations" : "Tunisia"
+    },
+    {
+      "Code" : "TOP",
+      "Num" : 776,
+      "E" : 2,
+      "Name" : "Tongan paʻanga",
+      "Locations" : "Tonga"
+    },
+    {
+      "Code" : "TRY",
+      "Num" : 949,
+      "E" : 2,
+      "Name" : "Turkish lira",
+      "Locations" : "Turkey , Northern Cyprus"
+    },
+    {
+      "Code" : "TTD",
+      "Num" : 780,
+      "E" : 2,
+      "Name" : "Trinidad and Tobago dollar",
+      "Locations" : "Trinidad and Tobago"
+    },
+    {
+      "Code" : "TWD",
+      "Num" : 901,
+      "E" : 2,
+      "Name" : "New Taiwan dollar",
+      "Locations" : "Taiwan"
+    },
+    {
+      "Code" : "TZS",
+      "Num" : 834,
+      "E" : 2,
+      "Name" : "Tanzanian shilling",
+      "Locations" : "Tanzania"
+    },
+    {
+      "Code" : "UAH",
+      "Num" : 980,
+      "E" : 2,
+      "Name" : "Ukrainian hryvnia",
+      "Locations" : "Ukraine"
+    },
+    {
+      "Code" : "UGX",
+      "Num" : 800,
+      "E" : 0,
+      "Name" : "Ugandan shilling",
+      "Locations" : "Uganda"
+    },
+    {
+      "Code" : null,
+      "Num" : null,
+      "E" : null,
+      "Name" : null,
+      "Locations" : null
+    },
+    {
+      "Code" : "USD",
+      "Num" : 840,
+      "E" : 2,
+      "Name" : "United States dollar",
+      "Locations" : "United States, American Samoa (AS), Barbados (BB) (as well as [[Barbados Dollar]]), Bermuda (BM) (as well as [[Bermudian Dollar]]), British Indian Ocean Territory (IO) (also uses GBP), British Virgin Islands (VG), [[Caribbean Netherlands]] (BQ - Bonaire, Sint Eustatius and Saba), Ecuador (EC), El Salvador (SV), Guam (GU), Haiti (HT), Marshall Islands (MH), Federated States of Micronesia (FM), Northern Mariana Islands (MP), Palau (PW), Panama (PA), Puerto Rico (PR), Timor-Leste (TL), Turks and Caicos Islands (TC), U.S. Virgin Islands (VI),  Zimbabwe (ZW)"
+    },
+    {
+      "Code" : "USN",
+      "Num" : 997,
+      "E" : 2,
+      "Name" : "United States dollar (next day) (funds code)",
+      "Locations" : "United States"
+    },
+    {
+      "Code" : "USS",
+      "Num" : 998,
+      "E" : 2,
+      "Name" : "United States dollar (same day) (funds code)",
+      "Locations" : "United States"
+    },
+    {
+      "Code" : "UYI",
+      "Num" : 940,
+      "E" : 0,
+      "Name" : "Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code)",
+      "Locations" : "Uruguay"
+    },
+    {
+      "Code" : "UYU",
+      "Num" : 858,
+      "E" : 2,
+      "Name" : "Uruguayan peso",
+      "Locations" : "Uruguay"
+    },
+    {
+      "Code" : "UZS",
+      "Num" : 860,
+      "E" : 2,
+      "Name" : "Uzbekistan som",
+      "Locations" : "Uzbekistan"
+    },
+    {
+      "Code" : "VEF",
+      "Num" : 937,
+      "E" : 2,
+      "Name" : "Venezuelan bolívar",
+      "Locations" : "Venezuela"
+    },
+    {
+      "Code" : "VND",
+      "Num" : 704,
+      "E" : 0,
+      "Name" : "Vietnamese dong",
+      "Locations" : "Vietnam"
+    },
+    {
+      "Code" : "VUV",
+      "Num" : 548,
+      "E" : 0,
+      "Name" : "Vanuatu vatu",
+      "Locations" : "Vanuatu"
+    },
+    {
+      "Code" : "WST",
+      "Num" : 882,
+      "E" : 2,
+      "Name" : "Samoan tala",
+      "Locations" : "Samoa"
+    },
+    {
+      "Code" : "XAF",
+      "Num" : 950,
+      "E" : 0,
+      "Name" : "Central African CFA franc|CFA franc BEAC",
+      "Locations" : "Cameroon (CM), Central African Republic (CF), Republic of the Congo (CG), Chad (TD), Equatorial Guinea (GQ), Gabon (GA)"
+    },
+    {
+      "Code" : "XAG",
+      "Num" : 961,
+      "E" : " . ",
+      "Name" : "Silver (one troy ounce)",
+      "Locations" : null
+    },
+    {
+      "Code" : "XAU",
+      "Num" : 959,
+      "E" : " . ",
+      "Name" : "Gold (one troy ounce)",
+      "Locations" : null
+    },
+    {
+      "Code" : "XBA",
+      "Num" : 955,
+      "E" : " . ",
+      "Name" : "European Composite Unit (EURCO) (bond market unit)",
+      "Locations" : null
+    },
+    {
+      "Code" : "XBB",
+      "Num" : 956,
+      "E" : " . ",
+      "Name" : "European Monetary Unit (E.M.U.-6) (bond market unit)",
+      "Locations" : null
+    },
+    {
+      "Code" : "XBC",
+      "Num" : 957,
+      "E" : " . ",
+      "Name" : "European Unit of Account 9 (E.U.A.-9) (bond market unit)",
+      "Locations" : null
+    },
+    {
+      "Code" : "XBD",
+      "Num" : 958,
+      "E" : " . ",
+      "Name" : "European Unit of Account 17 (E.U.A.-17) (bond market unit)",
+      "Locations" : null
+    },
+    {
+      "Code" : "XCD",
+      "Num" : 951,
+      "E" : 2,
+      "Name" : "East Caribbean dollar",
+      "Locations" : "Anguilla (AI), Antigua and Barbuda (AG), Dominica (DM), Grenada (GD), Montserrat (MS), Saint Kitts and Nevis (KN), Saint Lucia (LC), Saint Vincent and the Grenadines (VC)"
+    },
+    {
+      "Code" : "XDR",
+      "Num" : 960,
+      "E" : " . ",
+      "Name" : "Special drawing rights",
+      "Locations" : "[[International Monetary Fund]]"
+    },
+    {
+      "Code" : "XFU",
+      "Num" : " Nil ",
+      "E" : " . ",
+      "Name" : "UIC franc (special settlement currency)",
+      "Locations" : "[[International Union of Railways]]"
+    },
+    {
+      "Code" : "XOF",
+      "Num" : 952,
+      "E" : 0,
+      "Name" : "West African CFA franc|CFA franc BCEAO",
+      "Locations" : "Benin (BJ), Burkina Faso (BF), Côte d'Ivoire (CI), Guinea-Bissau (GW), Mali (ML), Niger (NE), Senegal (SN), Togo (TG)"
+    },
+    {
+      "Code" : "XPD",
+      "Num" : 964,
+      "E" : " . ",
+      "Name" : "Palladium (one troy ounce)",
+      "Locations" : null
+    },
+    {
+      "Code" : "XPF",
+      "Num" : 953,
+      "E" : 0,
+      "Name" : "CFP franc (franc Pacifique)",
+      "Locations" : "French territories of the Pacific Ocean: French Polynesia (PF), New Caledonia (NC), Wallis and Futuna (WF)"
+    },
+    {
+      "Code" : "XPT",
+      "Num" : 962,
+      "E" : " . ",
+      "Name" : "Platinum (one troy ounce)",
+      "Locations" : null
+    },
+    {
+      "Code" : "XSU",
+      "Num" : 994,
+      "E" : " . ",
+      "Name" : "XSU|SUCRE",
+      "Locations" : "Unified System for Regional Compensation (SUCRE)<ref>{{cite web |url=http://www.currency-iso.org/dam/isocy/downloads/dl_currency_iso_amendment_148.pdf |title=Amendment of ISO 4217 |date=17 October 2010<\/ref>"
+    },
+    {
+      "Code" : "XTS",
+      "Num" : 963,
+      "E" : " . ",
+      "Name" : "Code reserved for testing purposes",
+      "Locations" : null
+    },
+    {
+      "Code" : "XUA",
+      "Num" : 965,
+      "E" : " . ",
+      "Name" : "XUA|ADB Unit of Account",
+      "Locations" : "[[African Development Bank]]<ref>{{cite web |url=http://www.currency-iso.org/dam/isocy/downloads/dl_currency_iso_amendment_151.pdf |title=Amendment of ISO 4217 |date=7 April 2011<\/ref>"
+    },
+    {
+      "Code" : "XXX",
+      "Num" : 999,
+      "E" : " . ",
+      "Name" : "No currency {{Anchor|No currency}}",
+      "Locations" : null
+    },
+    {
+      "Code" : "YER",
+      "Num" : 886,
+      "E" : 2,
+      "Name" : "Yemeni rial",
+      "Locations" : "Yemen"
+    },
+    {
+      "Code" : "ZAR",
+      "Num" : 710,
+      "E" : 2,
+      "Name" : "South African rand",
+      "Locations" : "South Africa"
+    },
+    {
+      "Code" : "ZMW",
+      "Num" : 967,
+      "E" : 2,
+      "Name" : "Zambian kwacha",
+      "Locations" : "Zambia"
+    },
+    {
+      "Code" : "ZWL",
+      "Num" : 932,
+      "E" : 2,
+      "Name" : "Zimbabwean dollar",
+      "Locations" : "None (formerly Zimbabwe)"
+    }
+  ]
+}
