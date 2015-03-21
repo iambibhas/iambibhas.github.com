@@ -341,7 +341,7 @@
       "Num" : 978,
       "E" : 2,
       "Name" : "Euro",
-      "Locations" : "Andorra (AD), Austria (AT), Belgium (BE), Cyprus (CY) except, Estonia (EE), Finland (FI), France (FR), Germany (DE), Greece (GR), Guadeloupe (GP), Ireland (IE), Italy (IT),  Kosovo, Latvia (LV), Lithuania (LT), Luxembourg (LU), Malta (MT), Martinique (MQ), Mayotte (YT), Monaco (MC), Montenegro (ME), Netherlands (NL), Portugal (PT),  Reunion (RE), San Marino (SM), Saint Barthélemy (BL), Slovakia (SK), Slovenia (SI), Spain (ES), Saint Pierre and Miquelon (PM), Vatican City (VA);  ''see [[Eurozone]]''"
+      "Locations" : "Andorra (AD), Austria (AT), Belgium (BE), Cyprus (CY) except, Estonia (EE), Finland (FI), France (FR), Germany (DE), Greece (GR), Guadeloupe (GP), Ireland (IE), Italy (IT),  Kosovo, Latvia (LV), Lithuania (LT), Luxembourg (LU), Malta (MT), Martinique (MQ), Mayotte (YT), Monaco (MC), Montenegro (ME), Netherlands (NL), Portugal (PT),  Reunion (RE), San Marino (SM), Saint Barthélemy (BL), Slovakia (SK), Slovenia (SI), Spain (ES), Saint Pierre and Miquelon (PM), Vatican City (VA);"
     },
     {
       "Code" : "FJD",
@@ -362,14 +362,14 @@
       "Num" : 826,
       "E" : 2,
       "Name" : "Pound sterling",
-      "Locations" : "United Kingdom, the Isle of Man (IM, see [[Manx pound]]), Jersey (JE, see [[Jersey pound]]), Guernsey (GG, see [[Guernsey pound]]), South Georgia and the South Sandwich Islands (GS), British Indian Ocean Territory (IO) (also uses USD), Tristan da Cunha (SH-TA), and British Antarctic Territory"
+      "Locations" : "United Kingdom, the Isle of Man (IM), Jersey (JE), Guernsey (GG), South Georgia and the South Sandwich Islands (GS), British Indian Ocean Territory (IO) (also uses USD), Tristan da Cunha (SH-TA), and British Antarctic Territory"
     },
     {
       "Code" : "GEL",
       "Num" : 981,
       "E" : 2,
       "Name" : "Georgian lari",
-      "Locations" : "Georgia (country)|name=Georgia (except Abkhazia (GE-AB) and South Ossetia)"
+      "Locations" : "Georgia (country)"
     },
     {
       "Code" : "GHS",
@@ -460,7 +460,7 @@
       "Num" : 376,
       "E" : 2,
       "Name" : "Israeli new shekel",
-      "Locations" : "Israel, State of Palestine (PS)''<ref>According to Article 4 of the 1994 Paris Protocol [http://www.mfa.gov.il/MFA/Peace+Process/Guide+to+the+Peace+Process/Gaza-Jericho+Agreement+Annex+IV+-+Economic+Protoco.htm]. The Protocol allows the Palestinian Authority to adopt additional currencies. In West Bank the [[Jordanian dinar]] is widely accepted and in Gaza Strip the [[Egyptian pound]] is often used.<\/ref>"
+      "Locations" : "Israel, State of Palestine (PS)"
     },
     {
       "Code" : "INR",
@@ -761,7 +761,7 @@
       "Num" : 554,
       "E" : 2,
       "Name" : "New Zealand dollar",
-      "Locations" : "New Zealand, Cook Islands (CK), Niue (NU), Pitcairn Islands (PN; see also [[Pitcairn Islands dollar]]), Tokelau (TK), Ross Dependency"
+      "Locations" : "New Zealand, Cook Islands (CK), Niue (NU), Pitcairn Islands (PN), Tokelau (TK), Ross Dependency"
     },
     {
       "Code" : "OMR",
@@ -1041,7 +1041,7 @@
       "Num" : 840,
       "E" : 2,
       "Name" : "United States dollar",
-      "Locations" : "United States, American Samoa (AS), Barbados (BB) (as well as [[Barbados Dollar]]), Bermuda (BM) (as well as [[Bermudian Dollar]]), British Indian Ocean Territory (IO) (also uses GBP), British Virgin Islands (VG), [[Caribbean Netherlands]] (BQ - Bonaire, Sint Eustatius and Saba), Ecuador (EC), El Salvador (SV), Guam (GU), Haiti (HT), Marshall Islands (MH), Federated States of Micronesia (FM), Northern Mariana Islands (MP), Palau (PW), Panama (PA), Puerto Rico (PR), Timor-Leste (TL), Turks and Caicos Islands (TC), U.S. Virgin Islands (VI),  Zimbabwe (ZW)"
+      "Locations" : "United States, American Samoa (AS), Barbados (BB), Bermuda (BM), British Indian Ocean Territory (IO) (also uses GBP), British Virgin Islands (VG), Caribbean Netherlands (BQ - Bonaire, Sint Eustatius and Saba), Ecuador (EC), El Salvador (SV), Guam (GU), Haiti (HT), Marshall Islands (MH), Federated States of Micronesia (FM), Northern Mariana Islands (MP), Palau (PW), Panama (PA), Puerto Rico (PR), Timor-Leste (TL), Turks and Caicos Islands (TC), U.S. Virgin Islands (VI),  Zimbabwe (ZW)"
     },
     {
       "Code" : "USN",
@@ -1167,14 +1167,14 @@
       "Num" : 960,
       "E" : " . ",
       "Name" : "Special drawing rights",
-      "Locations" : "[[International Monetary Fund]]"
+      "Locations" : "International Monetary Fund"
     },
     {
       "Code" : "XFU",
       "Num" : " Nil ",
       "E" : " . ",
       "Name" : "UIC franc (special settlement currency)",
-      "Locations" : "[[International Union of Railways]]"
+      "Locations" : "International Union of Railways"
     },
     {
       "Code" : "XOF",
@@ -1209,7 +1209,7 @@
       "Num" : 994,
       "E" : " . ",
       "Name" : "XSU|SUCRE",
-      "Locations" : "Unified System for Regional Compensation (SUCRE)<ref>{{cite web |url=http://www.currency-iso.org/dam/isocy/downloads/dl_currency_iso_amendment_148.pdf |title=Amendment of ISO 4217 |date=17 October 2010<\/ref>"
+      "Locations" : "Unified System for Regional Compensation (SUCRE)"
     },
     {
       "Code" : "XTS",
@@ -1223,7 +1223,7 @@
       "Num" : 965,
       "E" : " . ",
       "Name" : "XUA|ADB Unit of Account",
-      "Locations" : "[[African Development Bank]]<ref>{{cite web |url=http://www.currency-iso.org/dam/isocy/downloads/dl_currency_iso_amendment_151.pdf |title=Amendment of ISO 4217 |date=7 April 2011<\/ref>"
+      "Locations" : "African Development Bank"
     },
     {
       "Code" : "XXX",

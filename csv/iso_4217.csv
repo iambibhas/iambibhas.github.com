@@ -47,11 +47,11 @@ DZD,12,2,Algerian dinar,Algeria
 EGP,818,2,Egyptian pound,"Egypt, auxiliary in Gaza Strip"
 ERN,232,2,Eritrean nakfa,Eritrea
 ETB,230,2,Ethiopian birr,Ethiopia
-EUR,978,2,Euro,"Andorra (AD), Austria (AT), Belgium (BE), Cyprus (CY) except, Estonia (EE), Finland (FI), France (FR), Germany (DE), Greece (GR), Guadeloupe (GP), Ireland (IE), Italy (IT),  Kosovo, Latvia (LV), Lithuania (LT), Luxembourg (LU), Malta (MT), Martinique (MQ), Mayotte (YT), Monaco (MC), Montenegro (ME), Netherlands (NL), Portugal (PT),  Reunion (RE), San Marino (SM), Saint Barthélemy (BL), Slovakia (SK), Slovenia (SI), Spain (ES), Saint Pierre and Miquelon (PM), Vatican City (VA);  ''see [[Eurozone]]''"
+EUR,978,2,Euro,"Andorra (AD), Austria (AT), Belgium (BE), Cyprus (CY) except, Estonia (EE), Finland (FI), France (FR), Germany (DE), Greece (GR), Guadeloupe (GP), Ireland (IE), Italy (IT),  Kosovo, Latvia (LV), Lithuania (LT), Luxembourg (LU), Malta (MT), Martinique (MQ), Mayotte (YT), Monaco (MC), Montenegro (ME), Netherlands (NL), Portugal (PT),  Reunion (RE), San Marino (SM), Saint Barthélemy (BL), Slovakia (SK), Slovenia (SI), Spain (ES), Saint Pierre and Miquelon (PM), Vatican City (VA);"
 FJD,242,2,Fiji dollar,Fiji
 FKP,238,2,Falkland Islands pound,Falkland Islands (pegged to GBP 1:1)
-GBP,826,2,Pound sterling,"United Kingdom, the Isle of Man (IM, see [[Manx pound]]), Jersey (JE, see [[Jersey pound]]), Guernsey (GG, see [[Guernsey pound]]), South Georgia and the South Sandwich Islands (GS), British Indian Ocean Territory (IO) (also uses USD), Tristan da Cunha (SH-TA), and British Antarctic Territory"
-GEL,981,2,Georgian lari,Georgia (country)|name=Georgia (except Abkhazia (GE-AB) and South Ossetia)
+GBP,826,2,Pound sterling,"United Kingdom, the Isle of Man (IM), Jersey (JE), Guernsey (GG), South Georgia and the South Sandwich Islands (GS), British Indian Ocean Territory (IO) (also uses USD), Tristan da Cunha (SH-TA), and British Antarctic Territory"
+GEL,981,2,Georgian lari,Georgia (country)
 GHS,936,2,Ghanaian cedi,Ghana
 GIP,292,2,Gibraltar pound,Gibraltar
 GMD,270,2,Gambian dalasi,Gambia
@@ -64,7 +64,7 @@ HRK,191,2,Croatian kuna,Croatia
 HTG,332,2,Haitian gourde,Haiti
 HUF,348,2,Hungarian forint,Hungary
 IDR,360,2,Indonesian rupiah,Indonesia
-ILS,376,2,Israeli new shekel,"Israel, State of Palestine (PS)''<ref>According to Article 4 of the 1994 Paris Protocol [http://www.mfa.gov.il/MFA/Peace+Process/Guide+to+the+Peace+Process/Gaza-Jericho+Agreement+Annex+IV+-+Economic+Protoco.htm]. The Protocol allows the Palestinian Authority to adopt additional currencies. In West Bank the [[Jordanian dinar]] is widely accepted and in Gaza Strip the [[Egyptian pound]] is often used.</ref>"
+ILS,376,2,Israeli new shekel,"Israel, State of Palestine (PS)"
 INR,356,2,Indian rupee,"India,Bhutan, Nepal, Zimbabwe"
 IQD,368,3,Iraqi dinar,Iraq
 IRR,364,2,Iranian rial,Iran
@@ -107,7 +107,7 @@ NGN,566,2,Nigerian naira,Nigeria
 NIO,558,2,Nicaraguan córdoba,Nicaragua
 NOK,578,2,Norwegian krone,"Norway, Svalbard and Jan Mayen (SJ), Bouvet Island (BV),  Queen Maud Land, Peter I Island"
 NPR,524,2,Nepalese rupee,Nepal
-NZD,554,2,New Zealand dollar,"New Zealand, Cook Islands (CK), Niue (NU), Pitcairn Islands (PN; see also [[Pitcairn Islands dollar]]), Tokelau (TK), Ross Dependency"
+NZD,554,2,New Zealand dollar,"New Zealand, Cook Islands (CK), Niue (NU), Pitcairn Islands (PN), Tokelau (TK), Ross Dependency"
 OMR,512,3,Omani rial,Oman
 PAB,590,2,Panamanian balboa,Panama
 PEN,604,2,Peruvian nuevo sol,Peru
@@ -146,7 +146,7 @@ TWD,901,2,New Taiwan dollar,Taiwan
 TZS,834,2,Tanzanian shilling,Tanzania
 UAH,980,2,Ukrainian hryvnia,Ukraine
 UGX,800,0,Ugandan shilling,Uganda
-USD,840,2,United States dollar,"United States, American Samoa (AS), Barbados (BB) (as well as [[Barbados Dollar]]), Bermuda (BM) (as well as [[Bermudian Dollar]]), British Indian Ocean Territory (IO) (also uses GBP), British Virgin Islands (VG), [[Caribbean Netherlands]] (BQ - Bonaire, Sint Eustatius and Saba), Ecuador (EC), El Salvador (SV), Guam (GU), Haiti (HT), Marshall Islands (MH), Federated States of Micronesia (FM), Northern Mariana Islands (MP), Palau (PW), Panama (PA), Puerto Rico (PR), Timor-Leste (TL), Turks and Caicos Islands (TC), U.S. Virgin Islands (VI),  Zimbabwe (ZW)"
+USD,840,2,United States dollar,"United States, American Samoa (AS), Barbados (BB), Bermuda (BM), British Indian Ocean Territory (IO) (also uses GBP), British Virgin Islands (VG), Caribbean Netherlands (BQ - Bonaire, Sint Eustatius and Saba), Ecuador (EC), El Salvador (SV), Guam (GU), Haiti (HT), Marshall Islands (MH), Federated States of Micronesia (FM), Northern Mariana Islands (MP), Palau (PW), Panama (PA), Puerto Rico (PR), Timor-Leste (TL), Turks and Caicos Islands (TC), U.S. Virgin Islands (VI),  Zimbabwe (ZW)"
 USN,997,2,United States dollar (next day) (funds code),United States
 USS,998,2,United States dollar (same day) (funds code),United States
 UYI,940,0,Uruguay Peso en Unidades Indexadas (URUIURUI) (funds code),Uruguay
@@ -164,15 +164,15 @@ XBB,956, . ,European Monetary Unit (E.M.U.-6) (bond market unit),
 XBC,957, . ,European Unit of Account 9 (E.U.A.-9) (bond market unit),
 XBD,958, . ,European Unit of Account 17 (E.U.A.-17) (bond market unit),
 XCD,951,2,East Caribbean dollar,"Anguilla (AI), Antigua and Barbuda (AG), Dominica (DM), Grenada (GD), Montserrat (MS), Saint Kitts and Nevis (KN), Saint Lucia (LC), Saint Vincent and the Grenadines (VC)"
-XDR,960, . ,Special drawing rights,[[International Monetary Fund]]
-XFU, Nil , . ,UIC franc (special settlement currency),[[International Union of Railways]]
+XDR,960, . ,Special drawing rights,International Monetary Fund
+XFU, Nil , . ,UIC franc (special settlement currency),International Union of Railways
 XOF,952,0,West African CFA franc|CFA franc BCEAO,"Benin (BJ), Burkina Faso (BF), Côte d'Ivoire (CI), Guinea-Bissau (GW), Mali (ML), Niger (NE), Senegal (SN), Togo (TG)"
 XPD,964, . ,Palladium (one troy ounce),
 XPF,953,0,CFP franc (franc Pacifique),"French territories of the Pacific Ocean: French Polynesia (PF), New Caledonia (NC), Wallis and Futuna (WF)"
 XPT,962, . ,Platinum (one troy ounce),
-XSU,994, . ,XSU|SUCRE,Unified System for Regional Compensation (SUCRE)<ref>{{cite web |url=http://www.currency-iso.org/dam/isocy/downloads/dl_currency_iso_amendment_148.pdf |title=Amendment of ISO 4217 |date=17 October 2010</ref>
+XSU,994, . ,XSU|SUCRE,Unified System for Regional Compensation (SUCRE)
 XTS,963, . ,Code reserved for testing purposes,
-XUA,965, . ,XUA|ADB Unit of Account,[[African Development Bank]]<ref>{{cite web |url=http://www.currency-iso.org/dam/isocy/downloads/dl_currency_iso_amendment_151.pdf |title=Amendment of ISO 4217 |date=7 April 2011</ref>
+XUA,965, . ,XUA|ADB Unit of Account,African Development Bank
 XXX,999, . ,No currency {{Anchor|No currency}},
 YER,886,2,Yemeni rial,Yemen
 ZAR,710,2,South African rand,South Africa
