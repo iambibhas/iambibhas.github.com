@@ -1,0 +1,3 @@
+[submodule "duckduckgo-answers"]
+	path = duckduckgo-answers
+	url = https://github.com/iambibhas/duckduckgo-answers.git
