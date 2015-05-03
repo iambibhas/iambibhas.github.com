@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="utf-8">
+    <title>DuckDuckGo Search</title>
+    <link rel="stylesheet" href="css/kickstart.css" media="all" /> <!-- KICKSTART -->
+</head>
+
+<body>
+
+<div>
+    <div>
+        <form id="id_form_search">
+            <input type="text" name="query" id="id_query" value="" placeholder="Type here">
+            <input type="submit" value="Go!">
+        </form>
+    </div>
+    <div id="results">
+        <div class="result-def"></div>
+
+    </div>
+</div>
+<button id="install_button" style="display:none">
+    INSTALL DuckDuckGo Search
+</button>
+<div class="footer">
+    Powered by <a target="_blank" href="https://duckduckgo.com/">DuckDuckGo</a>.
+</div>
+</body>
+<script src="static/js/jquery191.min.js"></script>
+<script src="https://apps.persona.org/include.js"></script>
+<script>
+var gManifestName = "/manifest.webapp";
+$(document).ready(function() {
+    var request = navigator.mozApps.getSelf();
+    request.onsuccess = function () {
+        if (request.result) {
+            // we're installed
+            // $("#install_button").text("INSTALLED!").show();
+        } else {
+            // not installed
+            $("#install_button").show();
+            $("#install_button").click(function () {
+                var req = navigator.mozApps.install(gManifestName);
+                req.onsuccess = function () {
+                    $("#install_button").text("INSTALLED!").unbind('click');
+                }
+                req.onerror = function (errObj) {
+                    alert("Couldn't install (" + errObj.code + ") " + errObj.message);
+                }
+            });
+        }
+    }
+    request.onerror = function () {
+        alert('Error checking installation status: ' + this.error.message);
+    }
+
+    function reloadAnchors() {
+        $('a').each(function(i) {
+            if(!$(this).attr('target') === undefined || !$(this).attr('target') === false){
+                $(this).attr('target', '_blank');
+            }
+        });
+    }
+
+    $('#id_form_search').on('submit', function(e) {
+        e.preventDefault();
+
+        $('#results').html("Searching...");
+        query = $('#id_query').val();
+
+        var url = 'https://api.duckduckgo.com/';
+        var remote = url + '?q=' + encodeURIComponent(query) + '&format=json&t=mozddg';
+
+        $.get(remote, function (j) {}, 'jsonp')
+        .success(function (data) {
+            console.log(data);
+            $('#results').html("");
+            $('.result-def').html(data.Definition);
+
+            if(data.RelatedTopics.length <= 0) {
+                $('#results').html('Nothing found. Please be more specific.');
+            }
+
+            $.each(data.RelatedTopics, function(idx, item) {
+                console.log(item);
+                if(idx < data.RelatedTopics.length - 1){
+                    if(item.Result !== undefined){
+                        $('#results').append(' \
+                            <div class="result-item"> \
+                                <div class="title">' + '<a target="_blank" href="' + item.FirstURL + '">' + item.Text + '</a>' + '</div> \
+                            </div> \
+                        ');
+                    }else if(item.Topics.length > 0){
+                        $('#results').append(' \
+                            <div class="result-item"> \
+                                <div class="title">' + item.Name + '</div> \
+                        ');
+                        $.each(item.Topics, function(idx2, item2) {
+                            $('#results').append(' \
+                                <ul class="result-subitem"> \
+                                    <li class="title">' + '<a target="_blank" href="' + item2.FirstURL + '">' + item2.Text + '</a>' + '</li> \
+                                </ul> \
+                            ');
+                        });
+                        $('#results').append("</div>");
+                    }
+                }
+            })
+        });
+        return false;
+    });
+});
+</script>
+</body>
+</html>

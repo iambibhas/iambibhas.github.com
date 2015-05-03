@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no" />
+  <title>DuckDuckGo Answers (unofficial)</title>
+  <!-- Building blocks -->
+  <link rel="stylesheet" href="style/action_menu.css">
+  <link rel="stylesheet" href="style/buttons.css">
+  <link rel="stylesheet" href="style/confirm.css">
+  <link rel="stylesheet" href="style/edit_mode.css">
+  <link rel="stylesheet" href="style/headers.css">
+  <link rel="stylesheet" href="style/input_areas.css">
+  <link rel="stylesheet" href="style/status.css">
+  <link rel="stylesheet" href="style/switches.css">
+  <link rel="stylesheet" href="style_unstable/drawer.css">
+  <link rel="stylesheet" href="style_unstable/lists.css">
+  <link rel="stylesheet" href="style_unstable/progress_activity.css">
+  <link rel="stylesheet" href="style_unstable/scrolling.css">
+  <link rel="stylesheet" href="style_unstable/seekbars.css">
+  <link rel="stylesheet" href="style_unstable/tabs.css">
+  <link rel="stylesheet" href="style_unstable/toolbars.css">
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="icons/styles/action_icons.css">
+  <link rel="stylesheet" href="icons/styles/media_icons.css">
+  <link rel="stylesheet" href="icons/styles/comms_icons.css">
+  <link rel="stylesheet" href="icons/styles/settings_icons.css">
+
+  <!-- Transitions -->
+  <link rel="stylesheet" href="transitions.css">
+
+  <!-- Util CSS: some extra tricks -->
+  <link rel="stylesheet" href="util.css">
+  <link rel="stylesheet" href="fonts.css">
+
+  <!-- Additional markup to make Building Blocks kind of cross browser -->
+  <link rel="stylesheet" href="cross_browser.css">
+
+  <style>
+    html {
+      -ms-word-break: break-all;
+      word-break: break-all;
+      word-break: break-word; /* old webkit */
+    }
+    #index {
+      height: 100%;
+    }
+    [data-position="right"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      transform: translateX(100%);
+      -webkit-transform: translateX(100%);
+      z-index: 15;
+      z-index: 100; /* -> drawer */
+    }
+    section[role="region"][data-position="right"] {
+      position: absolute;
+    }
+    [data-position="right"].current {
+      animation: rightToCurrent 0.4s forwards;
+      -webkit-animation: rightToCurrent 0.4s forwards;
+    }
+    [data-position="right"].right {
+      animation: currentToRight 0.4s forwards;
+      -webkit-animation: currentToRight 0.4s forwards;
+    }
+    [data-position="current"].left {
+      animation: currentToLeft 0.4s forwards;
+      -webkit-animation: currentToLeft 0.4s forwards;
+    }
+    [data-position="current"].current {
+      animation: leftToCurrent 0.4s forwards;
+      -webkit-animation: leftToCurrent 0.4s forwards;
+    }
+    [data-position="back"] {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+      opacity: 0;
+      /* z-index: 100; -> drawer */
+    }
+    [data-position="back"].fade-in {
+      z-index: 120;
+      animation: fadeIn 0.2s forwards;
+      -webkit-animation: fadeIn 0.2s forwards;
+    }
+    [data-position="back"].fade-out {
+      animation: fadeOut 0.2s forwards;
+      -webkit-animation: fadeOut 0.2s forwards;
+    }
+
+    [data-position="edit-mode"] {
+      position: absolute;
+      top: -5rem;
+      left: 0;
+      right: 0;
+      bottom: -7rem;
+      z-index: -1;
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+    [data-position="edit-mode"].edit {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 120;
+      opacity: 1;
+    }
+
+    /* Headers */
+    #headers section[role="region"] {
+      margin-bottom: 1.5rem;
+    }
+    #headers section[role="region"]:not(#drawer) {
+      display: inline;
+    }
+    #headers article header:first-child {
+      margin-top: 1.5rem;
+    }
+    #headers section[role="region"] header h2 {
+      margin: 0 0 1.5rem 0;
+    }
+
+    /* Lists */
+    /* to avoid double background effect on press */
+    [data-type=list] li>a:active {
+      background-color: transparent;
+    }
+
+    /* Drawer */
+    section[role="region"]:not(#drawer) {
+      transition: none;
+      left: 0;
+      z-index: 0;
+      padding-left: 0;
+    }
+    /*section[role="region"]:not(#drawer) > header:first-child {
+      margin-left: 0;
+    }
+    section[role="region"]:not(#drawer) > header:first-child h1 {
+      margin-left: 3rem;
+    }
+    section[role="region"]#drawer > header:first-child h1 {
+      margin-left: 4.5rem;
+    }
+    section[role="region"]:not(#drawer) > header:first-child > a {
+      width: 5rem;
+    }
+    section[role="region"]#drawer > header:first-child > a .icon {
+      width: 3.5rem;*/
+    }
+    section[data-type="sidebar"] + section[role="region"] > header:first-child > button,
+    section[data-type="sidebar"] + section[role="region"] > header:first-child > a {
+      background-position: 3.5rem center;
+    }
+   /* section[role="region"]:not(#drawer) > header:first-child > a .icon:after {
+      width: 2rem;
+    }
+    section[role="region"]#drawer > header:first-child > a .icon:after {
+      width: 3.5rem;
+    }*/
+
+    /* Switches */
+    #switches label:last-child {
+      margin-left: 2rem;
+    }
+
+    /* Scrolling */
+    nav[data-type="scrollbar"] {
+      padding-top: 1rem;
+    }
+    nav[data-type="scrollbar"] p {
+      opacity: 1;
+    }
+
+    /* Seek bars */
+    div[role="slider"] > label.icon {
+      background: no-repeat right top;
+      background-size: 3rem auto;
+    }
+
+    /* Tabs */
+    #tabs .content {
+      padding: 0;
+    }
+    #tabs .content .content {
+      padding: 1.5rem 3rem;
+    }
+
+    /* Filters */
+    [role="tablist"][data-type="filter"] {
+      margin-bottom: 2rem;
+    }
+
+    .bottom[role="tablist"][data-type="filter"] {
+      bottom: auto;
+    }
+
+    /* Device rotation */
+    .landscape section[role="region"]#drawer > header:first-child {
+      background: green;
+    }
+
+    .result-item {
+        word-wrap: break-all;
+    }
+  </style>
+  <script id="entry-template" type="text/x-handlebars-template">
+    <li class="result-item">
+      <a target="_blank" href="{{url}}">
+        <p>{{title}}</p>
+        <p>{{gist}}</p>
+      </a>
+    </li>
+  </script>
+</head>
+<body>
+  <section id="index" data-position="current">
+    <section data-type="sidebar">
+      <header>
+        <menu type="toolbar">
+          <a href="#">Done</a>
+        </menu>
+        <h1>Drawer demo</h1>
+      </header>
+      <nav>
+        <ul>
+          <li><a href="#">item 1</a></li>
+          <li><a href="#">item 2</a></li>
+          <li><a href="#">item 3</a></li>
+        </ul>
+        <h2>This is a subtitle</h2>
+        <ul>
+          <li><a href="#">item 4</a></li>
+          <li><a href="#">item 5</a></li>
+          <li><a href="#">item 6</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section id="drawer" role="region">
+      <header class="fixed">
+        <!-- <a href="#"><span class="icon icon-menu">hide sidebar</span></a>
+        <a href="#drawer"><span class="icon icon-menu">show sidebar</span></a> -->
+        <h1>DuckDuckGo Answers <em>unofficial</em></h1>
+      </header>
+      <article class="content scrollable header">
+        <header>&nbsp;</header>
+        <form id="id_form_search">
+          <p>
+            <input type="text" id="id_query" placeholder="Enter Your Text" required="required">
+            <!-- <button type="reset">Clear</button> -->
+            <div style="margin-top:5px">
+              <button class="recommend">Search</button>
+            </div>
+          </p>
+        </form>
+        <section data-type="list">
+          <header>Results</header>
+          <ul id="results">
+            <li><p>Enter some text and press search.</p></li>
+          </ul>
+        </section>
+      </article>
+    </section> <!-- end drawer -->
+  </section> <!-- end index -->
+
+  <script type="text/javascript" src="js/jquery191.min.js"></script>
+  <script type="text/javascript" defer src="js/status.js"></script>
+  <script type="text/javascript" defer src="js/seekbars.js"></script>
+  <script type="text/javascript" defer src="js/jquery.ddg.js"></script>
+  <script type="text/javascript" defer src="js/handlebars.js"></script>
+  <script type="text/javascript" defer src="js/app.js"></script>
+
+  <script>
+    var gManifestName = "/manifest.webapp";
+    var request = navigator.mozApps.getInstalled();
+    request.onsuccess = function () {
+        if (request.result) {
+            // we're installed
+            // $("#install_button").text("INSTALLED!").show();
+            console.log(request);
+            // console.log(version);
+            // if(version === undefined){
+            //     var req = navigator.mozApps.install(gManifestName);
+            //     req.onsuccess = function () {
+            //         $("#install_button").text("INSTALLED!").unbind('click');
+            //     }
+            //     req.onerror = function (errObj) {
+            //         alert("Couldn't install (" + errObj.code + ") " + errObj.message);
+            //     }
+            // }
+        } else {
+            // not installed
+            $("#install_button").show();
+            $("#install_button").click(function () {
+                var req = navigator.mozApps.install(gManifestName);
+                req.onsuccess = function () {
+                    $("#install_button").text("INSTALLED!").unbind('click');
+                }
+                req.onerror = function (errObj) {
+                    alert("Couldn't install (" + errObj.code + ") " + errObj.message);
+                }
+            });
+        }
+    }
+    request.onerror = function () {
+        alert('Error checking installation status: ' + this.error.message);
+    }
+
+    function reloadAnchors() {
+        $('a').each(function(i) {
+            if(!$(this).attr('target') === undefined || !$(this).attr('target') === false){
+                $(this).attr('target', '_blank');
+            }
+        });
+    }
+    var mobile = (navigator.userAgent.search("Mobile") != -1);
+    if ( mobile ) {
+      //Let's reduce font-size when in landscape
+      //fs: current font-size
+      var fs = parseInt(window.getComputedStyle(document.documentElement).getPropertyValue( 'font-size' ), 10);
+      var mql = window.matchMedia("(orientation: portrait)");
+
+      if(mql.matches) { //portrait
+        document.documentElement.style.fontSize = fs + 'px';
+        document.body.classList.remove('landscape');
+      } else { // landscape
+        document.documentElement.style.fontSize = fs * 0.7 + 'px';
+        document.body.classList.add('landscape');
+      }
+
+      mql.addListener(function(m) {
+        if(m.matches) { //portrait
+          document.documentElement.style.fontSize = fs + 'px';
+          document.body.classList.remove('landscape');
+        }
+        else { //landscape
+          document.documentElement.style.fontSize = fs * 0.7 + 'px';
+          document.body.classList.add('landscape');
+        }
+      });
+    }
+    $('#id_form_search').on('submit', function(e) {
+        e.preventDefault();
+
+        $('#results').html("Searching...");
+        query = $('#id_query').val();
+
+        var url = 'https://api.duckduckgo.com/';
+        var remote = url + '?q=' + encodeURIComponent(query) + '&format=json&t=mozddg';
+        var source   = $("#entry-template").html();
+        var template = Handlebars.compile(source);
+
+        $.get(remote, function (j) {}, 'jsonp')
+        .success(function (data) {
+            $('#results').html("");
+            $('.result-def').html(data.Definition);
+
+            if(data.RelatedTopics.length <= 0) {
+                $('#results').html('Nothing found. Please be more specific.');
+            }
+
+            $.each(data.RelatedTopics, function(idx, item) {
+                if(idx < data.RelatedTopics.length - 1){
+                    if(item.Result !== undefined){
+                        var context = {
+                          url: item.FirstURL,
+                          title: item.Text,
+                        }
+                        var html = template(context);
+                        $('#results').append(html);
+                    }else if(item.Topics.length > 0){
+                        $('#results').append('<header>' + item.Name + '</header>');
+                        $.each(item.Topics, function(idx2, item2) {
+                            var context = {
+                              url: item2.FirstURL,
+                              title: item2.Text,
+                            }
+                            var html = template(context);
+                            $('#results').append(html);
+                        });
+                    }
+                }
+            })
+        });
+        return false;
+    });
+  </script>
+</body>
+</html>
+
