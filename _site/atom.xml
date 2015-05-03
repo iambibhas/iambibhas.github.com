@@ -4,7 +4,7 @@
  <title>Bibhas Debnath</title>
  <link href="https://bibhas.in/atom.xml" rel="self"/>
  <link href="https://bibhas.in/"/>
- <updated>2015-05-03T23:54:10+05:30</updated>
+ <updated>2015-05-04T00:00:13+05:30</updated>
  <id>https://bibhas.in</id>
  <author>
    <name>Bibhas Debnath</name>
@@ -17,53 +17,6 @@
    <updated>2015-05-03T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/bangalore-auto-fare-vs-rest-of-the-options</id>
    <content type="html">&lt;p&gt;So I moved to Bangalore again last month. My new home is about 9km from my office. It&amp;rsquo;s not so bad because I don&amp;rsquo;t have to go to office everyday. Still, travelling in Bangalore has always been a bit pain for me, me being from Kolkata where everything is cheaper, specially transportation. You can travel 10km for Rs20 in the same auto that would cost you Rs130 in Bangalore, just because the concept of shared travelling is a big thing in Kolkata(which I wish were true in Bangalore). You have taxis in Kolkata which costs a bit less than Autos in Bangalore. Taxis in Kolkata costs about Rs12/km whereas autos in Bangalors costs about Rs13/km. And even buses are cheaper in Kolkata. Usually it&amp;rsquo;s Rs6 for first 4 km, and then increases by Rs2 for each 2-4 km. You can literally travel 12-14km for Rs10 in some routes. AC buses costs a bit more, but rarely more than Rs50 unless you&amp;rsquo;re travelling the whole route.&lt;/p&gt;
-
-&lt;p&gt;Anyway, back to travelling in Bangalore. I try to ride the buses wherever it&amp;rsquo;s possible. But the bus routes are odd. There isn&amp;rsquo;t always buses that take the shortest route between 2 places and most of the times you have to change bus 2-3 times to get to where you want. And add to that, the bus stops are at least 500-600 meter away from where you&amp;rsquo;d want to go, i.e. places of interest like malls etc. It&amp;rsquo;s good for a healthy traffic, I get it. But people are lazy and have money to spare. Lot of them would just book a cab than walk for 600m and then get a bus, which, I think, then adds up to the usual heavy traffic nowadays.&lt;/p&gt;
-
-&lt;p&gt;For some such reasons, I end up taking an auto or a cab if I&amp;rsquo;m really tired or have heavy luggage with me or dont have much time to spare. And that hurts the wallet. Auto is kind of the cheapest mode of transport (excluding the bus) and it costs Rs13/km. And most of the places I want to go is about 6-10km away.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve read Ola cabs publicize by saying that they are cheaper than Autos nowadays. Even some friends mentioned that to me. Mostly because the Ola Mini costs Rs10/km after 4km. But Ola cabs also costs you Rs80 for that 4km. So I thought of drawing a graph of Auto fare and the ola cabs to see how cheap they are compared to the Autos. This is what I got -&lt;/p&gt;
-
-&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/1JpbOtb5O4Sn0Z618z6p3FOW658xPA02rLLnfXos9lOc/pubchart?oid=41073765&amp;amp;format=interactive&quot; style=&quot;width: 610px; height: 380px; border: 0px&quot;&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;Auto fare: Rs25 for first 1.9km, Rs13/km after that. Ola Bangalore fares are &lt;a href=&quot;https://www.olacabs.com/fares/bangalore&quot;&gt;on their website&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;So, turns out Ola Mini is cheaper &lt;em&gt;only&lt;/em&gt; if you travel more than 13km. And please remember, this is excluding the Rs50 surge pricing you see most of the times nowadays. If I include that Rs50, then you&amp;rsquo;d have to travel 30km before Ola mini becomes cheaper than Auto. So this whole ola-is-cheaper-than-auto thing has no leg given that you&amp;rsquo;d usually want to travel 6-10km.&lt;/p&gt;
-
-&lt;p&gt;Then I thought of comparing the other cab services available with the auto fare, just because.&lt;/p&gt;
-
-&lt;p&gt;Here is &lt;a href=&quot;http://www.merucabs.com/fares/&quot;&gt;Meru Cabs&lt;/a&gt; -&lt;/p&gt;
-
-&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/1JpbOtb5O4Sn0Z618z6p3FOW658xPA02rLLnfXos9lOc/pubchart?oid=325266559&amp;format=interactive&quot; style=&quot;width: 610px; height: 380px; border: 0px&quot;&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;And &lt;a href=&quot;http://www.taxiforsure.com/bangalore-cabs/&quot;&gt;TaxiForSure&lt;/a&gt; -&lt;/p&gt;
-
-&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/1JpbOtb5O4Sn0Z618z6p3FOW658xPA02rLLnfXos9lOc/pubchart?oid=1974263952&amp;format=interactive&quot; style=&quot;width: 610px; height: 380px; border: 0px&quot;&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;I think TaxiForSure Nano is the only option that&amp;rsquo;s &lt;em&gt;always&lt;/em&gt; cheaper than Autos. And I think that&amp;rsquo;s also the reason why I &lt;em&gt;never&lt;/em&gt; found one to book.&lt;/p&gt;
-
-&lt;p&gt;The other major player is Uber. Now it&amp;rsquo;s not really possible to calculate Uber cost as they take &lt;a href=&quot;https://www.uber.com/cities/bangalore&quot;&gt;both Time and Distance into consideration&lt;/a&gt;. But I still made some effort. According to the &lt;a href=&quot;http://www.urbantransport.kar.gov.in/Bangalore%20Mobility%20Indicators_%2822-12-2011%29.pdf&quot;&gt;Bangalore Mobility Indicator published in 2011&lt;/a&gt;, the average vehicle speed in Bangalore was 15-25km per hour. That&amp;rsquo;s 15km if you&amp;rsquo;re really unlucky and 25km if you&amp;rsquo;re really lucky. So I took the average of that and assumed al the Uber vehicles travel 20km per hour. It might be 25 if you&amp;rsquo;re lucky, 15 if you&amp;rsquo;re not. So at 20km/hour, that&amp;rsquo;s 1km per 3 minutes. I put those numbers in and I got this -&lt;/p&gt;
-
-&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/1JpbOtb5O4Sn0Z618z6p3FOW658xPA02rLLnfXos9lOc/pubchart?oid=614517384&amp;format=interactive&quot; style=&quot;width: 610px; height: 380px; border: 0px&quot;&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;So UberX is cheaper than Auto if you&amp;rsquo;re travelling more than 16km. And the name says &amp;ldquo;Fixed&amp;rdquo; as the numbers for first 3-4km are not the actual numbers as Uber has a minimum fare.&lt;/p&gt;
-
-&lt;p&gt;That was fun. Now let&amp;rsquo;s put all of them together -&lt;/p&gt;
-
-&lt;iframe src=&quot;https://docs.google.com/spreadsheets/d/1JpbOtb5O4Sn0Z618z6p3FOW658xPA02rLLnfXos9lOc/pubchart?oid=1611589244&amp;format=interactive&quot; style=&quot;width: 610px; height: 380px; border: 0px&quot;&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;Ola Prime tops all of them and TaxiForSure Nano is at the bottom.&lt;/p&gt;
-
-&lt;p&gt;Here is &lt;a href=&quot;/uploads/ride-comparison-bangalore.ods&quot;&gt;the ODS file&lt;/a&gt; with all the numbers and formulas.&lt;/p&gt;
-
-&lt;p&gt;Here is &lt;a href=&quot;https://docs.google.com/spreadsheets/d/1JpbOtb5O4Sn0Z618z6p3FOW658xPA02rLLnfXos9lOc/edit?usp=sharing&quot;&gt;the google spreadsheet&lt;/a&gt; of the same data, used to generate these charts.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s very much possible that there might be some mistakes, me being a human and all. Please leave a comment or tweet to me to fix it. Thanks.&lt;/p&gt;
 </content>
  </entry>
  
@@ -73,142 +26,6 @@
    <updated>2014-12-07T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/visualizing-networks-with-python-and-networkx</id>
    <content type="html">&lt;p&gt;Few days back I had an assignment to visualize a network of people who talk to each other. I needed to find the people who are contacted most. Drawing a network graph seemed like the best way to find it out visually.&lt;/p&gt;
-
-&lt;p&gt;So I looked around for tools that could help with it and came across &lt;a href=&quot;https://networkx.github.io/&quot;&gt;Networkx&lt;/a&gt;. They have a nice &lt;a href=&quot;https://networkx.github.io/documentation/latest/overview.html&quot;&gt;documentation&lt;/a&gt; and a &lt;a href=&quot;https://networkx.github.io/documentation/latest/examples/&quot;&gt;Lot of examples&lt;/a&gt; on drawing different kinds of graphs. I decided to try it out. Here&amp;rsquo;s how to draw a simple undirected graph with it -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import networkx as nx
-import matplotlib.pyplot as plt
-
-def draw_graph(graph):
-    # create networkx graph
-    G=nx.Graph()
-
-    # add edges
-    for edge in graph:
-        G.add_edge(edge[0], edge[1])
-
-    # There are graph layouts like shell, spring, spectral and random.
-    # Shell layout usually looks better, so we're choosing it.
-    # I will show some examples later of other layouts
-    graph_pos = nx.shell_layout(G)
-
-    # draw nodes, edges and labels
-    nx.draw_networkx_nodes(G, graph_pos, node_size=1000, node_color='blue', alpha=0.3)
-    nx.draw_networkx_edges(G, graph_pos)
-    nx.draw_networkx_labels(G, graph_pos, font_size=12, font_family='sans-serif')
-
-    # show graph
-    plt.show()
-
-# draw example
-# graph is a list of tuples of nodes. Each tuple defining the
-# connection between 2 nodes
-graph = [(20, 21), (21, 22), (22, 23), (23, 24), (24, 25), (25, 20)]
-
-draw_graph(graph)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And this is the image that&amp;rsquo;s produced -&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/RBTArHs.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;We can try adding some more edges and see how it looks. E.g. -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;graph = [
-    (20, 21), (21, 22), (22, 23), (23, 24), (24, 25), (25, 20),
-    (25, 21), (23, 20), (24, 22)
-]
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This generates -&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/Xqrlmlh.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Neat!&lt;/p&gt;
-
-&lt;h2&gt;Directed Graph&lt;/h2&gt;
-
-&lt;p&gt;But the above graph is undirected. I needed directed to know which node is receiving more connections from others. Then I found out that Networkx has a Graph class called DiGraph, which can be used to draw directed graphs. Let&amp;rsquo;s try that -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;def draw_graph(graph):
-    # create directed networkx graph
-    G=nx.DiGraph()
-
-    # add edges
-    G.add_edges_from(graph)
-
-    graph_pos = nx.shell_layout(G)
-
-    # draw nodes, edges and labels
-    nx.draw_networkx_nodes(G, graph_pos, node_size=1000, node_color='blue', alpha=0.3)
-    # we can now added edge thickness and edge color
-    nx.draw_networkx_edges(G, graph_pos, width=2, alpha=0.3, edge_color='green')
-    nx.draw_networkx_labels(G, graph_pos, font_size=12, font_family='sans-serif')
-
-    # show graph
-    plt.show()
-
-# we can add more edges here as the direction is a factor now,
-# edges are added as (from_node, to_node) tuples
-# hence (22, 25) and (25, 22) are different. In undirected graph,
-# we couldn't have told the difference.
-graph = graph = [
-        (20, 21), (21, 22), (22, 23), (23, 24), (24, 25), (25, 20),
-        (25, 21), (23, 20), (24, 22), (21, 24), (20, 21)
-    ]
-draw_graph(graph)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This generates -&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/w74fl2J.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;That works great! But we&amp;rsquo;re still missing one thing, a label for the edge.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;labels = range(len(graph))
-# [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
-edge_labels = dict(zip(graph, labels))
-# {(23, 20): 7, (22, 23): 2, (20, 21): 10, (24, 25): 4, (21, 22): 1, (25, 20): 5, (24, 22): 8, (25, 21): 6, (23, 24): 3, (21, 24): 9}
-
-nx.draw_networkx_edge_labels(G, graph_pos, edge_labels=edge_labels)
-
-# show graph
-plt.show()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Which generates -&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/k2KZvnz.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;You can follow the same data structure and add any label you want to the edges.&lt;/p&gt;
-
-&lt;h3&gt;Layouts&lt;/h3&gt;
-
-&lt;p&gt;Now let&amp;rsquo;s try out the other layouts we mentioned -&lt;/p&gt;
-
-&lt;h4&gt;Spring layout&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;graph_pos = nx.spring_layout(G)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/LqgtZWH.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4&gt;Spectral layout&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;graph_pos = nx.spectral_layout(G)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/zr00Gad.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;h4&gt;Random layout&lt;/h4&gt;
-
-&lt;pre&gt;&lt;code&gt;graph_pos = nx.random_layout(G)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;img src=&quot;https://i.imgur.com/CVdNbH7.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Overall, I am liking Networkx. There are many more types of graphs that can be drawn. Can&amp;rsquo;t wait to try them.&lt;/p&gt;
 </content>
  </entry>
  
@@ -218,14 +35,6 @@ plt.show()
    <updated>2014-09-04T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/we-should-blame-ourselves-first</id>
    <content type="html">&lt;p&gt;Yesterday, I was standing at a road crossing waiting for the signal to turn green to cross the road. There was a &amp;ldquo;No U Turn&amp;rdquo; sign at the crossing and couple of traffic police. Then a taxi comes and wants to take a right turn, from the look of it because the passanger couple wanted him to. The traffic police stops them of course. Then the male passanger, who was dressed really well with formal shirts (If you met him any random day he&amp;rsquo;d introduce himself as a gentleman I&amp;rsquo;m sure), starts arguing with the traffic police. His point being he&amp;rsquo;s taken right on that crossing before so he can take right again.&lt;/p&gt;
-
-&lt;p&gt;The traffic police shows him the sign ans ask them to go ahead and take the next right. But the passanger keeps arguing, and slowly gets angry. His wife/gf/co-passanger slowly joins him and supports him. The traffic police starts insisting that they don&amp;rsquo;t argue and take the next turn. The passanger starts getting really angry this time and starts talking is loud voice.&lt;/p&gt;
-
-&lt;p&gt;The taxi driver then realizes that he can&amp;rsquo;t take a right, so he starts picking up the speed. But the passanger is really furious by then. And just as the taxi starts picking up speed, he says something &lt;em&gt;really&lt;/em&gt; offensive to the traffic police. The police, hearing that, shouts at the taxi driver and asks him to stop the taxi so that he can do something about it. The driver doesn&amp;rsquo;t stop and they speed away.&lt;/p&gt;
-
-&lt;p&gt;Now think a little, I&amp;rsquo;m sure you&amp;rsquo;ve seen something similar happen around you before. It&amp;rsquo;s clearly written that you can&amp;rsquo;t take a U turn. Or in your case it might have been a &amp;ldquo;No Parking&amp;rdquo; sign or something similar. What did the traffic police do to deserve bad-mouthing? Just because you&amp;rsquo;ve taken U turn on that crossing before, does that give you right to violate a traffic sign? And say offensice things to someone who stands at the crossing of a road trying to keep your journey smoother all day long?&lt;/p&gt;
-
-&lt;p&gt;What really bothers me is that these people who wears nice cloths and speaks nice language behaves like this while on road. These people cannot follow a simple traffic rule and don&amp;rsquo;t even know how to talk to another person. Any given day that traffic police works harder than you and me. They deserve more respect from us than you can think of. Let&amp;rsquo;s just try to give them that. Look around you, you&amp;rsquo;ll find such people around you all the time. You neighbours, relatives, acquaintances. If you see something like that and have a chance to speak some sense, please do.&lt;/p&gt;
 </content>
  </entry>
  
@@ -235,127 +44,6 @@ plt.show()
    <updated>2014-06-14T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/postgresql-swag-part-2-indexing-json-data-type</id>
    <content type="html">&lt;p&gt;In my &lt;a href=&quot;/blog/postgresql-swag-json-data-type-and-working-with-twitter-data/&quot;&gt;last post&lt;/a&gt; I demonstrated the use of JSON data type of PostgreSQL. But I skipped a crucial part, Indexes.&lt;/p&gt;
-
-&lt;p&gt;All my queries in last post ran on a table with about 24k rows with the JSON tweet data. That import script of mine is still running and I&amp;rsquo;ve crossed 100k records. I&amp;rsquo;ll run the same queries again, but this time I&amp;rsquo;ll create indexes for the appropriate columns before querying.&lt;/p&gt;
-
-&lt;p&gt;Also, I&amp;rsquo;ll explain briefly how you can use the full text search feature of PostgreSQL instead of using &lt;code&gt;LIKE&lt;/code&gt; like I used in last blog post.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s first try to fetch all the tweets that have both the word &amp;ldquo;world&amp;rdquo; and &amp;ldquo;cup&amp;rdquo; in it -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tweets=# create index &quot;idx_text&quot; on tweet using gin(to_tsvector('english', data-&amp;gt;&amp;gt;'text'));
-CREATE INDEX
-tweets=# analyze tweet;
-ANALYZE
-tweets=# explain analyze select tid, data-&amp;gt;&amp;gt;'text' from tweet where to_tsvector('english', data-&amp;gt;&amp;gt;'text') @@ to_tsquery('world &amp;amp; cup');
-                                                      QUERY PLAN
------------------------------------------------------------------------------------------------------------------------
- Bitmap Heap Scan on tweet  (cost=61.03..8490.10 rows=3229 width=51) (actual time=4.146..358.203 rows=17037 loops=1)
-   Recheck Cond: (to_tsvector('english'::regconfig, (data -&amp;gt;&amp;gt; 'text'::text)) @@ to_tsquery('world &amp;amp; cup'::text))
-   -&amp;gt;  Bitmap Index Scan on idx_text  (cost=0.00..60.23 rows=3229 width=0) (actual time=3.325..3.325 rows=17037 loops=1)
-         Index Cond: (to_tsvector('english'::regconfig, (data -&amp;gt;&amp;gt; 'text'::text)) @@ to_tsquery('world &amp;amp; cup'::text))
- Total runtime: 358.887 ms
-(5 rows)
-
-tweets=# explain analyze select tid, data-&amp;gt;&amp;gt;'text' from tweet where to_tsvector('english', data-&amp;gt;&amp;gt;'text') @@ to_tsquery('python &amp;amp; ruby');
-                                                      QUERY PLAN
------------------------------------------------------------------------------------------------------------------------
- Bitmap Heap Scan on tweet  (cost=28.13..91.09 rows=16 width=51) (actual time=2.969..12.769 rows=114 loops=1)
-   Recheck Cond: (to_tsvector('english'::regconfig, (data -&amp;gt;&amp;gt; 'text'::text)) @@ to_tsquery('python &amp;amp; ruby'::text))
-   -&amp;gt;  Bitmap Index Scan on idx_text  (cost=0.00..28.12 rows=16 width=0) (actual time=2.822..2.822 rows=114 loops=1)
-         Index Cond: (to_tsvector('english'::regconfig, (data -&amp;gt;&amp;gt; 'text'::text)) @@ to_tsquery('python &amp;amp; ruby'::text))
- Total runtime: 12.841 ms
-(5 rows)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The phenomenal time difference is dependant on the number of results -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tweets=# select count(tid) from tweet where to_tsvector('english', data-&amp;gt;&amp;gt;'text') @@ to_tsquery('python &amp;amp; ruby');
- count
--------
-   114
-(1 row)
-
-tweets=# select count(tid) from tweet where to_tsvector('english', data-&amp;gt;&amp;gt;'text') @@ to_tsquery('world &amp;amp; cup');
- count
--------
- 17037
-(1 row)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Just remember that these queries are running on almost 4 times the records compared to the last post.&lt;/p&gt;
-
-&lt;p&gt;I think that &lt;code&gt;gin(to_tsvector('english', data-&amp;gt;&amp;gt;'text'))&lt;/code&gt; and &lt;code&gt;where to_tsvector('english', data-&amp;gt;&amp;gt;'text') @@ to_tsquery('world &amp;amp; cup')&lt;/code&gt; needs some explanation.&lt;/p&gt;
-
-&lt;p&gt;&lt;code&gt;GIN&lt;/code&gt;(Generalized Inverted Index) and &lt;code&gt;GiST&lt;/code&gt;(Generalized Search Tree) indexes are &lt;a href=&quot;http://www.postgresql.org/docs/current/static/textsearch-indexes.html&quot;&gt;two types of indexes&lt;/a&gt; on PostgreSQL that can be used to speed up the text search proxess. There are merits and demerits of both. As a rule of thumb, &lt;code&gt;GIN&lt;/code&gt; indexes are best for static data because lookups are faster. Hence we&amp;rsquo;re using that.&lt;/p&gt;
-
-&lt;p&gt;It&amp;rsquo;s important to note that if you create index for &lt;code&gt;to_tsvector('english', data-&amp;gt;&amp;gt;'text')&lt;/code&gt; then while searching you much use the same &lt;code&gt;to_tsvector&lt;/code&gt; method. If you use &lt;code&gt;to_tsvector(data-&amp;gt;&amp;gt;'text')&lt;/code&gt;, the index might not be used.&lt;/p&gt;
-
-&lt;p&gt;The &lt;code&gt;to_tsvector()&lt;/code&gt; function takes a text and breaks it up into tokens, then consults few dictionaries that recognizes those tokens and provides a more normalized &lt;code&gt;lexems&lt;/code&gt; to represent the token. The stop words are also detected and ignored as they appear too frequently to be useful while searching. E.g. -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tweets=# select to_tsvector('english', 'Fifa world cup is ongoing');
-             to_tsvector
--------------------------------------
- 'cup':3 'fifa':1 'ongo':5 'world':2
-(1 row)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;to_tsquery()&lt;/code&gt; creates a &lt;code&gt;tsquery&lt;/code&gt; value from querytext, which must consist of single tokens separated by the Boolean operators &lt;code&gt;&amp;amp;&lt;/code&gt; (AND), &lt;code&gt;|&lt;/code&gt; (OR) and &lt;code&gt;!&lt;/code&gt; (NOT).&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tweets=# select to_tsquery('english', 'Fifa &amp;amp; world | cup');
-        to_tsquery
---------------------------
- 'fifa' &amp;amp; 'world' | 'cup'
-(1 row)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://www.postgresql.org/docs/9.3/static/textsearch-controls.html#TEXTSEARCH-PARSING-DOCUMENTS&quot;&gt;PostgreSQL doc&lt;/a&gt; has more details.&lt;/p&gt;
-
-&lt;p&gt;Then the &lt;code&gt;tsvector&lt;/code&gt; is searched with the &lt;code&gt;tsquery&lt;/code&gt; &lt;a href=&quot;http://www.postgresql.org/docs/9.3/static/functions-textsearch.html&quot;&gt;using &lt;code&gt;@@&lt;/code&gt;&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Now let&amp;rsquo;s try searching for tweets with more than 5 favorites, both with and without indexes, so that we can compare -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'favorite_count' from tweet where CAST(data-&amp;gt;&amp;gt;'favorite_count' AS integer) &amp;gt; 5;
-                                                 QUERY PLAN
--------------------------------------------------------------------------------------------------------------
- Seq Scan on tweet  (cost=0.00..21121.93 rows=32322 width=51) (actual time=1.901..2103.874 rows=100 loops=1)
-   Filter: (((data -&amp;gt;&amp;gt; 'favorite_count'::text))::integer &amp;gt; 5)
-   Rows Removed by Filter: 96865
- Total runtime: 2103.918 ms
-(4 rows)
-
-tweets=# create index &quot;idx_fav_count&quot; on tweet using btree(CAST(data-&amp;gt;&amp;gt;'favorite_count' AS integer));
-CREATE INDEX
-tweets=# analyze tweet;
-ANALYZE
-tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'favorite_count' from tweet where CAST(data-&amp;gt;&amp;gt;'favorite_count' AS integer) &amp;gt; 5;
-                                                         QUERY PLAN
------------------------------------------------------------------------------------------------------------------------------
- Index Scan using idx_fav_count on tweet  (cost=0.30..157.46 rows=133 width=51) (actual time=0.266..16.045 rows=100 loops=1)
-   Index Cond: (((data -&amp;gt;&amp;gt; 'favorite_count'::text))::integer &amp;gt; 5)
- Total runtime: 16.104 ms
-(3 rows)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;As you see, creating the index took down the time from 2 seconds to about 16ms!&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s find the tweets that has the word &lt;code&gt;home&lt;/code&gt; in them and also has geo location (remember, we created index for &lt;code&gt;data-&amp;gt;&amp;gt;'text'&lt;/code&gt; earlier) -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'text', data-&amp;gt;&amp;gt;'geo' from tweet where data-&amp;gt;&amp;gt;'geo' &amp;lt;&amp;gt; '' and to_tsvector('english', data-&amp;gt;&amp;gt;'text') @@ to_tsquery('home');
-                                                       QUERY PLAN
--------------------------------------------------------------------------------------------------------------------------
- Bitmap Heap Scan on tweet  (cost=126.35..4321.85 rows=1328 width=51) (actual time=2.095..46.272 rows=27 loops=1)
-   Recheck Cond: (to_tsvector('english'::regconfig, (data -&amp;gt;&amp;gt; 'text'::text)) @@ to_tsquery('home'::text))
-   Filter: ((data -&amp;gt;&amp;gt; 'geo'::text) &amp;lt;&amp;gt; ''::text)
-   Rows Removed by Filter: 1322
-   -&amp;gt;  Bitmap Index Scan on idx_text  (cost=0.00..126.02 rows=1335 width=0) (actual time=1.006..1.006 rows=1349 loops=1)
-         Index Cond: (to_tsvector('english'::regconfig, (data -&amp;gt;&amp;gt; 'text'::text)) @@ to_tsquery('home'::text))
- Total runtime: 46.313 ms
-(7 rows)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;From ~550ms to 46ms, that too on 4 times the records!&lt;/p&gt;
-
-&lt;p&gt;This just shows how indexing can make your life much easier if you use it correctly. :)&lt;/p&gt;
 </content>
  </entry>
  
@@ -365,181 +53,6 @@ tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', 
    <updated>2014-06-11T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/postgresql-swag-json-data-type-and-working-with-twitter-data</id>
    <content type="html">&lt;p&gt;When working on side projects that deal with 3rd party data, how much time do you spend on figuring out the database schema? Not an insignificant amount. You don&amp;rsquo;t use a DBMS you say? Good luck parsing the data files and querying them.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;m not going to start a DBMS comparison. I&amp;rsquo;ve spent a lot of time fiddling with structred data and PostgreSQL has been really kind to me. It&amp;rsquo;s stable, &lt;em&gt;really&lt;/em&gt; feaure rich and it can literally do &lt;em&gt;anything&lt;/em&gt;. You want to setup a cluster? Replication? Crunch geo spatial data? parse Gigabytes of CSV files? And want to do all of these really fast? Then PostgreSQL is for you, it can do all that and more out of the box. Just today a friend told me that PostgreSQL parsed and imported his 4.3GB CSV file in under 10 minutes. I&amp;rsquo;m happy with that performance.&lt;/p&gt;
-
-&lt;p&gt;We at KLP work with huge amount of data on daily basis and PostgreSQL has been helping us really well on our job. We&amp;rsquo;ve recently migrated all the databases to PostgreSQL 9.3 because of the native support for PostGIS and some more interesting features, I&amp;rsquo;ve written about some of them below. :)&lt;/p&gt;
-
-&lt;p&gt;You&amp;rsquo;ve probably heard about PostgreSQL&amp;rsquo;s &lt;a href=&quot;http://www.postgresql.org/docs/9.3/static/functions-json.html&quot;&gt;JSON data type&lt;/a&gt; recently. This has made it possible to work with both structured and schema-less data. For example, I&amp;rsquo;ll talk about Twitter data here. As you know, Twitter provides their data from API in JSON format. And till now, if I ever had to work with Twitter data, I had to write a quick db schema, create a table, then parse the incoming JSON, insert it in the said table and then work with it. Now the provess is a bit faster. ;)&lt;/p&gt;
-
-&lt;p&gt;First, I&amp;rsquo;ll create couple of small tables -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;CREATE TABLE tweet
-(
-    tid character varying NOT NULL,
-    data json,
-    CONSTRAINT tid_pkey PRIMARY KEY (tid)
-)
-
-CREATE TABLE word
-(
-    id bigserial NOT NULL,
-    text character varying(100),
-    CONSTRAINT id_pkey PRIMARY KEY (id)
-)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;code&gt;tid&lt;/code&gt; field will store the id of the tweet and &lt;code&gt;data&lt;/code&gt; field will store the json body of the tweet. The table &lt;code&gt;word&lt;/code&gt; is to store the list of words I need to search for on Twitter and gather the sample data.&lt;/p&gt;
-
-&lt;p&gt;Here is a sample script I used to quickly gather about 24k tweets. It&amp;rsquo;s not at all perfect and you should not use it to gather data. It doesn&amp;rsquo;t even use the &lt;code&gt;since_id&lt;/code&gt; param for the search API endpoint.&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import twitter
-import json
-import psycopg2
-
-api = twitter.Twitter(auth=twitter.OAuth('', '', '', ''))
-
-conn = psycopg2.connect(&quot;dbname=tweets user=bibhas password=forgotit&quot;)
-cur = conn.cursor()
-
-cur.execute('SELECT text from word')
-terms = cur.fetchall()
-if terms:
-    for t in terms:
-        tweets = api.search.tweets(q=t, lang='en', count=100)
-        for s in tweets['statuses']:
-            cur.execute(&quot;SELECT * FROM tweet WHERE tid='%s'&quot;, (s['id'], ))
-
-            # ignore the duplicate and RT-like tweets
-            if cur.fetchone() is not None or s['text'].find('RT @') &amp;gt;= 0:
-                continue
-
-            cur.execute(&quot;INSERT INTO tweet (tid, data) VALUES (%s, %s)&quot;, (s['id'], json.dumps(s), ))
-        conn.commit()
-
-cur.close()
-conn.close()
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;I ran this script as a cron job for few hours and I had the required data. Now if I query the table, this is what it looks like -&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/uploads/tweets-json.jpg&quot; alt=&quot;JSON data in PostgreSQL&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;So, no schema specific to the tweet&amp;rsquo;s JSON structure and we got the data in the database. Now let&amp;rsquo;s try to query the data and see what happens.&lt;/p&gt;
-
-&lt;p&gt;Let&amp;rsquo;s try to fetch all the tweet texts(I&amp;rsquo;ll use &lt;code&gt;explain analyze&lt;/code&gt; on all the queries for showing the performace) -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data-&amp;gt;&amp;gt;'text' from tweet;
-                                                 QUERY PLAN
--------------------------------------------------------------------------------------------------------------
- Seq Scan on tweet  (cost=0.00..4254.06 rows=20325 width=51) (actual time=0.169..458.198 rows=20335 loops=1)
- Total runtime: 459.121 ms
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;For reference, &lt;code&gt;-&amp;gt;&lt;/code&gt; returns a JSON object and &lt;code&gt;-&amp;gt;&amp;gt;&lt;/code&gt; returns text. Check the JSON data type reference url above for more details. Now, let&amp;rsquo;s try a &lt;code&gt;WHERE&lt;/code&gt; clause on a JSON property -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'text' from tweet where data-&amp;gt;&amp;gt;'text' like '%world cup%';
-                                               QUERY PLAN
---------------------------------------------------------------------------------------------------------
- Seq Scan on tweet  (cost=0.00..4384.70 rows=2 width=51) (actual time=10.700..481.758 rows=510 loops=1)
-   Filter: ((data -&amp;gt;&amp;gt; 'text'::text) ~~ '%world cup%'::text)
-   Rows Removed by Filter: 20202
- Total runtime: 481.825 ms
-(4 rows)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;and if I try case insensitive matching -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'text' from tweet where UPPER(data-&amp;gt;&amp;gt;'text') like UPPER('%world cup%');
-                                               QUERY PLAN
---------------------------------------------------------------------------------------------------------
- Seq Scan on tweet  (cost=0.00..4436.49 rows=2 width=51) (actual time=7.983..642.647 rows=3563 loops=1)
-   Filter: (upper((data -&amp;gt;&amp;gt; 'text'::text)) ~~ '%WORLD CUP%'::text)
-   Rows Removed by Filter: 17149
- Total runtime: 642.887 ms
-(4 rows)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now let&amp;rsquo;s try to find all the useful tweets, those that have been favorited more than, let&amp;rsquo;s say 5 times -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'favorite_count' from tweet where CAST(data-&amp;gt;&amp;gt;'favorite_count' AS integer) &amp;gt; 5;
-                                               QUERY PLAN
----------------------------------------------------------------------------------------------------------
- Seq Scan on tweet  (cost=0.00..5202.05 rows=7939 width=51) (actual time=2.727..557.297 rows=27 loops=1)
-   Filter: (((data -&amp;gt;&amp;gt; 'favorite_count'::text))::integer &amp;gt; 5)
-   Rows Removed by Filter: 23787
- Total runtime: 557.338 ms
-(4 rows)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt; &lt;code&gt;data-&amp;gt;&amp;gt;'favorite_count'&lt;/code&gt; returns the count as &lt;code&gt;text&lt;/code&gt; and we &lt;code&gt;CAST()&lt;/code&gt; it as integer and use it for comparing.&lt;/p&gt;
-
-&lt;p&gt; Now let&amp;rsquo;s try to fetch the geo enabled tweets that has the text &amp;lsquo;home&amp;rsquo; in it (:P) -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt; tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'text', data-&amp;gt;&amp;gt;'geo' from tweet where data-&amp;gt;&amp;gt;'geo' &amp;lt;&amp;gt; '' and UPPER(data-&amp;gt;&amp;gt;'text') like UPPER('%home%');
-                                               QUERY PLAN
----------------------------------------------------------------------------------------------------------
- Seq Scan on tweet  (cost=0.00..5302.47 rows=192 width=51) (actual time=28.156..549.844 rows=8 loops=1)
-   Filter: (((data -&amp;gt;&amp;gt; 'geo'::text) &amp;lt;&amp;gt; ''::text) AND (upper((data -&amp;gt;&amp;gt; 'text'::text)) ~~ '%HOME%'::text))
-   Rows Removed by Filter: 24172
- Total runtime: 549.886 ms
-(4 rows)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Here the &lt;code&gt;geo&lt;/code&gt; field will return GeoJSON like &lt;code&gt;{&quot;type&quot;: &quot;Point&quot;, &quot;coordinates&quot;: [43.6482035, -79.3886928]}&lt;/code&gt;. If you want to extract the lat, long directly, you can do this -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;tweets=# explain analyze select tid, data#&amp;gt;&amp;gt;'{user,screen_name}', data-&amp;gt;&amp;gt;'text', data-&amp;gt;'geo'-&amp;gt;'coordinates'-&amp;gt;0 as lat, data-&amp;gt;'geo'-&amp;gt;'coordinates'-&amp;gt;1 as lon from tweet where data-&amp;gt;&amp;gt;'geo' &amp;lt;&amp;gt; '' and UPPER(data-&amp;gt;&amp;gt;'text') like UPPER('%home%');
-                                               QUERY PLAN
----------------------------------------------------------------------------------------------------------
- Seq Scan on tweet  (cost=0.00..5304.87 rows=192 width=51) (actual time=1.220..537.186 rows=8 loops=1)
-   Filter: (((data -&amp;gt;&amp;gt; 'geo'::text) &amp;lt;&amp;gt; ''::text) AND (upper((data -&amp;gt;&amp;gt; 'text'::text)) ~~ '%HOME%'::text))
-   Rows Removed by Filter: 24172
- Total runtime: 537.205 ms
-(4 rows)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;These are numbers I can work with.&lt;/p&gt;
-
-&lt;p&gt;One of the major reasons to work with PostgreSQL is &lt;a href=&quot;http://postgis.net/&quot;&gt;PostGIS&lt;/a&gt;. &lt;em&gt;Really&lt;/em&gt; fast geo data parsing and querying is everyone who works with geo data, craves. So let&amp;rsquo;s try to find all the tweets which were created within 5km of my location, e.g. &lt;code&gt;13.004616, 77.620176&lt;/code&gt; -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;explain ANALYZE
-SELECT tmp_table.tid,
-   tmp_table.screen_name,
-   tmp_table.text
-FROM
-  (SELECT tid,
-    data-&amp;gt;'user'-&amp;gt;&amp;gt;'screen_name' AS screen_name,
-    data-&amp;gt;&amp;gt;'text' AS text,
-    CAST(data#&amp;gt;&amp;gt;'{geo,coordinates,0}' AS double PRECISION) AS lat,
-    CAST(data#&amp;gt;&amp;gt;'{geo,coordinates,1}' AS double PRECISION) AS lon
-   FROM tweet
-   WHERE data-&amp;gt;&amp;gt;'geo' &amp;lt;&amp;gt; '') AS tmp_table
-WHERE ST_Distance(
-    ST_MakePoint(tmp_table.lon, tmp_table.lat)::geography,
-    ST_MakePoint(77.620176, 13.004616)::geography
-) &amp;lt; 5000;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;that yields this -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;                                                QUERY PLAN
----------------------------------------------------------------------------------
- Seq Scan on tweet  (cost=0.00..12667.35 rows=8631 width=51) (actual time=311.740..617.514 rows=2 loops=1)
-   Filter: (((data -&amp;gt;&amp;gt; 'geo'::text) &amp;lt;&amp;gt; ''::text) AND (_st_distance((st_makepoint(((data #&amp;gt;&amp;gt; '{geo,coordinates,1}'::text[]))::double precision, ((data #&amp;gt;&amp;gt; '{geo,coordinates,0}'::text[]))::double precision))::geography, '0101000020E6100000E770ADF6B0675340A11342075D022A40'::geography, 0::double precision, true) &amp;lt; 5000::double precision))
-   Rows Removed by Filter: 26013
- Total runtime: 617.561 ms
-(4 rows)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;That&amp;rsquo;s fairly fast for me.&lt;/p&gt;
-
-&lt;p&gt;Just for reference, &lt;a href=&quot;http://postgis.net/docs/ST_Distance.html&quot;&gt;ST_Distance&lt;/a&gt; and &lt;a href=&quot;http://postgis.net/docs/ST_MakePoint.html&quot;&gt;ST_MakePoint&lt;/a&gt; docs are pretty handy.&lt;/p&gt;
-
-&lt;p&gt;All the above queries just showed that we can query a fairly sized db using JSON data type without much time different between complex queries. My cron job for collecting tweets is still running. I&amp;rsquo;m waiting for it to touch 1 million records. Once it does, will test on it and update this post.&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ll probably write another post on PostGIS and maybe Foursquare data. That would be fun. If you have any ideas, let me know.&lt;/p&gt;
-
-&lt;p&gt;&lt;strong&gt;UPDATE&lt;/strong&gt;: Here is the &lt;a href=&quot;/blog/postgresql-swag-part-2-indexing-json-data-type-and-full-text-search/&quot;&gt;part 2&lt;/a&gt; of this blog post about indexing the JSON data and the performance changes related to that.&lt;/p&gt;
 </content>
  </entry>
  
@@ -549,22 +62,6 @@ WHERE ST_Distance(
    <updated>2014-04-10T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/whatsapp--truecaller--horny-men--a-perfect-crime</id>
    <content type="html">&lt;p&gt;So, a friend pinged me today saying that she&amp;rsquo;s facing a weird problem where random strangers have started pinging her on WhatsApp and they seem to know her name. A little bit asking around and she got to know that they have been using a website to get hold of random phone numbers and using them to find girls and ping them.&lt;/p&gt;
-
-&lt;p&gt;It sounded interesting and then she explained whats happening. There is a new website here wowi.in which seem to be claiming that they have the list of &lt;em&gt;all&lt;/em&gt; the WhatsApp users in India. You can go and pick one of the numbers, save it in your contact. Then let WhatsApp sync the profile picture for the number(if the owner is using WhatsApp). If the profile picture is of a girl, then just head for Truecaller to find the name. That&amp;rsquo;s a perfect crime to me.&lt;/p&gt;
-
-&lt;p&gt;So, who to blame? The horny men who are looking for phone numbers of girls to start a fruitless conversation that leads to nowhere but to a bit of mental satisfaction for them? Yeah, maybe. It&amp;rsquo;s not new. I&amp;rsquo;ve been seeing this around me since I was in school. The girls in our class would get random calls from random numbers where one boy/guy would start asking her name, address, what she&amp;rsquo;s doing and more. We, the boys in the class, sometimes stood a bit brave, took the mobile and threatened them to never call back again. But that never really worked. The only real solution was to ignore them, so that they run out of credit balance and stop calling. But with the introduction of WhatsApp, that limit of credit balance is no longer in place. That&amp;rsquo;s a free channel they can exploit as much as they want, any time they want. How many of them are you going to block before you lose your nerve?&lt;/p&gt;
-
-&lt;p&gt;Maybe blame WhatsApp? Just because a number is on my contact list, does it &lt;em&gt;have to&lt;/em&gt; sync their profile picture without the owner&amp;rsquo;s consent? Can&amp;rsquo;t it be a permissible model? I&amp;rsquo;m not questioning the existence of WhatsApp. It&amp;rsquo;s pretty big and it&amp;rsquo;s growing bigger. More and more people are using it everyday. That might be because there is a need of messaging that doesn&amp;rsquo;t rip you off like SMS does. But WhatsApp should consider cases like this where the users become vulnerable to exploits.&lt;/p&gt;
-
-&lt;p&gt;So let&amp;rsquo;s blame Truecaller? Well, maybe. Truecaller is an Internet company that probably has the largest ever Mobile number directory. How do they work? Let&amp;rsquo;s say you are a good friend of mine, I trust you. So I gave you my phone number so that we can stay in touch. Now one day, you get some random calls from unknown numbers, so you feel the need of knowing who all are behind the random calls. So you install Truecaller. The moment you do that, Truecaller takes my number and my name from your contact list and possibly more of my details available to you, and put them online for the whole world to use. And I have absolutely no idea about it. So the next day, when I get calls from a random guy knowing who I am, I&amp;rsquo;m left wondering what just happened. While all these happened, Truecaller never felt the need of letting me know that my number, with my name, is being put up on their database for public to see and use. Fantastic, isn&amp;rsquo;t it?&lt;/p&gt;
-
-&lt;p&gt;I&amp;rsquo;ve had few debates with people before on Truecaller and their breach of privacy. You&amp;rsquo;d think that they would actually make a point of apologizing to people and amend their logic. But it seems they &lt;em&gt;love&lt;/em&gt; to stay behind their beloved paid users. Their point is, I shared my number with you. So it was in my consent that you can do whatever with my number. So in other words, they are saying that if I have some problem with it, it&amp;rsquo;s your fault and I should take it up with you. Because the Trucaller app asks it&amp;rsquo;s user if they want to upload their contacts on their server, before they do it, they think it&amp;rsquo;s perfectly fine to put my info out their without letting me know.&lt;/p&gt;
-
-&lt;p&gt;There has been debates going around on this. A &lt;a href=&quot;https://www.google.com/search?q=truecaller%20privacy%20breach&quot;&gt;little search&lt;/a&gt; will show you how people are concerned about this. But a little has been done to fix it. Because the number of people shouting that Truecaller is useful for them to spot spam calls, seems like ten fold of the number of people that are actually being harassed AND has access to Internet. We&amp;rsquo;re not even sure how many people can&amp;rsquo;t even report the troubles they go through because of Truecaller. Like the friend of mine. She&amp;rsquo;s not going to report anything. She&amp;rsquo;ll just remove her number of Truecaller DB. Because that&amp;rsquo;s Truecaller&amp;rsquo;s solution to your harassment. &amp;ldquo;Are you being troubled because of our service? Please request to remove it from our DB.&amp;rdquo; But the question is, why do I, who is not even remotely close to using a service like Truecaller, have to go visit their site and remove my info from there when they didn&amp;rsquo;t even had the courtesy to ask me if I&amp;rsquo;m OK with them putting them there? I don&amp;rsquo;t even care about their service! Isn&amp;rsquo;t that kind of like blackmail? &amp;ldquo;Come to our site and confirm that you own this phone number or we&amp;rsquo;ll give people more data along with it.&amp;rdquo; !!&lt;/p&gt;
-
-&lt;p&gt;She cannot take legal steps against that website which is saying they have numbers of all the WhatsApp users. Because all that website is doing is displaying a huge list of 10 digit numbers. While it&amp;rsquo;s morally wrong, it&amp;rsquo;s not a crime. And for all I know, they are just running a scam. I&amp;rsquo;ve checked with friends who use WhatsApp and their numbers are not on that site. So they have possibly put up a random list of mobile numbers and claiming attractive things, just to bring people on their site and earn money from the ads. So while thousands of people are being harassed because of the person responsible, they are actually earning money!&lt;/p&gt;
-
-&lt;p&gt;What on earth happened to doing decent business?&lt;/p&gt;
 </content>
  </entry>
  
@@ -574,8 +71,6 @@ WHERE ST_Distance(
    <updated>2014-03-16T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/the-festival-of-colors-holi-and-me</id>
    <content type="html">&lt;p&gt;Holi as a festival kind of sucks for me. I guess that&amp;rsquo;s mostly because I don&amp;rsquo;t like the idea of having fun while bathing in artifical colors.  So, I have to stay home for at least 3 days when everybody is &amp;ldquo;spreading the joy&amp;rdquo; outside. And if I go outside, they will share their &amp;ldquo;joy&amp;rdquo; with me too regardless of if I want to be a part of it or not. And they are not very considerate either. We Indians are &lt;em&gt;really&lt;/em&gt; strict about that.&lt;/p&gt;
-
-&lt;p&gt;But this time Holi is actually being awesome because four of us friends are staying inside with our computers. Wherever I look there is code, computer, boxes of foods that have been eaten, camera, bean bag and lot of concentration. I&amp;rsquo;m trying to become a bit less Indian about it and not forcing others to do the same. Wish you all(well, maybe not all) a Happy Holi.&lt;/p&gt;
 </content>
  </entry>
  
@@ -585,16 +80,6 @@ WHERE ST_Distance(
    <updated>2014-02-01T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/map-of-kolkata-book-fair-2014</id>
    <content type="html">&lt;p&gt;This year, the bookfair is happening at Milam Mela ground beside Science city like the last year. Here is the map of Kolkata Book Fair 2014 for your use -&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://farm8.staticflickr.com/7328/12246947193_544c9274d7_o.jpg&quot;&gt;&lt;img src=&quot;http://farm8.staticflickr.com/7328/12246947193_544c9274d7_o.jpg&quot; alt=&quot;Full Map&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;http://farm6.staticflickr.com/5521/12247184854_00401fdb2a_o.jpg&quot;&gt;&lt;img src=&quot;http://farm6.staticflickr.com/5521/12247184854_00401fdb2a_o.jpg&quot; alt=&quot;List of Stalls&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Some more images are in my &lt;a href=&quot;http://www.flickr.com/photos/pythonerd/sets/72157640377803394/&quot;&gt;Flickr gallery&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;If you&amp;rsquo;re new to Kolkata, here is the location of the book fair - &lt;a href=&quot;http://www.openstreetmap.org/#map=16/22.5450/88.3925&quot;&gt;OpenStreetMap&lt;/a&gt; | &lt;a href=&quot;https://www.google.com/maps/preview/@22.5441446,88.3948919,17z&quot;&gt;Google Maps&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Go visit today. Buy some books. :)&lt;/p&gt;
 </content>
  </entry>
  
@@ -604,110 +89,6 @@ WHERE ST_Distance(
    <updated>2013-09-08T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/moments-from-pycon-india-2013</id>
    <content type="html">&lt;p&gt;And just like that, PyCon India 2013 is over. A lot of hard work and dedications comes to an end for another year. Yet extremely happy because all those hard works yielded really awesome feedback. People have enjoyed those 3 days. That&amp;rsquo;s all we needed to make sure would happen. :)&lt;/p&gt;
-
-&lt;p&gt;I reached B'lore on 28th, changed from the original plan of going on 29th. I thought it&amp;rsquo;d better to reach with two days of time in hand so that I can help prepare for the event.&lt;/p&gt;
-
-&lt;p&gt;On 29th evening, went to CIS to help pack the equipments to bring to the event venue. Did some good amount of counting and packing. Then got a car and brought everything to the venue and started preparing for the next day. Unlike the last time, this year we had a lot of volunteers on the day before the event to help us with the preparation. And that really helped.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt; started &lt;a href=&quot;http://t.co/7lTXJaydG6&quot;&gt;pic.twitter.com/7lTXJaydG6&lt;/a&gt;&lt;/p&gt;&amp;mdash; kushaldas (@kushaldas) &lt;a href=&quot;https://twitter.com/kushaldas/statuses/373292924164796416&quot;&gt;August 30, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;On 30th morning, I had to go to HasGeek&amp;rsquo;s workshop office to pick up few more equipments, that made me late to reach the venue. By the time I was there, the registration had already started. I, along with Iliyas and Haseeb, had to take care of setting up the registration and sponsor booth systems. Whole day went testing and setting the systems up. And the first day went smoothly. Participants liked the workshops. I couldn&amp;rsquo;t attend any of them. At the end of the day, we needed one of the Asus Eee PCs to be configured so that it can be used for registration the next day, so brought it home with me. Installed Ubuntu and learned that Unity &lt;em&gt;does not&lt;/em&gt; play well on netbooks. So install gnome-classic. Then it started working smoothly.&lt;/p&gt;
-
-&lt;p&gt;On 31st morning, it was raining well, that caused some good amount of traffic jam on road and I guess thanks to that there was not much crowd on the registration desk. There were a lot of running around to get registration kits from inventory to the registration desk. And it was done well enough to not have a huge queue waiting to be registered. We had about 1000 registered participants. The registration was done really smoothly even despite that. That went really well.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;Registration complete. Nice spell of rain. Now in auditorium 1 for &lt;a href=&quot;https://twitter.com/jackerhack&quot;&gt;@jackerhack&lt;/a&gt;&amp;#39;s keynote at &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt;&lt;/p&gt;&amp;mdash; sankarshan সঙ্কর্ষণ (@sankarshan) &lt;a href=&quot;https://twitter.com/sankarshan/statuses/373644104178991104&quot;&gt;August 31, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;Registration started for main conference &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt; &lt;a href=&quot;http://t.co/rrnmC1QoZh&quot;&gt;pic.twitter.com/rrnmC1QoZh&lt;/a&gt;&lt;/p&gt;&amp;mdash; kushaldas (@kushaldas) &lt;a href=&quot;https://twitter.com/kushaldas/statuses/373652270111420417&quot;&gt;August 31, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;In the meantime, the food was arranged and it got some really good feedback from participants. In all that mess, missed the keynote by @jackerhack on paradox of code. :( Anyway, watched it right after &lt;a href=&quot;https://www.youtube.com/watch?v=_stsJlNgGfA&amp;amp;feature=c4-overview-vl&amp;amp;list=PL6GW05BfqWIdsaaV35jcHWPWTI-DAw6Yn&quot;&gt;the video was uploaded on Youtube&lt;/a&gt;. Good one. :)&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;Keynote at &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt; by &lt;a href=&quot;https://twitter.com/jackerhack&quot;&gt;@jackerhack&lt;/a&gt;. &lt;a href=&quot;http://t.co/84eCC2pO0j&quot;&gt;http://t.co/84eCC2pO0j&lt;/a&gt;&lt;/p&gt;&amp;mdash; Rishi Mukherjee (@RishiMukherjee2) &lt;a href=&quot;https://twitter.com/RishiMukherjee2/statuses/373859579127291905&quot;&gt;August 31, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;From morning keynote &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt; &lt;a href=&quot;http://t.co/MAzH5Oxs6q&quot;&gt;pic.twitter.com/MAzH5Oxs6q&lt;/a&gt;&lt;/p&gt;&amp;mdash; kushaldas (@kushaldas) &lt;a href=&quot;https://twitter.com/kushaldas/statuses/373707233617391617&quot;&gt;August 31, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;PyCon, event where even mic is tested speaking &amp;#39;hello world&amp;#39;.&amp;#10;&lt;a href=&quot;https://twitter.com/search?q=%23PyConIndia2013&amp;amp;src=hash&quot;&gt;#PyConIndia2013&lt;/a&gt;&lt;/p&gt;&amp;mdash; Gautam Singh (@CrypticSham9) &lt;a href=&quot;https://twitter.com/CrypticSham9/statuses/373738920921403392&quot;&gt;August 31, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;Then we had to start running to sponsor booths to set up the Contact point system. It in a software developed by team @hasgeek(mostly) for making it possible to exchange contacts betweek event participants and sponsors without much hassles. Although, there were some glitches here and there, the systems worked. Had to hunt down rogue WiFi access points running around the venue. That was fun. And the lunch was great. Met a lot of old friends from last and last last PyCons. Some of them, like @bhauvrat were wearing the PyCon 2011 t-shirt. Sadly I&amp;rsquo;ve outgrown that t-shirt. Still cherish it though.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt; keeps getting awesome. The response is awesome, the talks are awesome !!! &amp;lt;3&lt;/p&gt;&amp;mdash; Konark Modi (@konarkmodi) &lt;a href=&quot;https://twitter.com/konarkmodi/statuses/373716942609084417&quot;&gt;August 31, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;So who were the volunteers for catering? This is the best food in &lt;a href=&quot;https://twitter.com/pyconindia&quot;&gt;@pyconindia&lt;/a&gt; yet! &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt;&lt;/p&gt;&amp;mdash; Abdul Muneer (@abdulmuneer) &lt;a href=&quot;https://twitter.com/abdulmuneer/statuses/374079342805925891&quot;&gt;September 1, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;The second day went great. Konark did a great job managing the volunteers. Althought there were few rough spots. Some of them could not be found throughout the event. But we took on the tasks and completed it. Tried to make sure that the participants don&amp;rsquo;t face any trouble. From the tweets I saw, it seemed we succeeded. :)&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;Keynote by &lt;a href=&quot;https://twitter.com/kennethreitz&quot;&gt;@kennethreitz&lt;/a&gt; has just begun: &lt;a href=&quot;http://t.co/q6AjRwNJDV&quot;&gt;http://t.co/q6AjRwNJDV&lt;/a&gt; &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia&amp;amp;src=hash&quot;&gt;#pyconindia&lt;/a&gt; &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt;&lt;/p&gt;&amp;mdash; Harshad Sharma (@hiway) &lt;a href=&quot;https://twitter.com/hiway/statuses/374020620989628416&quot;&gt;September 1, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;The third day started slow. As most of the participants registered the day before, the rush was less, so I got to attend the keynote on second day by @kennethreitz. He shared his experience on running an open source project. Some good lessons. Maybe I can use them someday.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;&amp;quot;documentation is the glue that makes Open Source possible&amp;quot; &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt;&lt;/p&gt;&amp;mdash; sankarshan সঙ্কর্ষণ (@sankarshan) &lt;a href=&quot;https://twitter.com/sankarshan/statuses/374022910060396544&quot;&gt;September 1, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;Learn to say no to crazy features: &amp;quot;Simplicity is better than functionality&amp;quot; - Pieter Hinjesns.&amp;#10;&amp;#10;&lt;a href=&quot;https://twitter.com/kennethreitz&quot;&gt;@kennethreitz&lt;/a&gt; at &lt;a href=&quot;https://twitter.com/search?q=%23PyconIndia2013&amp;amp;src=hash&quot;&gt;#PyconIndia2013&lt;/a&gt;&lt;/p&gt;&amp;mdash; Arnab Deka (@arnab_deka) &lt;a href=&quot;https://twitter.com/arnab_deka/statuses/374025748291391488&quot;&gt;September 1, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;Almost around the lunch time we wrapped up the registration and started preparing for distributing the t-shirts. On the time of registration, each person was given a RFID card which they could use to share their contacts, and we needed them back. So what we did was we gave out the t-shirts only in exchange of the RFID cards. And that worked &lt;em&gt;really&lt;/em&gt; well. We got back more than 95% cards I think. And people were really happy with the t-shirts. The volunteers also got a bottle from Bluejeans, one of the sponsors. That also made them extra happy for all the effort they put in those 3 days.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;T shirt queue &lt;a href=&quot;https://twitter.com/pyconindia&quot;&gt;@pyconindia&lt;/a&gt; &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt; &lt;a href=&quot;http://t.co/PZqbhDTO06&quot;&gt;pic.twitter.com/PZqbhDTO06&lt;/a&gt;&lt;/p&gt;&amp;mdash; Anuvrat Parashar (@bhanuvrat) &lt;a href=&quot;https://twitter.com/bhanuvrat/statuses/374062976514289664&quot;&gt;September 1, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;This year&amp;#39;s T-shirt and promotional graphics are really good. Kudos to the designer. &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt;&lt;/p&gt;&amp;mdash; Jishnu (@jishnu7) &lt;a href=&quot;https://twitter.com/jishnu7/statuses/374062564407144448&quot;&gt;September 1, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;404 Registration. :-) &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt; &lt;a href=&quot;http://t.co/JOvO35KhK4&quot;&gt;pic.twitter.com/JOvO35KhK4&lt;/a&gt;&lt;/p&gt;&amp;mdash; Vivek Anand (@insidevivek) &lt;a href=&quot;https://twitter.com/insidevivek/statuses/374132068747182081&quot;&gt;September 1, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;Then the sun went down. The end of the event was near. And we attended the IPSS AGM. Konark was chosen to be the Vise President of IPSS. It was a great move. :) Happy that it happened. We also got a lot of new members for IPSS.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;The awesome team that made AV possible at &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt; :) way to go guys,&lt;a href=&quot;https://twitter.com/the_codebot&quot;&gt;@the_codebot&lt;/a&gt; &lt;a href=&quot;https://twitter.com/anandology&quot;&gt;@anandology&lt;/a&gt; &lt;a href=&quot;http://t.co/VoN9N7Zg0B&quot;&gt;pic.twitter.com/VoN9N7Zg0B&lt;/a&gt;&lt;/p&gt;&amp;mdash; Vishal Sood (@VishalSood114) &lt;a href=&quot;https://twitter.com/VishalSood114/statuses/374167156142788609&quot;&gt;September 1, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;The real rockstars of &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt; &lt;a href=&quot;http://t.co/pUx73My4Nf&quot;&gt;http://t.co/pUx73My4Nf&lt;/a&gt;&lt;/p&gt;&amp;mdash; sankarshan সঙ্কর্ষণ (@sankarshan) &lt;a href=&quot;https://twitter.com/sankarshan/statuses/376420382040797184&quot;&gt;September 7, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;Then everyone started heading home, and we started packing everything up. 3 long days of efforts came to an end. Most of the volunteers were gone at that point. Only handful of us were left. We packed everything up and said good bye. It was 3 days of awesomeness working with these people.&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;&lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt;, a very well organized event.Congrats &lt;a href=&quot;https://twitter.com/anandology&quot;&gt;@anandology&lt;/a&gt; and team for the wonderful effort!! Looking forward to pycon inda 2014 :)&lt;/p&gt;&amp;mdash; Rahul Krishna Upadhy (@RahulKrishnaUp) &lt;a href=&quot;https://twitter.com/RahulKrishnaUp/statuses/374290768145313792&quot;&gt;September 1, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;After everything was packed, it seemed that I was the only one left to bring &lt;em&gt;everything&lt;/em&gt; back to CIS. We rented a car, loaded everything on it and I rode with the driver in front seat. After dropping everything at the CIS with the help from the driver, just when I was going to leave, it started raining. I asked that car driver to give me a lift at least till the main road so that I could get an auto. The driver was kind enough to give me a lift almost to my home. :) Really grateful to him.&lt;/p&gt;
-
-&lt;p&gt;Then I decided to treat myself in completing all the tasks for PyCon India 2013. Went to Mani&amp;rsquo;s Biryani and had some. Satisfactory food. I was just really glad that everything went well. Checked the twitter timeline for the hashtag #pyconindia2013. It was full with positive feedback. As a volunteer, could not ask for anything more.&lt;/p&gt;
-
-&lt;p&gt;Thanks to everyone who attended. I hope we could make it comfortable for you to attend the event. And hope to see you next year. Thank you. :)&lt;/p&gt;
-
-&lt;p&gt;Oh, I can&amp;rsquo;t end the blog post without mentioning Anand Chitipothu. He&amp;rsquo;s the one who made the event possible. :)&lt;/p&gt;
-
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;A blogpost about &lt;a href=&quot;https://twitter.com/search?q=%23pyconindia2013&amp;amp;src=hash&quot;&gt;#pyconindia2013&lt;/a&gt; is incomplete without mentioning &lt;a href=&quot;https://twitter.com/anandology&quot;&gt;@anandology&lt;/a&gt;. The man behind the whole event. :) &lt;a href=&quot;http://t.co/vj4FC61TjH&quot;&gt;http://t.co/vj4FC61TjH&lt;/a&gt;&lt;/p&gt;&amp;mdash; Bibhas (@bibhasdn) &lt;a href=&quot;https://twitter.com/bibhasdn/statuses/376768511554498562&quot;&gt;September 8, 2013&lt;/a&gt;&lt;/blockquote&gt;
-
-
-&lt;p&gt;PS: The videos are being uploaded at &lt;a href=&quot;https://www.youtube.com/playlist?list=PL6GW05BfqWIdsaaV35jcHWPWTI-DAw6Yn&quot;&gt;Python India YouTube channel&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a class=&quot;twitter-timeline&quot; data-dnt=&quot;true&quot; href=&quot;https://twitter.com/search?q=%23pyconindia2013&quot; data-widget-id=&quot;376720132053020672&quot;&gt;Tweets about &amp;ldquo;#pyconindia2013&amp;rdquo;&lt;/a&gt;&lt;/p&gt;
 </content>
  </entry>
  
@@ -717,20 +98,6 @@ WHERE ST_Distance(
    <updated>2013-08-25T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/python-month-workshop-at-bppimt-kolkata</id>
    <content type="html">&lt;p&gt;This August has been special for all the Python lovers in India for it&amp;rsquo;s being celebrated as &amp;ldquo;Python Month&amp;rdquo; by PyCon India. Volunteers all around the country have been visiting colleges and organizing workshops to promote and spread the awesomeness of Python. There has been few workshops in West Bengal as well. I attended and helped organize two of them. One at the B.P.Poddar Institute of Management and Technology and Netaji Subhash Engineering College.&lt;/p&gt;
-
-&lt;p&gt;The workshop at BPPIMT was organized by CampusHash. Sanket and Rohit, who run CampusHash, has been kind enough to extend their support in organizing workshops around the country. The college management was really helpful, and the number of attendees were good.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/uploads/bppimt_1.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/uploads/bppimt_2.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;In the other hand, NSEC had a very concentrated crowd. We had to organize it in a rush, so we had to do it small. We took a small computer lab so that everyone could try out things that were being discussed. The volunteers Debjeet, Sneha, Nilabhra, Puja and others from that college were really helpful and the workshop was a success. :)&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&quot;/uploads/nsec.jpg&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;There has been more workshops in West Bengal. CampusHash organized two more workshops at Heritage Institute of Technology and Institute of Engineering and Management. And some students from B.C.Roy Engineering College, Durgapur organized another workshop there.&lt;/p&gt;
-
-&lt;p&gt;This is just the start. PyCon is next week. After that we&amp;rsquo;ll have more of these coming to Kolkata. :)&lt;/p&gt;
 </content>
  </entry>
  
@@ -743,92 +110,6 @@ WHERE ST_Distance(
 &lt;li&gt;What is Tornado?&lt;/li&gt;
 &lt;/ul&gt;
 
-
-&lt;p&gt;From the &lt;a href=&quot;http://www.tornadoweb.org/en/stable/index.html&quot;&gt;documentation&lt;/a&gt; itself -&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;Tornado is a Python web framework and asynchronous networking library, originally developed at FriendFeed. By using non-blocking network I/O, Tornado can scale to tens of thousands of open connections, making it ideal for long polling, WebSockets, and other applications that require a long-lived connection to each user.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;It&amp;rsquo;s basically a minimalistic web framework which supports non-blocking network operations. If you go through the &lt;a href=&quot;http://www.tornadoweb.org/en/stable/documentation.html&quot;&gt;list of modules&lt;/a&gt; it supports, you&amp;rsquo;ll see that it has a lot of modules built in. But there is no proper tutorial of how to achieve most of the things. All the reference to the API is there though. So you must go ahead, read the API and figure out things yourself.&lt;/p&gt;
-
-&lt;p&gt;Anyway, I&amp;rsquo;m not going to write about what is good or bad about it. This post is about how you can replace Tornado&amp;rsquo;s default template engine with Jinja2.&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;What is &lt;a href=&quot;https://github.com/mitsuhiko/jinja2&quot;&gt;Jinja2&lt;/a&gt;?&lt;/li&gt;
-&lt;/ul&gt;
-
-
-&lt;blockquote&gt;&lt;p&gt;Jinja2 is a modern and designer friendly templating language for Python, modelled after Django’s templates. It is fast, widely used and secure with the optional sandboxed template execution environment:&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;Tornado&amp;rsquo;s native template engine is good and really light-weight. But at the same time it lacks few features I wanted, which Jinja2 has. So I decided to replate tornado&amp;rsquo;s template engine with Jinja2.&lt;/p&gt;
-
-&lt;p&gt;To do this, you need to write a base handler which all the other handlers will inherit from. This is what I wrote -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;import os
-import tornado.web
-from jinja2 import Environment, FileSystemLoader, TemplateNotFound
-
-
-class TemplateRendering:
-    &quot;&quot;&quot;
-    A simple class to hold methods for rendering templates.
-    &quot;&quot;&quot;
-    def render_template(self, template_name, **kwargs):
-        template_dirs = []
-        if self.settings.get('template_path', ''):
-            template_dirs.append(
-                self.settings[&quot;template_path&quot;]
-            )
-
-        env = Environment(loader=FileSystemLoader(template_dirs))
-
-        try:
-            template = env.get_template(template_name)
-        except TemplateNotFound:
-            raise TemplateNotFound(template_name)
-        content = template.render(kwargs)
-        return content
-
-
-class BaseHandler(tornado.web.RequestHandler, TemplateRendering):
-    &quot;&quot;&quot;
-    RequestHandler already has a `render()` method. I'm writing another
-    method `render2()` and keeping the API almost same.
-    &quot;&quot;&quot;
-    def render2(self, template_name, **kwargs):
-        &quot;&quot;&quot;
-        This is for making some extra context variables available to
-        the template
-        &quot;&quot;&quot;
-        kwargs.update({
-            'settings': self.settings,
-            'STATIC_URL': self.settings.get('static_url_prefix', '/static/'),
-            'request': self.request,
-            'xsrf_token': self.xsrf_token,
-            'xsrf_form_html': self.xsrf_form_html,
-        })
-        content = self.render_template(template_name, **kwargs)
-        self.write(content)
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now to use this base handler, you need to make few things sure that your application settings should have a &lt;code&gt;template_path&lt;/code&gt; key pointing to the absolute path of the directory holding all the templates.&lt;/p&gt;
-
-&lt;p&gt;Now you can inherit this base handler and use jinja2 by default -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class RegisterHandler(BaseHandler):
-    def get(self, **kwargs):
-        data = {
-            'foo': 'bar'
-        }
-        return self.render2('auth/register.html', **data)
-
-    def post(self, **kwargs):
-        self.check_xsrf_cookie()
-        pass
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now you can use the &lt;code&gt;foo&lt;/code&gt; variable as &lt;code&gt;{{ foo }}&lt;/code&gt; in your jinja2 template.&lt;/p&gt;
-
-&lt;p&gt;Note: I took some help from &lt;a href=&quot;http://aurigroup.wordpress.com/2011/02/21/a-good-start-with-google-app-engine-for-python/&quot;&gt;this blog post&lt;/a&gt;.&lt;/p&gt;
 </content>
  </entry>
  
@@ -838,8 +119,6 @@ class BaseHandler(tornado.web.RequestHandler, TemplateRendering):
    <updated>2013-06-05T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/focus</id>
    <content type="html">&lt;p&gt;Just wrote this to someone -&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;I closed all the other tabs and started working on it, you can&amp;rsquo;t ask for more focus than that from me.&lt;/p&gt;&lt;/blockquote&gt;
 </content>
  </entry>
  
@@ -849,25 +128,6 @@ class BaseHandler(tornado.web.RequestHandler, TemplateRendering):
    <updated>2013-05-24T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/my-bangalore-story-1</id>
    <content type="html">&lt;p&gt;Why #1? Because there is going to be #2 and maybe more. Most probably not in near future, but someday.&lt;/p&gt;
-
-&lt;p&gt;Gist is, I&amp;rsquo;m heading back to Kolkata for now. Consider this post as a commit message to my life, for the changes in last few months.&lt;/p&gt;
-
-&lt;p&gt;First two months here were the worst. The &lt;em&gt;entrepreneur&lt;/em&gt; who hired me and convinced me to move here, betting a lot of savings of my parents, kept me sitting idle for a month and a half, and then declared that his idea isn&amp;rsquo;t working so he&amp;rsquo;s going after another idea and abandoning ship, without paying me or the my friend who was also on the same boat. That&amp;rsquo;s two months of no income for me. Of course I couldn&amp;rsquo;t tell my parents anything. They were already depending a lot on me and their health isn&amp;rsquo;t that good either. Hence I had to borrow money from some friends and manage somehow. And I&amp;rsquo;m still under a lot of debt. Thanks Mr Entrepreneur. You&amp;rsquo;re a real hero.&lt;/p&gt;
-
-&lt;p&gt;Because of my parents' ill health and some more reasons, I had to visit Kolkata multiple times in last few months. And it had good travel costs. So actually, all my earnings in last few months, after paying rent and food cost, were spent on repaying debts. And I&amp;rsquo;ll still have to do that for next couple of months. I&amp;rsquo;m saving almost nothing staying here and also spending about 15k each month in living cost, which I could, maybe, save, if I were in Kolkata.&lt;/p&gt;
-
-&lt;p&gt;All thanks to a friend, who appeared as an angel and gave me another opportunity at LxiDD, I was able to recover most part of the crisis. I&amp;rsquo;ll be forever grateful to him.&lt;/p&gt;
-
-&lt;p&gt;The city is great. The thing I liked most here, and which I also miss in Kolkata is that, people here are always active. They are talking, coming up with ideas, and, most importantly, executing those ideas no matter what. And I&amp;rsquo;ve made some really great friends among these people. I&amp;rsquo;ve learned so many things. This is a nice city to live in too. Maybe someday..&lt;/p&gt;
-
-&lt;p&gt;Still I decided to give up my job here and move because my parents need me right now. And swinging between two cities, is helping neither party much.&lt;/p&gt;
-
-&lt;p&gt;One other major reason is, I&amp;rsquo;m not liking this long distance relationship thing. We&amp;rsquo;ve been together for just about a year and a half now. And I&amp;rsquo;m already running around, away from her. She&amp;rsquo;s been more supportive that I&amp;rsquo;ve ever imagined. She&amp;rsquo;s one of the most strong willed girl I&amp;rsquo;ve met. But I am weak. I simply cannot stay away from her. I know you must be smirking. I really don&amp;rsquo;t care.&lt;/p&gt;
-
-&lt;p&gt;I know I shouldn&amp;rsquo;t leave my job like this. Well, I don&amp;rsquo;t want to. I&amp;rsquo;m willing to work remotely. But as it happens, my startup is not really ready to accept remote work. I&amp;rsquo;ll still be freelancing with them I guess. But I &lt;em&gt;really&lt;/em&gt; don&amp;rsquo;t want to stop working with them. LxiDD and Kamelot Kapital is the best place I&amp;rsquo;ve worked till now. The people are so nice and friendly, and there are huge scopes of learning new things here. Someday I want to come back to Bangalore again. And I&amp;rsquo;m gonna check if they have any place for me. Well, my skills are not gonna get rusty, that I&amp;rsquo;m sure of. So, let&amp;rsquo;s see. :P&lt;br/&gt;
-For now, I&amp;rsquo;d recomment any of my friends to join Kamelot Kapital/LxiDD if they can. Well, with me going out, they have a vacancy right now. If you&amp;rsquo;re up for it, just shoot a mail to &lt;a href=&quot;mailto:jobs@lxidd.com&quot;&gt;jobs@lxidd.com&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;I also know that I shouldn&amp;rsquo;t take my career so lightly. But I have always did things the way I felt were right. Well, most of the decisions till now turned out to be bad decisions, and they had their prices too. But the way I see it, in exchange of all the bad times, I always get something good back. So, I&amp;rsquo;m going to do it again this time. Let&amp;rsquo;s see what happens.&lt;/p&gt;
 </content>
  </entry>
  
@@ -877,62 +137,6 @@ For now, I&amp;rsquo;d recomment any of my friends to join Kamelot Kapital/LxiDD
    <updated>2013-04-25T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/tornado--wtforms--typeerror-formdata-should-be-a-multidict-type-wrapper-</id>
    <content type="html">&lt;p&gt;If you&amp;rsquo;re here from some search engine, that means you&amp;rsquo;ve been working with Tornado and WTForms, and you&amp;rsquo;ve faced the same error -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(Pdb) form = SomeForm(self.request.arguments)
-*** TypeError: formdata should be a multidict-type wrapper that supports the 'getlist' method
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;The thing is, Tornado does provide a dictionary that contains the data like a MultiDict should do for GET/POST/others request arguments -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;{'_xsrf': ['b2c0d0bebbf84516a8aa0462bb41ea0f'], 'password': ['password'], 'email': ['mail@gmail.com']}
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;But it sends it as a dictionary -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(Pdb) type(self.request.arguments)
-&amp;lt;type 'dict'&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;And Python dictionaries don&amp;rsquo;t have a &lt;code&gt;getlist()&lt;/code&gt; method. And WTForms requires the arguments object to have that method.&lt;/p&gt;
-
-&lt;p&gt;Workaround?&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class SimpleMultiDict(dict):
-    def getlist(self, key):
-        return self[key]
-
-    def __repr__(self):
-        return type(self).__name__ + '(' + dict.__repr__(self) + ')'
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This simply makes a subclass of &lt;code&gt;dict&lt;/code&gt; and adds the &lt;code&gt;getlist()&lt;/code&gt; method. So, What did we gain?&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;(Pdb) SimpleMultiDict(self.request.arguments)
-SimpleMultiDict({'_xsrf': ['b2c0d0bebbf84516a8aa0462bb41ea0f'], 'password': ['password'], 'email': ['mail@gmail.com']})
-(Pdb) arguments = SimpleMultiDict(self.request.arguments)
-(Pdb) dir(arguments)
-['__class__', (skipping some default methods) , 'clear', 'copy', 'fromkeys', 'get', 'getlist', 'has_key', 'items', 'iteritems', 'iterkeys', 'itervalues', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values', 'viewitems', 'viewkeys', 'viewvalues']
-
-# Notice the getlist() method
-
-(Pdb) arguments.getlist('email')
-['mail@gmail.com']
-(Pdb) form = LoginForm(arguments)
-(Pdb) form.email.data
-'mail@gmail.com'
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now there is a point to note here. Tornado sends the arguments data in a simple dictionary that has each of the values inside a list. Here is a pointer if you&amp;rsquo;re using some framework that sends a simple dictionary, with the arguments &lt;em&gt;not&lt;/em&gt; in list, and that also doesn&amp;rsquo;t have a &lt;code&gt;getlist()&lt;/code&gt; method, just change the &lt;code&gt;getlist()&lt;/code&gt; method to this -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;class SimpleMultiDict(dict):
-    def getlist(self, key):
-        return self[key] if type(self[key]) == list else [self[key]]
-
-    def __repr__(self):
-        return type(self).__name__ + '(' + dict.__repr__(self) + ')'
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;This just turns the simgle values to a list, just what &lt;code&gt;getlist()&lt;/code&gt; is supposed to do.&lt;/p&gt;
 </content>
  </entry>
  
@@ -959,39 +163,6 @@ That I keep coming back to you.&lt;/p&gt;&lt;/blockquote&gt;
    <updated>2013-04-21T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/shell-access-to-tornado-local-environment</id>
    <content type="html">&lt;p&gt;I&amp;rsquo;ve been working on &lt;a href=&quot;http://www.tornadoweb.org/en/stable/&quot;&gt;Tornado&lt;/a&gt; for last few days and I really needed a shell access to the local virtual environment of my Tornado app so that I can test few things out. Exactly like Django has &lt;code&gt;./manage.py shell&lt;/code&gt;. But as we all know Tornado lacks a good documentation. Most of the things except the use of the native classes, require a lot of trial and error(at least for me, I&amp;rsquo;m not so bright). So I looked around and found how &lt;a href=&quot;http://flask.pocoo.org/&quot;&gt;Flask&lt;/a&gt; &lt;a href=&quot;http://flask.pocoo.org/snippets/23/&quot;&gt;has a way&lt;/a&gt; of having an interactive shell access to the environment. And I just replicated it.&lt;/p&gt;
-
-&lt;p&gt;Create a file called &lt;code&gt;shell.py&lt;/code&gt;(or whatever you like) on the root of your project and put these codes in it -&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;#!/usr/bin/env python
-
-import os
-import readline
-from pprint import pprint
-
-# Your app file
-from app import * 
-
-# These project specific. But I need these to run my project
-from config import *
-from settings import *
-
-# This is the main part
-os.environ['PYTHONINSPECT'] = 'True'
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;From Python documentation -&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;PYTHONINSPECT&lt;br/&gt;
-If this is set to a non-empty string it is equivalent to specifying the &lt;code&gt;-i&lt;/code&gt; option.&lt;br/&gt;
-This variable can also be modified by Python code using os.environ to force inspect mode on program termination.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;And the &lt;code&gt;-i&lt;/code&gt; option -&lt;/p&gt;
-
-&lt;blockquote&gt;&lt;p&gt;-i&lt;br/&gt;
-When a script is passed as first argument or the -c option is used, enter interactive mode after executing the script or the command, even when sys.stdin does not appear to be a terminal. The PYTHONSTARTUP file is not read.&lt;br/&gt;
-This can be useful to inspect global variables or a stack trace when a script raises an exception.&lt;/p&gt;&lt;/blockquote&gt;
-
-&lt;p&gt;Now just navigate to your project root and execute &lt;code&gt;python shell.py&lt;/code&gt; or you can do &lt;code&gt;./shell.py&lt;/code&gt; if you know how. This will take you to an interactive shell where you can play around with your project.&lt;/p&gt;
 </content>
  </entry>
  
@@ -1001,14 +172,6 @@ This can be useful to inspect global variables or a stack trace when a script ra
    <updated>2013-04-15T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/shubho-nababarsha-1420</id>
    <content type="html">&lt;p&gt;I&amp;rsquo;d have &lt;em&gt;really&lt;/em&gt; regretted if I hadn&amp;rsquo;t come home for the Bengali New Year. This is one of those days when you get to see Bongs showing off their Bong-ness. I mean if you visit the City Center you&amp;rsquo;ll see that they have stalls and frying fish in bengali recipes. Girls and Ladies are wearing Sharees, guys are wearing Panjabi. Singing and playing Bengali songs loudly in every locality. People would behave more lethargic than Ever. So on and so forth ..&lt;/p&gt;
-
-&lt;p&gt;Among all of these things, I got to see a glimpse of the True bong spirit today. A cute sister of mine is a student at Arena Multimedia. And Arena celebrates Bengali new year with a small function among the students, teachers and staffs. Outsiders are usually not told about this, but my sis got me, her elder sister and her brother to attend it becasue, for the first time, she was going to dance in a function. And we 3 being her most favorite people, were invited to watch it. That&amp;rsquo;s another major reason I came to Kolkata this time. I just couldn&amp;rsquo;t miss this.&lt;/p&gt;
-
-&lt;p&gt;So they sang. Rabindranath, Jibanananda, bangla band, Anjan Datta; they left nothing. And they performed &lt;em&gt;really&lt;/em&gt; well. There were moments like &lt;em&gt;everyone&lt;/em&gt; singing &amp;ldquo;Bela Bose&amp;rdquo; together in open voice without any tension, making fun impressions in the process. Or some of them dancing and others cheering them up or just watching quietly. There were moments of reciting self-composed poems. Those are some talented kids.&lt;/p&gt;
-
-&lt;p&gt;And there were moments where someone was dancing a break-dance score from a movie called &amp;ldquo;Student of the year&amp;rdquo;. I think it released this year. And someone singing a hindi song that had absolutely no relationship with the event. But anyway, was glad to see their efforts.&lt;/p&gt;
-
-&lt;p&gt;Oh, I also visited a friend&amp;rsquo;s office and did some brainstorming. Good start of the bengali year overall. Hope this year goes well for you people reading this blog post too. Shubho Nababarsha. শুভ নববর্ষ।&lt;/p&gt;
 </content>
  </entry>
  
@@ -1092,6 +255,8 @@ It has few answers from people of 30s, sharing their views. I'd like to quote so
     On the bright side, I have this lovely girl beside me who thinks the world of me. I have my parents beside me who, even when we're running low on savings, are supporting me to do what I feel is right. I have an awesome colleague whom I've started to think as my mentor. I have few awesome friends who support me even when I'm down to the ground. I've already been part of 2 startups where things didn't quite work out as they planned. Yet I've joined another one.
 
     And I just realized, I really don't care anymore about what I want to be 10 years later. I'm just going to do what, I feel, is right and see where it goes. I have enough skills to earn my bread everyday. That's more than enough for me to go on.
+
+
 </content>
  </entry>
  
@@ -1102,19 +267,6 @@ It has few answers from people of 30s, sharing their views. I'd like to quote so
    <id>https://bibhas.in/blog/847/how-to-reach-pycon-india-2012</id>
    <content type="html">I had a quick visit to the venue today. As I'm volunteering this time, will be visiting tomorrow too, to help set up everything including the directions. So I thought, it's better if I just let you know of the location of the venue.
 
-It's just beside &lt;a href=&quot;http://goo.gl/maps/3rljG&quot; target=&quot;_blank&quot;&gt;&lt;strong&gt;Christ College&lt;/strong&gt; bus stoppage&lt;/a&gt;. For those who don't know, here is the general location of the Christ college stoppage and the venue -
-
-[caption id=&quot;&quot; align=&quot;aligncenter&quot; width=&quot;615&quot;]&lt;a href=&quot;http://i.imgur.com/nNgfh.png&quot;&gt;&lt;img class=&quot;  &quot; title=&quot;PyCon 2012 Venue&quot; src=&quot;http://i.imgur.com/nNgfh.png&quot; alt=&quot;PyCon 2012 Venue&quot; width=&quot;615&quot; height=&quot;395&quot; /&gt;&lt;/a&gt; PyCon 2012 Venue[/caption]
-
-Once you get to the Christ College stoppage, follow this path -
-
-[caption id=&quot;&quot; align=&quot;aligncenter&quot; width=&quot;610&quot;]&lt;a href=&quot;http://i.imgur.com/iUUbR.png&quot;&gt;&lt;img class=&quot;  &quot; title=&quot;PyCon 2012 closer map&quot; src=&quot;http://i.imgur.com/iUUbR.png&quot; alt=&quot;PyCon 2012 closer map&quot; width=&quot;610&quot; height=&quot;415&quot; /&gt;&lt;/a&gt; PyCon 2012 closer map[/caption]
-
-And you'll find yourself at the venue. :)
-
-Just for reference, here is the co-ordinates of the venue - &lt;a title=&quot;PyCon India 2012 Venue&quot; href=&quot;https://maps.google.co.in/?q=loc:12.9349,77.6052&quot; target=&quot;_blank&quot;&gt;12.9349, 77.6052&lt;/a&gt;(Clickable).
-
-See you at the venue. :)
 </content>
  </entry>
  
@@ -1179,6 +331,8 @@ function clearanchors(){
 
 &lt;p style=&quot;text-align: left;&quot;&gt;I added it as timed function because or else it wont change the urls Twitter Web loads with ajax.&lt;/p&gt;
 
+
+
 </content>
  </entry>
  
@@ -1227,15 +381,6 @@ Namespaces are one honking great idea -- let's do more of those!
    <content type="html">Hey guys,
 Found them in the web and I just thought these maps would help you during these puja days. :)&lt;!--more--&gt;
 
-&lt;a href=&quot;http://bibhas.in/blog/wp-content/uploads/2012/10/southkolkata.jpg&quot;&gt;&lt;img class=&quot; alignnone&quot; title=&quot;South Kolkata Pujas&quot; src=&quot;http://bibhas.in/blog/wp-content/uploads/2012/10/southkolkata.jpg&quot; alt=&quot;South Kolkata Pujas&quot; width=&quot;458&quot; height=&quot;420&quot; /&gt;&lt;/a&gt;
-
-[caption id=&quot;&quot; align=&quot;alignnone&quot; width=&quot;505&quot;]&lt;a href=&quot;http://bibhas.in/blog/wp-content/uploads/2012/10/guidemap.jpg&quot;&gt;&lt;img title=&quot;North and Central Kolkata Pujas&quot; src=&quot;http://bibhas.in/blog/wp-content/uploads/2012/10/guidemap.jpg&quot; alt=&quot;North and Central Kolkata Pujas&quot; width=&quot;505&quot; height=&quot;460&quot; /&gt;&lt;/a&gt; North and Central Kolkata Pujas[/caption]
-
-[caption id=&quot;&quot; align=&quot;alignnone&quot; width=&quot;501&quot;]&lt;a href=&quot;http://bibhas.in/blog/wp-content/uploads/2012/10/roadmap_south_bangalinet.jpg&quot;&gt;&lt;img title=&quot;South Kolkata Pujas&quot; src=&quot;http://bibhas.in/blog/wp-content/uploads/2012/10/roadmap_south_bangalinet.jpg&quot; alt=&quot;South Kolkata Pujas&quot; width=&quot;501&quot; height=&quot;458&quot; /&gt;&lt;/a&gt; South Kolkata Pujas[/caption]
-
-[caption id=&quot;&quot; align=&quot;alignnone&quot; width=&quot;505&quot;]&lt;a href=&quot;http://bibhas.in/blog/wp-content/uploads/2012/10/roadmapnorthcentral_bangalinet.jpg&quot;&gt;&lt;img title=&quot;North and Central Kolkata Pujas&quot; src=&quot;http://bibhas.in/blog/wp-content/uploads/2012/10/roadmapnorthcentral_bangalinet.jpg&quot; alt=&quot;North and Central Kolkata Pujas&quot; width=&quot;505&quot; height=&quot;460&quot; /&gt;&lt;/a&gt; North and Central Kolkata Pujas[/caption]
-
-Have a Nice puja this year. :)
 </content>
  </entry>
  
@@ -1266,6 +411,8 @@ Have a Nice puja this year. :)
 	&lt;li&gt;Follow &lt;a href=&quot;http://forum.xda-developers.com/showpost.php?p=25610423&amp;amp;postcount=1&quot; target=&quot;_blank&quot;&gt;the tutorial at XDA&lt;/a&gt;. Ignore step 2 of that guide if you are using Ubuntu.&lt;/li&gt;
 &lt;/ol&gt;
 You'll have your phone rooted in no time. :)
+
+
 </content>
  </entry>
  
@@ -1299,6 +446,8 @@ You'll have your phone rooted in no time. :)
 &lt;a href=&quot;mailto:sree@mahiti.org&quot;&gt;sree@mahiti.org&lt;/a&gt;, +919845512611&lt;/li&gt;
 &lt;/ul&gt;
 Reblogged from &lt;a href=&quot;http://blog.ramkrsna.net/quick-reference-links-pycon-india-2012-bangal&quot; target=&quot;_blank&quot;&gt;Bit Bucket Hell&lt;/a&gt;.
+
+
 </content>
  </entry>
  
@@ -1319,6 +468,8 @@ Venue being Bangalore is fine for me as I have a friend's home where I can stay.
 Hoping to have some real good time. Also hoping to meet few friends I've only spoken to via web. That should be fun. :)
 
 &lt;em&gt;Update&lt;/em&gt;: I wrote &lt;a title=&quot;PyCon India 2012 – More Details&quot; href=&quot;http://bibhas.in/blog/785/pycon-india-2012-more-details/&quot;&gt;another post&lt;/a&gt; with more details about PyCon India 2012.
+
+
 </content>
  </entry>
  
@@ -1356,6 +507,8 @@ Place this file to &lt;span class=&quot;lang:sh decode:true  crayon-inline&quot;
 Things should be fine now. :)
 
 P.S. - Here is &lt;a href=&quot;https://gist.github.com/1225493&quot;&gt;a fabfile&lt;/a&gt; for this deployment. I haven't tried it out yet.
+
+
 </content>
  </entry>
  
@@ -1366,12 +519,6 @@ P.S. - Here is &lt;a href=&quot;https://gist.github.com/1225493&quot;&gt;a fabfi
    <id>https://bibhas.in/blog/instagram-for-android-still-needs-a-lot-of-work</id>
    <content type="html">Last night like everyone I downloaded Instagram for my Android phone with really high hopes. But it seems they built the app in such a hurry that they forgot to adapt to the ways an Android app works.
 
-My friend Rajesh pointed that the bottom bar shouldn't be there always and they should make use of the menu key instead, which, strangely enough, doesn't do anything right now. Well, most users won't mind, cause I hardly needed the menu button, everything was right in front of me. 
-The share button icon is different than what it usually is. That's a little trouble cause we're used to the antler-like share icon. 
-Post-upload sharing is incomplete. If I choose to share the picture after upload using the share button, instead of while uploading it, choosing Twitter or Facebook will give me just the link. The caption is not included in the tweet or the Facebook post. You have to manually write it. That is not good. 
-My front facing camera is not working with Instagram's own Camera app. It says picture is too small. It's strange that they would have such a filter. 
-But I saw the most annoying thing this morning when I saw that there was an update for Instagram. I updated, thinking it'll fix some of the problems, but instead I found that the update size was 12mb+. That's the size of the original application! This is just embarrassing. They are yet to figure out how android apps update works! 
-Don't know if it was tight schedule or incompetent developers or both, but it seems like to me that they built it in a rush. They tried to move fast and left these bugs behind. I hope they fix these problems soon.
 </content>
  </entry>
  
@@ -1381,20 +528,6 @@ Don't know if it was tight schedule or incompetent developers or both, but it se
    <updated>2012-04-01T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/how-aware-are-you-of-whats-going-around-you</id>
    <content type="html">&lt;p&gt;Tonight I came across few youtube videos that pointed out how we tend &amp;ldquo;not to notice&amp;rdquo; things that we&amp;rsquo;re not expecting. I&amp;rsquo;ll say no more and let you watch them and see for yourselves.&lt;/p&gt;
-
-&lt;iframe width=\&quot;560\&quot; height=\&quot;420\&quot; src=\&quot;http://www.youtube.com/embed/Ahg6qcgoay4\&quot; frameborder=\&quot;0\&quot;allowfullscreen&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;How did you like it? Feel stupid? Confused? Want to watch again? Go ahead. Once you&amp;rsquo;re satisfied realizing what just happened, watch the later one.&lt;/p&gt;
-
-&lt;iframe width=\&quot;560\&quot; height=\&quot;420\&quot; src=\&quot;http://www.youtube.com/embed/ubNF9QNEQLA\&quot; frameborder=\&quot;0\&quot;allowfullscreen&gt;&lt;/iframe&gt;
-
-
-&lt;p&gt;Had enough fun yet?&lt;/p&gt;
-
-&lt;p&gt;Yes, this is the fact. It is just as the video says, &amp;ldquo;It&amp;rsquo;s easy to miss something you&amp;rsquo;re not looking for&amp;rdquo;. It can be anything from a Dancing Bear to a bear&amp;rsquo;s statue replaced by an iron armor. And if you&amp;rsquo;re not cautious enough, this might wind you up into something fatal.&lt;/p&gt;
-
-&lt;p&gt;So, keep your eyes open. :)&lt;/p&gt;
 </content>
  </entry>
  
@@ -1422,6 +555,8 @@ Even though I was miserable, I couldn't ignore the problems at home. I needed to
 Now things are looking good. Health is much better. Can spend less time on PC, when I'm not working, thanks to the new smartphone. Found new friends. Disconnected myself from all the previous contacts. I needed a new start. Needed to do things a new way. I figure, I was trying to get ahead of myself a year back. I remember all the foolish mistakes. Now I'm slowing down. Behaving like a 22 years old. Now all I'm looking for is an adventure. Planning to leave the city soon. Things at home are almost settled. Found friends who can accompany me in my adventure. Looking for places I can fit in. Everything is falling into places.
 
 I'm really excited.
+
+
 </content>
  </entry>
  
@@ -1453,6 +588,8 @@ I regret those years. If it were possible, I'd have done the same graduation in 
 I read articles where big-shot corporate gurus rant that only 10-15% of the student mass in India are employable. I wish they had spent at least 5% of their fortune in teaching these students. Where students feel challenged every single moment of those 4 years. I guess it's too much to ask.
 
 Pity.
+
+
 </content>
  </entry>
  
@@ -1468,6 +605,8 @@ One fact about myself is that I *Love* Terminal. I Love shell. So while thinking
 After building it, I suddenly thought of showing it off a bit and then &lt;a href=&quot;http://geekli.st/&quot; target=&quot;_blank&quot;&gt;Geekli.st&lt;/a&gt; came in my mind. I've signed up for a long time there but never created a card. So went ahead and created a card - &lt;a title=&quot;Geekli.st - I've put a Shell on my website.&quot; href=&quot;http://geekli.st/iAmBibhas/ive-put-a-shell-on-my-website&quot; target=&quot;_blank&quot;&gt;I've put a Shell on my website&lt;/a&gt;. Got the first ^5 in few minutes and then within few hour it was trending! And &lt;a title=&quot;Geekli.st Trending Cards&quot; href=&quot;http://geekli.st/cards#trending&quot; target=&quot;_blank&quot;&gt;it is still(at the time of this post) trending&lt;/a&gt;! Got &lt;del&gt;5&lt;/del&gt; 6 ^5 till now. But that's enough. Enough to keep me working on it and something new. :)
 
 1:03 AM right now. Was thinking of pulling a whole-nighter, but had a rough day and now this headache and stomach-ache is killing me. I guess I'll sleep for tonight. Just added two new stuff in the site - using the &quot;open&quot; option with &quot;blog&quot; or &quot;github&quot; command will open my blog and github profile in a new tab.
+
+
 </content>
  </entry>
  
@@ -1477,6 +616,8 @@ After building it, I suddenly thought of showing it off a bit and then &lt;a hre
    <updated>2012-02-12T00:00:00+05:30</updated>
    <id>https://bibhas.in/blog/the-most-useless-machine-ever</id>
    <content type="html">&lt;object width=&quot;425&quot; height=&quot;350&quot;&gt;  &lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/KxaWvJ-ziXA&amp;feature=youtube_gdata_player&quot;&gt;&lt;/param&gt;  &lt;param name=&quot;wmode&quot; value=&quot;transparent&quot;&gt;&lt;/param&gt;  &lt;embed src=&quot;http://www.youtube.com/v/KxaWvJ-ziXA&amp;feature=youtube_gdata_player&quot; type=&quot;application/x-shockwave-flash&quot;   wmode=&quot;transparent&quot; width=&quot;425&quot; height=&quot;350&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+
+
 </content>
  </entry>
  
@@ -1496,6 +637,8 @@ So to check which dependency package I was missing, I searched with YUM -
 [root@localhost ~]# yum whatprovides libXv.so.1
 [/bash]
 and found that this specific package &lt;span class=&quot;lang:default decode:true  crayon-inline &quot;&gt;libXv-1.0.5-1.fc13.i686&lt;/span&gt; has that specific file. So although I'm running Fedora 14 and it's of x86_64 architecture, I installed that package which was meant for Fedora 13 and i686 architecture. Then ran skype from terminal and it worked!
+
+
 </content>
  </entry>
  
@@ -1513,6 +656,8 @@ Target applications::
  - Robotics applications and more.
 
 Product page, http://ethicstech.in/aw/ &lt;object width=&quot;425&quot; height=&quot;350&quot;&gt;  &lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/9poFcowTFAQ&amp;feature=youtube_gdata_player&quot;&gt;&lt;/param&gt;  &lt;param name=&quot;wmode&quot; value=&quot;transparent&quot;&gt;&lt;/param&gt;  &lt;embed src=&quot;http://www.youtube.com/v/9poFcowTFAQ&amp;feature=youtube_gdata_player&quot; type=&quot;application/x-shockwave-flash&quot;   wmode=&quot;transparent&quot; width=&quot;425&quot; height=&quot;350&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+
+
 </content>
  </entry>
  
@@ -1524,6 +669,8 @@ Product page, http://ethicstech.in/aw/ &lt;object width=&quot;425&quot; height=&
    <content type="html">This Firefox plugin can help you view any website in 3D, layered according to DOM elements.
 &lt;!--more--&gt;
 &lt;object width=&quot;425&quot; height=&quot;350&quot;&gt;  &lt;param name=&quot;movie&quot; value=&quot;http://www.youtube.com/v/6n46H3CgKA8&amp;feature=youtube_gdata_player&quot;&gt;&lt;/param&gt;  &lt;param name=&quot;wmode&quot; value=&quot;transparent&quot;&gt;&lt;/param&gt;  &lt;embed src=&quot;http://www.youtube.com/v/6n46H3CgKA8&amp;feature=youtube_gdata_player&quot; type=&quot;application/x-shockwave-flash&quot;   wmode=&quot;transparent&quot; width=&quot;425&quot; height=&quot;350&quot;&gt;&lt;/embed&gt;&lt;/object&gt;
+
+
 </content>
  </entry>
  
@@ -1535,6 +682,8 @@ Product page, http://ethicstech.in/aw/ &lt;object width=&quot;425&quot; height=&
    <content type="html">Yum. The hamburger restaurant with a menu that boasts unhealthy foods.
 &lt;!--more--&gt;
 &lt;object width=&quot;425&quot; height=&quot;350&quot; classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot;&gt;&lt;param name=&quot;wmode&quot; value=&quot;transparent&quot; /&gt;&lt;param name=&quot;src&quot; value=&quot;http://www.youtube.com/v/hqf_SIQ3JAk&amp;amp;feature=youtube_gdata_player&quot; /&gt;&lt;embed width=&quot;425&quot; height=&quot;350&quot; type=&quot;application/x-shockwave-flash&quot; src=&quot;http://www.youtube.com/v/hqf_SIQ3JAk&amp;amp;feature=youtube_gdata_player&quot; wmode=&quot;transparent&quot; /&gt;&lt;/object&gt;
+
+
 </content>
  </entry>
  
@@ -1547,6 +696,8 @@ Product page, http://ethicstech.in/aw/ &lt;object width=&quot;425&quot; height=&
 &lt;img style=&quot;max-width: 600px;&quot; src=&quot;http://farm8.staticflickr.com/7173/6696842795_4485f55c36_b.jpg&quot; alt=&quot;&quot; /&gt;
 &lt;div&gt;A new Flat Bari..&lt;/div&gt;
 via Flickr http://flic.kr/p/bcM53P
+
+
 </content>
  </entry>
  
@@ -1585,6 +736,8 @@ class YourForm(forms.Form):
 [/python]
 
 That's it. Happy Coding. :)
+
+
 </content>
  </entry>
  
@@ -1608,6 +761,8 @@ sudo /etc/init.d/networking restart
 [/bash]
 
 That did the trick.
+
+
 </content>
  </entry>
  
@@ -1618,6 +773,8 @@ That did the trick.
    <id>https://bibhas.in/blog/where-the-fck-should-you-go-for-drink</id>
    <content type="html">In India? Wanna have some drink but dunno where to go? Well, Here is a portal to help you with that.
 &lt;!--more--&gt;Give &lt;a href=&quot;http://wherethefuckshouldigofordrinks.com/&quot;&gt;http://wherethefuckshouldigofordrinks.com/&lt;/a&gt; a visit. Might end up finding a bar/pub near your place that you never knew of. :)
+
+
 </content>
  </entry>
  
@@ -1631,6 +788,8 @@ That did the trick.
 &lt;!--more--&gt;
 
 [caption id=&quot;&quot; align=&quot;aligncenter&quot; width=&quot;600&quot; caption=&quot;Geek-Nerd Difference&quot;]&lt;a href=&quot;http://www.mastersinit.org/geeks-vs-nerds/geek-nerd.jpg&quot;&gt;&lt;img class=&quot; &quot; title=&quot;Geek-Nerd Difference&quot; src=&quot;http://www.mastersinit.org/geeks-vs-nerds/geek-nerd.jpg&quot; alt=&quot;Geek-Nerd Difference&quot; width=&quot;600&quot; height=&quot;3614&quot; /&gt;&lt;/a&gt;[/caption]
+
+
 </content>
  </entry>
  
@@ -1644,6 +803,8 @@ That did the trick.
 [caption id=&quot;&quot; align=&quot;aligncenter&quot; width=&quot;622&quot; caption=&quot;PHP Console&quot;]&lt;a href=&quot;http://seld.be/_misc/php-console.png&quot;&gt;&lt;img class=&quot; &quot; title=&quot;PHP Console&quot; src=&quot;http://seld.be/_misc/php-console.png&quot; alt=&quot;&quot; width=&quot;622&quot; height=&quot;505&quot; /&gt;&lt;/a&gt;[/caption]
 
 Looks good, right? You can &lt;a href=&quot;http://github.com/seldaek/php-console&quot; target=&quot;_blank&quot;&gt;grab the tool from github&lt;/a&gt; and use it on your localhost or your personal server, wherever you want. :)
+
+
 </content>
  </entry>
  
@@ -1695,6 +856,8 @@ Now you can add Virtual Servers and configure them as much as you can. You can a
 Go ahead and give it a try. If you face any trouble, ask me or consult &lt;a href=&quot;http://www.virtualmin.com/documentation/installation/automated&quot; target=&quot;_blank&quot;&gt;Virtualmin's official installation guide&lt;/a&gt;.
 
 Happy Cloud Computing. :)
+
+
 </content>
  </entry>
  
@@ -1708,6 +871,8 @@ Happy Cloud Computing. :)
 &lt;!--more--&gt;
 
 [caption id=&quot;&quot; align=&quot;aligncenter&quot; width=&quot;432&quot; caption=&quot;World of Programming&quot;]&lt;a href=&quot;http://i.imgur.com/EpDHk.jpg&quot;&gt;&lt;img class=&quot;   &quot; title=&quot;World of Programming&quot; src=&quot;http://i.imgur.com/EpDHk.jpg&quot; alt=&quot;World of Programming&quot; width=&quot;432&quot; height=&quot;1080&quot; /&gt;&lt;/a&gt;[/caption]
+
+
 </content>
  </entry>
  
@@ -1735,6 +900,8 @@ And to add more to it, I'm trying to get some sponsor for it. Almost decided on 
 I'm looking forward to my friends in other cities to start the same thing at their home town itself. Chennai and Bangalore already has such events. But we are asking people from cities like Kolkata to start this, where tech events rarely happens. And I planned on doing this every alternate Saturday because I want people to get used to the idea. The main motto is to bring out the hidden passionate people out of the crowd, those who either don't know any way to reach out to people about their ideas or thinks that doing so is impossible here in Kolkata.
 
 So we'll keep this up. If you've found the idea interesting, do contact me and Join us. We're looking for your participation that can make the image of the city better in front of the world. :)
+
+
 </content>
  </entry>
  
@@ -1760,6 +927,8 @@ Sources:
 	&lt;li&gt;&lt;a href=&quot;http://www.logoblog.org/apple_logo.php&quot;&gt;http://www.logoblog.org/apple_logo.php&lt;/a&gt;&lt;/li&gt;
 	&lt;li&gt;&lt;a href=&quot;http://ghigo1972.deviantart.com/art/Apple-1st-logo-143927661&quot;&gt;http://ghigo1972.deviantart.com/art/Apple-1st-logo-143927661&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
+
+
 </content>
  </entry>
  
@@ -1773,6 +942,8 @@ Sources:
 &lt;!--more--&gt;
 
 &lt;object width=&quot;800&quot; height=&quot;533&quot; classid=&quot;clsid:d27cdb6e-ae6d-11cf-96b8-444553540000&quot; codebase=&quot;http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0&quot;&gt;&lt;param name=&quot;src&quot; value=&quot;https://picasaweb.google.com/s/c/bin/slideshow.swf&quot; /&gt;&lt;param name=&quot;flashvars&quot; value=&quot;host=picasaweb.google.com&amp;amp;noautoplay=1&amp;amp;hl=en_US&amp;amp;feat=flashalbum&amp;amp;RGB=0x000000&amp;amp;feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2Fbivunlim%2Falbumid%2F5635737641037234721%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US&quot; /&gt;&lt;param name=&quot;pluginspage&quot; value=&quot;http://www.macromedia.com/go/getflashplayer&quot; /&gt;&lt;embed width=&quot;800&quot; height=&quot;533&quot; type=&quot;application/x-shockwave-flash&quot; src=&quot;https://picasaweb.google.com/s/c/bin/slideshow.swf&quot; flashvars=&quot;host=picasaweb.google.com&amp;amp;noautoplay=1&amp;amp;hl=en_US&amp;amp;feat=flashalbum&amp;amp;RGB=0x000000&amp;amp;feed=https%3A%2F%2Fpicasaweb.google.com%2Fdata%2Ffeed%2Fapi%2Fuser%2Fbivunlim%2Falbumid%2F5635737641037234721%3Falt%3Drss%26kind%3Dphoto%26hl%3Den_US&quot; pluginspage=&quot;http://www.macromedia.com/go/getflashplayer&quot; /&gt;&lt;/object&gt;
+
+
 </content>
  </entry>
  
@@ -1790,6 +961,8 @@ Hack Idea - Errr..&lt;!--more--&gt;
 Aaaah, WTM. Will work on it on the way. For now, its just the excitement of attending the event. And I'm all geared up for anything it can throw at me. :)
 
 To all the hackers out there who are also coming, See you there. Want to see great minds working on great ideas.. And want to be a part of it. That's all I'm looking for. :)
+
+
 </content>
  </entry>
  
@@ -1800,19 +973,6 @@ To all the hackers out there who are also coming, See you there. Want to see gre
    <id>https://bibhas.in/blog/chrome-instant-desktop-notification-of-your-google-reader-feed</id>
    <content type="html">I know there are hell lot of people out there(like me) who are too lazy to open &lt;a title=&quot;Google Reader&quot; href=&quot;http://reader.google.com&quot; target=&quot;_blank&quot;&gt;http://reader.google.com&lt;/a&gt; every time for latest news, yet want to stay updated of the news instantly. I made a simple solution for myself.&lt;!--more--&gt;The logic is simple. I'm going to fetch the public feed of my reader timeline and going to put that in a Chrome app that shows desktop notifications instantly for any feed. :)
 
-I installed a Chrome app named &lt;a title=&quot;Feed Notifier&quot; href=&quot;https://chrome.google.com/webstore/detail/njjncilebadhdbgkgnnbobcofhgjmipj?hl=en-US&quot; target=&quot;_blank&quot;&gt;Feed Notifier&lt;/a&gt;. After installing it, just go to &lt;strong&gt;Menu&lt;/strong&gt; &amp;gt; &lt;strong&gt;Tools&lt;/strong&gt; &amp;gt; &lt;strong&gt;Extensions&lt;/strong&gt; &amp;gt; Click on the &lt;strong&gt;Options&lt;/strong&gt; link below &lt;strong&gt;Feed Notifier&lt;/strong&gt;.
-&lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://i.imgur.com/AsBYT.png&quot;&gt;&lt;img class=&quot;aligncenter&quot; title=&quot;Feed notifier&quot; src=&quot;http://i.imgur.com/AsBYT.png&quot; alt=&quot;&quot; width=&quot;720&quot; height=&quot;405&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-Now keep that window open, we need to get your Reader feed now.
-
-Open &lt;a title=&quot;Google Reader&quot; href=&quot;http://reader.google.com&quot; target=&quot;_blank&quot;&gt;Google Reader&lt;/a&gt;. Go to All Items. Then copy the URL of that window. it should be something like -
-&lt;pre class=&quot;brush:html&quot;&gt;http://www.google.com/reader/view/#stream/user%2F08435596288051107451%2Fstate%2Fcom.google%2Freading-list&lt;/pre&gt;
-Now change that URL a bit. To something like this -
-&lt;pre class=&quot;brush:html&quot;&gt;http://www.google.com/reader/atom/user%2F08435596288051107451%2Fstate%2Fcom.google%2Freading-list&lt;/pre&gt;
-So you see, I just replaced &lt;strong&gt;/view/#stream/&lt;/strong&gt; to &lt;strong&gt;/atom/&lt;/strong&gt; ..
-
-Now copy the new modified URL, paste it in the &lt;strong&gt;Feed URL&lt;/strong&gt; field of the Feed Notifier extension window you opened earlier. Set refresh interval and other options. Click Save. And that's it. Now you should be able to see desktop notifications like this every time a new item appears in your Google Reader stream. :)
-
-&lt;img class=&quot;aligncenter&quot; title=&quot;Feed Notifier&quot; src=&quot;http://i.imgur.com/JdJDH.png&quot; alt=&quot;&quot; width=&quot;341&quot; height=&quot;258&quot; /&gt;
 </content>
  </entry>
  
@@ -1823,9 +983,6 @@ Now copy the new modified URL, paste it in the &lt;strong&gt;Feed URL&lt;/strong
    <id>https://bibhas.in/blog/laden-is-dead-is-that-so</id>
    <content type="html">So you think Osama is dead. Eh? Read this status message from Obama. :D
 
-&lt;img class=&quot;aligncenter&quot; title=&quot;Obama FB Status&quot; src=&quot;http://i.imgur.com/hP8qc.png&quot; alt=&quot;&quot; width=&quot;504&quot; height=&quot;219&quot; /&gt;
-&lt;blockquote&gt;4 days left for exam. So don't blame me if I'm making stuff like this instead of studying. :P (Inspired from a friend's SMS though) :)&lt;/blockquote&gt;
-&amp;nbsp;
 </content>
  </entry>
  
@@ -1836,9 +993,6 @@ Now copy the new modified URL, paste it in the &lt;strong&gt;Feed URL&lt;/strong
    <id>https://bibhas.in/blog/only-domain-name-is-not-enough</id>
    <content type="html">There was a time when a domain name was enough for any business or product for their web presence. We were happy with &lt;a title=&quot;McAfee&quot; href=&quot;http://www.McAfee.com&quot; target=&quot;_blank&quot;&gt;www.McAfee.com&lt;/a&gt; or &lt;a title=&quot;Amazon&quot; href=&quot;http://www.Amazon.com&quot; target=&quot;_blank&quot;&gt;www.Amazon.com&lt;/a&gt; .. But the scenario is different now. It seems we can't be satisfied with just the domain name now. We also want &lt;a title=&quot;McAfee Twitter&quot; href=&quot;http://twitter.com/McAfee&quot; target=&quot;_blank&quot;&gt;@McAfee&lt;/a&gt; or @&lt;a title=&quot;Amazon on Twitter&quot; href=&quot;http://twitter.com/Amazon&quot; target=&quot;_blank&quot;&gt;Amazon&lt;/a&gt;. Or rather those brands need them even more than a website now.
 
-I recently tried out a forum website &lt;a href=&quot;http://www.androidhelps.com&quot; target=&quot;_blank&quot;&gt;AndroidHelps.com&lt;/a&gt; and someone referred me to &lt;a title=&quot;Woorank&quot; href=&quot;http://www.woorank.com&quot; target=&quot;_blank&quot;&gt;WooRank.com&lt;/a&gt; to check some rank and stuff about the website. So, there I noticed that they also check the twitter handle on the given domain name for calculating rank! I immediately went to twitter and registered the handle &lt;a title=&quot;AndroidHelps&quot; href=&quot;http://twitter.com/AndroidHelps&quot; target=&quot;_blank&quot;&gt;@AndroidHelps&lt;/a&gt; .. And now I've ensured that when (and If) my site (ever) become popuplar, i'll have the web covered with a website, a blog and a twitter account.
-
-So, things have come to this. We're so much into twitter now(not everyone though, but those who 'make' things popular, always keep an eye on their timeline), that we cannot think about advertising or promoting a brand without a twitter account. The equation is now, No. of Followers is proportional to the popularity of the service or product. Maybe one or two of you will disagree, but be sure, a hundred more will be agreeing as they read this.
 </content>
  </entry>
  
@@ -1849,63 +1003,6 @@ So, things have come to this. We're so much into twitter now(not everyone though
    <id>https://bibhas.in/blog/modifying-mysql-database-using-c-net</id>
    <content type="html">To modify MySQL databases using C#.NET or any language using .NET framework, you must first install the MySQL Connector for .NET. You can download it &lt;a title=&quot;MySQL Connectors for .NET&quot; href=&quot;http://www.mysql.com/downloads/connector/net/&quot; target=&quot;_blank&quot;&gt;from here&lt;/a&gt;. Avoid v6.3.6 for now, as I've discussed in &lt;a title=&quot;MySQL’s Connector for .NET v6.3.6 has bugs it seems&quot; href=&quot;http://bibhas.in/blog/2011/05/mysqls-connector-for-net-v6-3-6-has-bugs-it-seems/&quot; target=&quot;_blank&quot;&gt;a previous post&lt;/a&gt;, that version might have some bugs. Go the the &lt;a title=&quot;Connector/NET Previous Versions Download&quot; href=&quot;http://www.mysql.com/downloads/connector/net/6.2.html#downloads&quot; target=&quot;_blank&quot;&gt;previous versions section&lt;/a&gt; and download v6.3.4 instead. After you've downloaded it, install.&lt;!--more--&gt;
 
-Now run Visual Studio. Open your project. Go to &lt;em&gt;View&lt;/em&gt; menu &amp;gt; &lt;em&gt;Solution Explorer&lt;/em&gt; &amp;gt; right click on &lt;em&gt;References&lt;/em&gt; &amp;gt; &lt;em&gt;Add References&lt;/em&gt; &amp;gt; under the tab &lt;em&gt;.NET&lt;/em&gt;, select &lt;em&gt;MySQL.Data &lt;/em&gt;&amp;gt; &lt;em&gt;Ok&lt;/em&gt;. That's almost it. Now you've added the reference to your project.
-
-To start coding, add this line to the top of your source -
-&lt;pre class=&quot;brush:csharp&quot;&gt;using MySql.Data.MySqlClient;&lt;/pre&gt;
-Now you can write the codes just like you do with &lt;em&gt;SQL server&lt;/em&gt;, just add My in front of SQL :P. See the code below for example. I wrote two abstract function for my use.
-&lt;pre class=&quot;brush:csharp&quot;&gt;private string MySQLConnectionString = &quot;SERVER=localhost;DATABASE=db_name;UID=root;PASSWORD=;&quot;;
-public int mysql_query_execute_noReturn(string query)
-{
-    Int32 row_affected = 0;
-    try
-    {
-        MySqlConnection con = new MySqlConnection(MySQLConnectionString);
-        if (con.State == System.Data.ConnectionState.Closed)
-        {
-            con.Open();
-        }
-        MySqlCommand command = new MySqlCommand(query, con);
-        row_affected = command.ExecuteNonQuery();
-
-        if (con.State == System.Data.ConnectionState.Open)
-        {
-            con.Close();
-        }
-    }
-    catch (Exception ex)
-    {
-
-    }
-    return row_affected;
-}
-
-public DataSet mysql_query_execute_return(string query)
-{
-    DataSet dataSet = new DataSet();
-    try
-    {
-        MySqlConnection con = new MySqlConnection(MySQLConnectionString);
-        if (con.State == System.Data.ConnectionState.Closed)
-        {
-            con.Open();
-        }
-        MySqlDataAdapter dataAdapter = new MySqlDataAdapter(query, con);
-        dataAdapter.Fill(dataSet);
-        if (con.State == System.Data.ConnectionState.Open)
-        {
-            con.Close();
-        }
-    }
-    catch (Exception ex)
-    {
-
-    }
-    return dataSet;
-}&lt;/pre&gt;
-You can pass any query string to these functions, &lt;em&gt;mysql_query_execute_noReturn&lt;/em&gt; will take a query, execute it and return the number of rows affected. It's only for queries like INSERT, UPDATE, DELETE etc. And &lt;em&gt;mysql_query_execute_return&lt;/em&gt; will take a query, execute it and return a &lt;em&gt;DataSet &lt;/em&gt;containing all the records. It's for queries like SELECT.
-
-So, try it out. :)
 </content>
  </entry>
  
@@ -1916,11 +1013,6 @@ So, try it out. :)
    <id>https://bibhas.in/blog/mysqls-connector-for-net-v6-3-6-has-bugs-it-seems</id>
    <content type="html">My final year project requires both the use of .NET and PHP/MySQL. For some certain process, I needed to connect to the MySQL database from the .NET desktop app.&lt;!--more--&gt; So I searched a bit and saw that MySQL provides several connectors to connect to MySQL database using various languages or platforms, e.g. there are connectors for ODBC(for Windows, Linux, Mac OS X, and Unix platforms), Java platform, .NET platform, MXJ(MBean for embedding the MySQL server in Java applications), C and C++ language and even for OpenOffice.org products! Seemed cool. went ahead and downloaded the latest stable version 6.3.6 of the .NET connector. But when I tried to install it, the installation failed unexpectedly. There were no error log for me to analyze and take step. Only this error message from the installer -
 
-[caption id=&quot;&quot; align=&quot;aligncenter&quot; width=&quot;510&quot; caption=&quot;MySQL Connector/NET installation error&quot;]&lt;img title=&quot;MySQL Connector/NET installation error&quot; src=&quot;http://i.imgur.com/YWBX6.png&quot; alt=&quot;MySQL Connector/NET installation error&quot; width=&quot;510&quot; height=&quot;397&quot; /&gt;[/caption]
-
-Now I searched for the solution, went to the MySQL dev forum, but couldn't find a solution that worked. So I assumed that this installer is faulty, hence downloaded the immediate previous version 6.3.4 and tried to install it. Now it installed without any problem. Tried connecting from the .NET app, worked cool.
-
-So it's pretty much clear that the 6.3.6 installer has some glitch that needs to be worked on. Hope they fix it soon.
 </content>
  </entry>
  
@@ -1931,13 +1023,6 @@ So it's pretty much clear that the 6.3.6 installer has some glitch that needs to
    <id>https://bibhas.in/blog/validating-regular-expression</id>
    <content type="html">One of my basic beliefs - Regular Expression is God-Gifted.. Its hard to find something that can be so simple but so much useful.. All for these reasons, I end up using RegEx whenever I have some pattern matching business. And for that to be perfect, I need a cool RegEx validator.
 
-&lt;!--more--&gt;Most of the times, I use the validator from &lt;a title=&quot;GSkinner&quot; href=&quot;http://www.gskinner.com/&quot; target=&quot;_blank&quot;&gt;GSkinner&lt;/a&gt; - &lt;a title=&quot;RegExr&quot; href=&quot;http://gskinner.com/RegExr/&quot; target=&quot;_blank&quot;&gt;http://gskinner.com/RegExr/&lt;/a&gt; ..
-&lt;p style=&quot;text-align: center;&quot;&gt;&lt;a href=&quot;http://i.imgur.com/rgBYG.png&quot;&gt;&lt;img class=&quot;aligncenter&quot; title=&quot;RegExp&quot; src=&quot;http://i.imgur.com/rgBYG.png&quot; alt=&quot;&quot; width=&quot;808&quot; height=&quot;382&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
-It's built with flash. Have a cool interface. There are a lot of inbuilt patters you can use or try out. You can also save your own patterns.
-
-It have options to test both matching of patterns and replacing using patterns.
-
-And to add to all this, it has a desktop version you can &lt;a title=&quot;RegExr Desktop&quot; href=&quot;http://www.gskinner.com/RegExr/desktop/&quot; target=&quot;_blank&quot;&gt;download&lt;/a&gt; and use right away! Sweet! :)
 </content>
  </entry>
  
@@ -1948,20 +1033,6 @@ And to add to all this, it has a desktop version you can &lt;a title=&quot;RegEx
    <id>https://bibhas.in/blog/how-do-you-leave-your-home-again</id>
    <content type="html">Received my &lt;a title=&quot;And They Called My Name&quot; href=&quot;http://bibhas.in/blog/2011/02/and-they-called-my-name/&quot; target=&quot;_blank&quot;&gt;appointment letter&lt;/a&gt; last night. Will be joining Persistent Systems Ltd as a Software Engineer. Have to leave for Nagpur in September..
 
-&lt;!--more--&gt;
-
-This will be my third time leaving a hometown and shifting to another. And it wasn't easy the first two times. Wondering how I'm going to manage this time..
-
-First time I left shifted from one city to another, I was a little kid of 7-8 years. So almost felt nothing as I had new enjoyments, new toys to play with in the new city. Second time, it was a bit hard. Left all my relatives, my cousins, my school friends. But as I found later, I'm extremely good in adapting with a new situation. I can blend in to a new environment really fast. Without anyone noticing it. So handled it somehow.
-
-But, what about this time?
-
-Its different. I have to leave my city, the City of Joy, away from my family, friends, inspirations, my love.. How can I adjust without them..?
-
-I'm hoping for the best till now. For years, I've made friends with people around the country. I've been friends with &lt;a href=&quot;http://www.karthikrewired.com/&quot; target=&quot;_blank&quot;&gt;few&lt;/a&gt; &lt;a href=&quot;http://chetangole.com/&quot; target=&quot;_blank&quot;&gt;great&lt;/a&gt; &lt;a href=&quot;http://www.akshul.com/&quot; target=&quot;_blank&quot;&gt;people&lt;/a&gt; from Nagpur. I'm hoping that I'll be just fine with them around.
-
-But still.. How.. Can't figure. Leaving things to the hands of time. Lets see.
-&lt;blockquote&gt;P.S. - Sorry for getting all emotional.. But can not help. :(&lt;/blockquote&gt;
 </content>
  </entry>
  
@@ -1972,21 +1043,6 @@ But still.. How.. Can't figure. Leaving things to the hands of time. Lets see.
    <id>https://bibhas.in/blog/googles-1-button-and-my-view-on-it</id>
    <content type="html">Google recently introduced a new feature to be used with their search engine, sort of a plugin you can say, calling it the +1 button.. Now those of us who use internet forums, know very well what is the value of those two letters -&amp;gt; +1. Google took that idea and implemented it in their search engine.&lt;!--more--&gt;
 
-Google says,
-&lt;blockquote&gt;Sometimes it’s easier to find exactly what you’re looking for when someone you know already found it. Get recommendations for the things that interest you, right when you want them, in your search results.&lt;/blockquote&gt;
-So, basically it works like a recommendation system. You can also put the +1 button on your website and ask the visitors to +1 it if they like it.
-
-Now according to Google, this +1 is going to also affect your search results. Google is going to store the recommendation of the people from your network and give those results preferences that others.. Ummm, but wait, what do they mean by people in your network? As they mentioned, it means -
-&lt;ul&gt;
-	&lt;li&gt;People in your Gmail (or Google Talk) chat list.&lt;/li&gt;
-	&lt;li&gt;People in your My Contacts group in Google Contacts.&lt;/li&gt;
-	&lt;li&gt;People you’re following in Google Reader and Google Buzz.&lt;/li&gt;
-&lt;/ul&gt;
-Now that's interesting..
-
-It means that, if some people from your *network* starts spamming with the +1 button(which is quite possible with the number of SEOs, pseudo-SEOs and Punks around), you'll start missing good results.. That is real concern.
-
-Well, one solution that I thought should be considered, it to introduce a -1 button too.. Meaning that you can prioritize and deprioritize your results according to your choice.. With only +1 button, you'll have to +1 almost 9 search results if you want an unwanted result to be removed which is at position one.. That's lame.. :-/
 </content>
  </entry>
  
@@ -1997,11 +1053,6 @@ Well, one solution that I thought should be considered, it to introduce a -1 but
    <id>https://bibhas.in/blog/facebooks-comment-posting-failure-error-handler</id>
    <content type="html">This is something new I saw today.
 
-While posting a comment in Facebook, for some unknown reason, it couldn't be posted so facebook showed an error message and also provided a &quot;Try Again&quot; button!
-
-&lt;img class=&quot;alignnone&quot; title=&quot;Facebook Comment Posting Error handler&quot; src=&quot;http://i.imgur.com/VcQSp.png&quot; alt=&quot;&quot; width=&quot;439&quot; height=&quot;78&quot; /&gt;
-
-Maybe it has been there for sometime, but never encountered it..!
 </content>
  </entry>
  
@@ -2012,28 +1063,6 @@ Maybe it has been there for sometime, but never encountered it..!
    <id>https://bibhas.in/blog/a-day-with-kws-kolkata-weekend-shoots</id>
    <content type="html">I've been added to the &lt;a href=&quot;http://www.facebook.com/group.php?gid=27363419159&quot; target=&quot;_blank&quot;&gt;KWS Facebook group&lt;/a&gt; for sometime. And being an amateur(read nOOb) photographer, I always wanted to meet others who are just like me or more expert and learn from them. Hence a photowalk was always welcome to me. So when I learned that KWS is going to hold a photowalk at West Bengal State Handicraft Expo 2011 at Milan Mela ground, I really wanted to join and started poking &lt;a class=&quot;aptureEnhance&quot; href=&quot;http://www.flickr.com/photos/cybercool10/&quot; target=&quot;_blank&quot;&gt;Kuntal&lt;/a&gt; for his secondary camera(&lt;a href=&quot;http://www.flickr.com/cameras/nikon/coolpix_p90/&quot; target=&quot;_blank&quot;&gt;Nikon Coolpix P90&lt;/a&gt;) for a day as I don't have a camera myself. Well, luckily Kuntal managed it somehow and on that day, we went to the venue together.
 
-&lt;!--more--&gt;
-
-We were supposed to meet in front of the Science city gate on EM Bypass. But me and Kuntal were a bit late, so we couldn't find anyone there and decided to enter the fair. I've already implied that fact that this was my first photowalk with KWS, everyone was stranger to me. But Kuntal seemed to know some of them and noticed where they are the moment we entered the fair, all I saw was a bunch of people with cameras in their hands and only one almost-known face, that was &lt;a href=&quot;http://www.flickr.com/photos/prasundutta/&quot; target=&quot;_blank&quot;&gt;Prasun da&lt;/a&gt;(recognized him from his Flickr account DP). Although I heard about &lt;a href=&quot;http://www.flickr.com/photos/anirbanbrahma/&quot; target=&quot;_blank&quot;&gt;Anirban Brahma&lt;/a&gt; from &lt;a href=&quot;http://www.facebook.com/dasumit&quot; target=&quot;_blank&quot;&gt;some&lt;/a&gt; &lt;a href=&quot;http://www.facebook.com/sanjibc&quot; target=&quot;_blank&quot;&gt;friends&lt;/a&gt; who personally know him, but we never met before.
-
-The fair premise was pretty huge for a fair like that. And the sun was almost above head as it was about 2pm. I felt myself that the light was too harsh for capturing something outdoor. So we started wandering around just to pass the time and let the sun drop a li'l bit.
-
-As time passed, more and more people started gathering for KWS. I was wondering how many exactly are gonna turn up. And the number wasn't small. Wherever I went, I saw a face from KWS and some more people with cameras who weren't with us.
-
-So I took out that camera of mine, and started capturing. This was the first time I was using a P90(I usually use a &lt;a href=&quot;http://www.flickr.com/cameras/canon/powershot_s5_is/&quot; target=&quot;_blank&quot;&gt;Canon S5-IS&lt;/a&gt; from &lt;a href=&quot;http://www.facebook.com/profile.php?id=1594893313&amp;amp;sk=photos&quot; target=&quot;_blank&quot;&gt;another friend&lt;/a&gt;), so took some time to familiarize myself with it.
-There were a LOT to capture. The fair was full of subjects - drawings, ornaments, decorative stuffs and (my personal favorite) People!
-
-Lot of people, everyone was busy. The vendors were working on their show-pieces, one artist was drawing a portrait of a girl, the kids of the vendors were playing around, the people who came to the fair were busy bargaining, other photographers were capturing things with interesting poses etc etc..
-
-Suddenly saw &lt;a href=&quot;http://www.facebook.com/sahaanirbannew?sk=photos&quot; target=&quot;_blank&quot;&gt;Anirban Saha&lt;/a&gt; there. I didn't actually know that he was a semi-regular with KWS. He was shooting interesting stuff too. Showed me some, liked 'em.
-
-In a gist, it was a pretty interesting place when you've got a camera with you. I didn't even realize when the time was up, sun was setting and suddenly the group members started calling for me, I get that its the group pic time. Now here I met everyone that were present that day. &lt;a href=&quot;http://www.flickr.com/photos/amitavaghosh/&quot; target=&quot;_blank&quot;&gt;Amitava&lt;/a&gt; told us an interesting story where he was held by police for capturing photos, &lt;a href=&quot;http://www.flickr.com/photos/mrigankabanerjee/&quot; target=&quot;_blank&quot;&gt;Mriganka&lt;/a&gt; was a all-smile boy, &lt;a href=&quot;http://www.flickr.com/photos/abhijit_jabberwocky/&quot; target=&quot;_blank&quot;&gt;Abhijit&lt;/a&gt; and Anirban were calling for those who weren't present and a LOT of things.. The number was pretty high, about 27. It's a KWS attendance record I think. When we gathered up, I got some new faces to capture. Posted one(of &lt;a href=&quot;http://www.flickr.com/photos/tania_sarcar/&quot; target=&quot;_blank&quot;&gt;Tania Sarcar&lt;/a&gt;) in the KWS pool. Anyway, we got a great group pic. You can see it below(I'm the second right standing one with white t-shirt :).
-
-&lt;img class=&quot;alignnone&quot; title=&quot;Kolkata Weekend Shoots Members&quot; src=&quot;http://i.imgur.com/ErM8c.jpg&quot; alt=&quot;&quot; width=&quot;800&quot; height=&quot;544&quot; /&gt;
-
-The later plan was to go visit China town and have some snacks, but It would've been a li'l bit overkill for my pocket, so decided to head back for home. Kuntal was also up for returning home. So we left saying good bye to all those who stayed.
-
-Now I should write a conclusion. But I can't find any. The only thing in my mind is the next KWS meet. Waiting for another rocking day. :)
 </content>
  </entry>
  
@@ -2044,21 +1073,6 @@ Now I should write a conclusion. But I can't find any. The only thing in my mind
    <id>https://bibhas.in/blog/selective-conditional-update-with-yum</id>
    <content type="html">The first thing I noticed after installing Fedora 14 was that there are updates available for my packages. And not a few, more than 400 updates! Sizing about 500mb!
 
-Now, I use a lame internet plan of 256kbps. Updating all the packages in one go will make me keep this system on for about 5 hours. Thats not possible for me. So I needed a way to update few packages everytime and keep doing that whenever I find time.&lt;!--more--&gt;Now I can open the update manager, untick about 350 package the first time to update first 50 package and go on like that.. Sounds ridiculous, right? So ticking-unticking aint an option, lets look for something new.
-
-Terminal is always there, lets use it. I thought of using conditions with the &lt;strong&gt;yum&lt;/strong&gt; command. Like defining a number, so that first that number of packages will be updated. But that'd most probably require me to write a complicated shell script which I'm not intending to do right now.
-
-Next option, lets try to find if any condition can be applied to packages' name and update only the matching ones. This idea seem to have an easy way to deploy. I found that you can use wildcard (*) to the &lt;strong&gt;yum update&lt;/strong&gt; command. Now that's cool! it lets me to select packages based on a portion of their name. Like, if I want to update only the packages that start with a, all I need to do is use this command -
-&lt;pre class=&quot;brush:bash&quot;&gt;# yum update a*
-&lt;/pre&gt;
-Or if I want to update all the packages that has the phrase py in them, I'd use the command -
-&lt;pre class=&quot;brush:bash&quot;&gt;# yum update *py*
-&lt;/pre&gt;
-I can also define more than one condition with a space as delimiter, like -
-&lt;pre class=&quot;brush:bash&quot;&gt;# yum update 'a*' '*bas*'
-&lt;/pre&gt;
-That's it! I got my way to update few packages at a time. :D
-&lt;blockquote&gt;Note: Before using Yum, install the yum plugin &lt;strong&gt;yum-fastestmirror&lt;/strong&gt;. Saves time finding the the mirrors that'll transfer data faster. :)&lt;/blockquote&gt;
 </content>
  </entry>
  
@@ -2084,6 +1098,8 @@ rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-adobe-linux
 &lt;pre class=&quot;brush:bash&quot;&gt;yum install flash-plugin nspluginwrapper.x86_64 nspluginwrapper.i686 alsa-plugins-pulseaudio.i686 libcurl.i686&lt;/pre&gt;
 &lt;blockquote&gt;This command should also work on &lt;strong&gt;Fedora 13, Fedora 12 and Red Hat (RHEL) 6 64-bit version (x86_64) (32 bit wrapped version)&lt;/strong&gt;..&lt;/blockquote&gt;
 That's it. Restart Firefox and you should be able to run Flash stuff. Head for Youtube to test it.
+
+
 </content>
  </entry>
  
@@ -2094,26 +1110,6 @@ That's it. Restart Firefox and you should be able to run Flash stuff. Head for Y
    <id>https://bibhas.in/blog/comments-from-known-faces-unknown-faces</id>
    <content type="html">If you've read my blog before, you'll know that I keep attending all the tech/web related events here. Thankfully, I've been able to collaborate with many active faces here and also brought together few more in that list. Yesterday (20th Feb '11) was a day full of fun and cheers coming from each and everyone.. Two Major bloggers' meet on a single day. Heck, whattay day it was!
 
-At the indiBlogger meet, there was a social networking session, where everyone has been given a white paper which they can hang on their back and go to other people, talk to them, introduce self and ask for a comment.. It was a really interesting session. Loved it. My piece of paper was full of comments written by people I hardly know, and also some people I'm lucky to know.. I'm gonna share the comments here, because I want to remember them. For an eternity..&lt;!--more--&gt;
-&lt;blockquote&gt;Someone: &lt;strong&gt;Bibhas(in Bengali), meeting you was an experience.&lt;/strong&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;Someone: &lt;strong&gt;Bibhas, tu bahoot bara programmer bane. &lt;/strong&gt;[Whoever you are, Thanks a LOT for the wish. :) ]&lt;/blockquote&gt;
-&lt;blockquote&gt;&lt;a href=&quot;http://twitter.com/Aagan86&quot; target=&quot;_blank&quot;&gt;Agnivo da&lt;/a&gt; wrote: &lt;strong&gt;Biriyani Tweetup koboe hobe? :D&lt;/strong&gt; [There's a story behind it, will share later after I have that tweetup. :P]&lt;/blockquote&gt;
-&lt;blockquote&gt;&lt;a href=&quot;http://www.progamist.com/&quot; target=&quot;_blank&quot;&gt;Subham Singh&lt;/a&gt; wrote: &lt;strong&gt;Good blogger, keep up the good work. &lt;/strong&gt;[Thanks Dude :)]&lt;/blockquote&gt;
-&lt;blockquote&gt;Someone: &lt;strong&gt;Dont be DUMB!&lt;/strong&gt; [To the writer, &quot;Ok, Sire.&quot; :) ]&lt;/blockquote&gt;
-&lt;blockquote&gt;Someone: &lt;strong&gt;THE SOCIAL FREAK! :)&lt;/strong&gt; [yeah, I know. :P ]&lt;/blockquote&gt;
-&lt;blockquote&gt;Someone: &lt;strong&gt;Why did you get a white chat? :P&lt;/strong&gt; [because I had a white sheet, whereas most had a yellow one.]&lt;/blockquote&gt;
-&lt;blockquote&gt;Someone: &lt;strong&gt;bibhas rocks!! (^_^)&lt;/strong&gt; [Thanks dude, who ever you are.. :) ]&lt;/blockquote&gt;
-&lt;blockquote&gt;Someone: &lt;strong&gt;Aspiring Developer&lt;/strong&gt; :)&lt;/blockquote&gt;
-&lt;blockquote&gt;&lt;a href=&quot;http://twitter.com/warijit&quot; target=&quot;_blank&quot;&gt;Arijit&lt;/a&gt; wrote: &lt;strong&gt;You are cool - @warijit&lt;/strong&gt; [Thanks bro. :) ]&lt;/blockquote&gt;
-&lt;blockquote&gt;Someone: &lt;strong&gt;keep blogging.&lt;/strong&gt; [I will. :) ]&lt;/blockquote&gt;
-&lt;blockquote&gt;Some R.G. wrote: &lt;strong&gt;Nice blog u have. Gimme some suggestions. Teach me to cheat!!&lt;/strong&gt; [Heck Dude.. That was odd! O_O]&lt;/blockquote&gt;
-&lt;blockquote&gt;&lt;a href=&quot;http://www.snaphow.com/&quot; target=&quot;_blank&quot;&gt;Debojyoti&lt;/a&gt; wrote: &lt;strong&gt;All the best in Life. God Bless..&lt;/strong&gt; [Thanks dude. :) ]&lt;/blockquote&gt;
-&lt;blockquote&gt;Someone: &lt;strong&gt;Keep Sleeping!!&lt;/strong&gt; [o_O]&lt;/blockquote&gt;
-&lt;blockquote&gt;Someone: &lt;strong&gt;The Whitehat Blogger..&lt;/strong&gt; [ :) ]&lt;/blockquote&gt;
-And my favorite -
-&lt;blockquote&gt;&lt;a href=&quot;http://twitter.com/dbwrd&quot; target=&quot;_blank&quot;&gt;Debleena di&lt;/a&gt; wrote: &lt;strong&gt;A Techie.. who is there on the web.. everywhere...&lt;/strong&gt; [ Thanks Di.. :) ]&lt;/blockquote&gt;
-This is the exact reason I love networking.. People are like pieces of puzzles. You can build a great picture when you bring them together.. So, keep networking.. :)
-&lt;blockquote&gt;P.S. If you wrote any of them, please comment and let me know.. :)&lt;/blockquote&gt;
 </content>
  </entry>
  
@@ -2124,26 +1120,6 @@ This is the exact reason I love networking.. People are like pieces of puzzles. 
    <id>https://bibhas.in/blog/and-they-called-my-name</id>
    <content type="html">This blog post is only for me  to remember that what happened, was the last thing I expected..&lt;!--more--&gt;
 
-5th  February, 2011. I woke up like any other day, early, to go for my driving lessons, drove pretty well, returned home expecting my friend Nishan to call me and say that I was late. We were supposed to leave early for &lt;a href=&quot;http://www.nsec.ac.in&quot; target=&quot;_blank&quot;&gt;Netaji Subhas Engg College&lt;/a&gt; for our campusing process with &lt;a href=&quot;http://www.persistentsys.com/&quot; target=&quot;_blank&quot;&gt;Persistent Systems Ltd&lt;/a&gt;. Well, eventually, we both were late. But I tried to keep up with the schedule. Got ready really fast. In my mind, I was going for an outing. Was pretty sure I'm not gonna clear the aptitude test among all those 800+ students. So I didnt wear my blazer, I didnt shave, didnt wear a good shirt. And left for the destination.
-
-We reached the college, waited for about 2 hours as there were already half of the number inside the college appearing the test. When that batch came out, my friends were all asking them what were all the question, how to answer the tough ones. Some started revising quick. I was just standing there, planning to go to the book fair after we appear in the written test.
-
-So our time came, we entered the hall, first the aptitude question paper was distributed. It had 60 MCQs. I had 1 hour in hand. And the question were pretty easy. So attended about 57. I was 100% sure about 50-53 of them. Then after the hour, came the subjective paper. It had a C program, which asked the students to write a program to read another C source file and remove all the commented lines from it. And there was another question asking the students to explain a sentence. Something about India being a field of opportunity or something. I dont remember because I didn't even think of attending it. I knew the algo required for the C program. I was just lacking some syntaxes(its been really long since I tried C). But I thought, WTH! I can make up syntaxes with ease. :P
-
-So started writing the code, and where it was a bit complex, kept commenting them. after half an hour, they took the paper, I submitted it with a lot of bugs, but the maintained the logic. Left the room and the waiting started. :-/
-
-They were supposed to declare the result in about half an hour. But it took them about 2 hours in total to come up with the names!! During then, I was planning to visit Book fair and South City mall with my friends. And was waiting when they'd declare the result, so that we can leave early..
-
-Then after sometime, which seemed like an year to me, they appeared in front of us and started reading the names.
-
-5 names, 10 names, 15 names, 20 names, 25 names ... And on the 28th, I heard something like &quot;Bibhas Chandra Debnath from Narula Institute of Technology&quot;.. I was one of the 33 who cleared the aptitude test. And my friends were like &quot;Woooooot&quot;! And the first word I spoke was WT&lt;strong&gt;F, &lt;/strong&gt;excluding the &lt;strong&gt;WT&lt;/strong&gt; part.. :-/
-
-&lt;span style=&quot;text-decoration: underline;&quot;&gt;Later part of the story&lt;/span&gt; - They had 3 interviews(Two technical round and one HR round). The first technical round was supposed to start from 6:30. But it started at 9:30 for me. (Remember, I didn't have lunch. :-/) then they called me, went and answered all the questions which were on basic of C, DS and some theories on Windows. Then again started waiting for the 1st round result.. I was so exhausted that I was ready to leave before the 1st round result was declared. But then suddenly they came, asked me to go for the 2nd round.. I was again like wtf!..
-
-Went anyway. Answered all the questions related to my projects. Asked them something about the slides they showed me, and left. Again started waiting. Then they came with a form and said that I cleared the 2nd technical round. :| And was asked to appear in the HR round.. Appeared. The HR asked me to wait half an hour for the final result.
-
-After half an hour, it was almost 12 midnight. The HR came out, with 7 envelops. Announced 6 names. then suddenly called my name.!. Another wtf moment people.. And said, &quot;See you in Nagpur.&quot; .. I was smiling.. What else could I do? The only thing that came in my mind was, &quot;I *did not* come here for all these and I couldn't go to the Book fair with my friends..&quot; :(
-&lt;blockquote&gt;&lt;span style=&quot;color: #333333;&quot;&gt;P.S. - Just to complete the story, only these 7 were selected finally.&lt;/span&gt;&lt;/blockquote&gt;
 </content>
  </entry>
  
@@ -2154,20 +1130,6 @@ After half an hour, it was almost 12 midnight. The HR came out, with 7 envelops.
    <id>https://bibhas.in/blog/a-fedora-day-at-gcect-kolkata</id>
    <content type="html">Kolkata is usually not very frequent when it comes to organizing Tech related events. mostly because that crowd is very small every time someone tries something. But despite that, I've been trying to attend as many events possible and bring then together, so that everytime we can have atleast some new faces. That is actually how the crowd grows.
 
-So when I came to know about this &quot;Fedora 14 Realease Party&quot; on 2nd February via Facebook, I was interested and despite some trouble, went ahead and attended it. And I must say, It's been a memory to remember for sometime. :)&lt;!--more--&gt;
-
-The main attraction of the event for me was the speech from Mr. Indranil Das Gupta and the proposed speech on 'KDE-EDU : Using, Learning, Contributing' by Mrs Stephenie Das Gupta. The main reason was that I've known Indranil da from sometimes now, but could never attend his speech and I really wanted to. And for Stephenie, I've seen her in *action* before, but never had the chance to get familiar to her. So here was my chance. :)
-
-The venue, Government College of Engineering &amp;amp; Ceramic Technology or GCECT, is a well known Govt Engineering college in West Bengal. They had a big space. But however might the event have been, I have to give them kudos for they had a good number of students attend the seminar. More would have been netter, but I think they'll learn from this event.
-
-For some problems in the college during the event, only the speech By Indranil da was performed, and the speech by Stephenie had to be discarded. But I have to say, I enjoyed Indranil da's speech. He actually knew how to engage the type of students that were sitting infront of him and he proceeded that way. I loved the way he demonstrated that how we're all one way or another using Free and Open Source Softwares or FOSS, and How we're going to realize their importance when we actually run out of them. One little example of this was his &quot;Breath-Holding&quot; experiment(I made up the name :P ). He asked a girl from the audience and a boy with a wrist watch. Then he asked the girl to hold her breath as long as she can. That boy had the count, she could hold it for about 40 seconds. And had to give up as it was impossible for her to continue without air.. Now compare the Air with the FOSS we're using in our daily life, we're using them even not knowing when we're doing that, just like we breath. And once we run out of them, we're definitely gonna suffocate.
-
-For people interested in how to earn through FOSS, he gave some interesting live examples of how people are already doing that and earning even more then the ones not working with FOSS. I'll talk about it more later.
-
-Although this was supposed to be a &quot;Fedora Release Party&quot;, it actually ended up being a &quot;Fedora Activity Day&quot; as Fedora 14 was released exactly 3 months before the event, and it was unethical to call it a release party. :) I left early, so I didnt get the Fedora 14 disc, but I'm sure the other attendants got theirs. :)
-
-Here are some pics from the event. Might give you a picture of what happened. :)
-&lt;a href=&quot;http://i.imgur.com/mSgxP.jpg&quot;&gt;&lt;img class=&quot;alignnone&quot; title=&quot;The Crowd&quot; src=&quot;http://i.imgur.com/mSgxP.jpg&quot; alt=&quot;&quot; width=&quot;120&quot; height=&quot;90&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://i.imgur.com/bzyoo.jpg&quot;&gt;&lt;img class=&quot;alignnone&quot; title=&quot;Prabin talking&quot; src=&quot;http://i.imgur.com/bzyoo.jpg&quot; alt=&quot;&quot; width=&quot;120&quot; height=&quot;90&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://i.imgur.com/MT53j.jpg&quot;&gt;&lt;img class=&quot;alignnone&quot; title=&quot;Indranil Das Gupta speaking&quot; src=&quot;http://i.imgur.com/MT53j.jpg&quot; alt=&quot;&quot; width=&quot;120&quot; height=&quot;90&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://i.imgur.com/MjCB7.jpg&quot;&gt;&lt;img class=&quot;alignnone&quot; title=&quot;Breath-holding Experiment&quot; src=&quot;http://i.imgur.com/MjCB7.jpg&quot; alt=&quot;&quot; width=&quot;120&quot; height=&quot;90&quot; /&gt;&lt;/a&gt;
 </content>
  </entry>
  
@@ -2178,14 +1140,6 @@ Here are some pics from the event. Might give you a picture of what happened. :)
    <id>https://bibhas.in/blog/php-enthusiast-discover-new-functions-right-on-your-timelinewall</id>
    <content type="html">&lt;img class=&quot;alignright&quot; title=&quot;PHPrefX&quot; src=&quot;http://i.imgur.com/zUcIf.jpg&quot; alt=&quot;&quot; width=&quot;200&quot; height=&quot;200&quot; /&gt;Being a PHP developer myself, I know how hard a work might get if you don't know about functions that are appropriate to the situation. So, I thought of building a service that will let people discover new functions everyday, right on their wall(in case of Facebook) or timeline(in case of Twitter).
 
-So I built &lt;strong&gt;PHPrefX&lt;/strong&gt;. A service that keeps posting the name of a function, a short info and the link to the reference of that function once every hour on Twitter and Facebook.
-&lt;br style=&quot;clear: both;&quot; /&gt;&lt;!--more--&gt;
-
-If people show interests, I will add an email subscription system too. But that's for a near future. :)
-
-For Twitter users, Please follow @&lt;a href=&quot;http://twitter.com/phprefx&quot; target=&quot;_blank&quot;&gt;phprefx&lt;/a&gt;. Facebook users can head for the &lt;a href=&quot;http://on.fb.me/PHPrefX&quot; target=&quot;_blank&quot;&gt;Fan page of PHPrefX&lt;/a&gt;.
-
-And DO let me know if you like it and if you need any changes made. :)
 </content>
  </entry>
  
@@ -2200,95 +1154,6 @@ And DO let me know if you like it and if you need any changes made. :)
 &lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/cybercool10&quot; target=&quot;_blank&quot;&gt;@cybercool10&lt;/a&gt;
 &lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/cybercool10&quot; target=&quot;_blank&quot;&gt;http://fb.me/cybercool10&lt;/a&gt;
 
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/GJUg4.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Aritra Maulik&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/_neophile&quot; target=&quot;_blank&quot;&gt;@_neophile&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/aritra.mk&quot; target=&quot;_blank&quot;&gt;http://fb.me/aritra.mk&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/t1nnb.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Rajesh Pandey&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/ePandu&quot; target=&quot;_blank&quot;&gt;@ePandu&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/eRajesh&quot; target=&quot;_blank&quot;&gt;http://fb.me/eRajesh&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/WIjns.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Ashish Mohta&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/ashishmohta&quot; target=&quot;_blank&quot;&gt;@ashishmohta&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/ashishmohta&quot; target=&quot;_blank&quot;&gt;http://fb.me/ashishmohta&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/HIq6r.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Ramanuj Mukherjee&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/bluishbottle&quot; target=&quot;_blank&quot;&gt;@bluishbottle&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/ramanujm&quot; target=&quot;_blank&quot;&gt;http://fb.me/ramanujm&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/ZOqlZ.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Rabimba karanjai&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/rabimba&quot; target=&quot;_blank&quot;&gt;@rabimba&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/rabimba&quot; target=&quot;_blank&quot;&gt;http://fb.me/rabimba&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/63Uuy.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Mitesh Ashar&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/iMBA&quot; target=&quot;_blank&quot;&gt;@iMBA&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/miteshashar&quot; target=&quot;_blank&quot;&gt;http://fb.me/miteshashar&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/WaXCC.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Sourav Ghosh&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/souravghosh&quot; target=&quot;_blank&quot;&gt;@souravghosh&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/souravghosh&quot; target=&quot;_blank&quot;&gt;http://fb.me/souravghosh&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/NvSsL.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Kirtika Sanyal &amp;amp; her friend Somrita&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/kirtikasanyal&quot; target=&quot;_blank&quot;&gt;@kirtikasanyal&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/Awlut.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Aritra Sen&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/aritrasen&quot; target=&quot;_blank&quot;&gt;@aritrasen&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/aritrasen87&quot; target=&quot;_blank&quot;&gt;http://fb.me/aritrasen87&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/5flGo.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Shilpa Srivastava&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/shilps31&quot; target=&quot;_blank&quot;&gt;@shilps31&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/shilpa.srivastava&quot; target=&quot;_blank&quot;&gt;http://fb.me/shilpa.srivastava&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/fWNE5.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Ulhas Vardhan Golchha&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/golchha21&quot; target=&quot;_blank&quot;&gt;@golchha21&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://www.facebook.com/golchha21&quot; target=&quot;_blank&quot;&gt;http://fb.me/golchha21&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/5QIGE.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Sanjib Chakravorty&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/isanzc&quot; target=&quot;_blank&quot;&gt;@isanzc&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/sanjibc&quot; target=&quot;_blank&quot;&gt;http://fb.me/sanjibc&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/zTnNk.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Gourab Sanyal&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/g0UrAb&quot; target=&quot;_blank&quot;&gt;@g0UrAb&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/SLyMw.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Abhishek Adhikary&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/avii13&quot; target=&quot;_blank&quot;&gt;@avii13&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/abhishek.adhikary13&quot; target=&quot;_blank&quot;&gt;http://fb.me/abhishek.adhikary13&lt;/a&gt;
-
-&lt;/div&gt;
-&lt;div style=&quot;border: 1px solid #aaa; padding: 10px; height: 230px; margin-bottom: 10px;&quot;&gt;&lt;img style=&quot;float: left; margin-right: 10px;&quot; src=&quot;http://imgur.com/DfCSc.jpg&quot; alt=&quot;&quot; /&gt;
-&lt;div style=&quot;font-size: 2em;&quot;&gt;&lt;strong&gt;Me&lt;/strong&gt;&lt;/div&gt;
-&lt;strong&gt;Twitter:&lt;/strong&gt; &lt;a href=&quot;http://twitter.com/bibhasdn&quot; target=&quot;_blank&quot;&gt;@iAmBivas&lt;/a&gt;
-&lt;strong&gt;Facebook:&lt;/strong&gt; &lt;a href=&quot;http://fb.me/iambibhas&quot; target=&quot;_blank&quot;&gt;http://fb.me/iambibhas&lt;/a&gt;
-
-&lt;/div&gt;
 </content>
  </entry>
  
@@ -2334,6 +1199,8 @@ new TWTR.Widget({
   }
 }).render().start();
 // ]]&gt;&lt;/script&gt;
+
+
 </content>
  </entry>
  
@@ -2344,23 +1211,6 @@ new TWTR.Widget({
    <id>https://bibhas.in/blog/customize-wordpress-automated-permalink-generation</id>
    <content type="html">If you use Wordpress for managing your blog or CMS, then you know how it automatically generate the permalink of a post when you just provide the title of the post. It takes the Title, removes special characters or replaces them with a hyphen(-).
 
-Now, I was working on a project which required a news submission to Google news, for which I needed to fix an arbitrary 3 or more digit number to the permalink(Google requirement). So one way of doing that was to manually edit it each time i wrote a post. But that aint possible considering the frequency of posting. So I had to automate the process. &lt;!--more--&gt;So I looked around a bit, had &lt;a class=&quot;aptureEnhance&quot; href=&quot;http://stackoverflow.com/questions/4518527/customize-the-auto-generation-of-post-slug-in-wordpress/&quot; target=&quot;_blank&quot;&gt;a healthy conversation in StackOverflow&lt;/a&gt; but it didn't work well. So, when I was wandering around the &lt;a class=&quot;aptureEnhance&quot; href=&quot;http://phpxref.ftwr.co.uk/wordpress/nav.html?wp-admin/includes/post.php.html&quot; target=&quot;_blank&quot;&gt;post.php&lt;/a&gt; file, I noticed a function named &lt;em&gt;wp_unique_post_slug()&lt;/em&gt; which seemed like the solution I needed! That function generates the slug of the post when the post title is passed to it.
-
-Here is the total function -
-&lt;pre class=&quot;brush: php&quot;&gt;function wp_unique_post_slug( $slug, $post_ID, $post_status, $post_type, $post_parent ) {
-	// A Whole Lot of Stuff is done here.. But what we really need is the final line ..
-        // ....
-        return $slug;
-}&lt;/pre&gt;
-So, Just before the generated slug is returned from the function, I made the necessary changes. Like -
-&lt;pre class=&quot;brush: php&quot;&gt;if($slug!=&quot;&quot;){
-  $random=rand(11111,99999); //I needed 5 digit random
-  $slug .= &quot;-&quot; . $random;
-}
-return $slug;&lt;/pre&gt;
-And Tada! My Job Done. So now if I give a post title like &quot;&lt;strong&gt;Hello World&lt;/strong&gt;&quot;, for a default Wordpress installation, the permalink generated would be - &lt;strong&gt;http://bibhas.in/blog/2010/12/hello-world/&lt;/strong&gt; but with my customization, I'd get a permalink like &lt;strong&gt;http://bibhas.in/blog/2010/12/hello-world-34523/&lt;/strong&gt; .. Where the number &lt;strong&gt;34523&lt;/strong&gt; is a random number generated by my added code. :)
-
-So this way, you can make changes in your slug any way you want. But be careful when you edit the file. One mistake can literally Hang your blog. :P
 </content>
  </entry>
  
@@ -2405,6 +1255,8 @@ new TWTR.Widget({
   }
 }).render().start();
 &lt;/script&gt;
+
+
 </content>
  </entry>
  
@@ -2415,18 +1267,6 @@ new TWTR.Widget({
    <id>https://bibhas.in/blog/been-wondering-why-facebook-doesnt-have-a-dislike-button</id>
    <content type="html">Saw some really Lame posts in Facebook and thought there should be a 'dislike' button?
 
-Well, think again.
-&lt;!--more--&gt;
-
-Lets face the facts. Facebook is a site for growing your network. Your network necessarily means the people you like and feel comfortable with. (Well, its not always the case. People often keep adding people they dont even intend to communicate. That's definitely Lame.)
-Now, in this scenario, introducing a “Dislike” button would also come with some basic social problems.
-
-Ever heard of “Bullying”? Clicking the dislike button is like Bullying over someone. Why? because you’re not even showing reason for disliking. If someone dislike your post, of course you’ll get offended. Its like Someone Shouting in front of a whole bunch of people that he Hates you. (Well, you can understand what people will think about both of you after that.)
-If you dont like something, just tell him that directly *with reasons* or just ignore it. When someone publicly dislikes your post, you lose a good amount of respect from others who can see it. (Think about that.)
-
-And also, You think disliking someone else's post would be Cool? Just give it a thought, How'd You feel if someone dislikes Your post?
-
-I think that’ll be enough. I made my point.
 </content>
  </entry>
  
@@ -2437,59 +1277,6 @@ I think that’ll be enough. I made my point.
    <id>https://bibhas.in/blog/the-first-50-tweets-ever-posted</id>
    <content type="html">The other day I was just talking to a friend about the numbering of twitter status IDs. He asked, whats the proof  that they started from 1. So, I thought, lets show him.
 
-Here are the first 50 tweets ever posted. The interesting thing is, There is no tweet with the IDs 0-19.. It all started from 20. I also hyperlinked the tweets, check them out. :)
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; Jack Dorsey (@jack) &lt;a href=&quot;https://twitter.com/jack/status/20&quot;&gt;March 21, 2006&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote&gt;For the reference, The original project code name for &lt;strong&gt;Twitter&lt;/strong&gt; was &lt;strong&gt;twttr&lt;/strong&gt;.&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; Biz Stone (@biz) &lt;a href=&quot;https://twitter.com/biz/status/21&quot;&gt;March 21, 2006&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; noah glass (@noah) &lt;a href=&quot;https://twitter.com/noah/status/22&quot;&gt;March 21, 2006&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; : twitter Support (@crystal) &lt;a href=&quot;http://twitter.com/crystal/status/23&quot;&gt;2:30am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; : lacking pretense isn't always helpful in life. (@Jeremy) &lt;a href=&quot;http://twitteR.Com/jeremy/staTUS/24&quot;&gt;2:30am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; : founder of crowdVine. Interested in events, smallbiz, social software. (@Tony Stubblebine) &lt;a href=&quot;http://twitter.com/tonystubblebine/status/25&quot;&gt;2:31am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; : trazzler, reston, Syracuse university, Sandwich (@adam rugel) &lt;a href=&quot;http://twitter.com/adam/status/26&quot;&gt;2:31am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; : farm boy from nebraska. Husband and father. co-founder of twitter. (@Evan Williams) &lt;a href=&quot;http://twitter.com/ev/status/28&quot;&gt;2:32am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;inviting coworkers&lt;/p&gt;&amp;mdash; : creator, Co-founder and Chairman of twitter; CEo of square. (@jack Dorsey) &lt;a href=&quot;htTP://twitter.com/jack/status/29&quot;&gt;2:32am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;getting my odeo folks on this deal&lt;/p&gt;&amp;mdash; : co-founder of Twitter, Inc. (@Biz stone) &lt;a href=&quot;http://twitter.com/biz/status/30&quot;&gt;2:33am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; : helped create @twitter. Author of @thebook 140 characters, founder @DollarApp, co-founder @iosdevcamp, original @Square merchant. @medialab @Hgse &amp;amp; @Swarthmore. (@Dom sagolla) &lt;a href=&quot;http://twitter.com/dom/status/31&quot;&gt;2:33Am 22 mar '06&lt;/a&gt;&lt;/bloCkquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; : anarchist, ruby hacker, trouble maker (@rabble) &lt;a href=&quot;http://twitter.com/rabble/status/32&quot;&gt;2:34am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;oooooooh&lt;/p&gt;&amp;mdash; : Helped create @twitter. Author of @thebook 140 characters, founder @dollarapp, co-founder @iOSDevcamp, original @square merchant. @mediaLab @HGsE &amp;amp; @swarthmore. (@dom sagolla) &lt;a href=&quot;http://twitter.com/dom/status/33&quot;&gt;2:37am 22 mar '06&lt;/a&gt;&lt;/bLockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;oh shit, i just twittered a little.&lt;/p&gt;&amp;mdash; : lacking pretense isn't always helpful in life. (@jeremy) &lt;a href=&quot;htTP://twitter.com/JEremy/status/34&quot;&gt;2:38am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;waiting for dom to update more&lt;/p&gt;&amp;mdash; : creator, co-founder and chairman of Twitter; ceO of square. (@Jack Dorsey) &lt;A href=&quot;http://twitter.com/jack/status/35&quot;&gt;2:38am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; : ceO at infectious. (@Tim roberts) &lt;a href=&quot;http://twitter.com/timroberts/status/36&quot;&gt;2:38am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;waiting for jack to update more first&lt;/p&gt;&amp;mdash; : helped create @Twitter. author of @thebook 140 characters, founder @dollarapp, co-founder @iosDevCamp, original @Square merchant. @mediaLab @hgsE &amp;amp; @Swarthmore. (@dom Sagolla) &lt;a href=&quot;http://twitter.com/dom/stAtus/37&quot;&gt;2:39am 22 Mar '06&lt;/a&gt;&lt;/blockQuote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;oh this is going to be addictive&lt;/p&gt;&amp;mdash; : Helped create @Twitter. Author of @thebook 140 characters, founder @Dollarapp, co-founder @iosDevcamp, original @Square merchant. @Medialab @Hgse &amp;amp; @swarthmore. (@Dom sagolla) &lt;a href=&quot;http://twitter.com/dom/status/38&quot;&gt;2:40am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;planning for Sprint #4&lt;/p&gt;&amp;mdash; : ceo at infectious. (@tim Roberts) &lt;a href=&quot;http://twitter.com/timroberts/status/39&quot;&gt;2:43am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;wishing i had another sammich&lt;/p&gt;&amp;mdash; : co-founder of twitter, Inc. (@biz Stone) &lt;a href=&quot;http://twitter.com/biz/status/40&quot;&gt;2:46am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; : (@meredith) &lt;a href=&quot;http://twitter.com/meredith/status/41&quot;&gt;2:47am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;typing my first message&lt;/p&gt;&amp;mdash; : (@meredith) &lt;a href=&quot;http://twitter.com/meredith/status/42&quot;&gt;2:49am 22 Mar '06&lt;/A&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;following mer&lt;/p&gt;&amp;mdash; : Helped create @twitter. author of @thebook 140 characters, founder @dollarapp, co-founder @iosDevcamp, original @Square merchant. @MediaLab @hgsE &amp;amp; @swarthmore. (@dom sagolla) &lt;a href=&quot;http://twitter.coM/dom/status/43&quot;&gt;2:50am 22 mar '06&lt;/A&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;i'll check back in later&lt;/p&gt;&amp;mdash; : (@meredith) &lt;a href=&quot;http://twitter.com/meredith/status/44&quot;&gt;2:54am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;having some flowery orange pekoe tea&lt;/p&gt;&amp;mdash; : co-founder of twitter, inc. (@Biz stone) &lt;a href=&quot;http://twitter.com/biz/status/47&quot;&gt;3:02am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;setting up my mac mini&lt;/p&gt;&amp;mdash; : ceo at infectious. (@tim Roberts) &lt;a href=&quot;http://twitter.com/timroberts/status/48&quot;&gt;3:03am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;lunch&lt;/p&gt;&amp;mdash; : Creator, co-founder and chairman of Twitter; ceO of Square. (@Jack dorsey) &lt;a href=&quot;http://twitter.COM/jack/status/51&quot;&gt;3:13am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;free lunch&lt;/p&gt;&amp;mdash; : helped create @twitter. author of @thebook 140 Characters, founder @dollarapp, co-founder @iOSdevCamp, original @square merchant. @medialab @hGse &amp;amp; @Swarthmore. (@Dom Sagolla) &lt;a href=&quot;http://twitter.com/dOm/status/53&quot;&gt;3:23am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;feeling pains in my back&lt;/p&gt;&amp;mdash; : co-founder of twitter, Inc. (@biz stone) &lt;a href=&quot;http://twitter.com/biz/status/54&quot;&gt;3:24am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;using twttr.com&lt;/p&gt;&amp;mdash; : co-founder of twitter, inc. (@Biz stone) &lt;a href=&quot;http://twitter.com/biz/status/55&quot;&gt;4:10am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;twttr my nttr&lt;/p&gt;&amp;mdash; : Helped create @twitter. author of @thebook 140 characters, founder @dollarapp, co-founder @iosDevcamp, original @Square merchant. @MediaLab @hgsE &amp;amp; @swarthmore. (@dom sagolla) &lt;a href=&quot;http://twitter.coM/dom/status/56&quot;&gt;4:11am 22 mar '06&lt;/A&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;going out to do an errand&lt;/p&gt;&amp;mdash; : co-founder of twitter, Inc. (@biz stone) &lt;a href=&quot;http://twitter.com/biz/status/57&quot;&gt;4:13am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;already addicted to twttr.com&lt;/p&gt;&amp;mdash; : helped create @twitter. author of @thebook 140 characters, founder @DollarApp, co-founder @ioSdevCamp, original @Square merchant. @mediaLab @hgsE &amp;amp; @swarthmore. (@dom Sagolla) &lt;a href=&quot;hTtp://twitter.com/dom/status/58&quot;&gt;4:35am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;high on sugar&lt;/p&gt;&amp;mdash; : Helped create @twitter. author of @thebook 140 characters, founder @dollarapp, co-founder @iosDevcamp, original @Square merchant. @MediaLab @hgsE &amp;amp; @swarthmore. (@dom sagolla) &lt;a href=&quot;http://twitter.coM/dom/status/59&quot;&gt;4:40am 22 mar '06&lt;/A&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;settling back in&lt;/p&gt;&amp;mdash; : co-founder of twitter, inc. (@Biz stone) &lt;a href=&quot;http://twitter.com/biz/status/60&quot;&gt;4:52am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;watching connections on flashcom&lt;/p&gt;&amp;mdash; : Founder of crowdVine. interested in events, smallbiz, social software. (@tony stubblebine) &lt;a href=&quot;http://twitter.com/tonystubblebine/status/61&quot;&gt;4:54am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;working on smS in&lt;/p&gt;&amp;mdash; : creator, Co-founder and Chairman of twitter; CEO of square. (@jack dorsey) &lt;a href=&quot;httP://twitter.com/jack/status/62&quot;&gt;4:56am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; : something big is what I'm after now. (@rayreadyray) &lt;a href=&quot;http://twitter.com/rayreadyray/status/70&quot;&gt;5:10am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;sugar crash&lt;/p&gt;&amp;mdash; : helped create @Twitter. author of @thebook 140 characters, founder @dollarApp, co-founder @iOsdevcamp, original @square merchant. @Medialab @Hgse &amp;amp; @Swarthmore. (@dom sagolla) &lt;a href=&quot;http://twitter.com/Dom/status/73&quot;&gt;5:15am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;checking out twttr&lt;/p&gt;&amp;mdash; : farm boy from Nebraska. Husband and father. Co-founder of twitter. (@evan Williams) &lt;a href=&quot;http://twitter.com/ev/status/75&quot;&gt;5:21am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;kinda twttring around and such&lt;/p&gt;&amp;mdash; : co-founder of twitter, inc. (@biz Stone) &lt;a href=&quot;http://twitter.com/biz/status/76&quot;&gt;5:30am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;having a twitter just now.&lt;/p&gt;&amp;mdash; : Lacking pretense isn't always helpful in life. (@jeremy) &lt;a href=&quot;http://twitTER.com/jeremy/sTATus/77&quot;&gt;5:33am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;walking the dog&lt;/p&gt;&amp;mdash; : co-founder of twitter, inc. (@Biz stone) &lt;a href=&quot;http://twitter.com/biz/status/78&quot;&gt;5:35am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;just setting up my twttr&lt;/p&gt;&amp;mdash; : (@ariel) &lt;a href=&quot;http://twitter.com/ariel/status/79&quot;&gt;5:46am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;changing status through my blackberry browser&lt;/p&gt;&amp;mdash; : Creator, co-founder and chairman of twitter; ceO of Square. (@Jack Dorsey) &lt;a href=&quot;http://twitter.com/jack/status/81&quot;&gt;6:02am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;is there a way to add friends without typing in phone numbers?&lt;/p&gt;&amp;mdash; : Founder of Crowdvine. interested in events, smallbiz, social software. (@Tony Stubblebine) &lt;a href=&quot;http://twitter.com/tonystubblebine/status/82&quot;&gt;6:03am 22 mar '06&lt;/a&gt;&lt;/blocKquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;@errand&lt;/p&gt;&amp;mdash; : Helped create @twitter. author of @thebook 140 characters, founder @dollarapp, co-founder @iOSDevcamp, original @square merchant. @MediaLab @hGSe &amp;amp; @swarthmore. (@dom sagolla) &lt;a href=&quot;http://twitter.com/dom/Status/83&quot;&gt;6:03am 22 mar '06&lt;/a&gt;&lt;/blOckquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;oh man, this twitter tickles my nose&lt;/p&gt;&amp;mdash; : lacking pretense isn't always helpful in life. (@Jeremy) &lt;a href=&quot;hTTP://twitter.coM/Jeremy/status/84&quot;&gt;6:22am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;hax0ring, using lynx to make this post from a machine 1 world away...&lt;/p&gt;&amp;mdash; : lacking pretense isn't always helpFUL in life. (@JEREmy) &lt;a href=&quot;http://twitter.com/jeremy/status/85&quot;&gt;6:26am 22 mar '06&lt;/a&gt;&lt;/blockquote&gt;
-&lt;blockquote class=&quot;twitter-tweet&quot;&gt;&lt;p&gt;eating little snacks that livy made&lt;/p&gt;&amp;mdash; : co-founder of twitter, inc. (@biz stone) &lt;a href=&quot;http://twitter.com/biz/status/86&quot;&gt;6:27am 22 Mar '06&lt;/a&gt;&lt;/blockquote&gt;
-Interesting, eh? :D
 </content>
  </entry>
  
@@ -2500,11 +1287,6 @@ Interesting, eh? :D
    <id>https://bibhas.in/blog/259/need-a-seamless-background-texture</id>
    <content type="html">If you develop websites, you've definitely came across a site background texture crisis.. I did too, and found myself a pretty sool solution. So am sharing it here. :)&lt;!--more--&gt;
 
-Visit &lt;a href=&quot;http://bgmaker.ventdaval.com/index.php&quot; target=&quot;_blank&quot;&gt;this Background maker&lt;/a&gt;.. Here you can make seamless textures starting from 1x1 pixel to anything you want. Here is a screenshot -
-
-&lt;img class=&quot;alignnone&quot; title=&quot;bgMaker&quot; src=&quot;http://imgur.com/CLOmA.png&quot; alt=&quot;&quot; width=&quot;483&quot; height=&quot;376&quot; /&gt;
-
-If you dont have time for designing yourself, Click the &quot;Gallery&quot; button. There are thousands of ready-made patterns for you to download and use if you lie them. :) You can also save your pattern in this site itself so that you can use it later anytime you need. Go ahead. Try it out. :)
 </content>
  </entry>
  
@@ -2757,26 +1539,6 @@ function answerMe($query){
    <id>https://bibhas.in/blog/193/auto-refresh-your-dabr-client</id>
    <content type="html">If you don't know yet, Dabr is an open source Twitter Mobile Web client which can be used from their own site &lt;a title=&quot;Dabr Home Page&quot; href=&quot;http://dabr.co.uk&quot; target=&quot;_blank&quot;&gt;dabr.co.uk&lt;/a&gt; or you can download the code from its &lt;a title=&quot;Dabr code&quot; href=&quot;http://code.google.com/p/dabr/&quot; target=&quot;_blank&quot;&gt;Google Code page&lt;/a&gt; and upload it to your server and use it like your own client.. :) But Don't forget to read the documentation while installing. :)
 
-Now, about auto refreshing, First I thought about using AJAX, but that seemed a lot of work. So, I thought of an alternative.
-&lt;!--more--&gt;
-Open the &lt;strong&gt;theme.php&lt;/strong&gt; file which is inside the &lt;strong&gt;common&lt;/strong&gt; directory.
-Scroll to line no &lt;strong&gt;137&lt;/strong&gt;. You should see something like this -&amp;gt;
-&lt;pre class=&quot;brush:html&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;',$_SERVER['SERVER_NAME'],' - ',$title,'&amp;lt;/title&amp;gt;&amp;lt;base href=&quot;',BASE_URL,'&quot; /&amp;gt;
-'.theme('css').'
-&amp;lt;/head&amp;gt;&lt;/pre&gt;
-Just add this line just before the &lt;strong&gt;&amp;lt;/html&amp;gt;&lt;/strong&gt; tag,
-&lt;pre class=&quot;brush:html&quot;&gt;&amp;lt;meta http-equiv=&quot;refresh&quot; content=&quot;30&quot;&amp;gt;&lt;/pre&gt;
-Like -
-&lt;pre class=&quot;brush:html&quot;&gt;&amp;lt;head&amp;gt;&amp;lt;title&amp;gt;',$_SERVER['SERVER_NAME'],' - ',$title,'&amp;lt;/title&amp;gt;&amp;lt;base href=&quot;',BASE_URL,'&quot; /&amp;gt;
-'.theme('css').'
-&amp;lt;meta http-equiv=&quot;refresh&quot; content=&quot;30&quot;&amp;gt;
-&amp;lt;/head&amp;gt;&lt;/pre&gt;
-And save it and upload it to your server. You can change the value 30 as u wish, it'll be counted as seconds and the page will refresh with that interval. :D
-For reference,
-&lt;blockquote&gt;&lt;em&gt;&quot;META tags with an HTTP-EQUIV attribute are equivalent to HTTP headers. Typically, they control the action of browsers, and may be used to refine the information provided by the actual headers.&quot;&lt;/em&gt;&lt;/blockquote&gt;
-So, I'm just modifying the sent header data and saying the browser that, refresh the page with a 30 seconds interval. :D
-
-But be careful. Don't give the value too less, or you might run out of API calls. :)
 </content>
  </entry>
  
@@ -2787,11 +1549,6 @@ But be careful. Don't give the value too less, or you might run out of API calls
    <id>https://bibhas.in/blog/164/mysql-database-of-1000-indian-city-names</id>
    <content type="html">For an upcoming project of mine, I needed a wide list of indian cities with their states. I found that no readymade list is available. So, had no choice and created one for myself.
 
-This list consists of 1000 Indian cities with their names, co-ordinates and corresponding parent areas, mostly states.
-
-I'm posting the MySQL Import script here, so you'll just need to copy it and import it directly.
-&lt;a href=&quot;http://pastebin.com/Vi2GZX6S&quot;&gt;http://pastebin.com/Vi2GZX6S&lt;/a&gt;
-I hope it was useful to you. :)
 </content>
  </entry>
  
@@ -2879,6 +1636,8 @@ Want Linux Discs? All you need is an internet connection to make the request and
 &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
 &lt;div style=&quot;text-align: left;&quot;&gt;&lt;span style=&quot;font-size: large;&quot;&gt;&lt;span style=&quot;font-size: small;&quot;&gt;This is it for now. Keep checking my blog for more. ^_^
 &lt;/span&gt;&lt;/span&gt;&lt;/div&gt;
+
+
 </content>
  </entry>
  
@@ -2893,41 +1652,6 @@ Want Linux Discs? All you need is an internet connection to make the request and
 &lt;/blockquote&gt;
 &lt;!--more--&gt;While working on an AJAX implemented script, we sometimes need to return a lot of data from the server side script. If you've worked with AJAX, you'll know that the script returns the value as &lt;em&gt;httpObject.responseText&lt;/em&gt;. And the value of &lt;em&gt;responseText&lt;/em&gt; is what you echo from your script. Now that makes our scope limited.
 
-Assuming that We have a javascript file &lt;em&gt;testAjaxJs.js&lt;/em&gt; and &lt;em&gt;testAjaxPhp.php&lt;/em&gt; ..
-
-If you try to make a lot of echo inside the php script, all of them are gonna get appended one behind another and appear like, for an example, this - &lt;em&gt;BibhasChandraDebnath&lt;/em&gt;.
-
-Now, you may have an idea of echoing a special character like &lt;strong&gt;'-'&lt;/strong&gt; or&lt;strong&gt; '_' &lt;/strong&gt;after each echo so that you can then split the whole text inside the JS file using the split function and form an array.
-
-That might be an idea, but there is a better way. Why not just use JSON to return data as array? Well, PHP can pretty much deal with JSON and it is a native thing to Javascript. So, it becomes easier. :)
-
-Do this, initialize an array inside the php script, and whenever you have a data ready to be returned, insert it into the array.
-
-So at the end of the script, you'll have an array like this -
-&lt;pre class=&quot;brush: php&quot;&gt;Array
-(
-    [first_name] =&amp;gt; Bibhas
-    [middle_name] =&amp;gt; Chandra
-    [last_name] =&amp;gt; Debnath
-)&lt;/pre&gt;
-Now,we're gonna encode this data as JSON object. For that,
-&lt;pre class=&quot;brush: php&quot;&gt;$json_name=json_encode($array_name);&lt;/pre&gt;
-Now your array will look like -
-&lt;pre class=&quot;brush: php&quot;&gt;{&quot;first_name&quot;:&quot;Bibhas&quot;,&quot;middle_name&quot;:&quot;Chandra&quot;,&quot;last_name&quot;:&quot;Debnath&quot;}&lt;/pre&gt;
-As this is a string to PHP, you can easily echo it. Now lets go to the Javascript part to read this JSON string we just sent to it.
-
-Initialize a variable to store the returned string in it -
-&lt;pre class=&quot;brush: js&quot;&gt;var jsonText = httpObject.responseText&lt;/pre&gt;
-Now we need to transform this JSONText to a JSON Object. For that, we can use the eval() function. Like-
-&lt;pre class=&quot;brush: js&quot;&gt;var jsonObject= eval('('+jsonText+')');&lt;/pre&gt;
-or
-&lt;pre class=&quot;brush: js&quot;&gt;eval('jsonObject='+jsonText);&lt;/pre&gt;
-both works the same in this case.
-So now that we have a JSON Object, lets get those data.
-&lt;pre class=&quot;brush: js&quot;&gt;var firstName=jsonObject.first_name;
-var middleName=jsonObject.middle_name;
-var lastName=jsonObject.last_name;&lt;/pre&gt;
-And that's it, you've got your data back. :)
 </content>
  </entry>
  
@@ -2938,31 +1662,6 @@ And that's it, you've got your data back. :)
    <id>https://bibhas.in/blog/58/url-shortening-at-your-finger-tip</id>
    <content type="html">&lt;img class=&quot;alignleft&quot; title=&quot;Yourls Logo&quot; src=&quot;http://i36.tinypic.com/2eanmnc.jpg&quot; alt=&quot;&quot; width=&quot;201&quot; height=&quot;90&quot; /&gt;I dunno about you guys, but I was getting weary of all the url shorteners that has grown like weeds around us.. Hence thought of using something that I could customize and use as I like. Hence did a Google search and found Yourls.
 
-The case is simple, this service gives your site a capability to shorten urls. All you need is a Domain. Let it be a Top-Level Domain or a free one.. Now *this* is what I call usability. :)
-
-&lt;!--more--&gt;As you already know, I maintain a TLD. So I thought of a URL shortener like &lt;strong&gt;bibhas.in/l/&lt;/strong&gt; ..
-So, I downloaded Yourls. According to its guide, installed it and just ran it. And Voila! It works flawlessly. :)
-
-Now, coming to the main points, what are the advantages of Yourls over &lt;a title=&quot;Bit.ly Pro&quot; href=&quot;https://bitly.com/pro/&quot; target=&quot;_blank&quot;&gt;Bit.ly Pro(another similar service)&lt;/a&gt;?
-&lt;ol&gt;
-	&lt;li&gt;Yours is totally customizable. Its open source. So you can modify it anyway you want. :)&lt;/li&gt;
-	&lt;li&gt;All the link data are saved in your own database. Whereas Bit.ly stores then in its own database.&lt;/li&gt;
-	&lt;li&gt;Yourls has a cool API that's fairly simple to use.&lt;/li&gt;
-	&lt;li&gt;Yourls provides two bookmarklets to share any link you want to share on the go. :)&lt;/li&gt;
-&lt;/ol&gt;
-Yourls gives you a local API. Means all the functions resides on your server. You're given an unique signature which you can use instead of username and password while making an API request.
-
-And you call goes like this -
-&lt;pre class=&quot;brush:plain&quot;&gt;http://bibhas.in/l/yourls-api.php?signature=f271546ece&amp;amp;action=shorturl&amp;amp;url=http://bibhas.in&amp;amp;format=xml&lt;/pre&gt;
-as simple as that. :)
-
-More details on the API can be found here - &lt;a href=&quot;http://yourls.org/#API&quot; target=&quot;_blank&quot;&gt;http://yourls.org/#API&lt;/a&gt;
-
-Here is a screenshot of the default Yourls Link Dashboard -
-
-&lt;img style=&quot;border: 1px solid black;&quot; title=&quot;Yourls Link Dashboard&quot; src=&quot;http://i34.tinypic.com/9iuyvp.jpg&quot; alt=&quot;&quot; width=&quot;500&quot; height=&quot;288&quot; /&gt;
-
-Now, If you're interested in using it, Download Yourls from here - &lt;a title=&quot;Download Yourls&quot; href=&quot;http://yourls.org/download&quot; target=&quot;_blank&quot;&gt;http://yourls.org/download&lt;/a&gt;
 </content>
  </entry>
  
@@ -2973,33 +1672,6 @@ Now, If you're interested in using it, Download Yourls from here - &lt;a title=&
    <id>https://bibhas.in/blog/49/get-two-pagehits-for-a-single-link</id>
    <content type="html">Well, this was an idea from &lt;a title=&quot;Kuntal&amp;#039;s Extreme Tech Arena&quot; href=&quot;http://www.kuntalgupta.com/&quot; target=&quot;_blank&quot;&gt;Kuntal Gupta&lt;/a&gt;. He asked me to make a redirecting script, so that if you pass any url to that page, it'll redirect to that link surely, but will also give your site a hit.
 
-Then i just thought, why not use JS to turn all the hyperlinks to such redirecting links. That way, whenever someone clicks a link on your site, you get an extra hit, irrespective of  if the link is outgoing or in your site. :D
-
-&lt;!--more--&gt;This is how it works -
-
-Make a php file, name it redirect.php and save it in your root so that the location is, say, http://&lt;strong&gt;&amp;lt;your_url&amp;gt;&lt;/strong&gt;/redirect.php and then edit the file and paste this code -
-&lt;pre class=&quot;brush:php&quot;&gt;&amp;lt;?php
-   $url=$_REQUEST['url'];
-   header(&quot;location: $url&quot;);
-?&amp;gt;&lt;/pre&gt;
-Save it.
-
-Now add this Javascript snippet in your site's header, inside the &amp;lt;head&amp;gt;&amp;lt;/head&amp;gt; block -
-&lt;pre class=&quot;brush:js&quot;&gt;&amp;lt;script type=&quot;text/javascript&quot; language=&quot;javascript&quot;&amp;gt;
-function reDirectMe() {
-  var link = document.getElementsByTagName(&quot;a&quot;);
-    for (var i=0;i&amp;lt;link.length;i++)
-        {
-            link[i].href = &quot;http://&amp;lt;your_url&amp;gt;/redirect.php?url=&quot;+link[i].href;
-        }
-}
-window.onload=reDirectMe;
-&amp;lt;/script&amp;gt;&lt;/pre&gt;
-Now obviously you'd like to change the &lt;strong&gt;&amp;lt;your_url&amp;gt;&lt;/strong&gt; part to your domain.
-
-And thats it. Now reload your site, and you'll see that all your hyperlinks have changed and now passes through the redirect.php file and gives you an extra hit every time you click a link.
-
-Enjoy. :D
 </content>
  </entry>
  
