@@ -45,6 +45,7 @@ blockquote {
 }
 
 #console{
+    font-family: 'Inconsolata', sans-serif;
     height: 500px;
     width: 97%;
     border: 1px solid #aaa;
@@ -54,11 +55,21 @@ blockquote {
     overflow-x: hidden;
 }
 
+#console strong {
+    font-family: 'Inconsolata', sans-serif;
+}
+
 .cnsl-ln{
+    font-family: 'Inconsolata', sans-serif;
     font-size: 25px;
 }
 
+#cursor {
+    font-size: 20px;
+}
+
 #input{
+    font-family: 'Inconsolata', sans-serif;
     margin: 5px 0 0 0;
     width: 98%;
 }

@@ -1,7 +1,12 @@
 @charset UTF-8;
 
 * {
-font-family:Inconsolata, sans-serif;
+font-family: "Lato", sans-serif;
+}
+
+pre {
+font-family: Inconsalata;
+font-size: 13px;
 }
 
 body {
