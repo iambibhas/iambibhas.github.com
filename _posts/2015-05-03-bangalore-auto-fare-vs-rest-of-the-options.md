@@ -37,6 +37,8 @@ The other major player is Uber. Now it's not really possible to calculate Uber c
 
 <iframe src="https://docs.google.com/spreadsheets/d/1JpbOtb5O4Sn0Z618z6p3FOW658xPA02rLLnfXos9lOc/pubchart?oid=614517384&format=interactive" style="width: 610px; height: 380px; border: 0px"></iframe>
 
+*Update: I didn't add UberGO at first becaue [it's missing on their website](https://www.uber.com/cities/bangalore) itself. And as I don't use Uber, my only source of data was their website. Anyway, I added the UberGO data. And it seems they are cheaper than auto above 6km. Which is good, but not sure about their availability.*
+
 So UberX is cheaper than Auto if you're travelling more than 16km. And the name says "Fixed" as the numbers for first 3-4km are not the actual numbers as Uber has a minimum fare.
 
 That was fun. Now let's put all of them together -
