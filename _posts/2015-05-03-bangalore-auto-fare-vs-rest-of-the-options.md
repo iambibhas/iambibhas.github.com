@@ -45,6 +45,8 @@ That was fun. Now let's put all of them together -
 
 Ola Prime tops all of them and TaxiForSure Nano is at the bottom.
 
+*Update:* I know that autos ask for extra a lot of the times. And there is a bit of haggling involved to get by meter. But look at the charts above, and tell me, would you blame them for asking for a little extra when they are providing the same service as those charging almost twice or thrice? And if you think you're saving the trouble of haggling by opting for a cab, is the extra money you're paying, worth the trouble you just saved? In my experience, if you let go couple of autos, you'll get one that will go by meter. I can live with that if that saves my hard earned money.
+
 Here is [the ODS file](/uploads/ride-comparison-bangalore.ods) with all the numbers and formulas.
 
 Here is [the google spreadsheet](https://docs.google.com/spreadsheets/d/1JpbOtb5O4Sn0Z618z6p3FOW658xPA02rLLnfXos9lOc/edit?usp=sharing) of the same data, used to generate these charts.
