@@ -19,7 +19,7 @@ I've read Ola cabs publicize by saying that they are cheaper than Autos nowadays
 
 Auto fare: Rs25 for first 1.9km, Rs13/km after that. Ola Bangalore fares are [on their website](https://www.olacabs.com/fares/bangalore).
 
-So, turns out Ola Mini is cheaper *only* if you travel more than 13km. And please remember, this is excluding the Rs50 surge pricing you see most of the times nowadays. If I include that Rs50, then you'd have to travel 30km before Ola mini becomes cheaper than Auto. So this whole ola-is-cheaper-than-auto thing has no leg given that you'd usually want to travel 6-10km.
+~~So, turns out Ola Mini is cheaper *only* if you travel more than 13km.~~ I'm sorry I didn't notice but by the time I wrote this post, Olacabs has increased their fare and introduced time based charges like Uber. So I put in those numbers and above is the graph you see. I could not find a minimum distance that you'd want to travel in an auto for which Ola Mini is cheaper now. And also, please remember, this is excluding the Rs50 surge pricing you see most of the times nowadays. ~~If I include that Rs50, then you'd have to travel 30km before Ola mini becomes cheaper than Auto. So this whole ola-is-cheaper-than-auto thing has no leg given that you'd usually want to travel 6-10km.~~
 
 Then I thought of comparing the other cab services available with the auto fare, just because.
 
