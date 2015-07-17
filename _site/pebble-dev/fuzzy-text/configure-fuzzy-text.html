@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Configure Fuzzy Text</title>
+	<meta name="description" content="configuration page for Fuzzy Text International, a Pebble watchface">
+	<meta name="author" content="Jesse Hallett <jesse@sitr.us>">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+	<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+</head>
+<body>
+
+	<!-- Primary Page Layout
+	================================================== -->
+
+	<div class="container">
+		<header>
+			<h1>Configure Fuzzy Text Int'l</h1>
+		</header>
+
+		<div id="update-available" class="hidden bg-danger" style="padding:0.75em">
+			<p>There is a new version of Fuzzy Text International
+			available - some settings will not work until you update to
+			the new version. <a href="CHANGES.html">See
+			details</a></p>
+		</div>
+
+		<div id="up-to-date" class="hidden bg-info" style="padding:0.75em">
+			<p>Your version of Fuzzy Text International is up-to-date.
+			<a href="CHANGES.html">See changes</a></p>
+		</div>
+
+		<form id="config" role="form" class="input-lg">
+
+			<fieldset>
+				<legend>Colors:</legend>
+				<div class="checkbox">
+					<label>
+						<input type="checkbox" name="invert" value="on" />
+						invert colors
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Text align:</legend>
+				<div class="radio-inline">
+					<label>
+						<input type="radio" name="align" value="left" />
+						left
+					</label>
+				</div>
+				<div class="radio-inline">
+					<label>
+						<input type="radio" name="align" value="center" checked />
+						center
+					</label>
+				</div>
+				<div class="radio-inline">
+					<label>
+						<input type="radio" name="align" value="right" />
+						right
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<legend>Language:</legend>
+				<div class="radio">
+					<label>
+						<input type="radio" name="lang" value="ca" />
+						Català
+					</label>
+				</div>
+
+				<div class="radio">
+					<label>
+						<input type="radio" name="lang" value="de" />
+						Deutsch
+					</label>
+				</div>
+
+				<div class="radio">
+					<label>
+						<input type="radio" name="lang" value="en_GB" />
+						English (Great Britain)
+					</label>
+				</div>
+
+				<div class="radio">
+					<label>
+						<input type="radio" name="lang" value="en_US" checked />
+						English (United States)
+					</label>
+				</div>
+
+				<div class="radio">
+					<label>
+						<input type="radio" name="lang" value="bn" />
+						Bengali
+					</label>
+				</div>
+
+				<div class="radio">
+					<label>
+						<input type="radio" name="lang" value="fr" />
+						Français
+					</label>
+				</div>
+
+				<div class="radio">
+					<label>
+						<input type="radio" name="lang" value="no" />
+						Norsk
+					</label>
+				</div>
+
+				<div class="radio">
+					<label>
+						<input type="radio" name="lang" value="sv" />
+						Svenska
+					</label>
+				</div>
+			</fieldset>
+
+			<fieldset>
+				<a href="pebblejs://close" class="btn btn-lg btn-default" role="button">Cancel</a>
+				<button type="button" class="btn btn-lg btn-primary" id="b-submit">Save</button>
+			</fieldset>
+		</form>
+
+	</div><!-- container -->
+
+<!-- End Document
+================================================== -->
+
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script>
+		var LATEST = "1.2.1";
+
+		function saveOptions() {
+			var params = {};
+			$('#config').serializeArray().forEach(function(pair) {
+				params[pair.name] = pair.value;
+			});
+
+			var options = {
+				invert:		params.invert === 'on',
+				text_align:	params.align || 'center',
+				lang:		params.lang
+			}
+			return options;
+		}
+
+		function applyOptions() {
+			var $form	= $('#config');
+			var opts	= JSON.parse(getParam('options'));
+			if (opts && opts.invert) {
+				$form.find('[name="invert"]').prop('checked', true);
+			}
+			if (opts && opts.text_align) {
+				$form.find('[name="align"]').filter(function(i, btn) {
+					return btn.value === opts.text_align;
+				}).prop('checked', true);
+			}
+			if (opts && opts.lang) {
+				$form.find('[name="lang"]').filter(function(i, btn) {
+					return btn.value === opts.lang;
+				}).prop('checked', true);
+			}
+		}
+
+		function getParam(key) {
+			var params = window.location.hash;
+			var val;
+			params.replace(/(?:^|[#&])([a-z]+)=([^&]+)/ig, function(_, k, v) {
+				if (key === k) {
+					val = decodeURIComponent(v);
+				}
+			});
+			return val;
+		}
+
+		function parseVersion(verStr) {
+			var parts = verStr.split('.');
+			return parts.reduce(function(sum, part) {
+				return (sum * 1000) + parseInt(part, 10);
+			}, 0);
+		}
+
+		$("#b-submit").click(function() {
+			var location = "pebblejs://close#" + encodeURIComponent(JSON.stringify(saveOptions()));
+			document.location = location;
+		});
+
+		var version = getParam('v');
+		if (!version || (parseVersion(version) < parseVersion(LATEST))) {
+			$('#update-available').removeClass('hidden');
+		}
+		else {
+			$('#up-to-date').removeClass('hidden');
+		}
+
+		applyOptions();
+   </script>
+
+</body>
+</html>

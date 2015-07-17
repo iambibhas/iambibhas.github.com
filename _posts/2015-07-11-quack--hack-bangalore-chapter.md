@@ -13,7 +13,7 @@ Data is beautiful. The more you have, the more patterns you can find in them. It
 
 For such reasons DuckDuckGo has been my primary search engine for years. And over time, I've come to know more about how much customizable DDG is. DDG has something called Instant Answers that tries to provide you what you're looking for without any extra clicks. Like the currency changing IA -
 
-![Currency Convert Instant Answers](uploads/Selection_065.jpg)
+![Currency Convert Instant Answers](/uploads/Selection_065.jpg)
 
 And the fun part is that, this IA part of DDG is open source. And there is a whole community around it. I started contributing to the IA repositories few months back and started to meet people virtually. I found some more people around me who were contributing to DDG. Well, a meetup was inevitable.
 
