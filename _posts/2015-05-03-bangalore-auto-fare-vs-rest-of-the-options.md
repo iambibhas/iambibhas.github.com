@@ -45,7 +45,7 @@ I think TaxiForSure Nano is the only option that's *always* cheaper than Autos. 
 
 The other major player is Uber. Now it's not really possible to calculate Uber cost as they take [both Time and Distance into consideration](https://www.uber.com/cities/bangalore). But I still made some effort. According to the [Bangalore Mobility Indicator published in 2011](http://www.urbantransport.kar.gov.in/Bangalore%20Mobility%20Indicators_%2822-12-2011%29.pdf), the average vehicle speed in Bangalore was 15-25km per hour. That's 15km if you're really unlucky and 25km if you're really lucky. So I took the average of that and assumed al the Uber vehicles travel 20km per hour. It might be 25 if you're lucky, 15 if you're not. So at 20km/hour, that's 1km per 3 minutes.
 
-**Update**: As of August 25, 2015, Uber has updated their pricing and almost doubled the per km price after first 15km.
+**Update**: As of August 25, 2015, Uber has [updated their pricing](https://newsroom.uber.com/bangalore/2015/08/vardistfares/) and almost doubled the per km price after first 15km.
 
 I put those numbers in and I got this -
 
