@@ -13,6 +13,8 @@ Anyway, back to travelling in Bangalore. I try to ride the buses wherever it's p
 
 For some such reasons, I end up taking an auto or a cab if I'm really tired or have heavy luggage with me or dont have much time to spare. And that hurts the wallet. Auto is kind of the cheapest mode of transport (excluding the bus) and it costs Rs13/km. And most of the places I want to go is about 6-10km away.
 
+# Olacabs
+
 I've read Ola cabs publicize by saying that they are cheaper than Autos nowadays. Even some friends mentioned that to me. Mostly because the Ola Mini costs Rs10/km after 4km. But Ola cabs also costs you Rs80 for that 4km. So I thought of drawing a graph of Auto fare and the ola cabs to see how cheap they are compared to the Autos. This is what I got -
 
 <iframe src="https://docs.google.com/spreadsheets/d/1JpbOtb5O4Sn0Z618z6p3FOW658xPA02rLLnfXos9lOc/pubchart?oid=41073765&amp;format=interactive" style="width: 610px; height: 380px; border: 0px"></iframe>
@@ -23,15 +25,23 @@ Auto fare: Rs25 for first 1.9km, Rs13/km after that. Ola Bangalore fares are [on
 
 Then I thought of comparing the other cab services available with the auto fare, just because.
 
+# Meru cabs
+
 Here is [Meru Cabs](http://www.merucabs.com/fares/) -
 
 <iframe src="https://docs.google.com/spreadsheets/d/1JpbOtb5O4Sn0Z618z6p3FOW658xPA02rLLnfXos9lOc/pubchart?oid=325266559&format=interactive" style="width: 610px; height: 380px; border: 0px"></iframe>
+
+# TaxiForSure
+
+(This one needs updating. TFS got eaten by Olacabs.)
 
 And [TaxiForSure](http://www.taxiforsure.com/bangalore-cabs/) -
 
 <iframe src="https://docs.google.com/spreadsheets/d/1JpbOtb5O4Sn0Z618z6p3FOW658xPA02rLLnfXos9lOc/pubchart?oid=1974263952&format=interactive" style="width: 610px; height: 380px; border: 0px"></iframe>
 
 I think TaxiForSure Nano is the only option that's *always* cheaper than Autos. And I think that's also the reason why I *never* found one to book.
+
+# Uber
 
 The other major player is Uber. Now it's not really possible to calculate Uber cost as they take [both Time and Distance into consideration](https://www.uber.com/cities/bangalore). But I still made some effort. According to the [Bangalore Mobility Indicator published in 2011](http://www.urbantransport.kar.gov.in/Bangalore%20Mobility%20Indicators_%2822-12-2011%29.pdf), the average vehicle speed in Bangalore was 15-25km per hour. That's 15km if you're really unlucky and 25km if you're really lucky. So I took the average of that and assumed al the Uber vehicles travel 20km per hour. It might be 25 if you're lucky, 15 if you're not. So at 20km/hour, that's 1km per 3 minutes.
 
