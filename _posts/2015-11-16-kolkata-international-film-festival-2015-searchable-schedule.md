@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Kolkata International Film Festival 2015 Searchable Schedule"
+title: "Kolkata International Film Festival(KFF/KIFF) 2015 Searchable Schedule"
 description: ""
 category:
 tags: []
-permalink: /blog/kolkata-international-film-festival-2015-searchable-schedule/
+permalink: /blog/kolkata-international-film-festival-2015-kff-kiff-searchable-schedule/
 ---
 The annual Kolkata International Film Festival started yesterday in Kolkata. And like every year they have a website - [http://kff.in](http://kff.in)
 
