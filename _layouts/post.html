@@ -18,14 +18,9 @@ layout: layout
     <h3>Discussion, links, and tweets</h3>
     <section class="copy">
       <a href="https://twitter.com/share" class="twitter-share-button" data-via="bibhasdn">Tweet</a>
-      <div class="g-plusone" data-size="tall" data-annotation="none"></div>
     </section>
     <section style="padding-right: 20px; margin-top: 10px">
-        {% if site.comments.provider == 'facebook' %}
-            {% include comment_providers/facebook.html %}
-        {% else if site.comments.provider == 'disqus' %}
-            {% include comment_providers/disqus.html %}
-        {% endif %}
+        {% include comment_providers/disqus.html %}
     </section>
   </section>
 </section>

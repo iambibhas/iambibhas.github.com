@@ -44,15 +44,14 @@
 
   <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
   <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
   <script type="text/javascript" src="/js/application.js"></script>
 </head>
 
 <body>
   <section class="sidebar" align="right">
-    <a href="/">
+    <!-- <a href="/">
       <img src="{{ site.gravatar_url }}?s=150" height="75" width="75" class="avatar" />
-    </a>
+    </a> -->
 
     <section class="name">
       <a href="/">
@@ -72,7 +71,7 @@
         <li><a href="{{ site.about_page }}">about</a></li>
         <li><a href="/blog/">blog</a></li>
         <li><a href="/crypt/">Generate Hashes</a></li>
-        <li><a href="/search/all/">Moderated Search</a></li>
+        <!-- <li><a href="/search/all/">Moderated Search</a></li> -->
       </ul>
     </section>
     <section class="sections">
@@ -83,47 +82,13 @@
             <img src="//stackexchange.com/users/flair/94480.png" width="208" height="58" alt="profile for Bibhas on Stack Exchange, a network of free, community-driven Q&amp;A sites" title="profile for Bibhas on Stack Exchange, a network of free, community-driven Q&amp;A sites" />
         </a>
     </section>
-    <section id="gittip">
-
+    <section class="sections">
+      <a href="http://www.savetheinternet.in/" target="_blank"><img src="/images/Save_The-_internet_03_200_250.jpg"></a>
     </section>
   </section>
 
   {{ content }}
 
-{% if page.url == '/' %}
-    <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-3724476-5']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : '//www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-{% else %}
-    <script type="text/javascript">
-
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-3724476-6']);
-      _gaq.push(['_trackPageview']);
-
-      (function() {
-        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : '//www') + '.google-analytics.com/ga.js';
-        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
-
-    </script>
-    <script type="text/javascript">
-        if(SyntaxHighlighter !== undefined){
-            SyntaxHighlighter.all();
-        }
-    </script>
-{% endif %}
 </body>
 
 </html>
