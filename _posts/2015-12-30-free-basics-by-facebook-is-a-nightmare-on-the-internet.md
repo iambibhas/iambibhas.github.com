@@ -14,7 +14,7 @@ Because you're here, I'm assuming that you're interested in knowing more about t
 
 Free Basics is a program by Facebook where they make a deal with the Telecom Operators like Reliance etc to provide the said Telco's millions of customers free(as in without paying for it) access to a handful of websites from the Internet. These websites are handpicked by Facebook itself. (If you want your website to show up to these millions of people, you have to *apply* for it and it has to get approved by Facebook). These websites may include news, health-care, education, public service related websites. Those too are chosen by Facebook. Facebook is not charging these websites anything to apply or get approved. Facebook isn't charging anything to the customers. It definitely looks like a generous charity and a good thing, right?
 
-![Wrong](http://i.imgur.com/Zy3GDqQm.jpg)
+![Wrong](https://i.imgur.com/Zy3GDqQm.jpg)
 
 ### Like everything else, the devil is in the details.
 
@@ -40,7 +40,7 @@ Now if you'd let me get a bit technical, here is the [Participation Guideline of
 
 This is what this means -
 
-![Free Basics Proxy](http://i.imgur.com/DKJLcD3h.png)
+![Free Basics Proxy](https://i.imgur.com/DKJLcD3h.png)
 
 It means that *all* your requests go through Facebook's proxy server. Facebook says that, it is so that the requests and responses are optimized for mobile access. But that also means that Facebook reads **everything** and can tamper with **everything**.
 
@@ -54,7 +54,7 @@ So Facebook is saying outright that they *will* modify the content of those site
 
 Here is [BB-8](https://en.wikipedia.org/wiki/BB-8) showing his concern on the topic -
 
-![BB-8](http://i.imgur.com/SEIa2qb.jpg)
+![BB-8](https://i.imgur.com/SEIa2qb.jpg)
 
 ### Can I check this with someone else?
 
@@ -98,11 +98,11 @@ Oh WOW! So if you dont support Free Basics, there is a chance that the 4 people 
 
 > Source: Survey of **3,094** Indian ...
 
-![Imgur](http://i.imgur.com/QdXhq4Ll.jpg?1)
+![Imgur](https://i.imgur.com/QdXhq4Ll.jpg?1)
 
 So a survey done on 0.0002503% of Indian population told Facebook that 4 out of 5 Indians support Free Basics?
 
-![Imgur](http://i.imgur.com/ks6wBOOl.jpg)
+![Imgur](https://i.imgur.com/ks6wBOOl.jpg)
 
 Moving on from here. I have too many memes I can use here, but even *that* will still not suffice.
 
