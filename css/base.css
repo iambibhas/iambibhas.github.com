@@ -1,7 +1,7 @@
 @charset UTF-8;
 
 * {
-font-family: "Lato", sans-serif;
+font-family: "Gentium Book Basic", sans-serif;
 }
 
 pre {
@@ -78,15 +78,18 @@ margin-bottom:7px;
 }
 
 .content {
-margin-left:230px;
+margin-left:235px;
 margin-right:20px;
 margin-bottom:50px;
-padding-left:8px;
+padding-left:20px;
+border-left: 1px solid #ccc;
+font-size:20px;
+color: #353535;
 }
 
 .content h1 {
 color:#333;
-font-family:"Yanone Kaffeesatz", Helvetica, sans-serif;
+font-family:"Gentium Book Basic", Helvetica, sans-serif;
 font-weight:400;
 font-size:36px;
 margin:18px 0 5px;
@@ -94,16 +97,16 @@ margin:18px 0 5px;
 
 .content h2 {
 color:#333;
-font-family:"Yanone Kaffeesatz", Helvetica, sans-serif;
+font-family:"Gentium Book Basic", Helvetica, sans-serif;
 font-weight:400;
 font-size:30px;
 margin-bottom:15px;
 }
 
 .content h3 {
-font-family:"Yanone Kaffeesatz", Helvetica, sans-serif;
-font-weight:400;
-color:#777;
+font-family:"Gentium Book Basic", Helvetica, sans-serif;
+font-weight:600;
+color:#3A3A3A;
 font-size:25px;
 padding-bottom:5px;
 margin-bottom:10px;
@@ -111,15 +114,12 @@ margin-bottom:10px;
 
 .content h4 {
 color:#333;
-font-family:"Yanone Kaffeesatz", Helvetica, sans-serif;
+font-family:"Gentium Book Basic", Helvetica, sans-serif;
 font-weight:400;
 }
 
 .content p {
-font-size:16px;
-margin-top:0;
-margin-bottom:1.2em;
-line-height:1.7em;
+line-height:1.4em;
 }
 
 .content p code {
@@ -145,13 +145,12 @@ margin:2em 3em;
 }
 
 .content li {
-margin-bottom:10px;
+margin-bottom:5px;
 line-height:1.4em;
 }
 
 .content blockquote {
-font-style:italic;
-font-size:14px;
+font-size:18px;
 color:#444;
 margin:1em;
 padding:.25em 1em;
@@ -171,7 +170,7 @@ font-style:normal;
 
 .content .byline {
 margin-bottom:17px;
-font-family:"Yanone Kaffeesatz", Helvetica, sans-serif;
+font-family:"Gentium Book Basic", Helvetica, sans-serif;
 padding-left:0;
 font-size:17px;
 color:#777;
@@ -266,6 +265,5 @@ padding:0;
 }
 
 .content h1 a,.content h2 a,.content h3 a,.content h4 a {
-color:#111;
-text-decoration:none;
+color: #3C70BD;
 }
