@@ -177,7 +177,7 @@ Well, not really. This is a tweet from Ravi Shankar Prasad, Communications and I
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr">No. of Internet users in India increased by 100 million in 2015 to touch 400 million. <a href="https://twitter.com/_DigitalIndia">@_DigitalIndia</a> <a href="https://twitter.com/hashtag/FlashBack2015?src=hash">#FlashBack2015</a> <a href="https://t.co/FLHMhpwEjf">pic.twitter.com/FLHMhpwEjf</a></p>&mdash; Ravi Shankar Prasad (@rsprasad) <a href="https://twitter.com/rsprasad/status/682130503688794112">December 30, 2015</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-That's 300 million people coming online in a single year without the help of any system like Free Basics. Compare that to the previous 100 million that took 3 years. The progress is fantastic!
+That's 100 million people coming online in a single year without the help of any system like Free Basics. Compare that to the previous 100 million that took 3 years. The progress is fantastic!
 
 ### I'm still not convinced..
 
