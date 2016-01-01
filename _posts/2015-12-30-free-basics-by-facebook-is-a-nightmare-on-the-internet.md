@@ -110,7 +110,7 @@ Only in last few weeks, Facebook has spent over Rs 1,000,000,000(close to $15,40
 
 If you've been thinking that Facebook is here to do charity, let me burst that bubble. If you really want better life for the poor, you dont spend Rs 100 Crore on advertising how your methods are not doing the opposite. If Zuckerberg really wanted better life for people, he could buy basic *full Internet* access for at least 35,714,285 people using that money for a whole month. (Aircel provides 110MB 2G for a month for Rs 28)
 
-Facebook is saying everywhere that they are not taking money from anyone. But is that even possible that they are not making any profit? Why would Facebook be *so* desperate to get this program running in India and Africa if there were no benefit out of it? Facebook has become *so* desperate that they are now showing "Free Basics" ad on YouTube before the videos that asks people not to support Free Basics.
+Facebook is saying everywhere that they are not taking money from anyone. But is that even possible that they are not making any profit? Why would Facebook be *so* desperate to get this program running in India and countries in Africa if there were no benefit out of it? Facebook has become *so* desperate that they are now showing "Free Basics" ad on YouTube before the videos that asks people not to support Free Basics.
 
 ### But why is Facebook so desperate?
 
@@ -131,7 +131,7 @@ Facebook's primary business is data collection and information control. Facebook
  - Facebook bought Instagram, the most used "social" image sharing app (to know what you're interested in)
  - Facebook can automatically tag people on their uploaded photos, meaning that they run facial recognition on *any* photo uploaded on Facebook (to know who you are with and where you've been)
 
-Now that we've established that Facebook's main target in life is to collect people's data. Imagine how much they'd want to get a billion more people signed up for their website. Countries like India and Africa are couple of countries like that. Almost 70% of Indians have no access to Internet yet. This is like free money lying around, for Facebook. They just need to convince that govt that they are here for the better life of people and voila! They've got themselves a billion more customers overnight. Do you still wonder why Zuckerberg himself is writing on an Indian newspaper defending Free Basics' purpose?
+Now that we've established that Facebook's main target in life is to collect people's data. Imagine how much they'd want to get a billion more off-the-grid people signed up for their website. Countries like India and those in Africa are few countries like that. Almost 70% of Indians have no access to Internet yet. This is like free money lying around, for Facebook. They just need to convince that govt that they are here for the better life of people and voila! They've got themselves a billion more customers overnight. Do you still wonder why Zuckerberg himself is writing on an Indian newspaper defending Free Basics' purpose?
 
 Facebook wants people to keep using Facebook. Social networking sites don't live forever. Remember MySpace? Or Orkut? Facebook doesn't want to be yet another Orkut. So they are doing everything in their might to become irreplaceable. Which they will be for a billion Indians if Free Basics gets through. This is the ticket to Facebook's survival for next 10 years.
 
