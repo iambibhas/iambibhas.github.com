@@ -155,11 +155,11 @@ Facebook having the ability to reject applications also mean that if your friend
 
 ### I think I get it now. How is Facebook handling these doubts about Free Basics?
 
-Not very well evidently. The other day Zuckerberg himself [wrote a piece](http://blogs.timesofindia.indiatimes.com/toi-edit-page/free-basics-protects-net-neutrality/) on Times of India explaining why he is right, and Free Basics is awesome and all the people who are against it in India (which includes people from different backgrounds like entrepreneurs, IIT/IISc professors, even Inventor of WWW himself) are wrong. He asks in that piece -
+Not very well evidently. The other day Zuckerberg himself [wrote a piece](http://blogs.timesofindia.indiatimes.com/toi-edit-page/free-basics-protects-net-neutrality/) on Times of India explaining why he is right, and Free Basics is awesome and all the people who are against it in India are wrong. He asks in that piece -
 
 > Who could possibly be against this?
 
-Well sir, ["more than a few of us"](https://www.linkedin.com/pulse/facebook-responds-free-basics-challenge-duel-umm-i-accept-murthy). Including the latest addition - [Egypt](http://www.theguardian.com/technology/2015/dec/30/facebook-disappointed-shutdown-free-internet-service-egypt).
+Well sir, How about [entrepreneurs](https://www.linkedin.com/pulse/facebook-responds-free-basics-challenge-duel-umm-i-accept-murthy), [IIT professors](https://docs.google.com/document/d/1iQ1F7-S4NCGqp1FyKiDcK2J1eV4VNqM2B1qC3O4OlfA/pub), [IISc professors](http://www.thenewsminute.com/article/chorus-against-facebook-grows-iit-iisc-professors-write-trai-dismissing-free-basics-37186), [One of the founders of Infosys](http://blogs.timesofindia.indiatimes.com/toi-editorials/free-basics-is-a-walled-garden-heres-a-much-better-scheme-direct-benefit-transfer-for-internet-data-packs/) and more are learning about it and speaking against it every single day. ~~Including the latest addition - [Egypt](http://www.theguardian.com/technology/2015/dec/30/facebook-disappointed-shutdown-free-internet-service-egypt).~~ Egypt blocked Free Basics because of military pressure it seems. Not relevant.
 
 ### If Facebook changes the terms of Free Basics to be Net Neutral, would that be desirable?
 
