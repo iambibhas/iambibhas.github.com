@@ -145,6 +145,18 @@ Remember that it *does not* take more infrastructure to provide full Internet ac
 
 So why provide the same spectrum to provide Facebooknet to the billion people when it can be used to provide full Internet access to them? Shouldn't govt be asking this question to the telecom operators?
 
+**Update:** One of the founders of Infosys, Nandan Nilekani along with Viral B Shah, co-founder of Julia Language, [proposed an alternate solution](http://blogs.timesofindia.indiatimes.com/toi-editorials/free-basics-is-a-walled-garden-heres-a-much-better-scheme-direct-benefit-transfer-for-internet-data-packs/) that can also work -
+
+> We propose a different solution – one that respects net neutrality, aligns incentives, can be rolled out swiftly, and which allows Facebook to also participate. We propose that the government take the approach of a Direct Benefit Transfer (DBT) for internet data packs. This idea is based on the success of LPG DBT or Pahal, where over 100 million families receive LPG subsidy in their bank accounts.
+
+> Suppose the government announces a Data Pack DBT scheme that offers 120MB annually to every subscriber with the first 10MB free every month. A scan of various existing data packs suggests that 1MB data over 3G conservatively costs 25 paisa. At government’s scale, this could be much lower.
+
+> Even with all existing 400 million data users plus 400 million new data users being offered a free Data Pack DBT, the cost to the government would be 30/user x 800 million users = 2,400 crore a year. People may buy multiple SIMs for free data, but this problem is easily solved by linking mobile numbers to Aadhaar numbers (now held by 950 million people) so that one person can get access to only one Data Pack DBT.
+
+> This may sound like a lot of money, but we as a country can afford this cost to bring everyone online. The Department of Telecom’s Universal Service Obligation Fund today has a corpus of 40,000 crore with contributions from all telecom operators over time. Facebook can simply contribute to the same fund and achieve its own stated goal of bringing all of India online without distorting markets. With our design, government can roll out Data Pack DBT nationwide within 3 months.
+
+We should be looking for ways to remove differential pricing from the equation. Solutions like these will help that agenda. If Facebook really wants a better life for the poor, they should be promoting options that gives those people access to the Internet, not Facebooknet.
+
 ### Ok.. Can you explain what's wrong with Facebook choosing the websites?
 
 Facebook wants to shape Internet's future in India. If Free Basics gets through, a billion Indians will know that "Social Networking" means "Facebook". Because Facebook is and will be the only social network on Free Basics. Similarly, you'll only be able to use Facebook messenger for instant messaging. Similarly, Facebook's partner ecommerce website will be the only ecommerce website those billion people will get to know. What's wrong with that? Well, Facebook is collecting all the data. Facebook will know "who wipes your nose when you sneeze". Facebook will know your habits, your thinking patterns and behavioral patterns. International ecommerce websites like Target [has already shown](http://www.businessinsider.com/the-incredible-story-of-how-target-exposed-a-teen-girls-pregnancy-2012-2?IR=T) what can be done with patterns like that (TL;DR, they predicted a teen's pregnancy from her shopping patterns and informed her parents before she did).
