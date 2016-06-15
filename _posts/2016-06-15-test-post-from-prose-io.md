@@ -1,8 +1,7 @@
 ---
-published: false
+published: true
 layout: post
 title: Test post using prose.io
-description: ''
 category: null
 tags: []
 permalink: /blog/test-post-using-prose-io/
