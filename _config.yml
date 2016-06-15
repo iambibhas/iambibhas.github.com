@@ -1,5 +1,4 @@
-markdown: rdiscount
-highlighter: pygments
+highlighter: rouge
 permalink: /blog/:title
 rdiscount:
   extensions: [smart]
