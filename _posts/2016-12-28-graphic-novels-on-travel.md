@@ -25,3 +25,13 @@ Author: [Guy Delisle](https://www.goodreads.com/author/show/46027.Guy_Delisle)
 ![Shenzhen: A Travelogue from China](https://images.gr-assets.com/books/1330445378l/210946.jpg)
 
 Guy Delisle's work for a French animation studio requires him to oversee production at various Asian studios on the grim frontiers of free trade. His employer puts him up for months at a time in 'cold and soulless' hotel rooms where he suffers the usual deprivations of a man very far from home. After _Pyongyang_, his book about the strange society that is North Korea, Delisle turned his attention to Shenzhen, the cold, urban city in Southern China that is sealed off with electric fences and armed guards from the rest of the country. The result is another brilliant graphic novel - funny, scary, utterly original and illuminating.
+
+## [Jerusalem: Chronicles from the Holy City](http://amzn.to/2hx7YCn)
+
+Author: [Guy Delisle](https://www.goodreads.com/author/show/46027.Guy_Delisle)
+
+![Jerusalem: Chronicles from the Holy City](https://images.gr-assets.com/books/1347396940l/13104040.jpg)
+
+Guy Delisle expertly lays the groundwork for a cultural road map of contemporary Jerusalem, utilizing the classic stranger in a strange land point of view that made his other books, _Pyongyang_, _Shenzhen_, and _Burma Chronicles_ required reading for understanding what daily life is like in cities few are able to travel to. In _Jerusalem: Chronicles from the Holy City_, Delisle explores the complexities of a city that represents so much to so many. He eloquently examines the impact of the conflict on the lives of people on both sides of the wall while drolly recounting the quotidian: checkpoints, traffic jams, and holidays.
+
+When observing the Christian, Jewish, and Muslim populations that call Jerusalem home, Delisle's drawn line is both sensitive and fair, assuming nothing and drawing everything. Jerusalem showcases once more Delisle's mastery of the travelogue.
