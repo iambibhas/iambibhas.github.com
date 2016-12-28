@@ -10,7 +10,7 @@ I love graphic novels. They are a visual treat, the best way to tell stories. An
 
 ## [Japan Ai: A Tall Girl's Adventures in Japan](http://amzn.to/2iqhgwH)
 
-> by [Aimee Major-Steinberger](https://www.goodreads.com/author/show/5710042.Aimee_Major_Steinberger)
+Author: [Aimee Major-Steinberger](https://www.goodreads.com/author/show/5710042.Aimee_Major_Steinberger)
 
 ![Japan Ai: A Tall Girl's Adventures in Japan](https://images.gr-assets.com/books/1302286528l/2184895.jpg)
 
