@@ -59,3 +59,11 @@ Author: [Sarah Glidden](https://www.goodreads.com/author/show/2817217.Sarah_Glid
 A stunningly accomplished debut graphic novel, HOW TO UNDERSTAND ISRAEL IN 60 DAYS OR LESS is Sarah Glidden's charming and funny travel memoir of her trip through Tel Aviv, Jerusalem, the Golan Heights, Masada and other historic locales, brought to life with lush watercolors in all of their quirky and breathtaking detail.
 
 At the same time, ISRAEL is a sensitive, deeply thoughtful and personal examination of a highly charged issue, an account of a journey Sarah never expected to take. Her experience clashes with her preconceived notions again and again, particularly when she tries to take a non-chaperoned excursion into the West Bank. As she struggles to "understand Israel," Sarah is forced to question first her beliefs, then ultimately her own identity.
+
+## [Palestine](http://amzn.to/2hQ20Zf)
+
+Author: [Joe Sacco](https://www.goodreads.com/author/show/32468.Joe_Sacco)
+
+![Palestine](https://images.gr-assets.com/books/1295987223l/57541.jpg)
+
+In late l991 and early 1992, at the time of the first Intifada, Joe Sacco spent two months with the Palestinians in the West Bank and Gaza Strip, travelling and taking notes. Upon returning to the United States he started writing and drawing Palestine, which combines the techniques of eyewitness reportage with the medium of comic-book storytelling to explore this complex, emotionally weighty situation. He captures the heart of the Palestinian experience in image after unforgettable image, with great insight and remarkable humour.
