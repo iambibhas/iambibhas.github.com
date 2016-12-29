@@ -44,3 +44,10 @@ Author: [Guy Delisle](https://www.goodreads.com/author/show/46027.Guy_Delisle)
 
 Famously referred to as one of the "Axis of Evil" countries, North Korea remains one of the most secretive and mysterious nations in the world today. In early 2001 cartoonist Guy Delisle became one of the few Westerners to be allowed access to the fortress-like country. While living in the nation's capital for two months on a work visa for a French film animation company, Delisle observed what he was allowed to see of the culture and lives of the few North Koreans he encountered; his findings form the basis of this graphic novel.
 
+## [Burma Chronicles](http://amzn.to/2igYvfE)
+
+Author: [Guy Delisle](https://www.goodreads.com/author/show/46027.Guy_Delisle)
+
+![Burma Chronicles](https://images.gr-assets.com/books/1328302383l/5596923.jpg)
+
+'Burma Chronicles' presents a personal and distinctively humorous glimpse into a political hotspot, putting a popular spin on current affairs.
