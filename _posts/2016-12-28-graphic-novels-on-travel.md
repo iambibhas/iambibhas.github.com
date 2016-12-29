@@ -68,10 +68,10 @@ Author: [Joe Sacco](https://www.goodreads.com/author/show/32468.Joe_Sacco)
 
 In late l991 and early 1992, at the time of the first Intifada, Joe Sacco spent two months with the Palestinians in the West Bank and Gaza Strip, travelling and taking notes. Upon returning to the United States he started writing and drawing Palestine, which combines the techniques of eyewitness reportage with the medium of comic-book storytelling to explore this complex, emotionally weighty situation. He captures the heart of the Palestinian experience in image after unforgettable image, with great insight and remarkable humour.
 
-## Tokyo on Foot: Travels in the City's Most Colorful Neighborhoods
+## [Tokyo on Foot: Travels in the City's Most Colorful Neighborhoods](http://amzn.to/2iiQkzp)
 
 Author: [Florent Chavouet](https://www.goodreads.com/author/show/2888780.Florent_Chavouet)
 
-![](https://images.gr-assets.com/books/1388988112l/9722408.jpg)
+![Tokyo on Foot: Travels in the City's Most Colorful Neighborhoods](https://images.gr-assets.com/books/1388988112l/9722408.jpg)
 
 Florent Chavouet, a young graphic artist, spent six months exploring Tokyo while his girlfriend interned at a company there. Each day he would set forth, with a pouch full of colored pencils and a sketchpad, to visit different neighborhoods. This stunning book records the city that he got to know during his adventures, a gritty, vibrant place, full of ordinary people going about their daily lives. Realistically rendered city views or posters of pop stars contrast with cartoon sketches of iconic objects or droll vignettes, like a housewife walking her pet pig and a Godzilla statue in a local park.With wit, a playful sense of humor, and the colored pencils of his kit, Florent Chavouet sets aside the question of urban ugliness or beauty and captures the Japanese essence of a great city.
