@@ -40,7 +40,7 @@ When observing the Christian, Jewish, and Muslim populations that call Jerusalem
 
 Author: [Guy Delisle](https://www.goodreads.com/author/show/46027.Guy_Delisle)
 
-![](https://images.gr-assets.com/books/1327884533l/80834.jpg)
+![Pyongyang: A Journey in North Korea](https://images.gr-assets.com/books/1327884533l/80834.jpg)
 
 Famously referred to as one of the "Axis of Evil" countries, North Korea remains one of the most secretive and mysterious nations in the world today. In early 2001 cartoonist Guy Delisle became one of the few Westerners to be allowed access to the fortress-like country. While living in the nation's capital for two months on a work visa for a French film animation company, Delisle observed what he was allowed to see of the culture and lives of the few North Koreans he encountered; his findings form the basis of this graphic novel.
 
@@ -51,3 +51,13 @@ Author: [Guy Delisle](https://www.goodreads.com/author/show/46027.Guy_Delisle)
 ![Burma Chronicles](https://images.gr-assets.com/books/1328302383l/5596923.jpg)
 
 'Burma Chronicles' presents a personal and distinctively humorous glimpse into a political hotspot, putting a popular spin on current affairs.
+
+## [How to Understand Israel in 60 Days or Less]()
+
+Author: [Sarah Glidden](https://www.goodreads.com/author/show/2817217.Sarah_Glidden)
+
+![How to Understand Israel in 60 Days or Less](https://images.gr-assets.com/books/1309398564l/7941986.jpg)
+
+A stunningly accomplished debut graphic novel, HOW TO UNDERSTAND ISRAEL IN 60 DAYS OR LESS is Sarah Glidden's charming and funny travel memoir of her trip through Tel Aviv, Jerusalem, the Golan Heights, Masada and other historic locales, brought to life with lush watercolors in all of their quirky and breathtaking detail.
+
+At the same time, ISRAEL is a sensitive, deeply thoughtful and personal examination of a highly charged issue, an account of a journey Sarah never expected to take. Her experience clashes with her preconceived notions again and again, particularly when she tries to take a non-chaperoned excursion into the West Bank. As she struggles to "understand Israel," Sarah is forced to question first her beliefs, then ultimately her own identity.
