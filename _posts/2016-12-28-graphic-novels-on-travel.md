@@ -52,7 +52,7 @@ Author: [Guy Delisle](https://www.goodreads.com/author/show/46027.Guy_Delisle)
 
 'Burma Chronicles' presents a personal and distinctively humorous glimpse into a political hotspot, putting a popular spin on current affairs.
 
-## [How to Understand Israel in 60 Days or Less]()
+## [How to Understand Israel in 60 Days or Less](http://amzn.to/2igMnLv)
 
 Author: [Sarah Glidden](https://www.goodreads.com/author/show/2817217.Sarah_Glidden)
 
