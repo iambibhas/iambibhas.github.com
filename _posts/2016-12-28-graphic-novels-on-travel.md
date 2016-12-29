@@ -35,3 +35,12 @@ Author: [Guy Delisle](https://www.goodreads.com/author/show/46027.Guy_Delisle)
 Guy Delisle expertly lays the groundwork for a cultural road map of contemporary Jerusalem, utilizing the classic stranger in a strange land point of view that made his other books, _Pyongyang_, _Shenzhen_, and _Burma Chronicles_ required reading for understanding what daily life is like in cities few are able to travel to. In _Jerusalem: Chronicles from the Holy City_, Delisle explores the complexities of a city that represents so much to so many. He eloquently examines the impact of the conflict on the lives of people on both sides of the wall while drolly recounting the quotidian: checkpoints, traffic jams, and holidays.
 
 When observing the Christian, Jewish, and Muslim populations that call Jerusalem home, Delisle's drawn line is both sensitive and fair, assuming nothing and drawing everything. Jerusalem showcases once more Delisle's mastery of the travelogue.
+
+## [Pyongyang: A Journey in North Korea](http://amzn.to/2hPWt4X)
+
+Author: [Guy Delisle](https://www.goodreads.com/author/show/46027.Guy_Delisle)
+
+![](https://images.gr-assets.com/books/1327884533l/80834.jpg)
+
+Famously referred to as one of the "Axis of Evil" countries, North Korea remains one of the most secretive and mysterious nations in the world today. In early 2001 cartoonist Guy Delisle became one of the few Westerners to be allowed access to the fortress-like country. While living in the nation's capital for two months on a work visa for a French film animation company, Delisle observed what he was allowed to see of the culture and lives of the few North Koreans he encountered; his findings form the basis of this graphic novel.
+
