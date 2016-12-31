@@ -87,3 +87,11 @@ When bombs are falling and western journalism is the only game left in town "fix
 It's dangerous, a little amoral and a lot desperate.
 
 Award-winning comix-journalist Joe Sacco goes behind the scene of war correspondence to reveal the anatomy of the big scoop. He begins by returning us to the dying days of Balkan conflict and introduces us to his own fixer; a man looking to squeeze the last bit of profit from Bosnia before the reconstruction begins. Thanks to a complex relationship with the fixer Joe discovers the crimes of opportunistic warlords and gangsters who run the countryside in times of war. But the west is interested in a different spin on the stories coming out of Bosnia. Almost ten years later, Joe meets up with his fixer and sees how the new Bosnian government has "dealt" with these criminals and Joe ponders who is holding the reins of power these days... 
+
+## [Carnet De Voyage (Travel Journal)](http://amzn.to/2hDUIMx)
+
+Author: [Craig Thompson](https://www.goodreads.com/author/show/14151.Craig_Thompson)
+
+![Carnet De Voyage](https://images.gr-assets.com/books/1389359335l/37261.jpg)
+
+Craig Thompson spent three months traveling through Barcelona, the Alps, and France, as well as Morocco, researching his next graphic novel, _Habibi_. Spontaneous sketches and a travelogue diary document his adventures and quiet moments, creating a raw and intimate portrait of countries, culture and the wandering artist.
