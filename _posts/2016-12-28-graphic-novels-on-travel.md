@@ -95,3 +95,7 @@ Author: [Craig Thompson](https://www.goodreads.com/author/show/14151.Craig_Thomp
 ![Carnet De Voyage](https://images.gr-assets.com/books/1389359335l/37261.jpg)
 
 Craig Thompson spent three months traveling through Barcelona, the Alps, and France, as well as Morocco, researching his next graphic novel, _Habibi_. Spontaneous sketches and a travelogue diary document his adventures and quiet moments, creating a raw and intimate portrait of countries, culture and the wandering artist.
+
+## Macedonia
+
+Author: Thammy Evans,Rudolf Abraham
