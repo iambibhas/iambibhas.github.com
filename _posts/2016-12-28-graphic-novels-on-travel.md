@@ -75,3 +75,15 @@ Author: [Florent Chavouet](https://www.goodreads.com/author/show/2888780.Florent
 ![Tokyo on Foot: Travels in the City's Most Colorful Neighborhoods](https://images.gr-assets.com/books/1388988112l/9722408.jpg)
 
 Florent Chavouet, a young graphic artist, spent six months exploring Tokyo while his girlfriend interned at a company there. Each day he would set forth, with a pouch full of colored pencils and a sketchpad, to visit different neighborhoods. This stunning book records the city that he got to know during his adventures, a gritty, vibrant place, full of ordinary people going about their daily lives. Realistically rendered city views or posters of pop stars contrast with cartoon sketches of iconic objects or droll vignettes, like a housewife walking her pet pig and a Godzilla statue in a local park.With wit, a playful sense of humor, and the colored pencils of his kit, Florent Chavouet sets aside the question of urban ugliness or beauty and captures the Japanese essence of a great city.
+
+## [The Fixer: A Story from Sarajevo](http://amzn.to/2hE1bHa)
+
+Author: [Joe Sacco](https://www.goodreads.com/author/show/32468.Joe_Sacco)
+
+![The Fixer: A Story from Sarajevo](https://images.gr-assets.com/books/1312030143l/307448.jpg)
+
+When bombs are falling and western journalism is the only game left in town "fixers" are the people who sell war correspondents the human tragedy and moral outrage that makes news editors happy.
+
+It's dangerous, a little amoral and a lot desperate.
+
+Award-winning comix-journalist Joe Sacco goes behind the scene of war correspondence to reveal the anatomy of the big scoop. He begins by returning us to the dying days of Balkan conflict and introduces us to his own fixer; a man looking to squeeze the last bit of profit from Bosnia before the reconstruction begins. Thanks to a complex relationship with the fixer Joe discovers the crimes of opportunistic warlords and gangsters who run the countryside in times of war. But the west is interested in a different spin on the stories coming out of Bosnia. Almost ten years later, Joe meets up with his fixer and sees how the new Bosnian government has "dealt" with these criminals and Joe ponders who is holding the reins of power these days... 
