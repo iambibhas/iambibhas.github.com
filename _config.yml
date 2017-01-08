@@ -1,14 +1,15 @@
-highlighter: rouge
-permalink: /blog/:title
-rdiscount:
-  extensions: [smart]
-
 name: Bibhas Debnath
 url: https://bibhas.in
-description: "Bibhas Debnath, developer from Kolkata, India."
-twitter: bibhasdn
-github_uname: iambibhas
+title: Bibhas Debnath
+description: "Developer from Kolkata, India."
+email: me@bibhas.in
+twitter_username: bibhasdn
+github_username: iambibhas
+baseurl: ""
+logo: "/images/logo.jpg"
+author_image: "/images/author.jpg"
 gravatar_url: https://www.gravatar.com/avatar/ffbd494728961d8baf2c7404dc420152
+paginate:	5
 
 about_page: /about-me/
 
@@ -26,3 +27,11 @@ analytics :
   provider : mixpanel
   mixpanel:
     id: b0dae1534eca0d9521c89110e2ce4081
+
+markdown: kramdown
+
+kramdown:
+  parse_block_html: true
+
+gems:
+  - jekyll-paginate

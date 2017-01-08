@@ -1,18 +1,35 @@
 ---
-layout: layout
-title: "Home"
-permalink: /
+layout: default
 ---
 
-<section class="content" id="app">
-    <div id="console">
-        <div class="cnsl-ln">anonymous@127.0.0.1:~$ <strong><span id="cursor">|</span></strong></div>
-    </div>
-    <div id="input">
-        <form onsubmit="return execute()">
-            <div id="command-box">
-                <input type="text" name="command" id="command" /><input type="submit" value="" style="display:none"/>
-            </div>
-        </form>
-    </div>
-</section>
+<main class="content" role="main">
+
+  <header class="blog-header">
+      <h1 class="blog-title">{{ site.title }}</h1>
+      <h2 class="blog-description">{{ site.description }}</h2>
+  </header>
+
+  <div class="cf frame">
+    {% for post in site.posts limit:10 %}
+      <article class="post" itemscope itemtype="http://schema.org/BlogPosting" role="article">
+        <div class="article-item">
+          <header class="post-header">
+            <h2 class="post-title" itemprop="name"><a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">{{ post.title }}</a></h2>
+          </header>
+          <section class="post-excerpt" itemprop="description">
+            <p>{{ post.excerpt | strip_html | truncatewords: 50 }}</p>
+          </section>
+          <div class="post-meta">
+            <time datetime="{{ post.date | date_to_long_string }}">{{ post.date | date_to_long_string }}</time>
+          </div>
+        </div>
+      </article>
+    {% endfor %}
+  </div>
+
+  <nav class="pagination" role="navigation">
+    <a class="older-posts" href="{{ site.baseurl }}/blog/">All the posts</a>
+  </nav>
+</main>
+
+{% include footer.html %}
