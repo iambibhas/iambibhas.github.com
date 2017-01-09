@@ -29,15 +29,12 @@ task :post do
   if File.exist?(filename)
     abort("rake aborted!") if ask("#{filename} already exists. Do you want to overwrite?", ['y', 'n']) == 'n'
   end
-  
+
   puts "Creating new post: #{filename}"
   open(filename, 'w') do |post|
     post.puts "---"
     post.puts "layout: post"
     post.puts "title: \"#{title.gsub(/-/,' ')}\""
-    post.puts 'description: ""'
-    post.puts "category: "
-    post.puts "tags: []"
     post.puts "permalink: /blog/#{slug}/"
     post.puts "---"
     post.puts "Body here"
@@ -47,7 +44,7 @@ end # task :post
 # Internal: Process theme package manifest file.
 #
 # theme_path - String, Required. File path to theme package.
-#        
+#
 # Returns theme manifest hash
 def verify_manifest(theme_path)
   manifest_path = File.join(theme_path, "manifest.yml")
