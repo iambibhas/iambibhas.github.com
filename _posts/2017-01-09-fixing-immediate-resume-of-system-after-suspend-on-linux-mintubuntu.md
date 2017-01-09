@@ -87,6 +87,6 @@ I started with `EHC1` and `EHC2`. Like -
 
     $ echo EHC1 | sudo tee /proc/acpi/wakeup
 
-Then closed the lid and the laptop slept and woke up instantly. So that didn't fix the problem. Then `XHCI` and then `IGBE`. I don't yet to why, but disabling `IGBE`, the integrated ethernet controller, solved hte problem for me. Right after disabling it I closed the lid and the laptop went to sleep like it usually does.
+Then closed the lid and the laptop slept and woke up instantly. So that didn't fix the problem. Then `XHCI` and then `IGBE`. I don't yet know why, but disabling `IGBE`, the integrated ethernet controller, solved the problem for me. Right after disabling it I closed the lid and the laptop went to sleep like it usually does.
 
 Posting this blog so that it can help you someday. Or if I ever forget the solution.
