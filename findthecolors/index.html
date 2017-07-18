@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Your page title here :)</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <style type="text/css">
+      .color {
+        height: 500px;
+      }
+      .row {
+        text-align: center;
+      }
+  </style>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <div class="container">
+
+      <!-- columns should be the immediate child of a .row -->
+      <div class="row" id="colors">
+      </div>
+      <div class="row" id="colorcodes">
+      </div>
+    </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script type="text/javascript">
+    if (window.location.hash !== undefined) {
+        var colorcodes = window.location.hash.replace('#', '').split('+');
+        for (var i = 0; i < colorcodes.length; i++) {
+            var colorcode = colorcodes[i];
+            var colordiv = document.createElement("div");
+            colordiv.className = "two columns color";
+            colordiv.style.backgroundColor = '#' + colorcode;
+            document.getElementById("colors").appendChild(colordiv);
+            var colorcodediv = document.createElement("div");
+            colorcodediv.className = 'two columns';
+            colorcodediv.appendChild(document.createTextNode('#' + colorcode.toUpperCase()));
+            document.getElementById("colorcodes").appendChild(colorcodediv);
+        }
+    }
+  </script>
+</body>
+</html>
