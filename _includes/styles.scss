@@ -27,7 +27,7 @@ amp-img {
 
 $rs: 16px;
 
-$font-serif: Georgia,Cambria,"Times New Roman",Times,'Lora', serif;
+$font-serif: 'Lora', serif;
 $font-sans: "Helvetica Neue", 'Open Sans', Arial, Helvetica, sans-serif;
 
 @mixin respond-to($breakpoint) {
@@ -295,9 +295,8 @@ body {
       text-align:left;
     }
     p {
-      font-weight: 400;
       font-style: normal;
-      font-size: 22px;
+      font-size-adjust: 0.6;
       line-height: 1.59;
       letter-spacing: -.002em;
       margin-top: 30px;
