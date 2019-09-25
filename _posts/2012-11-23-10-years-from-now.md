@@ -75,106 +75,83 @@ some of them here.
 
 ---
 
-<blockquote>
-  It's not regret. But looking back, it seems my life would have been better if
-  I had done / had known these earlier:
-  <ul>
-    <li>
-      <strong>On love:</strong> Leave an unhappy relationship. It's not about
-      commitment. It's about how to respect yourself.
-    </li>
-    <li>
-      <strong>On work:</strong> Quit an unhappy job. The feeling of being caged,
-      deprived of the opportunity to learn new things simply because of your
-      role - are not compensated by pay or even gratification of supporting your
-      loved ones.
-    </li>
-    <li>
-      <strong>On emotion:</strong> Appreciate, listen to, even indulge in
-      emotions sometimes. It keeps a
-      <span style="text-decoration: underline;">human</span> life. No worries,
-      we're rational enough. Our brain is amazing.
-    </li>
-    <li>
-      <strong>On body:</strong> Have happy (safe) sex more and earlier. Play fun
-      sports more and earlier. Feeling a cramp in my leg once saved me from
-      depression due to overthinking.
-    </li>
-    <li>
-      <strong>On money:</strong> More is not better. There's a threshold over
-      which you feel secured and free to pursue your dreams. Work constantly to
-      lower this threshold. It frees you from constraints that you set for
-      yourself.
-    </li>
-    <li>
-      <strong>On desire/passion:</strong> It's OK that desire/passion changes
-      over time. Someday the dots can be linked. Before that, follow the passion
-      even as it takes leaps and seems without focus.
-    </li>
-    <li>
-      <strong>On fear:</strong> Never act/decide out of fear. You're doomed.
-      Lying is an example.
-    </li>
-    <li>
-      <strong>On people:</strong> Stay around those you want to become. If your
-      network is not given, create it yourself.
-    </li>
-    <li>
-      <strong>On human life:</strong> You can change your life. Be kind, be
-      honest (to others and to yourself), be grateful. Genuine happiness
-      triumphs.
-    </li>
-  </ul>
-</blockquote>
+> It's not regret. But looking back, it seems my life would have been better if
+> I had done / had known these earlier:
+>
+> - **On love:** Leave an unhappy relationship. It's not about
+>   commitment. It's about how to respect yourself.
+>
+> - **On work:** Quit an unhappy job. The feeling of being caged,
+>   deprived of the opportunity to learn new things simply because of your
+>   role - are not compensated by pay or even gratification of supporting your
+>   loved ones.
+>
+> - **On emotion:** Appreciate, listen to, even indulge in
+>   emotions sometimes. It keeps a
+>   <span style="text-decoration: underline;">human</span> life. No worries,
+>   we're rational enough. Our brain is amazing.
+>
+> - **On body:** Have happy (safe) sex more and earlier. Play fun
+>   sports more and earlier. Feeling a cramp in my leg once saved me from
+>   depression due to overthinking.
+>
+> - **On money:** More is not better. There's a threshold over
+>   which you feel secured and free to pursue your dreams. Work constantly to
+>   lower this threshold. It frees you from constraints that you set for
+>   yourself.
+>
+> - **On desire/passion:** It's OK that desire/passion changes
+>   over time. Someday the dots can be linked. Before that, follow the passion
+>   even as it takes leaps and seems without focus.
+>
+> - **On fear:** Never act/decide out of fear. You're doomed.
+>   Lying is an example.
+>
+> - **On people:** Stay around those you want to become. If your
+>   network is not given, create it yourself.
+>
+> - **On human life:** You can change your life. Be kind, be
+>   honest (to others and to yourself), be grateful. Genuine happiness
+>   triumphs.
 
 ---
 
-<blockquote>
-  <strong>Not taking more risks.</strong><br />
-
-Your 20s aren't like your 30s. You can afford to take more chances, try more
-things, take more risks to find out who you are and where you want to be.<br />
-
-<strong>Not taking more action.</strong><br />
-
-I thought that navel-gazing would lead me to answers to the existential angst
-which bugged me during my 20s. <em>Wrong</em>. Acting and trying new things is
-the way to answers.<br />
-
-<strong>Not sleeping around more.</strong><br />
-
-In your 30s, you and the people you meet are looking for long-term commitment.
-If I were 20 again I'd stop looking for 'the one true love' (what can I say, I
-was a romantic) and look for more people to connect with, heart as well as
-body. Pining around for someone who didn't love me back on a off-on thing was
-a long waste of a few years.<br />
-
-<strong>Not taking care of my body more.</strong><br />
-
-In your 20s, you're in that weird transition where your body is somewhat but
-not quite as fit as your teen years and going into the less-hardy 30s. The
-start of my beer belly wasn't dramatic, and I figured it would go away like it
-always had in my teens. <em>Wrong.</em> Once you see yourself going in your
-20s, workout like hell to get yourself back in health and shape.
-
-</blockquote>
+> **Not taking more risks:** Your 20s aren't like your 30s. You can afford to take more chances, try more
+> things, take more risks to find out who you are and where you want to be.<br />
+>
+> **Not taking more action:** I thought that navel-gazing would lead me to answers to the existential angst
+> which bugged me during my 20s. <em>Wrong</em>. Acting and trying new things is
+> the way to answers.<br />
+>
+> **Not sleeping around more:** In your 30s, you and the people you meet are looking for long-term commitment.
+> If I were 20 again I'd stop looking for 'the one true love' (what can I say, I
+> was a romantic) and look for more people to connect with, heart as well as
+> body. Pining around for someone who didn't love me back on a off-on thing was
+> a long waste of a few years.<br />
+>
+> **Not taking care of my body more:** In your 20s, you're in that weird transition where your body is somewhat but
+> not quite as fit as your teen years and going into the less-hardy 30s. The
+> start of my beer belly wasn't dramatic, and I figured it would go away like it
+> always had in my teens. <em>Wrong.</em> Once you see yourself going in your
+> 20s, workout like hell to get yourself back in health and shape.
 
 ---
 
-<p>
-  Well, if not entirely similar, I know I'm going to have some views that are
-  common with these above. And I still don't know <em>what I'll be</em> after 10
-  years. Right now I've bet everything I have on my instincts. I've moved to a
-  new city. I've set up a decent place to stay even before getting the first
-  salary. My bank balance is near zero. And my parents have already started
-  pushing me about the deadline of my marriage!! BIG Sigh. On the bright side, I
-  have this lovely girl beside me who thinks the world of me. I have my parents
-  beside me who, even when we're running low on savings, are supporting me to do
-  what I feel is right. I have an awesome colleague whom I've started to think
-  as my mentor. I have few awesome friends who support me even when I'm down to
-  the ground. I've already been part of 2 startups where things didn't quite
-  work out as they planned. Yet I've joined another one. And I just realized,
-  I really don't care anymore about what I want to be 10 years later. I'm just
-  going to do what, I feel, is right and see where it goes. I have enough skills
-  to earn my bread everyday. That's more than enough for me to go on.
-</p>
+Well, if not entirely similar, I know I'm going to have some views that are
+common with these above. And I still don't know _what I'll be_ after 10
+years. Right now I've bet everything I have on my instincts. I've moved to a
+new city. I've set up a decent place to stay even before getting the first
+salary. My bank balance is near zero. And my parents have already started
+pushing me about the deadline of my marriage!! BIG Sigh.
+
+On the bright side, I
+have this lovely girl beside me who thinks the world of me. I have my parents
+beside me who, even when we're running low on savings, are supporting me to do
+what I feel is right. I have an awesome colleague whom I've started to think
+as my mentor. I have few awesome friends who support me even when I'm down to
+the ground. I've already been part of 2 startups where things didn't quite
+work out as they planned. Yet I've joined another one. And I just realized,
+
+I really don't care anymore about what I want to be 10 years later. I'm just
+going to do what, I feel, is right and see where it goes. I have enough skills
+to earn my bread everyday. That's more than enough for me to go on.
