@@ -17,28 +17,33 @@ title: Where Do I See Myself in 10 Years?
 permalink: /blog/874/10-years-from-now/
 ---
 
-<h4>Incident 1 (I'm in college, 1st year):</h4>
+#### Incident 1 (I'm in college, 1st year):
+
 The head of the dept. walks into our class, and throws us a question, "Where do
 you see yourself in 10 years?". Honestly, I took that question a bit seriously,
 and that was the first time I realized that I didn't know what I should be in
 future. I didn't start as a developer then. Didn't even know I'm going to be
 what I am today. I was asked "What is your aim in life?" several times in my
 college days, I remember clearly that I answered differently every single time.
-<h4>
-  Incident 2 (1 year after I've started freelancing, 4th year of college):
-</h4>
+
+#### Incident 2 (1 year after I've started freelancing, 4th year of college):
+
 Few of my co-workers were already in their 3rd-4th startup, and were talking
 about what they want to do next(start up again if that one fails) and I was
 thrown the question, "Bibhas, what are you going to do after college, and after
 couple of years?". I couldn't answer. I knew I will be working somewhere,
 developing something, but didn't know on what role, doing what.
-<h4>Incident 3 (I left the first job because I didn't like it):</h4>
+
+#### Incident 3 (I left the first job because I didn't like it):
+
 And I'm thinking what to do next. Then it strikes me, I still didn't know what I
 want to be in life. I have ideas about how to build softwares, I want to keep
 doing it. But I also have a feeling that writing code takes a lot of time. It'd
 be nice if I had few colleagues writing codes. I was pretty sure this is going
 to be a deciding factor later in my life. But I still don't see the sign.
-<h4>Incident 4 (a week back):</h4>
+
+#### Incident 4 (a week back):
+
 I was talking to a colleague. He's seen his share of startup lives. We were
 talking about few of my friends who don't want to take risks working in startups
 and keep working at MNCs because those jobs are "safe". Then he says, "They
@@ -48,33 +53,26 @@ used to work at an MNC. I used to go to office every freaging day at 9am and
 return at 10pm. I had a wonderful life." Don't know about you, but that seemed
 effin hilarious to me. But then I thought they might not realize it and think
 that they are too young to start "taking risks".
-<h4>Incident 5 (Present day):</h4>
-I come across this question in Quora:
-<a
-  href="http://www.quora.com/Life/What-do-you-regret-not-doing-in-your-20s"
-  target="_blank"
-  ><strong>What do you regret not doing in your 20s?</strong></a
->
 
-<p>
+#### Incident 5 (Present day):
+
+I come across this question in Quora: ["What do you regret not doing in your 20s?](http://www.quora.com/Life/What-do-you-regret-not-doing-in-your-20s)
+
 It has few answers from people of 30s, sharing their views. I'd like to quote
 some of them here.
-</p>
-<p>
-<blockquote>
-  The only thing I regret in my 20's is not taking more risks. I took a ton of
-  risks in my 20's from what I studied in school to where I lived to who I
-  wanted to be. In the end, I could have been more fearless and more courageous
-  to be exactly who I wanted to be, no matter what. The only advice I can offer:
-  Do not listen to anyone else when you make big life decisions. No one knows
-  you like you. When you make a big decision, do not listen to your parents,
-  your siblings, your friends, or anyone else. It sounds absurd, but when I look
-  back on my 20's the best decisions I made were ones I made myself that were
-  protested by everyone around me. When you can stand truly on your own to make
-  the correct choice while everyone around you is telling you that you're wrong,
-  you're doing it right.
-</blockquote>
-</p>
+
+> The only thing I regret in my 20's is not taking more risks. I took a ton of
+> risks in my 20's from what I studied in school to where I lived to who I
+> wanted to be. In the end, I could have been more fearless and more courageous
+> to be exactly who I wanted to be, no matter what. The only advice I can offer:
+> Do not listen to anyone else when you make big life decisions. No one knows
+> you like you. When you make a big decision, do not listen to your parents,
+> your siblings, your friends, or anyone else. It sounds absurd, but when I look
+> back on my 20's the best decisions I made were ones I made myself that were
+> protested by everyone around me. When you can stand truly on your own to make
+> the correct choice while everyone around you is telling you that you're wrong,
+> you're doing it right.
+
 ---
 
 <blockquote>
@@ -134,30 +132,31 @@ some of them here.
 <blockquote>
   <strong>Not taking more risks.</strong><br />
 
-  Your 20s aren't like your 30s. You can afford to take more chances, try more
-  things, take more risks to find out who you are and where you want to be.<br />
+Your 20s aren't like your 30s. You can afford to take more chances, try more
+things, take more risks to find out who you are and where you want to be.<br />
 
-  <strong>Not taking more action.</strong><br />
+<strong>Not taking more action.</strong><br />
 
-  I thought that navel-gazing would lead me to answers to the existential angst
-  which bugged me during my 20s. <em>Wrong</em>. Acting and trying new things is
-  the way to answers.<br />
+I thought that navel-gazing would lead me to answers to the existential angst
+which bugged me during my 20s. <em>Wrong</em>. Acting and trying new things is
+the way to answers.<br />
 
-  <strong>Not sleeping around more.</strong><br />
+<strong>Not sleeping around more.</strong><br />
 
-  In your 30s, you and the people you meet are looking for long-term commitment.
-  If I were 20 again I'd stop looking for 'the one true love' (what can I say, I
-  was a romantic) and look for more people to connect with, heart as well as
-  body. Pining around for someone who didn't love me back on a off-on thing was
-  a long waste of a few years.<br />
+In your 30s, you and the people you meet are looking for long-term commitment.
+If I were 20 again I'd stop looking for 'the one true love' (what can I say, I
+was a romantic) and look for more people to connect with, heart as well as
+body. Pining around for someone who didn't love me back on a off-on thing was
+a long waste of a few years.<br />
 
-  <strong>Not taking care of my body more.</strong><br />
+<strong>Not taking care of my body more.</strong><br />
 
-  In your 20s, you're in that weird transition where your body is somewhat but
-  not quite as fit as your teen years and going into the less-hardy 30s. The
-  start of my beer belly wasn't dramatic, and I figured it would go away like it
-  always had in my teens. <em>Wrong.</em> Once you see yourself going in your
-  20s, workout like hell to get yourself back in health and shape.
+In your 20s, you're in that weird transition where your body is somewhat but
+not quite as fit as your teen years and going into the less-hardy 30s. The
+start of my beer belly wasn't dramatic, and I figured it would go away like it
+always had in my teens. <em>Wrong.</em> Once you see yourself going in your
+20s, workout like hell to get yourself back in health and shape.
+
 </blockquote>
 
 ---
