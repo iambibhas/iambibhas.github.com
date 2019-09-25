@@ -78,41 +78,41 @@ some of them here.
 > It's not regret. But looking back, it seems my life would have been better if
 > I had done / had known these earlier:
 >
-> - **On love:** Leave an unhappy relationship. It's not about
->   commitment. It's about how to respect yourself.
+> **On love:** Leave an unhappy relationship. It's not about
+> commitment. It's about how to respect yourself.
 >
-> - **On work:** Quit an unhappy job. The feeling of being caged,
->   deprived of the opportunity to learn new things simply because of your
->   role - are not compensated by pay or even gratification of supporting your
->   loved ones.
+> **On work:** Quit an unhappy job. The feeling of being caged,
+> deprived of the opportunity to learn new things simply because of your
+> role - are not compensated by pay or even gratification of supporting your
+> loved ones.
 >
-> - **On emotion:** Appreciate, listen to, even indulge in
->   emotions sometimes. It keeps a
->   <span style="text-decoration: underline;">human</span> life. No worries,
->   we're rational enough. Our brain is amazing.
+> **On emotion:** Appreciate, listen to, even indulge in
+> emotions sometimes. It keeps a
+> <span style="text-decoration: underline;">human</span> life. No worries,
+> we're rational enough. Our brain is amazing.
 >
-> - **On body:** Have happy (safe) sex more and earlier. Play fun
->   sports more and earlier. Feeling a cramp in my leg once saved me from
->   depression due to overthinking.
+> **On body:** Have happy (safe) sex more and earlier. Play fun
+> sports more and earlier. Feeling a cramp in my leg once saved me from
+> depression due to overthinking.
 >
-> - **On money:** More is not better. There's a threshold over
->   which you feel secured and free to pursue your dreams. Work constantly to
->   lower this threshold. It frees you from constraints that you set for
->   yourself.
+> **On money:** More is not better. There's a threshold over
+> which you feel secured and free to pursue your dreams. Work constantly to
+> lower this threshold. It frees you from constraints that you set for
+> yourself.
 >
-> - **On desire/passion:** It's OK that desire/passion changes
->   over time. Someday the dots can be linked. Before that, follow the passion
->   even as it takes leaps and seems without focus.
+> **On desire/passion:** It's OK that desire/passion changes
+> over time. Someday the dots can be linked. Before that, follow the passion
+> even as it takes leaps and seems without focus.
 >
-> - **On fear:** Never act/decide out of fear. You're doomed.
->   Lying is an example.
+> **On fear:** Never act/decide out of fear. You're doomed.
+> Lying is an example.
 >
-> - **On people:** Stay around those you want to become. If your
->   network is not given, create it yourself.
+> **On people:** Stay around those you want to become. If your
+> network is not given, create it yourself.
 >
-> - **On human life:** You can change your life. Be kind, be
->   honest (to others and to yourself), be grateful. Genuine happiness
->   triumphs.
+> **On human life:** You can change your life. Be kind, be
+> honest (to others and to yourself), be grateful. Genuine happiness
+> triumphs.
 
 ---
 
